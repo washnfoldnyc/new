@@ -21,10 +21,10 @@ function pick<T>(arr: T[], seed: string, offset = 0): T {
 
 export function homepageContent() {
   return {
-    title: 'Wash and Fold NYC Service & Wash and Fold From $3/lb | 5-Star Rated | Wash and Fold NYC',
-    metaDescription: 'NYC\'s top-rated wash and fold from $3/lb. House cleaning across Manhattan, Brooklyn, Queens, Manhattan, Brooklyn & Queens. Licensed, insured. 5.0★ Google. (917) 970-6002',
-    h1: 'NYC\'s #1 Rated Wash and Fold & Wash and Fold — From $3/lb',
-    subtitle: 'Professional wash and fold across Manhattan, Brooklyn, Queens, . Licensed, insured, and loved by thousands of clients.',
+    title: 'NYC Wash & Fold Laundry Service — $3/lb, Free Pickup & Delivery | Wash and Fold NYC',
+    metaDescription: 'NYC\'s top-rated laundry service. $3/lb wash & fold with free pickup and delivery across Manhattan, Brooklyn & Queens. Same-day rush +$20. $39 minimum. 5.0★ Google. (917) 970-6002',
+    h1: 'NYC\'s #1 Laundry Service — $3/lb With Free Pickup & Delivery',
+    subtitle: 'Professional wash and fold serving Manhattan, Brooklyn & Queens. $39 minimum order. Same-day rush +$20. 10% off weekly subscriptions.',
   }
 }
 
@@ -48,9 +48,9 @@ const areaIntros: Record<string, string[]> = {
 export function areaContent(area: Area) {
   const intros = areaIntros[area.slug] || areaIntros['manhattan']
   return {
-    title: `House Laundry Services in ${area.name}`,
-    metaDescription: `Professional laundry service in ${area.name} from $3/lb. Deep cleaning, weekly service, move-in/out & more. 5.0★ Google. (917) 970-6002`,
-    h1: `Professional Laundry Services in ${area.name}`,
+    title: `${area.name} Wash & Fold — $3/lb Laundry Service With Free Pickup | Wash and Fold NYC`,
+    metaDescription: `Professional wash and fold in ${area.name} — $3/lb, free pickup & delivery, 24-48hr turnaround. Serving every ${area.name} neighborhood. (917) 970-6002`,
+    h1: `${area.name} Wash & Fold — $3/lb Laundry With Free Pickup`,
     intro: pick(intros, area.slug),
   }
 }
@@ -65,10 +65,10 @@ const introTemplates = [
 ]
 
 const h1Templates = [
-  (n: Neighborhood) => `${n.name} Laundry Services`,
-  (n: Neighborhood) => `Wash and Fold in ${n.name}`,
-  (n: Neighborhood) => `Professional Laundry Service in ${n.name}`,
-  (n: Neighborhood) => `${n.name} House Laundry Services`,
+  (n: Neighborhood) => `${n.name} Wash & Fold — $3/lb Laundry With Free Pickup`,
+  (n: Neighborhood) => `Laundry Service in ${n.name} — $3/lb, Picked Up & Delivered Free`,
+  (n: Neighborhood) => `${n.name} Laundry Pickup & Delivery — $3/lb, 24-Hour Turnaround`,
+  (n: Neighborhood) => `Wash & Fold Near ${n.landmarks[0]} — ${n.name} Laundry From $3/lb`,
 ]
 
 export function neighborhoodContent(neighborhood: Neighborhood, area: Area) {
@@ -131,10 +131,10 @@ const serviceIntroTemplates = [
 ]
 
 const serviceH1Templates = [
-  (n: Neighborhood, s: Service) => `${s.name} in ${n.name}`,
-  (n: Neighborhood, s: Service) => `${n.name} ${s.name} Services`,
-  (n: Neighborhood, s: Service) => `Professional ${s.name} in ${n.name}`,
-  (n: Neighborhood, s: Service) => `${s.name} Services in ${n.name}`,
+  (n: Neighborhood, s: Service) => `${s.name} in ${n.name} — ${s.priceRange}, Free Pickup & Delivery`,
+  (n: Neighborhood, s: Service) => `${n.name} ${s.name} — Picked Up & Delivered From ${s.priceRange}`,
+  (n: Neighborhood, s: Service) => `Professional ${s.name} Near ${n.landmarks[0]} — ${n.name}, ${s.priceRange}`,
+  (n: Neighborhood, s: Service) => `${s.name} for ${n.housing_types[0].charAt(0).toUpperCase() + n.housing_types[0].slice(1)} in ${n.name} — ${s.priceRange}`,
 ]
 
 export function neighborhoodServiceContent(neighborhood: Neighborhood, service: Service, area: Area) {
@@ -143,16 +143,17 @@ export function neighborhoodServiceContent(neighborhood: Neighborhood, service: 
   const h1 = pick(serviceH1Templates, seed, 1)(neighborhood, service)
 
   return {
-    title: `${h1} | ${area.name}`,
-    metaDescription: `${service.name} in ${neighborhood.name}, ${area.name}. ${service.features.slice(0, 2).join(', ')} & more. ${service.priceRange}. 5.0★ Google. (917) 970-6002`,
+    title: `${service.name} in ${neighborhood.name}, ${area.name} — ${service.priceRange} | Wash and Fold NYC`,
+    metaDescription: `${service.name} in ${neighborhood.name}, ${area.name}. ${service.priceRange}, free pickup & delivery. ${service.features.slice(0, 2).join(', ')} & more. 5.0★ Google. (917) 970-6002`,
     h1,
     intro,
     whyUs: [
       `Local ${neighborhood.name} expertise — we know the ${neighborhood.housing_types[0]} and ${neighborhood.housing_types[1]} here`,
       `Specialized in ${neighborhood.cleaning_challenges[hashCode(seed) % neighborhood.cleaning_challenges.length]} common in this area`,
-      `${service.duration} of thorough, detail-oriented ${service.name.toLowerCase()}`,
-      'Licensed, insured, and background-checked cleaners',
-      'Satisfaction guaranteed on every visit',
+      `${service.priceRange} with free pickup and delivery to your door`,
+      `${service.duration} turnaround — fast, reliable, consistent`,
+      'Licensed, insured, and background-checked team',
+      'Satisfaction guaranteed on every order',
     ],
   }
 }
@@ -161,9 +162,9 @@ export function neighborhoodServiceContent(neighborhood: Neighborhood, service: 
 
 export function serviceContent(service: Service) {
   return {
-    title: `${service.name} Services | NYC, Brooklyn, Queens`,
-    metaDescription: `Professional ${service.name.toLowerCase()} across NYC, Brooklyn, Queens, Manhattan, Brooklyn & Queens. ${service.features.slice(0, 2).join(', ')} & more. ${service.priceRange}. 5.0★ Google. (917) 970-6002`,
-    h1: `${service.name} Services`,
+    title: `${service.name} in NYC — ${service.priceRange}, Free Pickup & Delivery | Wash and Fold NYC`,
+    metaDescription: `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn & Queens. ${service.priceRange}, free pickup & delivery. ${service.features.slice(0, 2).join(', ')} & more. 5.0★ Google. (917) 970-6002`,
+    h1: `NYC ${service.name} — ${service.priceRange} With Free Pickup & Delivery`,
     intro: service.description,
   }
 }
