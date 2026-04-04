@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const content = neighborhoodContent(neighborhood, neighborhoodArea)
     const url = `https://www.washandfoldnyc.com/${slug}`
     const title = `${neighborhood.name} Laundry Service & Wash and Fold From $3/lb | Wash and Fold NYC`
-    const description = `Professional cleaning in ${neighborhood.name}, ${neighborhoodArea.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $3/lb. 5.0★ Google. (917) 970-6002`
+    const description = `Professional wash and fold in ${neighborhood.name}, ${neighborhoodArea.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $3/lb. 5.0★ Google. (917) 970-6002`
     return {
       title: { absolute: title },
       description,
@@ -115,11 +115,11 @@ export default async function SlugPage({ params }: Props) {
                   <p className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-5">Flat Hourly Rate — All {area.name}</p>
                   <div className="flex items-center gap-4 mb-5">
                     <div className="flex-1 bg-gray-100 rounded-xl py-5 px-4 text-center">
-                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-[#1a3a5c] tracking-wide leading-none">$59<span className="text-xl text-gray-400">/hr</span></p>
+                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-[#1a3a5c] tracking-wide leading-none">$3<span className="text-xl text-gray-400">/lb</span></p>
                       <p className="text-gray-500 text-xs mt-2">Your supplies</p>
                     </div>
                     <div className="flex-1 bg-[#1a3a5c] rounded-xl py-5 px-4 text-center">
-                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$75<span className="text-xl text-sky-200/40">/hr</span></p>
+                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$75<span className="text-xl text-sky-200/40">/lb</span></p>
                       <p className="text-[#4BA3D4]/70 text-xs mt-2">We bring everything</p>
                     </div>
                   </div>
@@ -148,7 +148,7 @@ export default async function SlugPage({ params }: Props) {
               <div className="lg:col-span-2 lg:sticky lg:top-28">
                 <div className="w-10 h-[3px] bg-[#4BA3D4] mb-5" />
                 <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide leading-tight mb-4">{area.name} Neighborhoods We Serve</h2>
-                <p className="text-gray-500 leading-relaxed mb-6">Every neighborhood below gets the same rates, the same quality, and the same background-checked cleaners. Click any neighborhood to see services available in your area.</p>
+                <p className="text-gray-500 leading-relaxed mb-6">Every neighborhood below gets the same rates, the same quality, and the same free pickup and delivery. Click any neighborhood to see services available in your area.</p>
                 <a href="sms:9179706002" className="inline-block bg-white text-[#4BA3D4] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                   Text (917) 970-6002
                 </a>
@@ -202,12 +202,12 @@ export default async function SlugPage({ params }: Props) {
         <section className="py-20 bg-[#1a3a5c]">
           <div className="max-w-7xl mx-auto px-4">
             <p className="text-xs font-semibold text-[#4BA3D4]/60 tracking-[0.25em] uppercase mb-3 text-center">How It Works</p>
-            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book {area.name} Cleaning in 3 Steps</p>
+            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book Laundry in 3 Steps</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { n: '01', t: 'Text or Call', d: `Reach us at (917) 970-6002 with your ${area.name} address, preferred date, and any special requests.` },
-                { n: '02', t: 'We Confirm', d: 'We match you with a background-checked, insured cleaner and lock in your appointment — usually within the hour.' },
-                { n: '03', t: 'Pay After', d: 'Your cleaner arrives on time, does the work, and you pay only after the cleaning is complete. No deposits ever.' },
+                { n: '02', t: 'We Confirm', d: 'We confirm your order and schedule a free pickup — usually same-day or next-day.' },
+                { n: '03', t: 'Pay After', d: 'We pick up your laundry, wash it, fold it, and deliver it back within 24-48 hours. Pay after delivery. No deposits.' },
               ].map(s => (
                 <div key={s.n} className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7 text-center">
                   <span className="font-[family-name:var(--font-bebas)] text-5xl text-[#4BA3D4]/30 leading-none">{s.n}</span>
@@ -224,7 +224,7 @@ export default async function SlugPage({ params }: Props) {
           </div>
         </section>
 
-        <CTABlock title={`Book Your ${area.name} Cleaning Today`} subtitle={`Text or call — serving every ${area.name} neighborhood at the same flat hourly rate.`} />
+        <CTABlock title={`Schedule a Laundry Pickup`} subtitle={`Text or call — serving every ${area.name} neighborhood at the same $3/lb rate with free pickup.`} />
       </>
     )
   }
@@ -286,12 +286,12 @@ export default async function SlugPage({ params }: Props) {
                 <div className="flex items-center gap-6">
                   <div className="flex items-baseline gap-1.5">
                     <span className="font-[family-name:var(--font-bebas)] text-3xl text-white tracking-wide">$59</span>
-                    <span className="text-sky-200/60 text-sm">/hr &middot; your supplies</span>
+                    <span className="text-sky-200/60 text-sm">/lb &middot; your supplies</span>
                   </div>
                   <div className="hidden sm:block w-px h-6 bg-white/20" />
                   <div className="flex items-baseline gap-1.5">
                     <span className="font-[family-name:var(--font-bebas)] text-3xl text-[#4BA3D4] tracking-wide">$75</span>
-                    <span className="text-sky-200/60 text-sm">/hr &middot; we bring everything</span>
+                    <span className="text-sky-200/60 text-sm">/lb &middot; we bring everything</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -321,7 +321,7 @@ export default async function SlugPage({ params }: Props) {
                 <div className="w-12 h-[2px] bg-[#4BA3D4] mb-6" />
                 <p className="text-gray-600 text-lg leading-relaxed mb-5">{vibe}</p>
                 <p className="text-gray-600 leading-relaxed mb-8">
-                  That&apos;s why we&apos;re proud to serve {neighborhood.name} with the same care and attention your neighborhood deserves. Our cleaners know the {neighborhood.housing_types[0]} and {neighborhood.housing_types[1]} here — and they know how to make them shine.
+                  That&apos;s why we&apos;re proud to serve {neighborhood.name} with the same care and attention your neighborhood deserves. Our team knows the {neighborhood.housing_types[0]} and {neighborhood.housing_types[1]} here — and they know how to make them shine.
                 </p>
                 {/* Landmark tags */}
                 <p className="text-xs font-semibold text-gray-400 tracking-[0.15em] uppercase mb-3">Local Landmarks</p>
@@ -374,10 +374,10 @@ export default async function SlugPage({ params }: Props) {
         {/* Neighborhood Expertise — housing types + challenges, dark section */}
         <section className="py-16 bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0]">
           <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-xs font-semibold text-[#4BA3D4]/60 tracking-[0.25em] uppercase mb-3 text-center">Local Cleaning Expertise</h2>
+            <h2 className="text-xs font-semibold text-[#4BA3D4]/60 tracking-[0.25em] uppercase mb-3 text-center">Local Laundry Expertise</h2>
             <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-4">We Know {neighborhood.name} Homes Inside and Out</p>
             <p className="text-sky-200/60 text-center max-w-2xl mx-auto mb-12">
-              Our cleaners are experienced with the specific home types and cleaning challenges unique to {neighborhood.name}. No learning curve — just expert-level results from day one.
+              Our team is experienced with the specific home types and laundry challenges unique to {neighborhood.name}. No learning curve — just expert-level results from day one.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7">
@@ -392,7 +392,7 @@ export default async function SlugPage({ params }: Props) {
                 </div>
               </div>
               <div className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7">
-                <h3 className="font-[family-name:var(--font-bebas)] text-xl text-white tracking-wide mb-5">{neighborhood.name} Cleaning Challenges We Handle</h3>
+                <h3 className="font-[family-name:var(--font-bebas)] text-xl text-white tracking-wide mb-5">{neighborhood.name} Laundry Challenges We Handle</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {neighborhood.cleaning_challenges.map(c => (
                     <div key={c} className="flex items-start gap-2.5">
@@ -415,9 +415,9 @@ export default async function SlugPage({ params }: Props) {
               </div>
             </div>
             <div>
-              <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide mb-2">{neighborhood.name} Cleaning Costs</h3>
+              <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide mb-2">{neighborhood.name} Laundry Pricing</h3>
               <p className="text-[#1a3a5c]/80 leading-relaxed">
-                House cleaning in {neighborhood.name} starts at $3/lb with your supplies, $75/hr when we bring everything, or $100/hr for same-day emergency service. A typical {neighborhood.name} apartment cleaning runs $98–$260 depending on size and service type. Deep cleans, move-in/move-out, and post-renovation jobs take longer but use the same flat hourly rate. No travel fees, no surge pricing — {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
+                Wash and fold in {neighborhood.name} starts at $3/lb with your supplies, $75/lb when we bring everything, or $100/lb for same-day emergency service. A typical {neighborhood.name} apartment cleaning runs $98–$260 depending on size and service type. Deep cleans, move-in/move-out, and post-renovation jobs take longer but use the same $3/lb rate with free pickup. No travel fees, no surge pricing — {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
               </p>
               <Link href="/updated-nyc-wash-and-fold-industry-pricing" className="inline-block mt-3 text-[#1a3a5c] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
             </div>
@@ -456,12 +456,12 @@ export default async function SlugPage({ params }: Props) {
         <section className="py-20 bg-[#1a3a5c]">
           <div className="max-w-7xl mx-auto px-4">
             <p className="text-xs font-semibold text-[#4BA3D4]/60 tracking-[0.25em] uppercase mb-3 text-center">How It Works</p>
-            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book {neighborhood.name} Cleaning in 3 Steps</p>
+            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book Laundry in 3 Steps</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { n: '01', t: 'Text or Call', d: `Reach us at (917) 970-6002 with your ${neighborhood.name} address, preferred date, and any special requests.` },
-                { n: '02', t: 'We Confirm', d: 'We match you with a background-checked, insured cleaner and lock in your appointment — usually within the hour.' },
-                { n: '03', t: 'Pay After', d: 'Your cleaner arrives on time, does the work, and you pay only after the cleaning is complete. No deposits ever.' },
+                { n: '02', t: 'We Confirm', d: 'We confirm your order and schedule a free pickup — usually same-day or next-day.' },
+                { n: '03', t: 'Pay After', d: 'We pick up your laundry, wash it, fold it, and deliver it back within 24-48 hours. Pay after delivery. No deposits.' },
               ].map(s => (
                 <div key={s.n} className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7 text-center">
                   <span className="font-[family-name:var(--font-bebas)] text-5xl text-[#4BA3D4]/30 leading-none">{s.n}</span>
@@ -484,14 +484,14 @@ export default async function SlugPage({ params }: Props) {
             <div className="max-w-7xl mx-auto px-4">
               <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">Also Serving</h2>
               <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-4">Neighborhoods Near {neighborhood.name}</p>
-              <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">Same rates, same quality, same background-checked cleaners — no matter which {neighborhoodArea.name} neighborhood you call home.</p>
+              <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">Same rates, same quality, same free pickup and delivery — no matter which {neighborhoodArea.name} neighborhood you call home.</p>
               <NearbyNeighborhoods slugs={neighborhood.nearby} />
             </div>
           </section>
         )}
 
-        <FAQSection faqs={faqs} title={`${neighborhood.name} Cleaning — Frequently Asked Questions`} columns={2} />
-        <CTABlock title={`Book Your ${neighborhood.name} Cleaning Today`} subtitle={`Text or call — same rates, same quality across all of ${neighborhoodArea.name}.`} />
+        <FAQSection faqs={faqs} title={`${neighborhood.name} Laundry — Frequently Asked Questions`} columns={2} />
+        <CTABlock title={`Schedule a Laundry Pickup`} subtitle={`Text or call — same rates, same quality across all of ${neighborhoodArea.name}.`} />
       </>
     )
   }
