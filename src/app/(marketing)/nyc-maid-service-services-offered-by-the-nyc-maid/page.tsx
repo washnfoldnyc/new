@@ -50,7 +50,7 @@ export default function ServicesIndexPage() {
             <span className="text-[#4BA3D4] text-sm font-medium">&#10003; Background-checked</span>
           </div>
           <div className="flex flex-col sm:flex-row items-start gap-5">
-            <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+            <a href="sms:9179706002" className="bg-white text-[#4BA3D4] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
               Text (917) 970-6002
             </a>
             <a href="tel:9179706002" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
@@ -140,7 +140,7 @@ export default function ServicesIndexPage() {
               Our cleaners serve <Link href="/manhattan-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Manhattan</Link>, <Link href="/brooklyn-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Brooklyn</Link>, <Link href="/queens-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Queens</Link>, <Link href="/long-island-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Long Island</Link>, and <Link href="/new-jersey-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">New Jersey</Link> — same rates, same quality, no travel fees. <Link href="/nyc-customer-reviews-for-the-nyc-maid" className="text-[#1a3a5c] underline underline-offset-2">Read our reviews</Link> to see what clients say.
             </p>
             <div className="flex flex-col sm:flex-row items-start gap-4">
-              <a href="sms:9179706002" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+              <a href="sms:9179706002" className="inline-block bg-white text-[#4BA3D4] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                 Text (917) 970-6002
               </a>
               <a href="tel:9179706002" className="inline-block text-[#1a3a5c] font-semibold py-3.5 hover:underline underline-offset-4">

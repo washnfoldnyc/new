@@ -101,7 +101,7 @@ export default async function SlugPage({ params }: Props) {
                   <span className="text-[#4BA3D4] text-sm font-medium">&#10003; Background-checked</span>
                 </div>
                 <div className="flex flex-col sm:flex-row items-start gap-4">
-                  <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                  <a href="sms:9179706002" className="bg-white text-[#4BA3D4] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                     Text (917) 970-6002
                   </a>
                   <a href="tel:9179706002" className="text-sky-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
@@ -128,7 +128,7 @@ export default async function SlugPage({ params }: Props) {
                     <p className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide">Same Rate Everywhere</p>
                     <p className="text-[#1a3a5c]/60 text-xs mt-1">No travel fees &middot; No surge pricing</p>
                   </div>
-                  <a href="sms:9179706002" className="block text-center bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                  <a href="sms:9179706002" className="block text-center bg-white text-[#4BA3D4] px-6 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                     Text (917) 970-6002
                   </a>
                 </div>
@@ -149,7 +149,7 @@ export default async function SlugPage({ params }: Props) {
                 <div className="w-10 h-[3px] bg-[#4BA3D4] mb-5" />
                 <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide leading-tight mb-4">{area.name} Neighborhoods We Serve</h2>
                 <p className="text-gray-500 leading-relaxed mb-6">Every neighborhood below gets the same rates, the same quality, and the same background-checked cleaners. Click any neighborhood to see services available in your area.</p>
-                <a href="sms:9179706002" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                <a href="sms:9179706002" className="inline-block bg-white text-[#4BA3D4] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                   Text (917) 970-6002
                 </a>
               </div>
@@ -217,7 +217,7 @@ export default async function SlugPage({ params }: Props) {
               ))}
             </div>
             <div className="flex justify-center mt-10">
-              <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+              <a href="sms:9179706002" className="bg-white text-[#4BA3D4] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                 Text (917) 970-6002
               </a>
             </div>
@@ -331,7 +331,7 @@ export default async function SlugPage({ params }: Props) {
                   ))}
                 </div>
                 <div className="flex flex-wrap items-center gap-4">
-                  <a href="sms:9179706002" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                  <a href="sms:9179706002" className="inline-block bg-white text-[#4BA3D4] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                     Text (917) 970-6002
                   </a>
                   <a href="tel:9179706002" className="text-[#1a3a5c] font-semibold hover:underline underline-offset-4">
@@ -471,7 +471,7 @@ export default async function SlugPage({ params }: Props) {
               ))}
             </div>
             <div className="flex justify-center mt-10">
-              <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+              <a href="sms:9179706002" className="bg-white text-[#4BA3D4] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                 Text (917) 970-6002
               </a>
             </div>

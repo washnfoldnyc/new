@@ -80,7 +80,7 @@ export default function ContactPage() {
               <a href="sms:9179706002" className="text-[#1a3a5c] text-xl font-bold hover:underline underline-offset-4">(917) 970-6002</a>
               <p className="text-gray-500 text-sm mt-3">Fastest way to reach us. Most quotes delivered within 15 minutes.</p>
               <div className="flex flex-col gap-2 mt-5">
-                <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                <a href="sms:9179706002" className="bg-white text-[#4BA3D4] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                   Text Us
                 </a>
                 <a href="tel:9179706002" className="text-[#1a3a5c] font-semibold text-sm py-2 hover:underline underline-offset-4">

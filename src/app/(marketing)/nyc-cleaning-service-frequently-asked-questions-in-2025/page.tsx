@@ -186,7 +186,7 @@ export default function FAQPage() {
             We&apos;re happy to answer anything. Text or call us — most questions are answered within minutes.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+            <a href="sms:9179706002" className="bg-white text-[#4BA3D4] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
               Text (917) 970-6002
             </a>
             <a href="tel:9179706002" className="text-blue-200/70 font-medium text-lg hover:text-white transition-colors underline underline-offset-4">

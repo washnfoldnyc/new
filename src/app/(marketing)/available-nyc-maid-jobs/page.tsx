@@ -194,7 +194,7 @@ export default function CareersPage() {
             Limpiadores de tiempo completo toman 18–20 trabajos por semana y ganan $1,350–$1,500+. Sin esperar día de pago — te pagan el mismo día, cada trabajo.
           </p>
           <div className="flex flex-col sm:flex-row items-start gap-5">
-            <Link href="/apply" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+            <Link href="/apply" className="bg-white text-[#4BA3D4] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
               Apply Now / Aplica Ahora
             </Link>
             <a href="sms:9179706002" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
@@ -438,7 +438,7 @@ export default function CareersPage() {
               { step: '4', title: 'Start Working', desc: 'Get matched with clients in your area. Complete jobs, get paid $30/hr via Zelle within 30 minutes.', es: 'Te conectamos con clientes en tu área. Completa trabajos, cobra $30/hr por Zelle en 30 minutos.' },
             ].map(item => (
               <div key={item.step}>
-                <div className="w-10 h-10 bg-[#4BA3D4] text-[#1a3a5c] rounded-full flex items-center justify-center font-bold mb-4">{item.step}</div>
+                <div className="w-10 h-10 bg-white text-[#4BA3D4] rounded-full flex items-center justify-center font-bold mb-4">{item.step}</div>
                 <h3 className="text-white font-semibold mb-2">{item.title}</h3>
                 <p className="text-sky-200/60 text-sm leading-relaxed">{item.desc}</p>
                 <p className="text-blue-200/30 text-xs italic mt-1">{item.es}</p>

@@ -149,7 +149,7 @@ export default async function NeighborhoodJobPage({ params }: { params: Promise<
             Necesitamos limpiadores experimentados en {n.name}. Trae tus habilidades y suministros — nosotros traemos clientes estables, desde $30/hr por Zelle en menos de 30 minutos, programas de bonos, y el 100% de las propinas son tuyas.
           </p>
           <div className="flex flex-col sm:flex-row items-start gap-5 mt-8">
-            <Link href="/apply" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+            <Link href="/apply" className="bg-white text-[#4BA3D4] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
               Apply Now / Aplica Ahora
             </Link>
             <a href="sms:9179706002" className="text-white/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">

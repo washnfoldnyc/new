@@ -320,7 +320,7 @@ export default function OperationsCoordinatorPage() {
             <span className="bg-[#4BA3D4]/20 text-[#4BA3D4] text-xs font-semibold px-4 py-2 rounded-full">1099 Independent Contractor</span>
           </div>
           <div className="flex flex-col sm:flex-row items-start gap-5">
-            <Link href="/apply/operations-coordinator" data-track="coord-hero-apply" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+            <Link href="/apply/operations-coordinator" data-track="coord-hero-apply" className="bg-white text-[#4BA3D4] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
               Apply Now
             </Link>
             <a href="sms:9179706002" data-track="coord-hero-text" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">

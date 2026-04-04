@@ -112,7 +112,7 @@ export default function PricingPage() {
             </div>
 
             <div className="flex justify-center mt-8">
-              <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+              <a href="sms:9179706002" className="bg-white text-[#4BA3D4] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                 Text (917) 970-6002
               </a>
             </div>
