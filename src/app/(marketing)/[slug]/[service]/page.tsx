@@ -99,11 +99,11 @@ export default async function NeighborhoodServicePage({ params }: Props) {
           </h1>
           <p className="text-sky-200/60 text-lg max-w-3xl leading-relaxed mb-8">{content.intro}</p>
           <div className="flex flex-col sm:flex-row items-start gap-4 mb-12">
-            <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+            <a href="sms:9179706002" className="bg-white text-[#4BA3D4] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-sky-50 transition-colors shadow-lg">
               Text (917) 970-6002
             </a>
-            <a href="tel:9179706002" className="text-sky-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
-              or Call (917) 970-6002
+            <a href="tel:9179706002" className="bg-white text-[#4BA3D4] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-sky-50 transition-colors shadow-lg">
+              Call (917) 970-6002
             </a>
           </div>
         </div>
@@ -197,7 +197,7 @@ export default async function NeighborhoodServicePage({ params }: Props) {
           <h2 className="text-xs font-semibold text-[#4BA3D4]/60 tracking-[0.25em] uppercase mb-3 text-center">{service.shortName} Expertise</h2>
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-4">{service.name} Tailored for {neighborhood.name} Homes</p>
           <p className="text-sky-200/60 text-center max-w-2xl mx-auto mb-12">
-            Our cleaners are experienced with the housing types and cleaning challenges specific to {neighborhood.name}. No learning curve — just expert {service.name.toLowerCase()} from day one.
+            Our team is experienced with the building types and laundry needs specific to {neighborhood.name}. We know the doorman buildings, the walkups, and the shared laundry rooms — and we tailor our {service.name.toLowerCase()} service to fit.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7">
@@ -237,9 +237,9 @@ export default async function NeighborhoodServicePage({ params }: Props) {
           <div>
             <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide mb-2">{service.name} Pricing in {neighborhood.name}</h3>
             <p className="text-[#1a3a5c]/80 leading-relaxed">
-              {service.name} in {neighborhood.name} typically costs {service.priceRange} and takes {service.duration}. We charge a flat hourly rate — $3/lb with your supplies, $75/hr when we bring everything, or $100/hr for same-day emergency service. No travel fees, no surge pricing, no hidden costs. {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
+              {service.name} in {neighborhood.name} is {service.priceRange} with a $39 minimum order. Free pickup and delivery on all orders. Same-day rush is available for a flat $20 fee. Turnaround is {service.duration}. Weekly subscribers save 10% — biweekly subscribers save 5%. No travel fees, no surge pricing, no hidden costs. {neighborhood.name} residents pay the same rate as every other neighborhood we serve across <Link href="/boroughs/manhattan" className="text-[#1a3a5c] underline underline-offset-2">Manhattan</Link>, <Link href="/boroughs/brooklyn" className="text-[#1a3a5c] underline underline-offset-2">Brooklyn</Link>, and <Link href="/boroughs/queens" className="text-[#1a3a5c] underline underline-offset-2">Queens</Link>.
             </p>
-            <Link href="/updated-nyc-wash-and-fold-industry-pricing" className="inline-block mt-3 text-[#1a3a5c] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
+            <Link href="/pricing" className="inline-block mt-3 text-[#1a3a5c] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
           </div>
         </div>
       </section>
@@ -263,7 +263,7 @@ export default async function NeighborhoodServicePage({ params }: Props) {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">More Services</h2>
-          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-4">Other Cleaning Services in {neighborhood.name}</p>
+          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-4">Other Laundry Services in {neighborhood.name}</p>
           <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">Same rates, same quality — pick the service that fits your needs.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {SERVICES.filter(s => s.slug !== service.slug).map(s => (
@@ -295,8 +295,8 @@ export default async function NeighborhoodServicePage({ params }: Props) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { n: '01', t: 'Text or Call', d: `Reach us at (917) 970-6002 with your ${neighborhood.name} address and tell us you need ${service.name.toLowerCase()}.` },
-              { n: '02', t: 'We Confirm', d: `We match you with a cleaner experienced in ${service.name.toLowerCase()} for ${neighborhood.name} homes and lock in your appointment.` },
-              { n: '03', t: 'Pay After', d: `Your cleaner arrives on time, completes the ${service.name.toLowerCase()}, and you pay only when you're satisfied. No deposits.` },
+              { n: '02', t: 'We Pick Up', d: `We send a driver to your ${neighborhood.name} address. Leave your bag at the door, with the doorman, or hand it off directly. Free pickup on all orders over $39.` },
+              { n: '03', t: 'Delivered Clean', d: `Your ${service.name.toLowerCase()} is completed and delivered back to your door within ${service.duration}. Pay after delivery — no deposits, no upfront charges.` },
             ].map(s => (
               <div key={s.n} className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7 text-center">
                 <span className="font-[family-name:var(--font-bebas)] text-5xl text-[#4BA3D4]/30 leading-none">{s.n}</span>
@@ -326,7 +326,7 @@ export default async function NeighborhoodServicePage({ params }: Props) {
       )}
 
       <FAQSection faqs={faqs} title={`${service.name} in ${neighborhood.name} — Frequently Asked Questions`} columns={2} />
-      <CTABlock title={`Book ${service.name} in ${neighborhood.name}`} subtitle={`Text or call — flat hourly rates across all of ${area.name}.`} />
+      <CTABlock title={`Book ${service.name} in ${neighborhood.name}`} subtitle={`Text or call — ${service.priceRange}, free pickup & delivery across all of ${area.name}.`} />
     </>
   )
 }
