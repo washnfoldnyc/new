@@ -38,7 +38,7 @@ export default function RefundPolicyPage() {
                 <strong className="text-[#1a3a5c]">We do not collect any money upfront.</strong> There are no deposits, no pre-authorizations, no advance charges, and no pre-payments of any kind.
               </p>
               <p className="text-gray-600 leading-relaxed mb-3">
-                Payment is collected only after your cleaning is complete — before the cleaner leaves your home. You see the results before you pay. Because we never take your money in advance, there is nothing to refund.
+                Payment is collected only after your cleaning is complete — upon delivery your home. You see the results before you pay. Because we never take your money in advance, there is nothing to refund.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 This is by design. We believe you should only pay for work that&apos;s been done, and you should be able to see the quality before handing over payment.
@@ -68,7 +68,7 @@ export default function RefundPolicyPage() {
           <div>
             <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-4">Payment Method</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Payment is due upon completion of your cleaning service, before the cleaner leaves. We accept:
+              Payment is due upon completion of your laundry service, upon delivery. We accept:
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {['Zelle', 'Apple Pay', 'Venmo', 'Credit Card', 'Debit Card', 'Cash'].map(method => (

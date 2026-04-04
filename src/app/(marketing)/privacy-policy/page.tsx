@@ -53,7 +53,7 @@ export default function PrivacyPolicyPage() {
             <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-4">How We Use Your Information</h2>
             <ul className="space-y-2.5">
               {[
-                'To schedule, confirm, and provide your cleaning service',
+                'To schedule, confirm, and provide your laundry service',
                 'To communicate with you about appointments, updates, and service-related matters',
                 'To assign the right cleaner to your home based on location and service type',
                 'To analyze anonymized usage data and improve our website experience',
@@ -71,7 +71,7 @@ export default function PrivacyPolicyPage() {
             <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-4">We Do Not Share Your Information</h2>
             <div className="bg-[#F0F8FF] border border-[#4BA3D4]/30 rounded-xl p-6">
               <p className="text-gray-600 leading-relaxed mb-3">
-                We do not sell, trade, rent, or share your personal information with any third parties. Period. Your data stays with us and is used solely to provide and improve your cleaning service.
+                We do not sell, trade, rent, or share your personal information with any third parties. Period. Your data stays with us and is used solely to provide and improve your laundry service.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 The only people who see your information are the members of our team who need it to do their job — your assigned cleaner receives your address and access instructions, and that&apos;s it. We do not use third-party marketing platforms, data brokers, or advertising networks that track you.

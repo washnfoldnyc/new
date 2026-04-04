@@ -36,8 +36,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (area) {
     const content = areaContent(area)
     const url = `https://www.washandfoldnyc.com/${slug}`
-    const title = `${area.name} Maid Service & House Cleaning From $3/lb | Wash and Fold NYC`
-    const description = `Professional house cleaning in ${area.name} from $3/lb. Deep cleaning, weekly maid service, move-in/out & more. Licensed, insured, 5.0★ Google. (917) 970-6002`
+    const title = `${area.name} Laundry Service & Wash and Fold From $3/lb | Wash and Fold NYC`
+    const description = `Professional wash and fold in ${area.name} from $3/lb. Wash & fold, pickup & delivery, dry cleaning & more. Licensed, insured, 5.0★ Google. (917) 970-6002`
     return {
       title: { absolute: title },
       description,
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const neighborhoodArea = getArea(neighborhood.area)!
     const content = neighborhoodContent(neighborhood, neighborhoodArea)
     const url = `https://www.washandfoldnyc.com/${slug}`
-    const title = `${neighborhood.name} Maid Service & House Cleaning From $3/lb | Wash and Fold NYC`
+    const title = `${neighborhood.name} Laundry Service & Wash and Fold From $3/lb | Wash and Fold NYC`
     const description = `Professional cleaning in ${neighborhood.name}, ${neighborhoodArea.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $3/lb. 5.0★ Google. (917) 970-6002`
     return {
       title: { absolute: title },
@@ -91,7 +91,7 @@ export default async function SlugPage({ params }: Props) {
                   <span className="text-sky-200/60 text-sm">5.0 on Google &middot; 27 verified reviews</span>
                 </div>
                 <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl lg:text-6xl text-white tracking-wide leading-[0.95] mb-5">
-                  {area.name} Maid Service & House Cleaning — From $3/lb
+                  {area.name} Laundry Service & Wash and Fold — From $3/lb
                 </h1>
                 <p className="text-sky-200/60 text-lg leading-relaxed mb-6">{content.intro}</p>
                 <div className="flex flex-wrap gap-x-6 gap-y-2 mb-8">
@@ -173,9 +173,9 @@ export default async function SlugPage({ params }: Props) {
         {/* Services — full showcase */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">Cleaning Services</h2>
-            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-4">Every Cleaning Service Available in {area.name}</p>
-            <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">From weekly maid service to deep cleaning, move-in/out, and same-day emergency cleans — all at the same flat hourly rate.</p>
+            <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">Laundry Services</h2>
+            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-4">Every Laundry Service Available in {area.name}</p>
+            <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">From wash & fold to dry cleaning, comforter cleaning, and commercial laundry — all with free pickup and delivery.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {SERVICES.map(s => (
                 <Link
@@ -260,7 +260,7 @@ export default async function SlugPage({ params }: Props) {
               <span className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase">{neighborhood.name}</span>
             </div>
             <h1 className="font-[family-name:var(--font-bebas)] text-5xl md:text-7xl lg:text-8xl text-[#1a3a5c] tracking-wide leading-[0.9] mb-5">
-              {neighborhood.name} Maid Service &amp; House Cleaning
+              {neighborhood.name} Laundry Service &amp; Wash and Fold
             </h1>
             <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-8">{content.intro}</p>
             {/* Landmark pills */}
@@ -427,9 +427,9 @@ export default async function SlugPage({ params }: Props) {
         {/* Services — full showcase grid */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">Cleaning Services</h2>
-            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-4">Every Cleaning Service Available in {neighborhood.name}</p>
-            <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">From weekly maid service to deep cleaning, move-in/out, and same-day emergency cleans — all at the same flat hourly rate.</p>
+            <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">Laundry Services</h2>
+            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-4">Every Laundry Service Available in {neighborhood.name}</p>
+            <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">From wash & fold to dry cleaning, comforter cleaning, and commercial laundry — all with free pickup and delivery.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {SERVICES.map(s => (
                 <Link

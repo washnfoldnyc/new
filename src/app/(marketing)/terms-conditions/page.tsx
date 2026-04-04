@@ -34,7 +34,7 @@ export default function TermsPage() {
           <div>
             <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-4">Service Agreement</h2>
             <p className="text-gray-600 leading-relaxed">
-              By booking a cleaning service with Wash and Fold NYC, you agree to the following terms and conditions. We reserve the right to update these terms at any time. Continued use of our services constitutes acceptance of any changes.
+              By booking a laundry service with Wash and Fold NYC, you agree to the following terms and conditions. We reserve the right to update these terms at any time. Continued use of our services constitutes acceptance of any changes.
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export default function TermsPage() {
               <ul className="space-y-3">
                 {[
                   'We do not collect any money upfront. There are no deposits, no pre-authorizations, and no advance charges.',
-                  'Payment is due upon completion of service — before the cleaner leaves your home.',
+                  'Payment is due upon completion of service — upon delivery your home.',
                   'Accepted payment methods: Zelle (hi@washandfoldnyc.com), Apple Pay, Venmo, credit/debit card, and cash.',
                   'Pricing is hourly and transparent. The rate you are quoted is the rate you pay. No hidden fees, no surcharges.',
                   'If a cleaning runs longer than expected, we will communicate with you before continuing and adjusting the final amount.',

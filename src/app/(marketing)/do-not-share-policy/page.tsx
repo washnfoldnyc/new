@@ -38,7 +38,7 @@ export default function DoNotSharePage() {
                 <strong className="text-[#1a3a5c]">We do not sell, trade, rent, or share your personal information with anyone.</strong> Not with advertisers, not with data brokers, not with marketing companies, not with any third parties of any kind.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Your name, phone number, email, address, and service details exist in our system for one reason — to provide you with an excellent cleaning service. That&apos;s it.
+                Your name, phone number, email, address, and service details exist in our system for one reason — to provide you with an excellent laundry service. That&apos;s it.
               </p>
             </div>
           </div>
