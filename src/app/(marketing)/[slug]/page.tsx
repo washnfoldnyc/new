@@ -119,7 +119,7 @@ export default async function SlugPage({ params }: Props) {
                       <p className="text-gray-500 text-xs mt-2">Your supplies</p>
                     </div>
                     <div className="flex-1 bg-[#1a3a5c] rounded-xl py-5 px-4 text-center">
-                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$75<span className="text-xl text-sky-200/40">/lb</span></p>
+                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$3<span className="text-xl text-sky-200/40">/lb</span></p>
                       <p className="text-[#4BA3D4]/70 text-xs mt-2">We bring everything</p>
                     </div>
                   </div>
@@ -285,12 +285,12 @@ export default async function SlugPage({ params }: Props) {
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="flex items-center gap-6">
                   <div className="flex items-baseline gap-1.5">
-                    <span className="font-[family-name:var(--font-bebas)] text-3xl text-white tracking-wide">$59</span>
+                    <span className="font-[family-name:var(--font-bebas)] text-3xl text-white tracking-wide">$3</span>
                     <span className="text-sky-200/60 text-sm">/lb &middot; your supplies</span>
                   </div>
                   <div className="hidden sm:block w-px h-6 bg-white/20" />
                   <div className="flex items-baseline gap-1.5">
-                    <span className="font-[family-name:var(--font-bebas)] text-3xl text-[#4BA3D4] tracking-wide">$75</span>
+                    <span className="font-[family-name:var(--font-bebas)] text-3xl text-[#4BA3D4] tracking-wide">$3</span>
                     <span className="text-sky-200/60 text-sm">/lb &middot; we bring everything</span>
                   </div>
                 </div>
