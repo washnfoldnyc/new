@@ -75,25 +75,25 @@ export default async function ServicePage({ params }: Props) {
       <JsonLd data={[...servicePageSchemas(service), faqSchema(faqs)]} />
 
       {/* Hero — split layout: left text, right pricing card */}
-      <section className="bg-gradient-to-b from-[#1E2A4A] to-[#243352] py-14 md:py-20">
+      <section className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] py-14 md:py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
             <div className="lg:col-span-3">
               <div className="flex flex-wrap items-center gap-3 mb-5">
                 <span className="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                <span className="text-blue-200/60 text-sm">5.0 on Google &middot; 27 verified reviews</span>
+                <span className="text-sky-200/60 text-sm">5.0 on Google &middot; 27 verified reviews</span>
               </div>
               <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl lg:text-6xl text-white tracking-wide leading-[0.95] mb-5">
                 {rich?.heroH1 || `${service.name} in NYC — Professional & Affordable`}
               </h1>
-              <p className="text-blue-200/60 text-lg leading-relaxed mb-6">
+              <p className="text-sky-200/60 text-lg leading-relaxed mb-6">
                 {rich?.heroSubtitle || content.intro}
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4">
-                <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                   Text (212) 202-8400
                 </a>
-                <a href="tel:2122028400" className="text-blue-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
+                <a href="tel:2122028400" className="text-sky-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
                   or Call (212) 202-8400
                 </a>
               </div>
@@ -104,26 +104,26 @@ export default async function ServicePage({ params }: Props) {
                 <p className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-5">Flat Hourly Rate — No Hidden Fees</p>
                 <div className="flex items-center gap-4 mb-5">
                   <div className="flex-1 bg-gray-100 rounded-xl py-5 px-4 text-center">
-                    <p className="font-[family-name:var(--font-bebas)] text-5xl text-[#1E2A4A] tracking-wide leading-none">$59<span className="text-xl text-gray-400">/hr</span></p>
+                    <p className="font-[family-name:var(--font-bebas)] text-5xl text-[#1a3a5c] tracking-wide leading-none">$59<span className="text-xl text-gray-400">/hr</span></p>
                     <p className="text-gray-500 text-xs mt-2">Your supplies</p>
                   </div>
-                  <div className="flex-1 bg-[#1E2A4A] rounded-xl py-5 px-4 text-center">
-                    <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$75<span className="text-xl text-blue-200/40">/hr</span></p>
-                    <p className="text-[#A8F0DC]/70 text-xs mt-2">We bring everything</p>
+                  <div className="flex-1 bg-[#1a3a5c] rounded-xl py-5 px-4 text-center">
+                    <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$75<span className="text-xl text-sky-200/40">/hr</span></p>
+                    <p className="text-[#4BA3D4]/70 text-xs mt-2">We bring everything</p>
                   </div>
                 </div>
                 {service.slug === 'same-day-cleaning' && (
                   <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-5 text-center">
-                    <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide">$100<span className="text-sm text-gray-400">/hr</span></p>
+                    <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide">$100<span className="text-sm text-gray-400">/hr</span></p>
                     <p className="text-amber-700 text-xs">Same-day dispatch</p>
                   </div>
                 )}
-                <div className="border border-[#A8F0DC]/40 bg-[#E8F8F1] rounded-xl p-4 mb-5 text-center">
+                <div className="border border-[#4BA3D4]/40 bg-[#E8F8F1] rounded-xl p-4 mb-5 text-center">
                   <p className="text-gray-500 text-xs mb-1">Average {service.shortName}</p>
-                  <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide">{service.duration}</p>
-                  <p className="text-[#1E2A4A]/60 text-xs mt-1">Pay only for time worked &middot; No upfront cost</p>
+                  <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide">{service.duration}</p>
+                  <p className="text-[#1a3a5c]/60 text-xs mt-1">Pay only for time worked &middot; No upfront cost</p>
                 </div>
-                <a href="sms:2122028400" className="block text-center bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                <a href="sms:2122028400" className="block text-center bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                   Text (212) 202-8400
                 </a>
               </div>
@@ -146,16 +146,16 @@ export default async function ServicePage({ params }: Props) {
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-start">
               {/* Left — heading */}
               <div className="lg:col-span-2 lg:sticky lg:top-28">
-                <div className="w-10 h-[3px] bg-[#A8F0DC] mb-5" />
-                <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide leading-tight mb-4">{rich.whatIs.heading}</h2>
+                <div className="w-10 h-[3px] bg-[#4BA3D4] mb-5" />
+                <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide leading-tight mb-4">{rich.whatIs.heading}</h2>
                 {rich.whatIs.subheading && (
                   <p className="text-gray-500 leading-relaxed mb-6">{rich.whatIs.subheading}</p>
                 )}
                 <div className="flex flex-col sm:flex-row items-start gap-3">
-                  <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                  <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                     Text (212) 202-8400
                   </a>
-                  <a href="tel:2122028400" className="text-[#1E2A4A]/60 font-medium py-3 hover:text-[#1E2A4A] transition-colors underline underline-offset-4">
+                  <a href="tel:2122028400" className="text-[#1a3a5c]/60 font-medium py-3 hover:text-[#1a3a5c] transition-colors underline underline-offset-4">
                     or Call (212) 202-8400
                   </a>
                 </div>
@@ -164,7 +164,7 @@ export default async function ServicePage({ params }: Props) {
               <div className="lg:col-span-3 space-y-5">
                 {rich.whatIs.body.map((p, i) => (
                   <div key={i} className="flex items-start gap-5 bg-gray-50 border border-gray-100 rounded-2xl p-6">
-                    <span className="font-[family-name:var(--font-bebas)] text-4xl text-[#A8F0DC]/40 leading-none flex-shrink-0">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="font-[family-name:var(--font-bebas)] text-4xl text-[#4BA3D4]/40 leading-none flex-shrink-0">{String(i + 1).padStart(2, '0')}</span>
                     <p className="text-gray-600 leading-relaxed">{p}</p>
                   </div>
                 ))}
@@ -179,15 +179,15 @@ export default async function ServicePage({ params }: Props) {
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">Room-by-Room Checklist</h2>
-            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide text-center mb-12">{rich?.roomsTitle || `What Gets Cleaned During a ${service.name}`}</p>
+            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-12">{rich?.roomsTitle || `What Gets Cleaned During a ${service.name}`}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {rich.rooms.map(room => (
                 <div key={room.room} className="bg-white border border-gray-200 rounded-2xl p-7">
-                  <h3 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide mb-5">{room.room}</h3>
+                  <h3 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-5">{room.room}</h3>
                   <ul className="space-y-2.5">
                     {room.tasks.map(task => (
                       <li key={task} className="flex items-start gap-2.5">
-                        <span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span>
+                        <span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span>
                         <span className="text-gray-600 text-sm">{task}</span>
                       </li>
                     ))}
@@ -206,14 +206,14 @@ export default async function ServicePage({ params }: Props) {
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-start">
               {/* Left — heading + context */}
               <div className="lg:col-span-2 lg:sticky lg:top-28">
-                <div className="w-10 h-[3px] bg-[#A8F0DC] mb-5" />
-                <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide leading-tight mb-4">{rich.comparison.title}</h2>
+                <div className="w-10 h-[3px] bg-[#4BA3D4] mb-5" />
+                <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide leading-tight mb-4">{rich.comparison.title}</h2>
                 <p className="text-gray-500 leading-relaxed mb-6">A regular clean maintains your home. A deep clean resets it. See exactly what&apos;s covered in each service so you know which one you need.</p>
                 <div className="flex flex-col sm:flex-row items-start gap-3">
-                  <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                  <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                     Text (212) 202-8400
                   </a>
-                  <a href="tel:2122028400" className="text-[#1E2A4A]/60 font-medium py-3 hover:text-[#1E2A4A] transition-colors underline underline-offset-4">
+                  <a href="tel:2122028400" className="text-[#1a3a5c]/60 font-medium py-3 hover:text-[#1a3a5c] transition-colors underline underline-offset-4">
                     or Call (212) 202-8400
                   </a>
                 </div>
@@ -221,16 +221,16 @@ export default async function ServicePage({ params }: Props) {
               {/* Right — table */}
               <div className="lg:col-span-3">
                 <div className="border border-gray-200 rounded-2xl overflow-hidden">
-                  <div className="grid grid-cols-[1fr_90px_90px] sm:grid-cols-[1fr_110px_110px] bg-[#1E2A4A] text-white text-xs font-semibold tracking-[0.15em] uppercase">
+                  <div className="grid grid-cols-[1fr_90px_90px] sm:grid-cols-[1fr_110px_110px] bg-[#1a3a5c] text-white text-xs font-semibold tracking-[0.15em] uppercase">
                     <div className="px-5 py-3.5">Task</div>
                     <div className="px-3 py-3.5 text-center">Regular</div>
-                    <div className="px-3 py-3.5 text-center bg-[#A8F0DC]/20">Deep</div>
+                    <div className="px-3 py-3.5 text-center bg-[#4BA3D4]/20">Deep</div>
                   </div>
                   {rich.comparison.rows.map((row, i) => (
                     <div key={row.task} className={`grid grid-cols-[1fr_90px_90px] sm:grid-cols-[1fr_110px_110px] ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'} border-t border-gray-100`}>
                       <div className="px-5 py-3.5 text-sm text-gray-700">{row.task}</div>
-                      <div className="px-3 py-3.5 text-center text-lg">{row.regular ? <span className="text-[#A8F0DC]">&#10003;</span> : <span className="text-gray-300">&mdash;</span>}</div>
-                      <div className="px-3 py-3.5 text-center text-lg bg-[#A8F0DC]/5">{row.deep ? <span className="text-[#A8F0DC]">&#10003;</span> : <span className="text-gray-300">&mdash;</span>}</div>
+                      <div className="px-3 py-3.5 text-center text-lg">{row.regular ? <span className="text-[#4BA3D4]">&#10003;</span> : <span className="text-gray-300">&mdash;</span>}</div>
+                      <div className="px-3 py-3.5 text-center text-lg bg-[#4BA3D4]/5">{row.deep ? <span className="text-[#4BA3D4]">&#10003;</span> : <span className="text-gray-300">&mdash;</span>}</div>
                     </div>
                   ))}
                 </div>
@@ -242,21 +242,21 @@ export default async function ServicePage({ params }: Props) {
 
       {/* When to book — two column split */}
       {rich && rich.whenToBook.items.length > 0 && (
-        <section className="py-20 bg-[#F5FBF8]">
+        <section className="py-20 bg-[#F0F8FF]">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-start">
               <div className="lg:col-span-2 lg:sticky lg:top-28">
-                <div className="w-10 h-[3px] bg-[#A8F0DC] mb-5" />
-                <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide leading-tight mb-4">{rich.whenToBook.title}</h2>
+                <div className="w-10 h-[3px] bg-[#4BA3D4] mb-5" />
+                <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide leading-tight mb-4">{rich.whenToBook.title}</h2>
                 <p className="text-gray-500 leading-relaxed mb-6">If any of these apply to you, a professional {service.name.toLowerCase()} is the move. Text us and we&apos;ll get you on the schedule.</p>
-                <a href="sms:2122028400" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                <a href="sms:2122028400" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                   Text (212) 202-8400
                 </a>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {rich.whenToBook.items.map((item, i) => (
                   <div key={i} className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5">
-                    <span className="font-[family-name:var(--font-bebas)] text-3xl text-[#A8F0DC]/40 leading-none flex-shrink-0">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="font-[family-name:var(--font-bebas)] text-3xl text-[#4BA3D4]/40 leading-none flex-shrink-0">{String(i + 1).padStart(2, '0')}</span>
                     <p className="text-gray-700 text-sm leading-relaxed">{item}</p>
                   </div>
                 ))}
@@ -268,17 +268,17 @@ export default async function ServicePage({ params }: Props) {
 
       {/* NYC Tips — large numbered cards */}
       {rich && rich.nycTips.length > 0 && (
-        <section className="py-16 bg-gradient-to-b from-[#1E2A4A] to-[#243352]">
+        <section className="py-16 bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0]">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-xs font-semibold text-[#A8F0DC]/60 tracking-[0.25em] uppercase mb-3 text-center">Pro Tips</h2>
+            <h2 className="text-xs font-semibold text-[#4BA3D4]/60 tracking-[0.25em] uppercase mb-3 text-center">Pro Tips</h2>
             <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">{rich?.tipsTitle || `NYC ${service.name} Tips From Local Pros`}</p>
             <div className="space-y-5">
               {rich.nycTips.map((tip, i) => (
                 <div key={tip.title} className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-xl p-6 flex items-start gap-5">
-                  <span className="font-[family-name:var(--font-bebas)] text-4xl text-[#A8F0DC]/30 leading-none flex-shrink-0">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="font-[family-name:var(--font-bebas)] text-4xl text-[#4BA3D4]/30 leading-none flex-shrink-0">{String(i + 1).padStart(2, '0')}</span>
                   <div>
                     <p className="text-white font-semibold mb-1">{tip.title}</p>
-                    <p className="text-blue-200/50 text-sm leading-relaxed">{tip.detail}</p>
+                    <p className="text-sky-200/60 text-sm leading-relaxed">{tip.detail}</p>
                   </div>
                 </div>
               ))}
@@ -293,8 +293,8 @@ export default async function ServicePage({ params }: Props) {
           <div className="max-w-7xl mx-auto px-4">
             <div className={`grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-start ${i % 2 === 1 ? 'lg:direction-rtl' : ''}`}>
               <div className={`lg:col-span-2 lg:sticky lg:top-28 ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
-                <div className="w-10 h-[3px] bg-[#A8F0DC] mb-5" />
-                <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide leading-tight">{section.heading}</h2>
+                <div className="w-10 h-[3px] bg-[#4BA3D4] mb-5" />
+                <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide leading-tight">{section.heading}</h2>
               </div>
               <div className={`lg:col-span-3 space-y-4 ${i % 2 === 1 ? 'lg:order-1' : ''}`}>
                 {section.body.map((p, j) => (
@@ -310,17 +310,17 @@ export default async function ServicePage({ params }: Props) {
 
       {/* Pricing note callout */}
       {rich?.pricingNote && (
-        <section className="py-12 bg-[#A8F0DC]">
+        <section className="py-12 bg-[#4BA3D4]">
           <div className="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-start gap-6">
             <div className="flex-shrink-0">
-              <div className="w-14 h-14 bg-[#1E2A4A] rounded-full flex items-center justify-center">
+              <div className="w-14 h-14 bg-[#1a3a5c] rounded-full flex items-center justify-center">
                 <span className="text-white text-xl">$</span>
               </div>
             </div>
             <div>
-              <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide mb-2">{service.name} Cost Summary</h3>
-              <p className="text-[#1E2A4A]/80 leading-relaxed">{rich.pricingNote}</p>
-              <Link href="/updated-nyc-maid-service-industry-pricing" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
+              <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide mb-2">{service.name} Cost Summary</h3>
+              <p className="text-[#1a3a5c]/80 leading-relaxed">{rich.pricingNote}</p>
+              <Link href="/updated-nyc-maid-service-industry-pricing" className="inline-block mt-3 text-[#1a3a5c] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
             </div>
           </div>
         </section>
@@ -332,14 +332,14 @@ export default async function ServicePage({ params }: Props) {
           <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-3">What&apos;s Included</h2>
-              <p className="font-[family-name:var(--font-bebas)] text-3xl text-[#1E2A4A] tracking-wide mb-2">{service.name} Checklist</p>
-              <div className="w-12 h-[2px] bg-[#A8F0DC] mb-6" />
+              <p className="font-[family-name:var(--font-bebas)] text-3xl text-[#1a3a5c] tracking-wide mb-2">{service.name} Checklist</p>
+              <div className="w-12 h-[2px] bg-[#4BA3D4] mb-6" />
               <p className="text-gray-600 leading-relaxed mb-6">{service.description}</p>
-              <div className="bg-[#F5FBF8] border border-[#A8F0DC]/30 rounded-xl p-6">
+              <div className="bg-[#F0F8FF] border border-[#4BA3D4]/30 rounded-xl p-6">
                 <ul className="space-y-3">
                   {service.features.map(f => (
                     <li key={f} className="flex items-start gap-3">
-                      <span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span>
+                      <span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span>
                       <span className="text-gray-700 text-sm">{f}</span>
                     </li>
                   ))}
@@ -348,20 +348,20 @@ export default async function ServicePage({ params }: Props) {
             </div>
             <div className="space-y-6">
               <div className="border border-gray-200 rounded-xl p-6">
-                <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide mb-5">Ideal Clients</h2>
+                <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-5">Ideal Clients</h2>
                 <ul className="space-y-3">
                   {service.idealFor.map(item => (
                     <li key={item} className="flex items-start gap-3">
-                      <span className="text-[#A8F0DC] mt-0.5 text-lg flex-shrink-0">&#10003;</span>
+                      <span className="text-[#4BA3D4] mt-0.5 text-lg flex-shrink-0">&#10003;</span>
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="bg-gray-50 rounded-xl p-6 text-center">
-                <p className="font-[family-name:var(--font-bebas)] text-3xl text-[#1E2A4A] tracking-wide mb-1">{service.priceRange}</p>
+                <p className="font-[family-name:var(--font-bebas)] text-3xl text-[#1a3a5c] tracking-wide mb-1">{service.priceRange}</p>
                 <p className="text-gray-500 text-sm mb-4">{service.duration}</p>
-                <a href="sms:2122028400" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                <a href="sms:2122028400" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                   Text (212) 202-8400
                 </a>
               </div>
@@ -371,9 +371,9 @@ export default async function ServicePage({ params }: Props) {
       )}
 
       {/* How it works — bold step cards */}
-      <section className="py-20 bg-[#1E2A4A]">
+      <section className="py-20 bg-[#1a3a5c]">
         <div className="max-w-7xl mx-auto px-4">
-          <p className="text-xs font-semibold text-[#A8F0DC]/60 tracking-[0.25em] uppercase mb-3 text-center">How It Works</p>
+          <p className="text-xs font-semibold text-[#4BA3D4]/60 tracking-[0.25em] uppercase mb-3 text-center">How It Works</p>
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book in 3 Simple Steps</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -382,14 +382,14 @@ export default async function ServicePage({ params }: Props) {
               { n: '03', t: 'Pay After', d: 'Your cleaner arrives on time, does the work, and you pay only after the cleaning is complete. No deposits ever.' },
             ].map(s => (
               <div key={s.n} className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7 text-center">
-                <span className="font-[family-name:var(--font-bebas)] text-5xl text-[#A8F0DC]/30 leading-none">{s.n}</span>
+                <span className="font-[family-name:var(--font-bebas)] text-5xl text-[#4BA3D4]/30 leading-none">{s.n}</span>
                 <p className="font-[family-name:var(--font-bebas)] text-xl text-white tracking-wide mt-3 mb-2">{s.t}</p>
-                <p className="text-blue-200/50 text-sm leading-relaxed">{s.d}</p>
+                <p className="text-sky-200/60 text-sm leading-relaxed">{s.d}</p>
               </div>
             ))}
           </div>
           <div className="flex justify-center mt-10">
-            <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+            <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
               Text (212) 202-8400
             </a>
           </div>
@@ -400,7 +400,7 @@ export default async function ServicePage({ params }: Props) {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">{service.name} Near You</h2>
-          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide text-center mb-4">{service.name} Across Manhattan, Brooklyn, Queens & Beyond</p>
+          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-4">{service.name} Across Manhattan, Brooklyn, Queens & Beyond</p>
           <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">Same rates, same quality — no matter which neighborhood you call home. Click any location to book {service.name.toLowerCase()} in your area.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -409,12 +409,12 @@ export default async function ServicePage({ params }: Props) {
               return (
                 <div key={area.slug} className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-shadow">
                   <Link href={`/${area.urlSlug}`} className="flex items-center justify-between mb-4 group">
-                    <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide group-hover:text-[#1E2A4A]/70 transition-colors">{area.name}</h3>
-                    <span className="text-[#A8F0DC] text-sm font-medium group-hover:underline underline-offset-4">{neighborhoods.length}+ areas &rarr;</span>
+                    <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide group-hover:text-[#1a3a5c]/70 transition-colors">{area.name}</h3>
+                    <span className="text-[#4BA3D4] text-sm font-medium group-hover:underline underline-offset-4">{neighborhoods.length}+ areas &rarr;</span>
                   </Link>
                   <div className="flex flex-wrap gap-1.5">
                     {neighborhoods.map(n => (
-                      <Link key={n.slug} href={`/${n.urlSlug}/${service.slug}`} className="px-3 py-1.5 bg-gray-50 border border-gray-100 rounded-lg text-xs text-gray-600 hover:border-[#A8F0DC] hover:bg-[#F5FBF8] hover:text-[#1E2A4A] transition-all">
+                      <Link key={n.slug} href={`/${n.urlSlug}/${service.slug}`} className="px-3 py-1.5 bg-gray-50 border border-gray-100 rounded-lg text-xs text-gray-600 hover:border-[#4BA3D4] hover:bg-[#F0F8FF] hover:text-[#1a3a5c] transition-all">
                         {n.name}
                       </Link>
                     ))}
@@ -425,7 +425,7 @@ export default async function ServicePage({ params }: Props) {
           </div>
 
           <div className="text-center mt-10">
-            <Link href="/service-areas-served-by-the-nyc-maid" className="inline-block bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+            <Link href="/service-areas-served-by-the-nyc-maid" className="inline-block bg-[#1a3a5c] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
               Browse All 225+ Neighborhoods &rarr;
             </Link>
           </div>
@@ -436,7 +436,7 @@ export default async function ServicePage({ params }: Props) {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">More NYC Cleaning Services</h2>
-          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide text-center mb-4">Not What You Need? We Do That Too.</p>
+          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-4">Not What You Need? We Do That Too.</p>
           <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">
             Same background-checked cleaners, same flat hourly rate, same quality — regardless of service type. Explore what else we can do for you.
           </p>
@@ -445,11 +445,11 @@ export default async function ServicePage({ params }: Props) {
               <Link
                 key={s.slug}
                 href={`/services/${s.urlSlug}`}
-                className="group border border-gray-200 rounded-2xl p-6 hover:border-[#A8F0DC] hover:shadow-lg transition-all bg-white"
+                className="group border border-gray-200 rounded-2xl p-6 hover:border-[#4BA3D4] hover:shadow-lg transition-all bg-white"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide group-hover:text-[#1E2A4A]/70 transition-colors">{s.name}</h3>
-                  <span className="text-[#1E2A4A] font-bold text-sm whitespace-nowrap ml-3">From {s.priceRange.split('–')[0]}</span>
+                  <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide group-hover:text-[#1a3a5c]/70 transition-colors">{s.name}</h3>
+                  <span className="text-[#1a3a5c] font-bold text-sm whitespace-nowrap ml-3">From {s.priceRange.split('–')[0]}</span>
                 </div>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">{s.description}</p>
                 <div className="flex flex-wrap gap-1.5 mb-4">
@@ -459,13 +459,13 @@ export default async function ServicePage({ params }: Props) {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-gray-400 text-xs">{s.duration}</span>
-                  <span className="text-[#1E2A4A] text-sm font-medium group-hover:underline underline-offset-4">View Details &rarr;</span>
+                  <span className="text-[#1a3a5c] text-sm font-medium group-hover:underline underline-offset-4">View Details &rarr;</span>
                 </div>
               </Link>
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/nyc-maid-service-services-offered-by-the-nyc-maid" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+            <Link href="/nyc-maid-service-services-offered-by-the-nyc-maid" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
               View All Services &amp; Pricing
             </Link>
           </div>

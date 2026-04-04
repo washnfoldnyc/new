@@ -144,7 +144,7 @@ export default function HeroChat() {
               <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div className={`max-w-[80%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
                   msg.role === 'user'
-                    ? 'bg-[#A8F0DC] text-[#1E2A4A] rounded-br-md'
+                    ? 'bg-[#4BA3D4] text-[#1a3a5c] rounded-br-md'
                     : 'bg-white/10 text-white rounded-bl-md'
                 }`}>
                   {msg.content}
@@ -167,7 +167,7 @@ export default function HeroChat() {
               <div className="flex flex-wrap gap-2 pt-2">
                 {quickReplies.map(qr => (
                   <button key={qr} onClick={() => send(qr)}
-                    className="bg-[#A8F0DC]/20 border border-[#A8F0DC]/40 text-[#A8F0DC] text-sm px-4 py-2 rounded-full hover:bg-[#A8F0DC]/30 hover:text-white transition-all">
+                    className="bg-[#4BA3D4]/20 border border-[#4BA3D4]/40 text-[#4BA3D4] text-sm px-4 py-2 rounded-full hover:bg-[#4BA3D4]/30 hover:text-white transition-all">
                     {qr}
                   </button>
                 ))}
@@ -194,11 +194,11 @@ export default function HeroChat() {
         <div className="flex-1">
           <input ref={inputRef} type="text" value={input} onChange={e => setInput(e.target.value)}
             placeholder={open ? 'Type a message...' : PLACEHOLDERS[placeholderIdx]}
-            className="w-full bg-white border-2 border-yellow-400 rounded-xl px-5 py-4 text-[#1E2A4A] placeholder-gray-400 text-base font-medium focus:outline-none focus:border-yellow-300 focus:ring-2 focus:ring-yellow-400/50 transition-all shadow-lg shadow-yellow-400/20"
+            className="w-full bg-white border-2 border-yellow-400 rounded-xl px-5 py-4 text-[#1a3a5c] placeholder-gray-400 text-base font-medium focus:outline-none focus:border-yellow-300 focus:ring-2 focus:ring-yellow-400/50 transition-all shadow-lg shadow-yellow-400/20"
             disabled={loading} />
         </div>
         <button type="submit" disabled={loading || !input.trim()}
-          className="bg-transparent px-10 py-4 rounded-xl font-black text-base tracking-widest uppercase hover:bg-yellow-400 hover:text-[#1E2A4A] transition-all disabled:text-white/50 disabled:border-yellow-400/50 disabled:cursor-not-allowed shrink-0 shadow-xl shadow-yellow-400/20 border-2 border-yellow-400 text-white">
+          className="bg-transparent px-10 py-4 rounded-xl font-black text-base tracking-widest uppercase hover:bg-yellow-400 hover:text-[#1a3a5c] transition-all disabled:text-white/50 disabled:border-yellow-400/50 disabled:cursor-not-allowed shrink-0 shadow-xl shadow-yellow-400/20 border-2 border-yellow-400 text-white">
           Chat
         </button>
       </form>

@@ -105,7 +105,7 @@ export default function FAQPage() {
       ]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#1E2A4A] to-[#243352] py-20 md:py-28">
+      <section className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] py-20 md:py-28">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-wrap items-center gap-4 mb-6">
             <span className="text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
@@ -115,7 +115,7 @@ export default function FAQPage() {
             Frequently Asked Questions About NYC House Cleaning Services
           </h1>
           <p className="text-blue-200/80 text-lg max-w-2xl leading-relaxed mb-10">
-            Everything you need to know about pricing, services, scheduling, and how we work — answered by our team. Can&apos;t find your question? Call <a href="tel:6464900130" className="text-[#A8F0DC] underline underline-offset-2">(646) 490-0130</a>.
+            Everything you need to know about pricing, services, scheduling, and how we work — answered by our team. Can&apos;t find your question? Call <a href="tel:6464900130" className="text-[#4BA3D4] underline underline-offset-2">(646) 490-0130</a>.
           </p>
 
           {/* Quick nav */}
@@ -136,13 +136,13 @@ export default function FAQPage() {
         {sections.map(section => (
           <div key={section.label} id={section.label.toLowerCase().replace(/[^a-z]+/g, '-')} className="mb-16 scroll-mt-8">
             <p className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-2">{section.label}</p>
-            <div className="w-10 h-[2px] bg-[#A8F0DC] mb-6" />
+            <div className="w-10 h-[2px] bg-[#4BA3D4] mb-6" />
 
             <div className="space-y-3">
               {section.faqs.map((faq, i) => (
                 <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden">
                   <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer hover:bg-gray-50 transition-colors">
-                    <h2 className="font-semibold text-[#1E2A4A] text-left pr-4">{faq.question}</h2>
+                    <h2 className="font-semibold text-[#1a3a5c] text-left pr-4">{faq.question}</h2>
                     <span className="text-gray-400 group-open:rotate-45 transition-transform text-2xl flex-shrink-0">+</span>
                   </summary>
                   <div className="px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed">
@@ -155,38 +155,38 @@ export default function FAQPage() {
         ))}
 
         {/* Quick pricing reference */}
-        <div className="bg-[#A8F0DC] rounded-2xl p-8 md:p-12 mb-16">
+        <div className="bg-[#4BA3D4] rounded-2xl p-8 md:p-12 mb-16">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xs font-semibold text-[#1E2A4A]/50 tracking-[0.25em] uppercase mb-2">Quick Pricing Reference</p>
-            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide mb-8">Three Simple Rates — No Hidden Fees</p>
+            <p className="text-xs font-semibold text-[#1a3a5c]/50 tracking-[0.25em] uppercase mb-2">Quick Pricing Reference</p>
+            <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide mb-8">Three Simple Rates — No Hidden Fees</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="bg-white rounded-xl p-5">
                 <p className="text-xs font-semibold text-gray-400 tracking-[0.15em] uppercase mb-1">Client Supplies</p>
-                <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1E2A4A] tracking-wide">$59<span className="text-xl text-gray-300">/hr</span></p>
+                <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1a3a5c] tracking-wide">$59<span className="text-xl text-gray-300">/hr</span></p>
               </div>
-              <div className="bg-[#1E2A4A] rounded-xl p-5">
-                <p className="text-xs font-semibold text-[#A8F0DC]/70 tracking-[0.15em] uppercase mb-1">We Bring Everything</p>
-                <p className="font-[family-name:var(--font-bebas)] text-4xl text-white tracking-wide">$75<span className="text-xl text-blue-200/40">/hr</span></p>
+              <div className="bg-[#1a3a5c] rounded-xl p-5">
+                <p className="text-xs font-semibold text-[#4BA3D4]/70 tracking-[0.15em] uppercase mb-1">We Bring Everything</p>
+                <p className="font-[family-name:var(--font-bebas)] text-4xl text-white tracking-wide">$75<span className="text-xl text-sky-200/40">/hr</span></p>
               </div>
               <div className="bg-white rounded-xl p-5">
                 <p className="text-xs font-semibold text-gray-400 tracking-[0.15em] uppercase mb-1">Same-Day</p>
-                <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1E2A4A] tracking-wide">$100<span className="text-xl text-gray-300">/hr</span></p>
+                <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1a3a5c] tracking-wide">$100<span className="text-xl text-gray-300">/hr</span></p>
               </div>
             </div>
-            <Link href="/updated-nyc-maid-service-industry-pricing" className="inline-block mt-6 text-[#1E2A4A] font-semibold underline underline-offset-4 hover:no-underline">
+            <Link href="/updated-nyc-maid-service-industry-pricing" className="inline-block mt-6 text-[#1a3a5c] font-semibold underline underline-offset-4 hover:no-underline">
               View Full Pricing Details &rarr;
             </Link>
           </div>
         </div>
 
         {/* Still have questions */}
-        <div className="bg-gradient-to-b from-[#1E2A4A] to-[#243352] rounded-2xl p-8 md:p-12 text-center mb-16">
+        <div className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] rounded-2xl p-8 md:p-12 text-center mb-16">
           <p className="font-[family-name:var(--font-bebas)] text-3xl text-white tracking-wide mb-3">Still Have Questions?</p>
           <p className="text-blue-200/70 max-w-xl mx-auto mb-8">
             We&apos;re happy to answer anything. Text or call us — most questions are answered within minutes.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+            <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
               Text (212) 202-8400
             </a>
             <a href="tel:2122028400" className="text-blue-200/70 font-medium text-lg hover:text-white transition-colors underline underline-offset-4">
@@ -197,16 +197,16 @@ export default function FAQPage() {
 
         {/* Helpful links */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
-          <Link href="/nyc-maid-service-services-offered-by-the-nyc-maid" className="group border border-gray-200 rounded-xl p-6 hover:border-[#A8F0DC] transition-all">
-            <p className="font-semibold text-[#1E2A4A] group-hover:underline underline-offset-2 mb-1">View All Services</p>
+          <Link href="/nyc-maid-service-services-offered-by-the-nyc-maid" className="group border border-gray-200 rounded-xl p-6 hover:border-[#4BA3D4] transition-all">
+            <p className="font-semibold text-[#1a3a5c] group-hover:underline underline-offset-2 mb-1">View All Services</p>
             <p className="text-gray-500 text-sm">10 cleaning services for every situation</p>
           </Link>
-          <Link href="/service-areas-served-by-the-nyc-maid" className="group border border-gray-200 rounded-xl p-6 hover:border-[#A8F0DC] transition-all">
-            <p className="font-semibold text-[#1E2A4A] group-hover:underline underline-offset-2 mb-1">Service Areas</p>
+          <Link href="/service-areas-served-by-the-nyc-maid" className="group border border-gray-200 rounded-xl p-6 hover:border-[#4BA3D4] transition-all">
+            <p className="font-semibold text-[#1a3a5c] group-hover:underline underline-offset-2 mb-1">Service Areas</p>
             <p className="text-gray-500 text-sm">Manhattan, Brooklyn, Queens, LI &amp; NJ</p>
           </Link>
-          <Link href="/nyc-customer-reviews-for-the-nyc-maid" className="group border border-gray-200 rounded-xl p-6 hover:border-[#A8F0DC] transition-all">
-            <p className="font-semibold text-[#1E2A4A] group-hover:underline underline-offset-2 mb-1">Read Reviews</p>
+          <Link href="/nyc-customer-reviews-for-the-nyc-maid" className="group border border-gray-200 rounded-xl p-6 hover:border-[#4BA3D4] transition-all">
+            <p className="font-semibold text-[#1a3a5c] group-hover:underline underline-offset-2 mb-1">Read Reviews</p>
             <p className="text-gray-500 text-sm">27 verified 5-star Google reviews</p>
           </Link>
         </div>

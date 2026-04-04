@@ -18,10 +18,10 @@ export default function LegalPage() {
         { name: 'Legal', url: 'https://www.thenycmaid.com/legal' },
       ])} />
 
-      <section className="bg-gradient-to-b from-[#1E2A4A] to-[#243352] py-16 md:py-20">
+      <section className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] py-16 md:py-20">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-white tracking-wide">Legal Information</h1>
-          <p className="text-blue-200/60 mt-3">Policies and terms for The NYC Maid</p>
+          <p className="text-sky-200/60 mt-3">Policies and terms for The NYC Maid</p>
         </div>
       </section>
 
@@ -35,15 +35,15 @@ export default function LegalPage() {
             { title: 'Refund Policy', href: '/refund-policy', desc: 'We don\'t take money upfront — so there\'s nothing to refund. Plus our satisfaction guarantee.' },
             { title: 'Do Not Share Policy', href: '/do-not-share-policy', desc: 'We don\'t sell or share your personal information with anyone. Your rights under CCPA.' },
           ].map(item => (
-            <Link key={item.href} href={item.href} className="block p-6 border border-gray-200 rounded-xl hover:border-[#A8F0DC] hover:shadow-md transition-all group">
-              <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide group-hover:text-[#1E2A4A]/70 mb-2">{item.title}</h2>
+            <Link key={item.href} href={item.href} className="block p-6 border border-gray-200 rounded-xl hover:border-[#4BA3D4] hover:shadow-md transition-all group">
+              <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide group-hover:text-[#1a3a5c]/70 mb-2">{item.title}</h2>
               <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
             </Link>
           ))}
         </div>
 
-        <div className="mt-12 bg-[#F5FBF8] border border-[#A8F0DC]/30 rounded-xl p-6">
-          <h2 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide mb-3">The Short Version</h2>
+        <div className="mt-12 bg-[#F0F8FF] border border-[#4BA3D4]/30 rounded-xl p-6">
+          <h2 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide mb-3">The Short Version</h2>
           <ul className="space-y-2.5">
             {[
               'We never take money upfront — you pay only after your cleaning is done',
@@ -55,7 +55,7 @@ export default function LegalPage() {
               'Not happy? Contact us within 24 hours and we\'ll send someone back at no charge',
             ].map(item => (
               <li key={item} className="flex items-start gap-3">
-                <span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span>
+                <span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span>
                 <span className="text-gray-600 text-sm">{item}</span>
               </li>
             ))}
@@ -64,7 +64,7 @@ export default function LegalPage() {
 
         <div className="mt-8 text-center">
           <p className="text-gray-500 text-sm">
-            Questions? Contact us at <a href="mailto:hi@thenycmaid.com" className="text-[#1E2A4A] underline underline-offset-2">hi@thenycmaid.com</a> or text/call <a href="tel:6464900130" className="text-[#1E2A4A] underline underline-offset-2">(646) 490-0130</a>.
+            Questions? Contact us at <a href="mailto:hi@thenycmaid.com" className="text-[#1a3a5c] underline underline-offset-2">hi@thenycmaid.com</a> or text/call <a href="tel:6464900130" className="text-[#1a3a5c] underline underline-offset-2">(646) 490-0130</a>.
           </p>
         </div>
       </div>

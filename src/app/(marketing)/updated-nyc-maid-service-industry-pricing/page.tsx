@@ -52,16 +52,16 @@ export default function PricingPage() {
       ]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#1E2A4A] to-[#243352] pt-14 md:pt-20 pb-0">
+      <section className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] pt-14 md:pt-20 pb-0">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span className="text-blue-200/60 text-sm">5.0 on Google &middot; 27 verified reviews</span>
+            <span className="text-sky-200/60 text-sm">5.0 on Google &middot; 27 verified reviews</span>
           </div>
           <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-6xl lg:text-7xl text-white tracking-wide leading-[0.95] mb-5">
             Simple, Honest Cleaning Prices
           </h1>
-          <p className="text-blue-200/60 text-lg max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-sky-200/60 text-lg max-w-2xl mx-auto leading-relaxed mb-10">
             Flat hourly rates across every neighborhood we serve. No hidden fees, no surge pricing, no surprises. You pay after the cleaning is done.
           </p>
         </div>
@@ -72,47 +72,47 @@ export default function PricingPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Tier 1 */}
               <div className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7 text-center">
-                <p className="text-xs font-semibold text-[#A8F0DC]/60 tracking-[0.2em] uppercase mb-3">Your Supplies</p>
-                <p className="font-[family-name:var(--font-bebas)] text-6xl text-white tracking-wide leading-none">$59<span className="text-2xl text-blue-200/40">/hr</span></p>
-                <div className="w-10 h-[2px] bg-[#A8F0DC]/30 mx-auto my-5" />
+                <p className="text-xs font-semibold text-[#4BA3D4]/60 tracking-[0.2em] uppercase mb-3">Your Supplies</p>
+                <p className="font-[family-name:var(--font-bebas)] text-6xl text-white tracking-wide leading-none">$59<span className="text-2xl text-sky-200/40">/hr</span></p>
+                <div className="w-10 h-[2px] bg-[#4BA3D4]/30 mx-auto my-5" />
                 <ul className="space-y-2.5 text-left">
-                  <li className="flex items-start gap-2.5"><span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-blue-100/70 text-sm">You provide cleaning supplies</span></li>
-                  <li className="flex items-start gap-2.5"><span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-blue-100/70 text-sm">You provide vacuum and mop</span></li>
-                  <li className="flex items-start gap-2.5"><span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-blue-100/70 text-sm">Same quality cleaning</span></li>
-                  <li className="flex items-start gap-2.5"><span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-blue-100/70 text-sm">Licensed &amp; insured cleaner</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-sky-100/80 text-sm">You provide cleaning supplies</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-sky-100/80 text-sm">You provide vacuum and mop</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-sky-100/80 text-sm">Same quality cleaning</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-sky-100/80 text-sm">Licensed &amp; insured cleaner</span></li>
                 </ul>
               </div>
 
               {/* Tier 2 — featured */}
-              <div className="bg-[#A8F0DC] rounded-2xl p-7 text-center relative">
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1E2A4A] text-white text-[10px] font-bold tracking-widest uppercase px-4 py-1 rounded-full">Most Popular</span>
-                <p className="text-xs font-semibold text-[#1E2A4A]/50 tracking-[0.2em] uppercase mb-3">We Bring Everything</p>
-                <p className="font-[family-name:var(--font-bebas)] text-6xl text-[#1E2A4A] tracking-wide leading-none">$75<span className="text-2xl text-[#1E2A4A]/40">/hr</span></p>
-                <div className="w-10 h-[2px] bg-[#1E2A4A]/20 mx-auto my-5" />
+              <div className="bg-[#4BA3D4] rounded-2xl p-7 text-center relative">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1a3a5c] text-white text-[10px] font-bold tracking-widest uppercase px-4 py-1 rounded-full">Most Popular</span>
+                <p className="text-xs font-semibold text-[#1a3a5c]/50 tracking-[0.2em] uppercase mb-3">We Bring Everything</p>
+                <p className="font-[family-name:var(--font-bebas)] text-6xl text-[#1a3a5c] tracking-wide leading-none">$75<span className="text-2xl text-[#1a3a5c]/40">/hr</span></p>
+                <div className="w-10 h-[2px] bg-[#1a3a5c]/20 mx-auto my-5" />
                 <ul className="space-y-2.5 text-left">
-                  <li className="flex items-start gap-2.5"><span className="text-[#1E2A4A] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-[#1E2A4A]/80 text-sm">Pro-grade cleaning products</span></li>
-                  <li className="flex items-start gap-2.5"><span className="text-[#1E2A4A] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-[#1E2A4A]/80 text-sm">Commercial vacuum included</span></li>
-                  <li className="flex items-start gap-2.5"><span className="text-[#1E2A4A] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-[#1E2A4A]/80 text-sm">Microfiber systems &amp; tools</span></li>
-                  <li className="flex items-start gap-2.5"><span className="text-[#1E2A4A] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-[#1E2A4A]/80 text-sm">Just open the door</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#1a3a5c] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-[#1a3a5c]/80 text-sm">Pro-grade cleaning products</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#1a3a5c] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-[#1a3a5c]/80 text-sm">Commercial vacuum included</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#1a3a5c] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-[#1a3a5c]/80 text-sm">Microfiber systems &amp; tools</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#1a3a5c] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-[#1a3a5c]/80 text-sm">Just open the door</span></li>
                 </ul>
               </div>
 
               {/* Tier 3 */}
               <div className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7 text-center">
-                <p className="text-xs font-semibold text-[#A8F0DC]/60 tracking-[0.2em] uppercase mb-3">Same-Day / Emergency</p>
-                <p className="font-[family-name:var(--font-bebas)] text-6xl text-white tracking-wide leading-none">$100<span className="text-2xl text-blue-200/40">/hr</span></p>
-                <div className="w-10 h-[2px] bg-[#A8F0DC]/30 mx-auto my-5" />
+                <p className="text-xs font-semibold text-[#4BA3D4]/60 tracking-[0.2em] uppercase mb-3">Same-Day / Emergency</p>
+                <p className="font-[family-name:var(--font-bebas)] text-6xl text-white tracking-wide leading-none">$100<span className="text-2xl text-sky-200/40">/hr</span></p>
+                <div className="w-10 h-[2px] bg-[#4BA3D4]/30 mx-auto my-5" />
                 <ul className="space-y-2.5 text-left">
-                  <li className="flex items-start gap-2.5"><span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-blue-100/70 text-sm">Dispatched within hours</span></li>
-                  <li className="flex items-start gap-2.5"><span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-blue-100/70 text-sm">We bring all supplies</span></li>
-                  <li className="flex items-start gap-2.5"><span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-blue-100/70 text-sm">Emergency &amp; last-minute</span></li>
-                  <li className="flex items-start gap-2.5"><span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-blue-100/70 text-sm">Subject to availability</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-sky-100/80 text-sm">Dispatched within hours</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-sky-100/80 text-sm">We bring all supplies</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-sky-100/80 text-sm">Emergency &amp; last-minute</span></li>
+                  <li className="flex items-start gap-2.5"><span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span><span className="text-sky-100/80 text-sm">Subject to availability</span></li>
                 </ul>
               </div>
             </div>
 
             <div className="flex justify-center mt-8">
-              <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+              <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                 Text (212) 202-8400
               </a>
             </div>
@@ -135,7 +135,7 @@ export default function PricingPage() {
               { label: 'Same Rate Everywhere', detail: 'Manhattan to Long Island — same price' },
             ].map(g => (
               <div key={g.label} className="bg-gray-50 border border-gray-100 rounded-xl p-5 text-center">
-                <p className="font-[family-name:var(--font-bebas)] text-lg text-[#1E2A4A] tracking-wide mb-1">{g.label}</p>
+                <p className="font-[family-name:var(--font-bebas)] text-lg text-[#1a3a5c] tracking-wide mb-1">{g.label}</p>
                 <p className="text-gray-500 text-xs">{g.detail}</p>
               </div>
             ))}
@@ -147,29 +147,29 @@ export default function PricingPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">By Service Type</h2>
-          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide text-center mb-4">What Does Each Service Cost?</p>
+          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-4">What Does Each Service Cost?</p>
           <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">All services use the same hourly rate. The total cost depends on the time required, which varies by service type and home size.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {SERVICES.map(service => (
               <Link
                 key={service.slug}
                 href={`/services/${service.urlSlug}`}
-                className="group bg-white border border-gray-200 rounded-2xl p-6 hover:border-[#A8F0DC] hover:shadow-lg transition-all"
+                className="group bg-white border border-gray-200 rounded-2xl p-6 hover:border-[#4BA3D4] hover:shadow-lg transition-all"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide group-hover:text-[#1E2A4A]/70 transition-colors">{service.name}</h3>
+                  <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide group-hover:text-[#1a3a5c]/70 transition-colors">{service.name}</h3>
                 </div>
-                <p className="font-[family-name:var(--font-bebas)] text-3xl text-[#1E2A4A] tracking-wide mb-1">{service.priceRange}</p>
+                <p className="font-[family-name:var(--font-bebas)] text-3xl text-[#1a3a5c] tracking-wide mb-1">{service.priceRange}</p>
                 <p className="text-gray-400 text-xs mb-4">{service.duration} typical</p>
                 <ul className="space-y-2 mb-4">
                   {service.features.slice(0, 4).map(f => (
                     <li key={f} className="flex items-start gap-2 text-sm">
-                      <span className="text-[#A8F0DC] mt-0.5 flex-shrink-0">&#10003;</span>
+                      <span className="text-[#4BA3D4] mt-0.5 flex-shrink-0">&#10003;</span>
                       <span className="text-gray-600">{f}</span>
                     </li>
                   ))}
                 </ul>
-                <span className="text-[#1E2A4A] text-sm font-medium group-hover:underline underline-offset-4">Full details &rarr;</span>
+                <span className="text-[#1a3a5c] text-sm font-medium group-hover:underline underline-offset-4">Full details &rarr;</span>
               </Link>
             ))}
           </div>
@@ -177,9 +177,9 @@ export default function PricingPage() {
       </section>
 
       {/* What affects price */}
-      <section className="py-16 bg-gradient-to-b from-[#1E2A4A] to-[#243352]">
+      <section className="py-16 bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0]">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-xs font-semibold text-[#A8F0DC]/60 tracking-[0.25em] uppercase mb-3 text-center">Pricing Factors</h2>
+          <h2 className="text-xs font-semibold text-[#4BA3D4]/60 tracking-[0.25em] uppercase mb-3 text-center">Pricing Factors</h2>
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">What Affects Your Final Price?</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -189,9 +189,9 @@ export default function PricingPage() {
               { n: '04', t: 'Supply Choice', d: '$59/hr with your supplies, $75/hr when we bring professional-grade products and equipment, or $100/hr for same-day emergency service. Same quality either way.' },
             ].map(item => (
               <div key={item.n} className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7 text-center">
-                <span className="font-[family-name:var(--font-bebas)] text-4xl text-[#A8F0DC]/30 leading-none">{item.n}</span>
+                <span className="font-[family-name:var(--font-bebas)] text-4xl text-[#4BA3D4]/30 leading-none">{item.n}</span>
                 <p className="font-[family-name:var(--font-bebas)] text-xl text-white tracking-wide mt-3 mb-2">{item.t}</p>
-                <p className="text-blue-200/50 text-sm leading-relaxed">{item.d}</p>
+                <p className="text-sky-200/60 text-sm leading-relaxed">{item.d}</p>
               </div>
             ))}
           </div>
@@ -199,19 +199,19 @@ export default function PricingPage() {
       </section>
 
       {/* Quick cost estimator */}
-      <section className="py-12 bg-[#A8F0DC]">
+      <section className="py-12 bg-[#4BA3D4]">
         <div className="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-start gap-6">
           <div className="flex-shrink-0">
-            <div className="w-14 h-14 bg-[#1E2A4A] rounded-full flex items-center justify-center">
+            <div className="w-14 h-14 bg-[#1a3a5c] rounded-full flex items-center justify-center">
               <span className="text-white text-xl">$</span>
             </div>
           </div>
           <div>
-            <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide mb-2">Quick Cost Guide</h3>
-            <p className="text-[#1E2A4A]/80 leading-relaxed mb-3">
+            <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide mb-2">Quick Cost Guide</h3>
+            <p className="text-[#1a3a5c]/80 leading-relaxed mb-3">
               <strong>Studio/1BR regular clean:</strong> $98–$195 &middot; <strong>2BR deep clean:</strong> $245–$390 &middot; <strong>3BR move-out:</strong> $390–$520 &middot; <strong>Post-reno:</strong> $375–$750
             </p>
-            <p className="text-[#1E2A4A]/60 text-sm">
+            <p className="text-[#1a3a5c]/60 text-sm">
               These are estimates at $59/hr. Add ~50% for the $75/hr supplies-included option. Every quote is customized to your specific home.
             </p>
           </div>
@@ -222,7 +222,7 @@ export default function PricingPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">How It Works</p>
-          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide text-center mb-12">Get a Quote in 3 Steps</p>
+          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-12">Get a Quote in 3 Steps</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { n: '01', t: 'Text or Call', d: 'Reach us at (212) 202-8400 with your address, home size, and what type of cleaning you need.' },
@@ -230,14 +230,14 @@ export default function PricingPage() {
               { n: '03', t: 'Pay After', d: 'We clean, you inspect, you pay. No deposits, no upfront charges. Cash, Venmo, Zelle (hi@thenycmaid.com), or credit card.' },
             ].map(s => (
               <div key={s.n} className="border border-gray-200 rounded-2xl p-7 text-center">
-                <span className="font-[family-name:var(--font-bebas)] text-5xl text-[#A8F0DC] leading-none">{s.n}</span>
-                <p className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide mt-3 mb-2">{s.t}</p>
+                <span className="font-[family-name:var(--font-bebas)] text-5xl text-[#4BA3D4] leading-none">{s.n}</span>
+                <p className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide mt-3 mb-2">{s.t}</p>
                 <p className="text-gray-500 text-sm leading-relaxed">{s.d}</p>
               </div>
             ))}
           </div>
           <div className="flex justify-center mt-10">
-            <a href="sms:2122028400" className="bg-[#1E2A4A] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+            <a href="sms:2122028400" className="bg-[#1a3a5c] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
               Text (212) 202-8400
             </a>
           </div>
@@ -248,11 +248,11 @@ export default function PricingPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">Common Questions</h2>
-          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide text-center mb-12">Pricing FAQ</p>
+          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-12">Pricing FAQ</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
             {pricingFaqs.map(faq => (
               <div key={faq.question}>
-                <h3 className="font-semibold text-[#1E2A4A] mb-2">{faq.question}</h3>
+                <h3 className="font-semibold text-[#1a3a5c] mb-2">{faq.question}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
               </div>
             ))}

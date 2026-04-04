@@ -59,7 +59,7 @@ export default function ReviewsPage() {
       ]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#1E2A4A] to-[#243352] py-20 md:py-28">
+      <section className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] py-20 md:py-28">
         <div className="max-w-5xl mx-auto px-4">
           <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-6xl lg:text-7xl text-white tracking-wide leading-[0.95] mb-6">
             NYC House Cleaning Reviews — What Real Clients Say About The NYC Maid
