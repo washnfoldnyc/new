@@ -45,7 +45,7 @@ export async function POST(request: Request) {
     })
 
     // SMS to admins
-    smsAdmins(`The NYC Maid: ${cleanerName} running late for ${time} job (${clientName})${etaText}`).catch(() => {})
+    smsAdmins(`Wash and Fold NYC: ${cleanerName} running late for ${time} job (${clientName})${etaText}`).catch(() => {})
 
     // Push to admins
     sendPushToAll('Running Late', `${cleanerName} — ${clientName} at ${time}${etaText}`, '/admin/bookings').catch(() => {})
@@ -56,8 +56,8 @@ export async function POST(request: Request) {
     if (clientPhone && clientId) {
       const cleanerFirst = cleanerName.split(' ')[0]
       const clientSms = eta
-        ? `The NYC Maid: Hi! ${cleanerFirst} is running a few minutes behind and will arrive in approximately ${eta} minutes. We apologize for the delay. Questions? (646) 490-0130`
-        : `The NYC Maid: Hi! ${cleanerFirst} is running a few minutes behind schedule. They'll be there shortly. We apologize for the delay. Questions? (646) 490-0130`
+        ? `Wash and Fold NYC: Hi! ${cleanerFirst} is running a few minutes behind and will arrive in approximately ${eta} minutes. We apologize for the delay. Questions? (917) 970-6002`
+        : `Wash and Fold NYC: Hi! ${cleanerFirst} is running a few minutes behind schedule. They'll be there shortly. We apologize for the delay. Questions? (917) 970-6002`
       sendSMS(clientPhone, clientSms, {
         recipientType: 'client',
         recipientId: clientId,

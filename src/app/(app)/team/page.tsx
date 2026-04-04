@@ -9,7 +9,7 @@ export default function TeamLoginPage() {
   const router = useRouter()
 
   useEffect(() => {
-    document.title = 'Team Login | The NYC Maid'
+    document.title = 'Team Login | Wash and Fold NYC'
   }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -39,7 +39,7 @@ export default function TeamLoginPage() {
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold text-[#1E2A4A]">Team Portal / Portal del Equipo</h1>
-          <p className="text-gray-600 mt-2">The NYC Maid</p>
+          <p className="text-gray-600 mt-2">Wash and Fold NYC</p>
         </div>
 
         <div className="bg-white rounded-lg shadow-sm border p-6">
@@ -78,7 +78,7 @@ export default function TeamLoginPage() {
         </div>
 
         <p className="text-center text-gray-500 text-sm mt-6">
-          Questions? / ¿Preguntas? <a href="tel:2122028400" className="text-[#1E2A4A]">(212) 202-8400</a>
+          Questions? / ¿Preguntas? <a href="tel:9179706002" className="text-[#1E2A4A]">(917) 970-6002</a>
         </p>
       </div>
     </div>

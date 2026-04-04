@@ -142,7 +142,7 @@ async function notifyCleanerOfNote(bookingId: string, authorType: string) {
     title: 'Job Notes Updated',
     message: `${updatedBy} updated notes for ${clientName} on ${date}`,
     bookingId,
-    smsMessage: `NYC Maid: ${updatedBy} updated notes for your ${date} job (${clientName}). Check portal: thenycmaid.com/team PIN: ${pin}\n${updatedBy} actualizó las notas para tu trabajo del ${date} (${clientName}). Portal: thenycmaid.com/team PIN: ${pin}`,
+    smsMessage: `Wash and Fold NYC: ${updatedBy} updated notes for your ${date} job (${clientName}). Check portal: washandfoldnyc.com/team PIN: ${pin}\n${updatedBy} actualizó las notas para tu trabajo del ${date} (${clientName}). Portal: washandfoldnyc.com/team PIN: ${pin}`,
     skipEmail: true,
   }).catch(() => {})
 }

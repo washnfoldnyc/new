@@ -115,10 +115,10 @@ export async function POST(request: Request, { params }: { params: Promise<{ tok
   //     `Total due: $${clientTotal}`,
   //     ``,
   //     `Pay via:`,
-  //     `Zelle: hi@thenycmaid.com`,
-  //     `Apple Pay: (212) 202-8400`,
+  //     `Zelle: hi@washandfoldnyc.com`,
+  //     `Apple Pay: (917) 970-6002`,
   //     ``,
-  //     `Thank you for choosing The NYC Maid! We appreciate you.`,
+  //     `Thank you for choosing Wash and Fold NYC! We appreciate you.`,
   //   ].join('\n')
   //   sendSMS(
   //     data.clients.phone.startsWith('+') ? data.clients.phone : `+1${data.clients.phone.replace(/\D/g, '')}`,

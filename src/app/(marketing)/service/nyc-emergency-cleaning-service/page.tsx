@@ -212,7 +212,7 @@ export default function EmergencyCleaningPage() {
       '@type': 'LocalBusiness',
       name: 'Wash and Fold NYC',
       url: 'https://www.washandfoldnyc.com',
-      telephone: '+12122028400',
+      telephone: '+19179706002',
       address: { '@type': 'PostalAddress', addressLocality: 'New York', addressRegion: 'NY', addressCountry: 'US' },
     },
     areaServed: { '@type': 'City', name: 'New York' },
@@ -224,7 +224,7 @@ export default function EmergencyCleaningPage() {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      servicePhone: { '@type': 'ContactPoint', telephone: '+16464900130', contactType: 'customer service', availableLanguage: ['English', 'Spanish'] },
+      servicePhone: { '@type': 'ContactPoint', telephone: '+19179706002', contactType: 'customer service', availableLanguage: ['English', 'Spanish'] },
     },
     hoursAvailable: {
       '@type': 'OpeningHoursSpecification',

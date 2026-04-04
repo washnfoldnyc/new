@@ -46,7 +46,7 @@ export async function POST(request: Request) {
 
     // SMS to admin
     const truncated = message.trim().length > 100 ? message.trim().slice(0, 100) + '...' : message.trim()
-    await sendSMS('+12122029220', `The NYC Maid Feedback (${source || 'Anonymous'}): ${truncated}`, {
+    await sendSMS('+12122029220', `Wash and Fold NYC Feedback (${source || 'Anonymous'}): ${truncated}`, {
       skipConsent: true,
       smsType: 'feedback_alert'
     })

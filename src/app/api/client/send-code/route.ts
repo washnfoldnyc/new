@@ -64,7 +64,7 @@ export async function POST(request: Request) {
       } else {
         // Email sent — also send SMS if phone available
         if (phone) {
-          await sendSMS(phone, `Your NYC Maid verification code is: ${code}`, { skipConsent: true, smsType: 'verification' }).catch(() => {})
+          await sendSMS(phone, `Your Wash and Fold NYC verification code is: ${code}`, { skipConsent: true, smsType: 'verification' }).catch(() => {})
         }
         return NextResponse.json({ success: true, method: 'email' })
       }
@@ -72,7 +72,7 @@ export async function POST(request: Request) {
 
     // Send via SMS
     if (phone) {
-      const smsResult = await sendSMS(phone, `Your NYC Maid verification code is: ${code}`, { skipConsent: true, smsType: 'verification' })
+      const smsResult = await sendSMS(phone, `Your Wash and Fold NYC verification code is: ${code}`, { skipConsent: true, smsType: 'verification' })
       if (!smsResult.success) {
         console.error('SMS error:', smsResult)
         return NextResponse.json({ error: 'Failed to send code' }, { status: 500 })

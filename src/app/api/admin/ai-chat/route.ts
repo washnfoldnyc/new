@@ -5,7 +5,7 @@ import { protectAdminAPI } from '@/lib/auth'
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
-const SYSTEM_PROMPT = `You are the NYC Maid AI assistant — a CRM copilot for managing a cleaning business.
+const SYSTEM_PROMPT = `You are the Wash and Fold NYC AI assistant — a CRM copilot for managing a cleaning business.
 You have tools to query and modify the database. Use them to answer questions and take actions.
 
 Key rules:

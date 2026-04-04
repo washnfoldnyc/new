@@ -113,7 +113,7 @@ function coordinatorJobPostingSchema() {
         width: 512,
         height: 512,
       },
-      telephone: '+1-212-202-8400',
+      telephone: '+1-917-970-6002',
       email: 'hi@washandfoldnyc.com',
       foundingDate: '2018',
       numberOfEmployees: {
@@ -191,7 +191,7 @@ function coordinatorJobPostingSchema() {
 
     applicationContact: {
       '@type': 'ContactPoint',
-      telephone: '+1-212-202-8400',
+      telephone: '+1-917-970-6002',
       email: 'hi@washandfoldnyc.com',
       contactType: 'Human Resources',
       availableLanguage: ['English', 'Spanish'],

@@ -305,7 +305,7 @@ function isSearchReferrer(referrer: string | null): boolean {
 
 // Generic domains — high traffic, only match on CTA actions within short window
 const GENERIC_DOMAINS = [
-  'thenycmaid.com', 'thenycmaidservice.com',
+  'washandfoldnyc.com', 'washandfoldnyc.com',
   'thenyccleaningservice.com', 'thenyccleaningcrew.com',
   'nychousecleanernearme.com', 'citycleannyc.com', 'cleanservicenyc.com',
   'imlookingforamaidnearme.com', 'imlookingforamaidinnyctoday.com',

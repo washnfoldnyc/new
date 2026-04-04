@@ -8,7 +8,7 @@ interface TimeSlot {
 }
 
 export default function ReschedulePage() {
-  useEffect(() => { document.title = 'Reschedule | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Reschedule | Wash and Fold NYC' }, []);
   const router = useRouter()
   const params = useParams()
   const bookingId = params.id as string
@@ -109,7 +109,7 @@ export default function ReschedulePage() {
           <div className="flex items-center gap-4">
             <button onClick={() => router.back()} className="text-white">&larr;</button>
             <div>
-              <p className="text-sm opacity-80">The NYC Maid</p>
+              <p className="text-sm opacity-80">Wash and Fold NYC</p>
               <h1 className="text-xl font-semibold">Reschedule</h1>
             </div>
           </div>
@@ -124,8 +124,8 @@ export default function ReschedulePage() {
             </p>
             <p className="text-gray-500 text-sm mb-4">Need help? Contact us directly:</p>
             <div className="flex gap-3">
-              <a href="tel:6464900130" className="flex-1 py-3 bg-[#1E2A4A] text-white rounded-lg text-center font-medium">Call (646) 490-0130</a>
-              <a href="sms:6464900130" className="flex-1 py-3 border border-gray-300 rounded-lg text-[#1E2A4A] text-center font-medium">Text Us</a>
+              <a href="tel:9179706002" className="flex-1 py-3 bg-[#1E2A4A] text-white rounded-lg text-center font-medium">Call (917) 970-6002</a>
+              <a href="sms:9179706002" className="flex-1 py-3 border border-gray-300 rounded-lg text-[#1E2A4A] text-center font-medium">Text Us</a>
             </div>
             <button onClick={() => router.push('/book/dashboard')} className="mt-4 text-gray-500 text-sm">Back to Dashboard</button>
           </div>
@@ -140,7 +140,7 @@ export default function ReschedulePage() {
         <div className="flex items-center gap-4">
           <button onClick={() => router.back()} className="text-white">&larr;</button>
           <div>
-            <p className="text-sm opacity-80">The NYC Maid</p>
+            <p className="text-sm opacity-80">Wash and Fold NYC</p>
             <h1 className="text-xl font-semibold">Reschedule</h1>
           </div>
         </div>

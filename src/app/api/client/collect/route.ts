@@ -66,7 +66,7 @@ export async function POST(request: Request) {
           await supabaseAdmin.from('notifications').insert({
             type: 'referral_lead',
             title: 'New Referrer Lead',
-            message: `${referrer_name || 'Unknown'} (${referrer_phone}) referred ${name} — not in system. Text them: thenycmaid.com/referral/signup`
+            message: `${referrer_name || 'Unknown'} (${referrer_phone}) referred ${name} — not in system. Text them: washandfoldnyc.com/referral/signup`
           })
         }
       }
@@ -225,12 +225,12 @@ export async function POST(request: Request) {
             if (clientAddress) parts.push(`at ${clientAddress}`)
             if (prefTime) parts.push(`at ${prefTime}`)
             parts.push(`We always allow for an additional 30 minutes due to traffic.`)
-            if (rate) parts.push(`Billed at the rate of ${rate}, paid via Zelle (hi@thenycmaid.com) or Apple Pay about 15 minutes before completion.`)
-            else parts.push(`Paid via Zelle (hi@thenycmaid.com) or Apple Pay about 15 minutes before completion.`)
+            if (rate) parts.push(`Billed at the rate of ${rate}, paid via Zelle (hi@washandfoldnyc.com) or Apple Pay about 15 minutes before completion.`)
+            else parts.push(`Paid via Zelle (hi@washandfoldnyc.com) or Apple Pay about 15 minutes before completion.`)
 
             recapMsg = `Ok ${firstName}, got your info ty! 😊 I'm going to get you added to the schedule now, let's recap:\n\n${parts.join('. ').replace(/\.\./g, '.')}\n\nI want to make sure all is correct as we have a no cancellation policy for first time and one-time services 😊`
           } else if (prefDate) {
-            recapMsg = `Ok ${firstName}, got your info ty! 😊 I'm going to get you added to the schedule now.\n\nWe have you down for ${prefDate}${prefTime ? ' at ' + prefTime : ''}${rate ? ', ' + rate : ''}. Paid via Zelle (hi@thenycmaid.com) or Apple Pay about 15 minutes before completion.\n\nI want to make sure all is correct as we have a no cancellation policy for first time and one-time services 😊`
+            recapMsg = `Ok ${firstName}, got your info ty! 😊 I'm going to get you added to the schedule now.\n\nWe have you down for ${prefDate}${prefTime ? ' at ' + prefTime : ''}${rate ? ', ' + rate : ''}. Paid via Zelle (hi@washandfoldnyc.com) or Apple Pay about 15 minutes before completion.\n\nI want to make sure all is correct as we have a no cancellation policy for first time and one-time services 😊`
           } else {
             recapMsg = `Ok ${firstName}, got your info ty! 😊 Let me get you added to the schedule now. I'll send you a confirmation with all the details shortly!\n\nJust a heads up — we have a no cancellation policy for first time and one-time services 😊`
           }
@@ -313,8 +313,8 @@ export async function POST(request: Request) {
           }
 
           const confirmMsg = bookingId
-            ? `Thanks for signing up with NYC Maid! 🎉\n\nWe got your info and cleaning details. We'll be in touch shortly to confirm your date and time.\n\nQuestions? Just text us back here!`
-            : `Thanks for signing up with NYC Maid! 🎉\n\nWe got your info. We'll be in touch shortly to get you scheduled.\n\nQuestions? Just text us back here!`
+            ? `Thanks for signing up with Wash and Fold NYC! 🎉\n\nWe got your info and cleaning details. We'll be in touch shortly to confirm your date and time.\n\nQuestions? Just text us back here!`
+            : `Thanks for signing up with Wash and Fold NYC! 🎉\n\nWe got your info. We'll be in touch shortly to get you scheduled.\n\nQuestions? Just text us back here!`
           await sendSMS(convo.phone, confirmMsg, { skipConsent: true, smsType: 'chatbot' })
           await supabaseAdmin.from('client_sms_messages').insert({
             client_id: data.id,

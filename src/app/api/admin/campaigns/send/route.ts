@@ -107,7 +107,7 @@ export async function POST(request: Request) {
   // Send emails first (fast via Resend), then SMS
   let sentCount = 0
   let failedCount = 0
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.thenycmaid.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.washandfoldnyc.com'
   const emailRecipients = recipients.filter(r => r.channel === 'email')
   const smsRecipients = recipients.filter(r => r.channel === 'sms')
 
@@ -211,7 +211,7 @@ export async function PUT(request: Request) {
 
   let sentCount = 0
   let failedCount = 0
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.thenycmaid.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.washandfoldnyc.com'
 
   for (const recipient of failedRecipients) {
     try {

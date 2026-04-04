@@ -82,7 +82,7 @@ function ReferrerPortalContent() {
     if (days < 7) return days + 'd ago'
     return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
   }
-  const copyLink = () => { if (referrer) { navigator.clipboard.writeText('https://www.thenycmaid.com/book/new?ref=' + referrer.ref_code); alert('Copied!') } }
+  const copyLink = () => { if (referrer) { navigator.clipboard.writeText('https://www.washandfoldnyc.com/book/new?ref=' + referrer.ref_code); alert('Copied!') } }
   const pendingAmount = referrer ? referrer.total_earned - referrer.total_paid : 0
 
   const actionLabels: Record<string, string> = {
@@ -123,7 +123,7 @@ function ReferrerPortalContent() {
     <div className="min-h-screen bg-gray-50">
       <header className="bg-[#1E2A4A] text-white py-4 px-6">
         <div className="max-w-4xl mx-auto flex justify-between items-center">
-          <div><h1 className="text-xl font-bold">The NYC Maid</h1><p className="text-gray-400 text-sm">Referral Portal</p></div>
+          <div><h1 className="text-xl font-bold">Wash and Fold NYC</h1><p className="text-gray-400 text-sm">Referral Portal</p></div>
           <div className="text-right"><p className="font-medium">{referrer?.name}</p><p className="text-gray-400 text-sm">{referrer?.ref_code}</p></div>
         </div>
       </header>
@@ -136,7 +136,7 @@ function ReferrerPortalContent() {
         <div className="bg-white rounded-lg shadow p-6 mb-6">
           <h2 className="font-semibold text-[#1E2A4A] mb-3">Your Referral Link</h2>
           <div className="flex gap-3">
-            <input type="text" value={'https://www.thenycmaid.com/book/new?ref=' + referrer?.ref_code} readOnly className="flex-1 px-4 py-2 bg-gray-50 border rounded-lg text-gray-600 text-sm" />
+            <input type="text" value={'https://www.washandfoldnyc.com/book/new?ref=' + referrer?.ref_code} readOnly className="flex-1 px-4 py-2 bg-gray-50 border rounded-lg text-gray-600 text-sm" />
             <button onClick={copyLink} className="px-4 py-2 bg-[#1E2A4A] text-white rounded-lg hover:bg-[#1E2A4A]/90">Copy</button>
           </div>
           <p className="text-sm text-gray-500 mt-2">Share this link. You earn 10% of every cleaning!</p>
@@ -186,13 +186,13 @@ function ReferrerPortalContent() {
             </div>
           )}
         </div>
-        <div className="mt-8 text-center text-sm text-gray-500"><p>Questions? hi@thenycmaid.com</p></div>
+        <div className="mt-8 text-center text-sm text-gray-500"><p>Questions? hi@washandfoldnyc.com</p></div>
       </main>
     </div>
   )
 }
 
 export default function ReferrerPortalPage() {
-  useEffect(() => { document.title = 'Referral Program | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Referral Program | Wash and Fold NYC' }, []);
   return <Suspense fallback={<div className="min-h-screen bg-gray-50 flex items-center justify-center"><p className="text-gray-500">Loading...</p></div>}><ReferrerPortalContent /></Suspense>
 }

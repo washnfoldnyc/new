@@ -43,7 +43,7 @@ export async function POST(request: Request) {
     if (body.client_id) {
       const { data: dnsCheck } = await supabaseAdmin.from('clients').select('do_not_service').eq('id', body.client_id).single()
       if (dnsCheck?.do_not_service) {
-        return NextResponse.json({ error: 'Please contact us at (212) 202-8400 to schedule your next service.' }, { status: 403 })
+        return NextResponse.json({ error: 'Please contact us at (917) 970-6002 to schedule your next service.' }, { status: 403 })
       }
     }
 
@@ -132,7 +132,7 @@ export async function POST(request: Request) {
           await supabaseAdmin.from('notifications').insert({
             type: 'referral_lead',
             title: 'New Referrer Lead',
-            message: `${body.referrer_name || 'Unknown'} (${body.referrer_phone}) referred ${body.name} — not in system. Text them: thenycmaid.com/referral/signup`
+            message: `${body.referrer_name || 'Unknown'} (${body.referrer_phone}) referred ${body.name} — not in system. Text them: washandfoldnyc.com/referral/signup`
           })
         }
       }

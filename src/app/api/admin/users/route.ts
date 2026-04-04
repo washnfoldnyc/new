@@ -73,18 +73,18 @@ export async function POST(request: Request) {
     }
     const welcomeHtml = `
       <div style="font-family: sans-serif; max-width: 500px;">
-        <h2 style="color: #1E2A4A;">Welcome to The NYC Maid</h2>
+        <h2 style="color: #1E2A4A;">Welcome to Wash and Fold NYC</h2>
         <p>Hi ${name},</p>
-        <p>You've been added as <strong>${roleLabels[role] || role}</strong> on The NYC Maid operations platform.</p>
+        <p>You've been added as <strong>${roleLabels[role] || role}</strong> on Wash and Fold NYC operations platform.</p>
         <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin: 16px 0;">
-          <p style="margin: 4px 0;"><strong>Login URL:</strong> <a href="https://www.thenycmaid.com/admin" style="color: #2563eb;">thenycmaid.com/admin</a></p>
+          <p style="margin: 4px 0;"><strong>Login URL:</strong> <a href="https://www.washandfoldnyc.com/admin" style="color: #2563eb;">washandfoldnyc.com/admin</a></p>
           <p style="margin: 4px 0;"><strong>Email:</strong> ${email.toLowerCase().trim()}</p>
           <p style="margin: 4px 0;"><strong>Password:</strong> ${password}</p>
         </div>
-        <p style="color: #64748b; font-size: 13px;">Please log in and change your password. If you have any questions, text Jeff at (212) 202-8400.</p>
+        <p style="color: #64748b; font-size: 13px;">Please log in and change your password. If you have any questions, text Jeff at (917) 970-6002.</p>
       </div>
     `
-    await sendEmail(email.toLowerCase().trim(), 'Welcome to The NYC Maid — Your Login Credentials', welcomeHtml).catch(err => console.error('Welcome email failed:', err))
+    await sendEmail(email.toLowerCase().trim(), 'Welcome to Wash and Fold NYC — Your Login Credentials', welcomeHtml).catch(err => console.error('Welcome email failed:', err))
 
     return NextResponse.json(data, { status: 201 })
   } catch (err) {

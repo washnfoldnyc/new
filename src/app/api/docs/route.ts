@@ -6,12 +6,12 @@ export async function GET() {
   if (authError) return authError
 
   return NextResponse.json({
-    platform: 'The NYC Maid',
+    platform: 'Wash and Fold NYC',
     updated: '2026-02-05',
     stack: { framework: 'Next.js 16', language: 'TypeScript', database: 'Supabase PostgreSQL', hosting: 'Vercel', email: 'Resend', styling: 'Tailwind CSS' },
-    domain: 'thenycmaid.com',
-    email_from: 'hi@thenycmaid.com',
-    email_forward: 'hi@thenycmaid.com',
+    domain: 'washandfoldnyc.com',
+    email_from: 'hi@washandfoldnyc.com',
+    email_forward: 'hi@washandfoldnyc.com',
     dns: { provider: 'SiteGround', dkim: 'verified', spf: 'verified', dmarc: 'p=none' },
     pages: {
       admin: [

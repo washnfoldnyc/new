@@ -130,7 +130,7 @@ async function checkExpiringRecurring() {
               <p><strong>Schedule:</strong> ${schedule.recurring_type}</p>
               <p><strong>Last Booking:</strong> ${lastDateStr}</p>
               <p style="margin-top: 20px;">
-                <a href="https://www.thenycmaid.com/admin/bookings" style="background: #000; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 6px;">Extend in Dashboard</a>
+                <a href="https://www.washandfoldnyc.com/admin/bookings" style="background: #000; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 6px;">Extend in Dashboard</a>
               </p>
             </div>
           `

@@ -3,7 +3,7 @@ import {useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 
 export default function LoginPage() {
-  useEffect(() => { document.title = 'Admin Login | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Admin Login | Wash and Fold NYC' }, []);
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
@@ -41,7 +41,7 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
           <div className="text-center mb-6">
-            <h1 className="text-2xl font-bold text-[#1E2A4A]">The NYC Maid</h1>
+            <h1 className="text-2xl font-bold text-[#1E2A4A]">Wash and Fold NYC</h1>
             <p className="text-gray-500 mt-1">Admin Portal</p>
           </div>
           <form onSubmit={handleSubmit}>

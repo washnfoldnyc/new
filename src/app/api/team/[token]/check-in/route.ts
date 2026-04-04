@@ -87,7 +87,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ tok
   //   const cleanerFirst = data.cleaners?.name?.split(' ')[0] || 'Your cleaner'
   //   sendSMS(
   //     data.clients.phone.startsWith('+') ? data.clients.phone : `+1${data.clients.phone.replace(/\D/g, '')}`,
-  //     `Hi ${data.clients.name?.split(' ')[0] || 'there'}! ${cleanerFirst} has arrived and is getting started. If you have any questions, text or call (212) 202-8400. Thank you for choosing The NYC Maid!`,
+  //     `Hi ${data.clients.name?.split(' ')[0] || 'there'}! ${cleanerFirst} has arrived and is getting started. If you have any questions, text or call (917) 970-6002. Thank you for choosing Wash and Fold NYC!`,
   //     { skipConsent: false, smsType: 'check_in' }
   //   ).catch(() => {})
   // }

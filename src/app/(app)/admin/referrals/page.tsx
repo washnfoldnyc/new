@@ -66,7 +66,7 @@ interface Analytics {
 }
 
 export default function ReferralsPage() {
-  useEffect(() => { document.title = 'Referrals | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Referrals | Wash and Fold NYC' }, []);
   const [referrers, setReferrers] = useState<Referrer[]>([])
   const [commissions, setCommissions] = useState<Commission[]>([])
   const [analytics, setAnalytics] = useState<Analytics | null>(null)
@@ -138,7 +138,7 @@ export default function ReferralsPage() {
 
   const [copiedRef, setCopiedRef] = useState<string | null>(null)
   const copyLink = (refCode: string) => {
-    navigator.clipboard.writeText(`https://www.thenycmaid.com/book?ref=${refCode}`)
+    navigator.clipboard.writeText(`https://www.washandfoldnyc.com/book?ref=${refCode}`)
     setCopiedRef(refCode)
     setTimeout(() => setCopiedRef(null), 2000)
   }
@@ -177,8 +177,8 @@ export default function ReferralsPage() {
           </button>
         </div>
         <div className="text-sm text-gray-400 mb-6">
-          Referral signup: <a href="https://www.thenycmaid.com/referral/signup" target="_blank" className="text-[#1E2A4A] hover:underline font-medium py-2 inline-block">thenycmaid.com/referral/signup</a> &middot;
-          Referral portal: <a href="https://www.thenycmaid.com/referral" target="_blank" className="text-[#1E2A4A] hover:underline font-medium ml-1 py-2 inline-block">thenycmaid.com/referral</a>
+          Referral signup: <a href="https://www.washandfoldnyc.com/referral/signup" target="_blank" className="text-[#1E2A4A] hover:underline font-medium py-2 inline-block">washandfoldnyc.com/referral/signup</a> &middot;
+          Referral portal: <a href="https://www.washandfoldnyc.com/referral" target="_blank" className="text-[#1E2A4A] hover:underline font-medium ml-1 py-2 inline-block">washandfoldnyc.com/referral</a>
         </div>
 
         {/* Tabs */}

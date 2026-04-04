@@ -3,10 +3,10 @@ import { Resend } from 'resend'
 const resend = new Resend(process.env.RESEND_API_KEY?.replace(/\s/g, ''))
 
 // Emails sent TO these domains are admin emails — don't BCC owner on those
-const ADMIN_DOMAINS = ['thenycmaid.com', 'thenycmaid.gmail.com']
+const ADMIN_DOMAINS = ['washandfoldnyc.com', 'washandfoldnyc.gmail.com']
 
 function isAdminEmail(email: string): boolean {
-  return ADMIN_DOMAINS.some(d => email.toLowerCase().endsWith(`@${d}`) || email.toLowerCase().includes('thenycmaid'))
+  return ADMIN_DOMAINS.some(d => email.toLowerCase().endsWith(`@${d}`) || email.toLowerCase().includes('washandfoldnyc'))
 }
 
 export async function sendEmail(to: string, subject: string, html: string, attachments?: any[], options?: { bcc?: string | string[]; skipOwnerBcc?: boolean }) {
@@ -26,7 +26,7 @@ export async function sendEmail(to: string, subject: string, html: string, attac
   for (let attempt = 0; attempt < maxRetries; attempt++) {
     try {
       const { data, error } = await resend.emails.send({
-        from: 'The NYC Maid <hi@thenycmaid.com>',
+        from: 'Wash and Fold NYC <hi@washandfoldnyc.com>',
         to,
         subject,
         html,

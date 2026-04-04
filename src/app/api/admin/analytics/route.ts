@@ -69,7 +69,7 @@ export async function GET(request: Request) {
         periodStart = thirtyDaysStart
     }
 
-    const NYCMAID_DOMAINS = ['thenycmaid.com', 'www.thenycmaid.com']
+    const NYCMAID_DOMAINS = ['washandfoldnyc.com', 'www.washandfoldnyc.com']
     const CTA_ACTIONS = ['call', 'text', 'book']
 
     // Bot UA patterns to exclude from analytics

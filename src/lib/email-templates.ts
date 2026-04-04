@@ -22,7 +22,7 @@ export const emailWrapper = (content: string) => `
           <tr>
             <td bgcolor="#ffffff" style="background-color: #ffffff; border-radius: 12px; padding: 40px;">
               <div style="margin: 0 0 24px 0;">
-                <a href="https://www.thenycmaid.com"><img src="https://www.thenycmaid.com/logo.png" alt="The NYC Maid" width="160" height="48" style="width: 160px; height: auto; display: block;" /></a>
+                <a href="https://www.washandfoldnyc.com"><img src="https://www.washandfoldnyc.com/logo.png" alt="Wash and Fold NYC" width="160" height="48" style="width: 160px; height: auto; display: block;" /></a>
               </div>
               ${content}
             </td>
@@ -30,7 +30,7 @@ export const emailWrapper = (content: string) => `
           <tr>
             <td style="padding: 24px 0 0 0; text-align: left;">
               <p style="color: #999; font-size: 12px; margin: 0;">
-                The NYC Maid · <a href="tel:6464900130" style="color: #999;">(646) 490-0130</a>
+                Wash and Fold NYC · <a href="tel:9179706002" style="color: #999;">(917) 970-6002</a>
               </p>
             </td>
           </tr>
@@ -103,7 +103,7 @@ export function clientBookingReceivedEmail(booking: any) {
 
   const content = `
     <h1 style="font-size: 24px; font-weight: 600; color: #000; margin: 0 0 8px 0;">We received your booking request!</h1>
-    <p style="color: #666; font-size: 15px; margin: 0 0 24px 0;">Hi ${clientName}, thank you for choosing NYC Maid. We're reviewing your request and will confirm shortly.</p>
+    <p style="color: #666; font-size: 15px; margin: 0 0 24px 0;">Hi ${clientName}, thank you for choosing Wash and Fold NYC. We're reviewing your request and will confirm shortly.</p>
 
     ${infoTable(`
       ${infoRow('Date', date)}
@@ -119,14 +119,14 @@ export function clientBookingReceivedEmail(booking: any) {
     ${booking.clients?.pin ? `
     <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin: 24px 0 0 0;">
       <p style="margin: 0 0 4px 0; color: #333; font-size: 14px; font-weight: 600;">Your Client Portal</p>
-      <p style="margin: 4px 0; color: #333; font-size: 13px;"><strong>Login:</strong> <a href="https://www.thenycmaid.com/book" style="color: #000;">thenycmaid.com/book</a></p>
+      <p style="margin: 4px 0; color: #333; font-size: 13px;"><strong>Login:</strong> <a href="https://www.washandfoldnyc.com/book" style="color: #000;">washandfoldnyc.com/book</a></p>
       <p style="margin: 4px 0; color: #333; font-size: 13px;"><strong>Email:</strong> ${booking.clients.email}</p>
       <p style="margin: 4px 0; color: #333; font-size: 13px;"><strong>PIN:</strong> <span style="font-family: monospace; background: #e2e8f0; padding: 2px 8px; border-radius: 4px; letter-spacing: 2px;">${booking.clients.pin}</span></p>
     </div>
     ` : ''}
 
     <p style="color: #333; font-size: 14px; line-height: 1.7; margin: 16px 0 0 0;">
-      Questions? Call or text us at <a href="tel:6464900130" style="color: #000; font-weight: 500;">(646) 490-0130</a>
+      Questions? Call or text us at <a href="tel:9179706002" style="color: #000; font-weight: 500;">(917) 970-6002</a>
     </p>
   `
 
@@ -181,7 +181,7 @@ export function clientConfirmationEmail(booking: any) {
 
     <h2 style="font-size: 18px; font-weight: 600; color: #000; margin: 0 0 16px 0;">Payment</h2>
     <p style="color: #333; font-size: 14px; line-height: 1.7; margin: 0 0 8px 0;">
-      About 15 minutes before wrapping up, we'll reach out to collect payment via <strong>Zelle (hi@thenycmaid.com) or Apple Pay</strong>. Our team is not allowed to leave until payment has been processed. Please note that time is billed until the cleaner leaves/payment is confirmed.
+      About 15 minutes before wrapping up, we'll reach out to collect payment via <strong>Zelle (hi@washandfoldnyc.com) or Apple Pay</strong>. Our team is not allowed to leave until payment has been processed. Please note that time is billed until the cleaner leaves/payment is confirmed.
     </p>
 
     ${divider()}
@@ -198,7 +198,7 @@ export function clientConfirmationEmail(booking: any) {
 
     ${hourlyRate === 49 ? noteBox('<strong>Supplies needed:</strong> Please have cleaning supplies ready — all-purpose cleaner, vacuum, mop, cloths, and trash bags.', 'warning') : noteBox('<strong>All supplies included!</strong> ' + cleanerFirst + ' will bring everything needed — no need to prepare anything.', 'success')}
 
-    ${noteBox(`<strong>Tipping:</strong> Tips are always appreciated but never required. 100% of all tips included with Apple Pay and Zelle (hi@thenycmaid.com) go directly to your cleaner.`, 'info')}
+    ${noteBox(`<strong>Tipping:</strong> Tips are always appreciated but never required. 100% of all tips included with Apple Pay and Zelle (hi@washandfoldnyc.com) go directly to your cleaner.`, 'info')}
 
     ${noteBox(`<strong>Cancellation &amp; Reschedule Policy:</strong> ${isRecurring
       ? 'Recurring (weekly, bi-weekly, monthly) services require <strong>7 days notice</strong> to reschedule. Cancellations are not permitted on recurring services unless the service is being discontinued entirely with 7 days notice.'
@@ -212,20 +212,20 @@ export function clientConfirmationEmail(booking: any) {
       View your bookings, update notes, and manage your account anytime:
     </p>
     <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin: 12px 0;">
-      <p style="margin: 4px 0; color: #333; font-size: 14px;"><strong>Login:</strong> <a href="https://www.thenycmaid.com/book" style="color: #000;">thenycmaid.com/book</a></p>
+      <p style="margin: 4px 0; color: #333; font-size: 14px;"><strong>Login:</strong> <a href="https://www.washandfoldnyc.com/book" style="color: #000;">washandfoldnyc.com/book</a></p>
       <p style="margin: 4px 0; color: #333; font-size: 14px;"><strong>Email:</strong> ${booking.clients.email}</p>
       <p style="margin: 4px 0; color: #333; font-size: 14px;"><strong>PIN:</strong> <span style="font-family: monospace; background: #e2e8f0; padding: 2px 8px; border-radius: 4px; letter-spacing: 2px;">${booking.clients.pin}</span></p>
     </div>
     ` : ''}
 
-    ${primaryButton('View Your Portal', 'https://www.thenycmaid.com/book')}
+    ${primaryButton('View Your Portal', 'https://www.washandfoldnyc.com/book')}
 
     <p style="color: #666; font-size: 14px; margin: 16px 0 0 0;">
-      You can update your notes and view upcoming bookings anytime at <a href="https://www.thenycmaid.com/book" style="color: #000; font-weight: 500;">thenycmaid.com/book</a>
+      You can update your notes and view upcoming bookings anytime at <a href="https://www.washandfoldnyc.com/book" style="color: #000; font-weight: 500;">washandfoldnyc.com/book</a>
     </p>
 
     <p style="color: #666; font-size: 14px; margin: 16px 0 0 0;">
-      Day-of questions? Text or call <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Day-of questions? Text or call <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 
@@ -249,7 +249,7 @@ export function clientReminderEmail(booking: any, daysOut: string) {
       ${infoRow('Cleaner', cleanerName)}
     `)}
 
-    ${primaryButton('View Details', 'https://www.thenycmaid.com/book')}
+    ${primaryButton('View Details', 'https://www.washandfoldnyc.com/book')}
 
     ${noteBox(`<strong>Reminder:</strong> ${isRecurring
       ? 'Recurring services require <strong>7 days notice</strong> to reschedule. Cancellations are not permitted unless discontinuing the service entirely with 7 days notice.'
@@ -257,7 +257,7 @@ export function clientReminderEmail(booking: any, daysOut: string) {
     } We hold your spot without taking payment upfront, turning away other clients. Late changes directly affect our team members who depend on this income.`, 'warning')}
 
     <p style="color: #666; font-size: 14px; margin: 24px 0 0 0;">
-      Questions? <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Questions? <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 
@@ -277,10 +277,10 @@ export function clientCancellationEmail(booking: any) {
       ${infoRow('Service', booking.service_type)}
     `)}
 
-    ${primaryButton('Book Again', 'https://www.thenycmaid.com/book')}
+    ${primaryButton('Book Again', 'https://www.washandfoldnyc.com/book')}
 
     <p style="color: #666; font-size: 14px; margin: 24px 0 0 0;">
-      Questions? <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Questions? <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 
@@ -312,16 +312,16 @@ export function clientThankYouEmail(clientName: string) {
       </p>
     </div>
 
-    ${primaryButton('Learn About Referral Rewards', 'https://www.thenycmaid.com/get-paid-for-cleaning-referrals-every-time-they-are-serviced')}
+    ${primaryButton('Learn About Referral Rewards', 'https://www.washandfoldnyc.com/get-paid-for-cleaning-referrals-every-time-they-are-serviced')}
 
     ${divider()}
 
     <p style="color: #333; font-size: 15px; margin: 0 0 16px 0; font-weight: 600;">Ready to book again?</p>
 
-    ${primaryButton('Visit Your Portal', 'https://www.thenycmaid.com/book')}
+    ${primaryButton('Visit Your Portal', 'https://www.washandfoldnyc.com/book')}
 
     <p style="color: #666; font-size: 14px; margin: 24px 0 0 0;">
-      Questions? <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Questions? <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 
@@ -344,7 +344,7 @@ export function clientPaymentDueEmail(booking: any, amount: string) {
     <h2 style="font-size: 18px; font-weight: 600; color: #000; margin: 0 0 16px 0;">Payment methods</h2>
 
     ${infoTable(`
-      ${infoRow('Zelle', '<a href="mailto:hi@thenycmaid.com" style="color: #0066cc;">hi@thenycmaid.com</a>')}
+      ${infoRow('Zelle', '<a href="mailto:hi@washandfoldnyc.com" style="color: #0066cc;">hi@washandfoldnyc.com</a>')}
       ${infoRow('Apple Pay', '<a href="tel:2120292200" style="color: #0066cc;">(212) 029-2200</a>')}
     `)}
 
@@ -353,7 +353,7 @@ export function clientPaymentDueEmail(booking: any, amount: string) {
     ${noteBox('<strong>Tipping:</strong> Tips are always appreciated but never required. 100% of all tips go directly to your cleaner.', 'info')}
 
     <p style="color: #666; font-size: 14px; margin: 24px 0 0 0;">
-      Questions? <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Questions? <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 
@@ -399,10 +399,10 @@ export function cleanerAssignmentEmail(booking: any) {
 
     ${booking.notes ? noteBox(`<strong>Notes / Notas:</strong> ${booking.notes}`, 'warning') : ''}
 
-    ${primaryButton('Open Team Portal / Abrir Portal', 'https://www.thenycmaid.com/team')}
+    ${primaryButton('Open Team Portal / Abrir Portal', 'https://www.washandfoldnyc.com/team')}
 
     <p style="color: #666; font-size: 14px; text-align: left; margin: 24px 0 0 0;">
-      Office / Oficina: <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Office / Oficina: <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 
@@ -451,10 +451,10 @@ export function cleanerDailySummaryEmail(cleanerName: string, bookings: any[]) {
 
     ${jobsList}
 
-    ${primaryButton('Open Team Portal / Abrir Portal', 'https://www.thenycmaid.com/team')}
+    ${primaryButton('Open Team Portal / Abrir Portal', 'https://www.washandfoldnyc.com/team')}
 
     <p style="color: #666; font-size: 14px; text-align: left; margin: 24px 0 0 0;">
-      Office / Oficina: <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Office / Oficina: <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 
@@ -479,10 +479,10 @@ export function cleanerCancellationEmail(booking: any) {
       ${infoRow('Client / Cliente', booking.clients?.name || 'N/A')}
     `)}
 
-    ${primaryButton('View Schedule / Ver Horario', 'https://www.thenycmaid.com/team')}
+    ${primaryButton('View Schedule / Ver Horario', 'https://www.washandfoldnyc.com/team')}
 
     <p style="color: #666; font-size: 14px; text-align: left; margin: 24px 0 0 0;">
-      Office / Oficina: <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Office / Oficina: <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 
@@ -495,11 +495,11 @@ export function cleanerCancellationEmail(booking: any) {
 
 export function referralWelcomeEmail(referrer: { name: string; ref_code: string; preferred_payout: string }) {
   const firstName = referrer.name.split(' ')[0]
-  const referralLink = `https://www.thenycmaid.com/book?ref=${referrer.ref_code}`
+  const referralLink = `https://www.washandfoldnyc.com/book?ref=${referrer.ref_code}`
   
   const content = `
     <h1 style="font-size: 24px; font-weight: 600; color: #000; margin: 0 0 8px 0;">Welcome to the team, ${firstName}!</h1>
-    <p style="color: #666; font-size: 15px; margin: 0 0 24px 0;">You're now part of The NYC Maid referral program.</p>
+    <p style="color: #666; font-size: 15px; margin: 0 0 24px 0;">You're now part of Wash and Fold NYC referral program.</p>
 
     <div style="background: #f5f5f5; border-radius: 8px; padding: 24px; margin: 24px 0; text-align: left;">
       <p style="margin: 0 0 8px 0; color: #666; font-size: 14px;">Your referral code</p>
@@ -519,14 +519,14 @@ export function referralWelcomeEmail(referrer: { name: string; ref_code: string;
       <a href="${referralLink}" style="color: #0066cc; font-size: 14px; word-break: break-all;">${referralLink}</a>
     </div>
 
-    ${primaryButton('View Your Dashboard', `https://www.thenycmaid.com/referral-dashboard?code=${referrer.ref_code}`)}
+    ${primaryButton('View Your Dashboard', `https://www.washandfoldnyc.com/referral-dashboard?code=${referrer.ref_code}`)}
 
     <p style="color: #666; font-size: 14px; margin: 24px 0 0 0;">
       Questions? Just reply to this email.
     </p>
   `
 
-  return { subject: `Welcome to The NYC Maid, ${firstName}!`, html: emailWrapper(content) }
+  return { subject: `Welcome to Wash and Fold NYC, ${firstName}!`, html: emailWrapper(content) }
 }
 
 export function referralCommissionEmail(referrer: any, booking: any, commission: number) {
@@ -545,10 +545,10 @@ export function referralCommissionEmail(referrer: any, booking: any, commission:
       ${infoRow('Pending balance', `$${pendingBalance}`)}
     `)}
 
-    ${primaryButton('View Dashboard', `https://www.thenycmaid.com/referral-dashboard?code=${referrer.ref_code}`)}
+    ${primaryButton('View Dashboard', `https://www.washandfoldnyc.com/referral-dashboard?code=${referrer.ref_code}`)}
 
     <p style="color: #666; font-size: 14px; text-align: left; margin: 24px 0 0 0;">
-      Keep sharing: <strong>thenycmaid.com/book?ref=${referrer.ref_code}</strong>
+      Keep sharing: <strong>washandfoldnyc.com/book?ref=${referrer.ref_code}</strong>
     </p>
   `
 
@@ -571,7 +571,7 @@ export function newReferrerAdminEmail(referrer: { name: string; email: string; p
       ${infoRow('Payout', `${referrer.preferred_payout === 'apple_cash' ? 'Apple Cash' : 'Zelle'} – ${referrer.zelle_email || referrer.email}`)}
     `)}
 
-    ${primaryButton('View Referrals', 'https://www.thenycmaid.com/admin/referrals')}
+    ${primaryButton('View Referrals', 'https://www.washandfoldnyc.com/admin/referrals')}
   `
 
   return { subject: `New Referrer: ${referrer.name}`, html: emailWrapper(content) }
@@ -593,7 +593,7 @@ export function newBookingAdminEmail(booking: any) {
       ${booking.ref_code ? infoRow('Referral', booking.ref_code) : ''}
     `)}
 
-    ${primaryButton('View Booking', 'https://www.thenycmaid.com/admin/bookings')}
+    ${primaryButton('View Booking', 'https://www.washandfoldnyc.com/admin/bookings')}
   `
 
   return { subject: `New Booking: ${booking.clients?.name || 'Unknown'}`, html: emailWrapper(content) }
@@ -621,8 +621,8 @@ export function cleanerWelcomeEmail(cleaner: { name: string; pin: string; phone:
   const firstName = cleaner.name.split(' ')[0]
 
   const content = `
-    <h1 style="font-size: 24px; font-weight: 600; color: #000; margin: 0;">Welcome to The NYC Maid!</h1>
-    <p style="color: #666; font-size: 14px; margin: 4px 0 24px 0;">¡Bienvenido/a a The NYC Maid!</p>
+    <h1 style="font-size: 24px; font-weight: 600; color: #000; margin: 0;">Welcome to Wash and Fold NYC!</h1>
+    <p style="color: #666; font-size: 14px; margin: 4px 0 24px 0;">¡Bienvenido/a a Wash and Fold NYC!</p>
 
     <p style="color: #444; font-size: 15px; margin: 0 0 24px 0;">Hi ${firstName} / Hola ${firstName}</p>
 
@@ -632,17 +632,17 @@ export function cleanerWelcomeEmail(cleaner: { name: string; pin: string; phone:
       <p style="margin: 12px 0 0 0; color: #999; font-size: 12px;">Last 4 digits of your phone / Últimos 4 dígitos de tu teléfono</p>
     </div>
 
-    ${primaryButton('Open Team Portal / Abrir Portal', 'https://www.thenycmaid.com/team')}
+    ${primaryButton('Open Team Portal / Abrir Portal', 'https://www.washandfoldnyc.com/team')}
 
     <!-- SPANISH GUIDE -->
     <div style="background: #fff8e6; border: 1px solid #f0e6cc; border-radius: 8px; padding: 20px; margin: 32px 0; text-align: left;">
       <h2 style="font-size: 18px; color: #000; margin: 0 0 16px 0;">📱 Guía del Portal de Equipo</h2>
 
       <h3 style="font-size: 14px; color: #333; margin: 16px 0 8px 0;">🔗 TU PORTAL</h3>
-      <p style="font-size: 13px; color: #555; margin: 0;">Ve a: <strong>thenycmaid.com/team</strong><br>Ingresa tu número de teléfono para ver tus trabajos.</p>
+      <p style="font-size: 13px; color: #555; margin: 0;">Ve a: <strong>washandfoldnyc.com/team</strong><br>Ingresa tu número de teléfono para ver tus trabajos.</p>
 
       <h3 style="font-size: 14px; color: #333; margin: 16px 0 8px 0;">📲 GUARDAR EN TU TELÉFONO</h3>
-      <p style="font-size: 13px; color: #555; margin: 0 0 8px 0;"><strong>iPhone:</strong> Abre thenycmaid.com/team en Safari → Toca compartir (↑) → "Añadir a pantalla de inicio"</p>
+      <p style="font-size: 13px; color: #555; margin: 0 0 8px 0;"><strong>iPhone:</strong> Abre washandfoldnyc.com/team en Safari → Toca compartir (↑) → "Añadir a pantalla de inicio"</p>
       <p style="font-size: 13px; color: #555; margin: 0;"><strong>Android:</strong> Abre en Chrome → Toca ⋮ → "Añadir a pantalla de inicio"</p>
 
       <h3 style="font-size: 14px; color: #333; margin: 16px 0 8px 0;">📧 CORREOS QUE RECIBIRÁS</h3>
@@ -656,11 +656,11 @@ export function cleanerWelcomeEmail(cleaner: { name: string; pin: string; phone:
       <p style="font-size: 13px; color: #555; margin: 0;">Pagamos por hora (redondeado a media hora).<br>Ejemplo: 2h 15min = pago por 2.5 horas<br>Puedes ver tus ganancias en el portal.</p>
 
       <h3 style="font-size: 14px; color: #333; margin: 16px 0 8px 0;">❓ PREGUNTAS</h3>
-      <p style="font-size: 13px; color: #555; margin: 0;">Llama o escribe: <strong>(646) 490-0130</strong></p>
+      <p style="font-size: 13px; color: #555; margin: 0;">Llama o escribe: <strong>(917) 970-6002</strong></p>
     </div>
 
     <p style="color: #666; font-size: 14px; text-align: left; margin: 24px 0 0 0;">
-      Office / Oficina: <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Office / Oficina: <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 
@@ -709,7 +709,7 @@ export function adminNewClientEmail(client: { name: string; phone?: string; emai
       ${client.notes ? infoRow('Notes', client.notes) : ''}
     `)}
 
-    ${primaryButton('View Clients', 'https://www.thenycmaid.com/admin/clients')}
+    ${primaryButton('View Clients', 'https://www.washandfoldnyc.com/admin/clients')}
   `
 
   return { subject: `New Client: ${client.name}`, html: emailWrapper(content) }
@@ -734,7 +734,7 @@ export function adminNewBookingRequestEmail(booking: any, details: { time?: stri
       ${details.referred_by ? infoRow('Referred By', details.referred_by) : ''}
     `)}
 
-    ${primaryButton('Review & Assign Cleaner', 'https://www.thenycmaid.com/admin/bookings')}
+    ${primaryButton('Review & Assign Cleaner', 'https://www.washandfoldnyc.com/admin/bookings')}
   `
 
   return { subject: `New Booking Request: ${booking.clients?.name || 'Unknown'}`, html: emailWrapper(content) }
@@ -765,7 +765,7 @@ export function adminDailyNotificationDigestEmail(data: {
     <h2 style="font-size: 18px; font-weight: 600; color: #000; margin: 24px 0 8px 0;">Texts (${data.texts.length})</h2>
     ${infoTable(smsRows)}
 
-    ${primaryButton('View Dashboard', 'https://www.thenycmaid.com/admin/bookings')}
+    ${primaryButton('View Dashboard', 'https://www.washandfoldnyc.com/admin/bookings')}
   `
 
   return {
@@ -783,7 +783,7 @@ export function adminPendingRemindersEmail(pendingBookings: { client_name: strin
 
     ${infoTable(rows)}
 
-    ${primaryButton('Review Pending Bookings', 'https://www.thenycmaid.com/admin/bookings')}
+    ${primaryButton('Review Pending Bookings', 'https://www.washandfoldnyc.com/admin/bookings')}
   `
 
   return { subject: `⚠️ ${pendingBookings.length} Pending Booking${pendingBookings.length !== 1 ? 's' : ''} Need Attention`, html: emailWrapper(content) }
@@ -884,7 +884,7 @@ export function adminDailyOpsRecapEmail(data: {
     <h2 style="font-size: 18px; font-weight: 600; color: #000; margin: 24px 0 8px 0;">Tomorrow — ${data.tomorrowJobs.length} Job${data.tomorrowJobs.length !== 1 ? 's' : ''}</h2>
     ${tomorrowSection}
 
-    ${primaryButton('Open Dashboard', 'https://www.thenycmaid.com/admin/bookings')}
+    ${primaryButton('Open Dashboard', 'https://www.washandfoldnyc.com/admin/bookings')}
   `
 
   return {
@@ -911,10 +911,10 @@ export function clientRescheduleEmail(booking: any, oldDate: string, oldTime: st
       ${infoRow('Service', booking.service_type)}
     `)}
 
-    ${primaryButton('View in Portal', 'https://www.thenycmaid.com/book')}
+    ${primaryButton('View in Portal', 'https://www.washandfoldnyc.com/book')}
 
     <p style="color: #666; font-size: 14px; margin: 24px 0 0 0;">
-      Questions? <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Questions? <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 
@@ -938,7 +938,7 @@ export function adminRescheduleEmail(booking: any, oldDate: string, oldTime: str
       ${infoRow('Cleaner', booking.cleaners?.name || 'Unassigned')}
     `)}
 
-    ${primaryButton('View Booking', 'https://www.thenycmaid.com/admin/bookings')}
+    ${primaryButton('View Booking', 'https://www.washandfoldnyc.com/admin/bookings')}
   `
 
   return { subject: `Rescheduled: ${booking.clients?.name || 'Client'} → ${newDate}`, html: emailWrapper(content) }
@@ -974,10 +974,10 @@ export function cleanerRescheduleEmail(booking: any, oldDate: string, oldTime: s
       <a href="${mapsLink}" style="color: #0066cc; font-size: 14px;">Open in Maps / Abrir en Mapas →</a>
     </div>
 
-    ${primaryButton('Open Team Portal / Abrir Portal', 'https://www.thenycmaid.com/team')}
+    ${primaryButton('Open Team Portal / Abrir Portal', 'https://www.washandfoldnyc.com/team')}
 
     <p style="color: #666; font-size: 14px; text-align: left; margin: 24px 0 0 0;">
-      Office / Oficina: <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Office / Oficina: <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 
@@ -998,7 +998,7 @@ export function referralSignupNotifyEmail(referrerName: string, bookingDate: str
     ${noteBox("We'll notify you when they're serviced and your 10% commission is ready!", 'success')}
 
     <p style="color: #666; font-size: 14px; margin: 24px 0 0 0;">
-      Questions? <a href="tel:6464900130" style="color: #000;">(646) 490-0130</a>
+      Questions? <a href="tel:9179706002" style="color: #000;">(917) 970-6002</a>
     </p>
   `
 

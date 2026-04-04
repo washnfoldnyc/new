@@ -39,7 +39,7 @@ interface ClientWithStats extends Client {
 }
 
 export default function ClientsPage() {
-  useEffect(() => { document.title = 'Clients | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Clients | Wash and Fold NYC' }, []);
   const [clients, setClients] = useState<ClientWithStats[]>([])
   const [referrers, setReferrers] = useState<Referrer[]>([])
   const [loading, setLoading] = useState(true)
@@ -257,9 +257,9 @@ export default function ClientsPage() {
           <button onClick={() => setShowAddModal(true)} className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800">+ Add Client</button>
         </div>
         <div className="text-sm text-gray-500 mb-6">
-          Client portal: <a href="https://www.thenycmaid.com/book" target="_blank" className="text-blue-600 hover:underline">thenycmaid.com/book</a> ·
-          New booking: <a href="https://www.thenycmaid.com/book/new" target="_blank" className="text-blue-600 hover:underline ml-1">thenycmaid.com/book/new</a> ·
-          Collect info: <a href="https://www.thenycmaid.com/book/collect" target="_blank" className="text-blue-600 hover:underline ml-1">thenycmaid.com/book/collect</a>
+          Client portal: <a href="https://www.washandfoldnyc.com/book" target="_blank" className="text-blue-600 hover:underline">washandfoldnyc.com/book</a> ·
+          New booking: <a href="https://www.washandfoldnyc.com/book/new" target="_blank" className="text-blue-600 hover:underline ml-1">washandfoldnyc.com/book/new</a> ·
+          Collect info: <a href="https://www.washandfoldnyc.com/book/collect" target="_blank" className="text-blue-600 hover:underline ml-1">washandfoldnyc.com/book/collect</a>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 mb-6">

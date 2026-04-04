@@ -30,7 +30,7 @@ const Card = ({ title, children, accent }: { title: string, children: React.Reac
 )
 
 export default function DocsPage() {
-  useEffect(() => { document.title = 'Documentation | The NYC Maid' }, [])
+  useEffect(() => { document.title = 'Documentation | Wash and Fold NYC' }, [])
   const [s, setS] = useState('overview')
 
   const sections = [
@@ -79,13 +79,13 @@ export default function DocsPage() {
 
         {s === 'overview' && (
           <div>
-            <h1 className="text-3xl font-bold text-[#1E2A4A] mb-2">The NYC Maid Platform</h1>
+            <h1 className="text-3xl font-bold text-[#1E2A4A] mb-2">Wash and Fold NYC Platform</h1>
             <p className="text-gray-500 mb-6">Complete cleaning service management system</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <Card title="" accent="blue">
-                <p><strong>Live:</strong> <a href="https://www.thenycmaid.com" className="underline py-1.5 inline-block">thenycmaid.com</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/thenycmaid/nycmaid" className="underline py-1.5 inline-block">thenycmaid/nycmaid</a></p>
+                <p><strong>Live:</strong> <a href="https://www.washandfoldnyc.com" className="underline py-1.5 inline-block">washandfoldnyc.com</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/washandfoldnyc" className="underline py-1.5 inline-block">washandfoldnyc/nycmaid</a></p>
               </Card>
               <Card title="" accent="blue">
                 <p><strong>Vercel:</strong> <a href="https://vercel.com/jeff-tuckers-projects/nycmaid" className="underline py-1.5 inline-block">jeff-tuckers-projects/nycmaid</a></p>
@@ -313,7 +313,7 @@ export default function DocsPage() {
 
             <h2 className="text-xl font-semibold text-[#1E2A4A] mt-10 mb-4">External Integrations</h2>
             <T headers={['Service', 'Purpose', 'Used In']} rows={[
-              ['Resend', 'Email delivery (hi@thenycmaid.com)', 'All emails — 21+ templates'],
+              ['Resend', 'Email delivery (hi@washandfoldnyc.com)', 'All emails — 21+ templates'],
               ['Telnyx', 'SMS delivery + inbound webhook', 'Selena chatbot, booking confirmations, reminders, broadcasts'],
               ['Supabase', 'Database (PostgreSQL) — 19 tables', 'Everything'],
               ['Radar.io', 'GPS verification + address autocomplete', 'Check-in/check-out, address forms'],
@@ -324,7 +324,7 @@ export default function DocsPage() {
 
             <h2 className="text-xl font-semibold text-[#1E2A4A] mt-10 mb-4">Payment Flow</h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
-              <li><strong>Client pays</strong> — Zelle (hi@thenycmaid.com) or Apple Pay (collected by cleaner on-site)</li>
+              <li><strong>Client pays</strong> — Zelle (hi@washandfoldnyc.com) or Apple Pay (collected by cleaner on-site)</li>
               <li><strong>Cleaner pay</strong> — actual_hours × cleaner.hourly_rate (stored in cents)</li>
               <li><strong>Referrer commissions</strong> — 10% of booking price, paid weekly via Zelle/Apple Cash</li>
               <li><strong>All money stored in cents</strong> — divide by 100 for display</li>
@@ -336,7 +336,7 @@ export default function DocsPage() {
               <li><strong>Emails</strong> — "Feedback?" link at the top of every email</li>
               <li><strong>Standalone page</strong> — /feedback for direct access</li>
               <li><strong>Anonymous</strong> — No personal info collected or attached</li>
-              <li><strong>Delivery</strong> — Emailed to thenycmaid@gmail.com + creates dashboard notification</li>
+              <li><strong>Delivery</strong> — Emailed to hi@washandfoldnyc.com + creates dashboard notification</li>
             </ul>
           </div>
         )}
@@ -740,7 +740,7 @@ export default function DocsPage() {
               ['ask_bedrooms', '"How many bathrooms?"', 'Bedroom count (0=studio)'],
               ['ask_bathrooms', '"A) $59/hr you supply or B) $75/hr we bring everything"', 'Bathroom count'],
               ['ask_pricing', 'Introduces herself as Selena, sends booking form URL', 'Pricing choice (A or B)'],
-              ['form_sent', 'Conversation complete', 'Booking form: thenycmaid.com/book/collect?src=sms-chatbot&convo_id={id}'],
+              ['form_sent', 'Conversation complete', 'Booking form: washandfoldnyc.com/book/collect?src=sms-chatbot&convo_id={id}'],
             ]} />
 
             <h2 className="text-lg font-semibold text-[#1E2A4A] mt-8 mb-3">Existing Client Intents</h2>
@@ -1102,7 +1102,7 @@ export default function DocsPage() {
             <h2 className="text-lg font-semibold text-[#1E2A4A] mt-8 mb-3">How It Works</h2>
             <ol className="list-decimal pl-6 space-y-2 text-gray-700 mb-6">
               <li>Referrer signs up at <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">/referral/signup</code></li>
-              <li>Gets unique ref code and link: <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">thenycmaid.com/book?ref=CODE</code></li>
+              <li>Gets unique ref code and link: <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm">washandfoldnyc.com/book?ref=CODE</code></li>
               <li>Client books using the referral link</li>
               <li>Client is tagged with referrer_id</li>
               <li>When cleaner checks out → commission auto-created</li>
@@ -1262,7 +1262,7 @@ export default function DocsPage() {
           <div>
             <h1 className="text-3xl font-bold text-[#1E2A4A] mb-6">Email System</h1>
             <Card title="" accent="gray">
-              <p><strong>Email Provider:</strong> Resend (from: hi@thenycmaid.com)</p>
+              <p><strong>Email Provider:</strong> Resend (from: hi@washandfoldnyc.com)</p>
               <p><strong>SMS Provider:</strong> Telnyx (from: +18883164019) — see SMS System section for full details</p>
               <p><strong>Push Provider:</strong> Web Push via VAPID protocol</p>
               <p><strong>Email Templates:</strong> 15+ HTML templates in email-templates.ts (Outlook/MSO compatible)</p>
@@ -1308,7 +1308,7 @@ export default function DocsPage() {
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
               <li><strong>Welcome message</strong> — Personalized greeting with assigned cleaner name</li>
               <li><strong>Appointment details</strong> — Date, time, address, service type, cleaner, price</li>
-              <li><strong>Payment reminder</strong> — Zelle (hi@thenycmaid.com) / Apple Pay 15 minutes before service</li>
+              <li><strong>Payment reminder</strong> — Zelle (hi@washandfoldnyc.com) / Apple Pay 15 minutes before service</li>
               <li><strong>Prep tips</strong> — What to do before the cleaner arrives</li>
               <li><strong>Supplies note</strong> — Clients must provide cleaning supplies</li>
               <li><strong>Tipping policy</strong> — Encouraged but not required</li>
@@ -1466,9 +1466,9 @@ git push origin main`}
 
             <h2 className="text-lg font-semibold text-[#1E2A4A] mt-8 mb-3">Links</h2>
             <T headers={['Service', 'URL']} rows={[
-              ['Live Site', 'www.thenycmaid.com'],
+              ['Live Site', 'www.washandfoldnyc.com'],
               ['Vercel', 'vercel.com/jeff-tuckers-projects/nycmaid'],
-              ['GitHub', 'github.com/thenycmaid/nycmaid'],
+              ['GitHub', 'github.com/washandfoldnyc'],
               ['Supabase', 'supabase.com/dashboard/project/ioppmvchszymwswtwsze'],
             ]} />
 
@@ -1524,13 +1524,13 @@ git push origin main`}
 vercel logs --follow
 
 # Test API (need auth cookie)
-curl -b "admin_authenticated=true" https://www.thenycmaid.com/api/dashboard
+curl -b "admin_authenticated=true" https://www.washandfoldnyc.com/api/dashboard
 
 # Check build
 npm run build 2>&1 | head -50
 
 # Read docs as JSON
-curl https://www.thenycmaid.com/api/docs | jq .`}
+curl https://www.washandfoldnyc.com/api/docs | jq .`}
             </pre>
           </div>
         )}

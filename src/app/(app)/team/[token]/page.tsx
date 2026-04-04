@@ -29,7 +29,7 @@ interface Booking {
 }
 
 export default function TeamPortalPage() {
-  useEffect(() => { document.title = 'Team Portal | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Team Portal | Wash and Fold NYC' }, []);
   const params = useParams()
   const token = params.token as string
   const [booking, setBooking] = useState<Booking | null>(null)
@@ -142,7 +142,7 @@ export default function TeamPortalPage() {
           <p className="text-gray-500">This job link is no longer valid. Contact the office for assistance.</p>
           <p className="text-gray-500">Este enlace ya no es válido. Contacta la oficina para ayuda.</p>
           <p className="text-gray-500 mt-4">
-            Office / Oficina: <a href="tel:2122028400" className="text-[#1E2A4A]">(212) 202-8400</a>
+            Office / Oficina: <a href="tel:9179706002" className="text-[#1E2A4A]">(917) 970-6002</a>
           </p>
         </div>
       </div>
@@ -159,7 +159,7 @@ export default function TeamPortalPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="bg-[#1E2A4A] text-white p-4">
-        <p className="text-sm opacity-80">The NYC Maid</p>
+        <p className="text-sm opacity-80">Wash and Fold NYC</p>
         <h1 className="text-xl font-semibold">{booking.cleaners?.name || 'Team Member'}</h1>
       </div>
 

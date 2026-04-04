@@ -62,7 +62,7 @@ const toEST = (ts: string) => {
 
 function BookingsPage() {
   const searchParams = useSearchParams()
-  useEffect(() => { document.title = 'Bookings | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Bookings | Wash and Fold NYC' }, []);
   const formatPhone = (value: string) => {
     const cleaned = value.replace(/\D/g, '')
     if (cleaned.length <= 3) return cleaned
@@ -1032,13 +1032,13 @@ function BookingsPage() {
 
         {/* Quick Links */}
         <div className="text-xs text-gray-400 mb-4 hidden md:flex items-center gap-1 flex-wrap">
-          <a href="https://www.thenycmaid.com/book" target="_blank" className="text-gray-500 hover:text-[#1E2A4A] hover:underline">Client Portal</a>
+          <a href="https://www.washandfoldnyc.com/book" target="_blank" className="text-gray-500 hover:text-[#1E2A4A] hover:underline">Client Portal</a>
           <span className="text-gray-300 mx-1">/</span>
-          <a href="https://www.thenycmaid.com/book/new" target="_blank" className="text-gray-500 hover:text-[#1E2A4A] hover:underline">New Booking</a>
+          <a href="https://www.washandfoldnyc.com/book/new" target="_blank" className="text-gray-500 hover:text-[#1E2A4A] hover:underline">New Booking</a>
           <span className="text-gray-300 mx-1">/</span>
-          <a href="https://www.thenycmaid.com/book/collect" target="_blank" className="text-gray-500 hover:text-[#1E2A4A] hover:underline">Collect Info</a>
+          <a href="https://www.washandfoldnyc.com/book/collect" target="_blank" className="text-gray-500 hover:text-[#1E2A4A] hover:underline">Collect Info</a>
           <span className="text-gray-300 mx-1">/</span>
-          <a href="https://www.thenycmaid.com/team" target="_blank" className="text-gray-500 hover:text-[#1E2A4A] hover:underline">Team Portal</a>
+          <a href="https://www.washandfoldnyc.com/team" target="_blank" className="text-gray-500 hover:text-[#1E2A4A] hover:underline">Team Portal</a>
         </div>
 
         {/* Stat Cards */}

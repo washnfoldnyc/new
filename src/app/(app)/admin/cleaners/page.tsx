@@ -103,7 +103,7 @@ const HOURS = [
 ]
 
 export default function CleanersPage() {
-  useEffect(() => { document.title = 'Team | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Team | Wash and Fold NYC' }, []);
   const [activeTab, setActiveTab] = useState<'team' | 'applications' | 'ops-manager'>('team')
   const [cleaners, setCleaners] = useState<Cleaner[]>([])
   const [applications, setApplications] = useState<Application[]>([])
@@ -516,10 +516,10 @@ export default function CleanersPage() {
           </button>
         </div>
         <div className="text-sm text-gray-500 mb-4">
-          Team portal: <a href="https://www.thenycmaid.com/team" target="_blank" className="text-[#1E2A4A] hover:underline py-2 inline-block">thenycmaid.com/team</a> ·
-          Client portal: <a href="https://www.thenycmaid.com/book" target="_blank" className="text-[#1E2A4A] hover:underline ml-1 py-2 inline-block">thenycmaid.com/book</a> ·
-          Apply form: <a href="https://www.thenycmaid.com/apply" target="_blank" className="text-[#1E2A4A] hover:underline ml-1 py-2 inline-block">thenycmaid.com/apply</a> ·
-          Ops Admin: <a href="https://www.thenycmaid.com/apply/operations-coordinator" target="_blank" className="text-[#1E2A4A] hover:underline ml-1 py-2 inline-block">thenycmaid.com/apply/operations-coordinator</a>
+          Team portal: <a href="https://www.washandfoldnyc.com/team" target="_blank" className="text-[#1E2A4A] hover:underline py-2 inline-block">washandfoldnyc.com/team</a> ·
+          Client portal: <a href="https://www.washandfoldnyc.com/book" target="_blank" className="text-[#1E2A4A] hover:underline ml-1 py-2 inline-block">washandfoldnyc.com/book</a> ·
+          Apply form: <a href="https://www.washandfoldnyc.com/apply" target="_blank" className="text-[#1E2A4A] hover:underline ml-1 py-2 inline-block">washandfoldnyc.com/apply</a> ·
+          Ops Admin: <a href="https://www.washandfoldnyc.com/apply/operations-coordinator" target="_blank" className="text-[#1E2A4A] hover:underline ml-1 py-2 inline-block">washandfoldnyc.com/apply/operations-coordinator</a>
         </div>
         <CoverageMap />
 
@@ -549,7 +549,7 @@ export default function CleanersPage() {
           <div className="space-y-4">
             {mgmtApplications.length === 0 ? (
               <div className="text-center py-12 text-gray-500">
-                No coordinator applications yet. Share the link: <a href="https://www.thenycmaid.com/apply/operations-coordinator" className="text-[#1E2A4A]">thenycmaid.com/apply/operations-coordinator</a>
+                No coordinator applications yet. Share the link: <a href="https://www.washandfoldnyc.com/apply/operations-coordinator" className="text-[#1E2A4A]">washandfoldnyc.com/apply/operations-coordinator</a>
               </div>
             ) : (
               <>
@@ -762,7 +762,7 @@ export default function CleanersPage() {
           <div className="space-y-4">
             {pendingApps.length === 0 && applications.length === 0 ? (
               <div className="text-center py-12 text-gray-500">
-                No applications yet. Share the apply link: <a href="https://www.thenycmaid.com/apply" className="text-[#1E2A4A]">thenycmaid.com/apply</a>
+                No applications yet. Share the apply link: <a href="https://www.washandfoldnyc.com/apply" className="text-[#1E2A4A]">washandfoldnyc.com/apply</a>
               </div>
             ) : (
               <>

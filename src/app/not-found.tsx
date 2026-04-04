@@ -13,8 +13,8 @@ export default function NotFound() {
           <Link href="/" className="bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
             Go Home
           </Link>
-          <a href="tel:6464900130" className="text-white font-semibold hover:text-[#A8F0DC] transition-colors">
-            Call (646) 490-0130
+          <a href="tel:9179706002" className="text-white font-semibold hover:text-[#A8F0DC] transition-colors">
+            Call (917) 970-6002
           </a>
         </div>
         <div className="border-t border-white/10 pt-8">

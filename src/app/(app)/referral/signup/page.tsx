@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 import { useFormTracking } from '@/lib/useFormTracking'
 
 export default function ReferralSignupPage() {
-  useEffect(() => { document.title = 'Become a Referrer | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Become a Referrer | Wash and Fold NYC' }, []);
   const router = useRouter()
   const { trackStart, trackSuccess } = useFormTracking('/referral/signup')
   const [loading, setLoading] = useState(false)
@@ -57,7 +57,7 @@ export default function ReferralSignupPage() {
   }
 
   const copyLink = () => {
-    navigator.clipboard.writeText(`https://www.thenycmaid.com/book?ref=${refCode}`)
+    navigator.clipboard.writeText(`https://www.washandfoldnyc.com/book?ref=${refCode}`)
     alert('Link copied!')
   }
 
@@ -72,7 +72,7 @@ export default function ReferralSignupPage() {
             </svg>
           </div>
           <h1 className="text-2xl font-bold text-[#1E2A4A] mb-2">You're In! 🎉</h1>
-          <p className="text-gray-600 mb-6">Welcome to The NYC Maid referral program</p>
+          <p className="text-gray-600 mb-6">Welcome to Wash and Fold NYC referral program</p>
 
           <div className="bg-gray-50 rounded-lg p-4 mb-6">
             <p className="text-sm text-gray-500 mb-2">Your referral code</p>
@@ -82,7 +82,7 @@ export default function ReferralSignupPage() {
           <p className="text-xs text-gray-400 mt-4">📧 Please check your spam/junk folder if you don't see our email in your inbox.</p>
           <div className="bg-[#A8F0DC]/20 rounded-lg p-4 mb-6">
             <p className="text-sm text-[#1E2A4A] mb-2">Your referral link</p>
-            <p className="text-sm font-mono text-[#1E2A4A] break-all">https://www.thenycmaid.com/book?ref={refCode}</p>
+            <p className="text-sm font-mono text-[#1E2A4A] break-all">https://www.washandfoldnyc.com/book?ref={refCode}</p>
             <button
               onClick={copyLink}
               className="mt-3 px-4 py-2 bg-[#1E2A4A] text-white rounded-lg text-sm hover:bg-[#1E2A4A]/90"
@@ -240,7 +240,7 @@ export default function ReferralSignupPage() {
             <div style={{ margin: '20px 0', padding: '15px', border: '1px solid #ddd', borderRadius: '8px', background: '#fafafa' }}>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', cursor: 'pointer', fontSize: '13px', lineHeight: '1.5', color: '#555' }}>
                 <input type="checkbox" name="sms_consent" required style={{ marginTop: '3px', minWidth: '18px', minHeight: '18px' }} />
-                <span>By checking this box, I consent to receive transactional text messages from <strong>The NYC Maid</strong> for appointment confirmations, reminders, and customer support. Reply STOP to opt out. Reply HELP for help. Msg frequency may vary. Msg &amp; data rates may apply. <a href="https://www.thenycmaid.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#1E2A4A] hover:underline">Privacy Policy</a> | <a href="https://www.thenycmaid.com/terms-conditions" target="_blank" rel="noopener noreferrer" className="text-[#1E2A4A] hover:underline">Terms &amp; Conditions</a></span>
+                <span>By checking this box, I consent to receive transactional text messages from <strong>Wash and Fold NYC</strong> for appointment confirmations, reminders, and customer support. Reply STOP to opt out. Reply HELP for help. Msg frequency may vary. Msg &amp; data rates may apply. <a href="https://www.washandfoldnyc.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#1E2A4A] hover:underline">Privacy Policy</a> | <a href="https://www.washandfoldnyc.com/terms-conditions" target="_blank" rel="noopener noreferrer" className="text-[#1E2A4A] hover:underline">Terms &amp; Conditions</a></span>
               </label>
             </div>
 
@@ -294,7 +294,7 @@ export default function ReferralSignupPage() {
 
       {/* Footer */}
       <div className="text-center py-8 text-sm text-gray-500">
-        <p>Questions? Email us at hi@thenycmaid.com</p>
+        <p>Questions? Email us at hi@washandfoldnyc.com</p>
       </div>
     </div>
   )

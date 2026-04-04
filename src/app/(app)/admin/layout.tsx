@@ -3,7 +3,7 @@ import AdminShell from './AdminShell'
 
 export const metadata: Metadata = {
   manifest: '/admin-manifest.json',
-  applicationName: 'NYC Maid Admin',
+  applicationName: 'Wash and Fold Admin',
   appleWebApp: {
     capable: true,
     title: 'Admin',

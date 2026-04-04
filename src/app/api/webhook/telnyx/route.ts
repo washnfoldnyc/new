@@ -159,7 +159,7 @@ export async function POST(request: Request) {
           } else if (ratingValue >= 3) {
             replyText = "Thanks for the feedback! We're always looking to improve \u{1F60A}"
           } else {
-            replyText = "We're sorry to hear that. Your feedback has been shared with our team.\n\nIf you'd like to share more details: thenycmaid.com/feedback"
+            replyText = "We're sorry to hear that. Your feedback has been shared with our team.\n\nIf you'd like to share more details: washandfoldnyc.com/feedback"
             // Notify admin of low rating
             await notify({
               type: 'low_rating',

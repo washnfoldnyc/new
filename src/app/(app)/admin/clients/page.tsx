@@ -42,7 +42,7 @@ interface ClientWithStats extends Client {
 }
 
 export default function ClientsPage() {
-  useEffect(() => { document.title = 'Clients | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Clients | Wash and Fold NYC' }, []);
   const [clients, setClients] = useState<ClientWithStats[]>([])
   const [referrers, setReferrers] = useState<Referrer[]>([])
   const [loading, setLoading] = useState(true)
@@ -280,9 +280,9 @@ export default function ClientsPage() {
           </div>
         </div>
         <div className="text-sm text-gray-400 mb-6">
-          Client portal: <a href="https://www.thenycmaid.com/book" target="_blank" className="text-[#1E2A4A]/70 hover:underline py-2 inline-block">thenycmaid.com/book</a> ·
-          New booking: <a href="https://www.thenycmaid.com/book/new" target="_blank" className="text-[#1E2A4A]/70 hover:underline ml-1 py-2 inline-block">thenycmaid.com/book/new</a> ·
-          Collect info: <a href="https://www.thenycmaid.com/book/collect" target="_blank" className="text-[#1E2A4A]/70 hover:underline ml-1 py-2 inline-block">thenycmaid.com/book/collect</a>
+          Client portal: <a href="https://www.washandfoldnyc.com/book" target="_blank" className="text-[#1E2A4A]/70 hover:underline py-2 inline-block">washandfoldnyc.com/book</a> ·
+          New booking: <a href="https://www.washandfoldnyc.com/book/new" target="_blank" className="text-[#1E2A4A]/70 hover:underline ml-1 py-2 inline-block">washandfoldnyc.com/book/new</a> ·
+          Collect info: <a href="https://www.washandfoldnyc.com/book/collect" target="_blank" className="text-[#1E2A4A]/70 hover:underline ml-1 py-2 inline-block">washandfoldnyc.com/book/collect</a>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 mb-6">
@@ -648,7 +648,7 @@ export default function ClientsPage() {
                         <p className="text-sm text-[#1E2A4A] font-medium">
                           PIN: {editingClient.pin ? <span className="font-mono bg-gray-100 px-2 py-0.5 rounded">{editingClient.pin}</span> : <span className="text-gray-400">Not set (using last 4 of phone: {editingClient.phone?.replace(/\D/g, '').slice(-4) || '—'})</span>}
                         </p>
-                        <p className="text-[11px] text-gray-400 mt-0.5">Client uses this PIN + email to log into thenycmaid.com/book</p>
+                        <p className="text-[11px] text-gray-400 mt-0.5">Client uses this PIN + email to log into washandfoldnyc.com/book</p>
                       </div>
                       <button
                         type="button"

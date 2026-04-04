@@ -60,7 +60,7 @@ export async function POST(req: NextRequest) {
 
     // Ask Selena (pass phone for client profile lookup on web)
     const result = await askSelena('web', message, conversationId, phone || undefined)
-    const reply = result.text || 'Text us at (212) 202-8400 and we\'ll help you right away 😊'
+    const reply = result.text || 'Text us at (917) 970-6002 and we\'ll help you right away 😊'
 
     // Log outbound
     await supabaseAdmin.from('sms_conversation_messages').insert({

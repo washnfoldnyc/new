@@ -17,7 +17,7 @@ import {
   verificationCodeEmail
 } from '@/lib/email-templates'
 
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'thenycmaid@gmail.com'
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'hi@washandfoldnyc.com'
 
 export async function POST() {
   const authError = await protectAdminAPI()

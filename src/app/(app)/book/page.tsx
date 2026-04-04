@@ -11,7 +11,7 @@ function ClientPortalContent() {
   const searchParams = useSearchParams()
 
   useEffect(() => {
-    document.title = 'Client Portal | The NYC Maid'
+    document.title = 'Client Portal | Wash and Fold NYC'
     const ref = searchParams.get('ref')
     if (ref) {
       router.replace('/book/new?ref=' + ref)
@@ -42,7 +42,7 @@ function ClientPortalContent() {
     } else {
       const data = await res.json().catch(() => ({}))
       if (data.error === 'Client not found') {
-        setError('No account found with this email. Text (212) 202-8400 to book.')
+        setError('No account found with this email. Text (917) 970-6002 to book.')
       } else {
         setError('Invalid email or PIN. Check your booking confirmation email for your PIN.')
       }
@@ -113,7 +113,7 @@ function ClientPortalContent() {
         </div>
 
         <div className="mt-4 text-center">
-          <p className="text-xs text-gray-400">Questions? Call (212) 202-8400</p>
+          <p className="text-xs text-gray-400">Questions? Call (917) 970-6002</p>
         </div>
       </div>
     </div>

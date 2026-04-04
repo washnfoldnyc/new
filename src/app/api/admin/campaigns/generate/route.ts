@@ -28,7 +28,7 @@ export async function POST(request: Request) {
       max_tokens: 4096,
       messages: [{
         role: 'user',
-        content: `You are a marketing copywriter for The NYC Maid, a premium cleaning service in NYC. Generate campaign content based on this prompt:
+        content: `You are a marketing copywriter for Wash and Fold NYC, a premium cleaning service in NYC. Generate campaign content based on this prompt:
 
 "${prompt}"
 
@@ -38,11 +38,11 @@ Return a JSON object with these fields:
 ${includeEmail ? `- "email_body": HTML email body content. Use inline styles only. Use the brand style:
   - Headings: <h1 style="font-size: 24px; font-weight: 600; color: #000; margin: 0 0 8px 0;">
   - Body text: <p style="color: #333; font-size: 15px; line-height: 1.6; margin: 0 0 16px 0;">
-  - For CTAs use: <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 32px 0;"><tr><td align="center"><a href="https://www.thenycmaid.com/book" style="display: inline-block; background-color: #2563eb; color: #ffffff !important; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">Book Now</a></td></tr></table>
+  - For CTAs use: <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 32px 0;"><tr><td align="center"><a href="https://www.washandfoldnyc.com/book" style="display: inline-block; background-color: #2563eb; color: #ffffff !important; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">Book Now</a></td></tr></table>
   - For highlight boxes: <div style="background: #f0fdf4; border-radius: 8px; padding: 20px; margin: 24px 0;">
   - Keep it clean, warm, and professional. No emojis in email.
   - The HTML will be wrapped in the standard email template automatically — just provide the inner content.` : ''}
-${includeSms ? `- "sms_body": a short SMS version (under 160 characters, include "The NYC Maid" and a call to action like "Book at thenycmaid.com/book" or "Call (212) 202-8400")` : ''}
+${includeSms ? `- "sms_body": a short SMS version (under 160 characters, include "Wash and Fold NYC" and a call to action like "Book at washandfoldnyc.com/book" or "Call (917) 970-6002")` : ''}
 
 IMPORTANT: Return ONLY the raw JSON object. No markdown, no code fences, no explanation.`
       }]

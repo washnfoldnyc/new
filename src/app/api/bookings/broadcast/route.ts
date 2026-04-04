@@ -62,7 +62,7 @@ export async function POST(request: Request) {
         ${booking.notes ? `<p style="margin: 10px 0; padding: 10px; background: #fef9c3; border-radius: 6px;"><strong>Notes:</strong> ${booking.notes}</p>` : ''}
       </div>
       <div style="padding: 20px; text-align: center;">
-        <a href="https://www.thenycmaid.com/team" style="display: inline-block; background: #dc2626; color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">
+        <a href="https://www.washandfoldnyc.com/team" style="display: inline-block; background: #dc2626; color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">
           CLAIM NOW / RECLAMAR
         </a>
         <p style="margin-top: 15px; color: #666; font-size: 14px;">

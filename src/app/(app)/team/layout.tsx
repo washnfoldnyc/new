@@ -3,7 +3,7 @@ import FeedbackWidget from '@/components/FeedbackWidget'
 
 export const metadata: Metadata = {
   manifest: '/team-manifest.json',
-  applicationName: 'NYC Maid Team',
+  applicationName: 'Wash and Fold Team',
   appleWebApp: {
     capable: true,
     title: 'Team Portal',

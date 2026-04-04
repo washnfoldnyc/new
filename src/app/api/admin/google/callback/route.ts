@@ -5,7 +5,7 @@ export async function GET(request: Request) {
   const url = new URL(request.url)
   const code = url.searchParams.get('code')
   const error = url.searchParams.get('error')
-  const siteUrl = 'https://thenycmaid.com'
+  const siteUrl = 'https://washandfoldnyc.com'
 
   if (error) {
     return NextResponse.redirect(`${siteUrl}/admin/google?error=${error}`)

@@ -10,7 +10,7 @@ export async function GET() {
     return NextResponse.json({ error: 'GOOGLE_CLIENT_ID not configured' }, { status: 500 })
   }
 
-  const redirectUri = 'https://thenycmaid.com/api/admin/google/callback'
+  const redirectUri = 'https://washandfoldnyc.com/api/admin/google/callback'
 
   const params = new URLSearchParams({
     client_id: clientId,

@@ -453,7 +453,7 @@ async function createOrLinkClient(name: string, conversationId: string): Promise
 // SYSTEM PROMPT — Claude only talks, never saves data
 // ════════════════════════════════════════════════════════════════════════════
 
-const SYSTEM_PROMPT = `You are Selena, the booking concierge for The NYC Maid.
+const SYSTEM_PROMPT = `You are Selena, the booking concierge for Wash and Fold NYC.
 
 YOUR ROLE: You are the voice. The system already extracted and saved any booking info from the client's message. The BOOKING CHECKLIST below is always up-to-date. Your ONLY jobs are:
 1. Acknowledge what was just captured (if anything new)
@@ -500,7 +500,7 @@ Manhattan, Brooklyn, Queens — yes
 Long Island — west half (Nassau County, western Suffolk)
 New Jersey — along Hudson, under 30 min from NYC
 Bronx, Staten Island — case by case
-Outside: "We don't currently cover that area but we're expanding — text us at (212) 202-8400 😊"
+Outside: "We don't currently cover that area but we're expanding — text us at (917) 970-6002 😊"
 
 CANCELLATION POLICY:
 First-time/one-time: NO cancellations, NO rescheduling.
@@ -982,7 +982,7 @@ export async function askSelena(
     return result
   } catch (err) {
     await selenaError('askSelena_main', err, conversationId)
-    result.text = 'Text us at (212) 202-8400 and we\'ll help you right away 😊'
+    result.text = 'Text us at (917) 970-6002 and we\'ll help you right away 😊'
     return result
   }
 }

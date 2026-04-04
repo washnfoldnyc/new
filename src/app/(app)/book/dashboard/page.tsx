@@ -23,7 +23,7 @@ interface Slot {
 }
 
 export default function ClientDashboardPage() {
-  useEffect(() => { document.title = 'My Bookings | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'My Bookings | Wash and Fold NYC' }, []);
   const [clientName, setClientName] = useState('')
   const [clientId, setClientId] = useState('')
   const [upcomingBookings, setUpcomingBookings] = useState<Booking[]>([])
@@ -240,7 +240,7 @@ export default function ClientDashboardPage() {
       <div className="bg-[#1E2A4A] text-white p-4">
         <div className="flex justify-between items-center">
           <div>
-            <p className="text-sm opacity-80">The NYC Maid</p>
+            <p className="text-sm opacity-80">Wash and Fold NYC</p>
             <h1 className="text-xl font-semibold">Welcome back, {clientName.split(' ')[0]}!</h1>
           </div>
           <button onClick={handleLogout} className="text-sm opacity-80 hover:opacity-100">
@@ -268,8 +268,8 @@ export default function ClientDashboardPage() {
               If you believe this is an error, please contact us:
             </p>
             <div className="flex gap-3 mt-3">
-              <a href="tel:6464900130" className="flex-1 py-3 bg-[#1E2A4A] text-white rounded-lg text-center font-medium">Call (646) 490-0130</a>
-              <a href="sms:6464900130" className="flex-1 py-3 border border-gray-300 rounded-lg text-[#1E2A4A] text-center font-medium">Text Us</a>
+              <a href="tel:9179706002" className="flex-1 py-3 bg-[#1E2A4A] text-white rounded-lg text-center font-medium">Call (917) 970-6002</a>
+              <a href="sms:9179706002" className="flex-1 py-3 border border-gray-300 rounded-lg text-[#1E2A4A] text-center font-medium">Text Us</a>
             </div>
           </div>
         )}
@@ -344,8 +344,8 @@ export default function ClientDashboardPage() {
                 <div className="bg-[#A8F0DC]/20 border border-[#A8F0DC]/30 rounded-lg p-3 mb-4 text-sm">
                   <p className="text-[#1E2A4A]"><span className="font-medium">Same-day or emergency?</span> Please call or text us directly:</p>
                   <div className="flex gap-3 mt-2">
-                    <a href="tel:6464900130" className="flex-1 py-2 bg-[#1E2A4A] text-white rounded-lg text-center font-medium text-sm hover:bg-[#1E2A4A]/90">Call (646) 490-0130</a>
-                    <a href="sms:6464900130" className="flex-1 py-2 bg-[#1E2A4A] text-white rounded-lg text-center font-medium text-sm hover:bg-[#1E2A4A]/90">Text (646) 490-0130</a>
+                    <a href="tel:9179706002" className="flex-1 py-2 bg-[#1E2A4A] text-white rounded-lg text-center font-medium text-sm hover:bg-[#1E2A4A]/90">Call (917) 970-6002</a>
+                    <a href="sms:9179706002" className="flex-1 py-2 bg-[#1E2A4A] text-white rounded-lg text-center font-medium text-sm hover:bg-[#1E2A4A]/90">Text (917) 970-6002</a>
                   </div>
                 </div>
 
@@ -368,8 +368,8 @@ export default function ClientDashboardPage() {
                     <p className="text-yellow-800 font-medium">Same-day bookings are not available online</p>
                     <p className="text-yellow-700 text-sm mt-1">For same-day or emergency cleaning, please contact us directly:</p>
                     <div className="flex gap-3 mt-3">
-                      <a href="tel:6464900130" className="flex-1 py-2 bg-yellow-600 text-white rounded-lg text-center font-medium text-sm">Call (646) 490-0130</a>
-                      <a href="sms:6464900130" className="flex-1 py-2 bg-yellow-600 text-white rounded-lg text-center font-medium text-sm">Text (646) 490-0130</a>
+                      <a href="tel:9179706002" className="flex-1 py-2 bg-yellow-600 text-white rounded-lg text-center font-medium text-sm">Call (917) 970-6002</a>
+                      <a href="sms:9179706002" className="flex-1 py-2 bg-yellow-600 text-white rounded-lg text-center font-medium text-sm">Text (917) 970-6002</a>
                     </div>
                   </div>
                 )}
@@ -651,7 +651,7 @@ export default function ClientDashboardPage() {
                         </button>
                       )}
                       <a
-                        href="sms:6464900130"
+                        href="sms:9179706002"
                         className="w-full py-2.5 border border-gray-300 rounded-lg text-[#1E2A4A] font-medium text-center hover:bg-gray-50"
                       >
                         Text Us About This Booking

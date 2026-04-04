@@ -21,7 +21,7 @@ interface Insights {
 }
 
 export default function GoogleProfilePage() {
-  useEffect(() => { document.title = 'Google Profile | The NYC Maid' }, [])
+  useEffect(() => { document.title = 'Google Profile | Wash and Fold NYC' }, [])
 
   const [connected, setConnected] = useState(false)
   const [loading, setLoading] = useState(true)
@@ -167,7 +167,7 @@ export default function GoogleProfilePage() {
                   Choose &quot;Web application&quot;. Add authorized redirect URI:
                 </p>
                 <code className="block mt-1 text-sm bg-gray-100 rounded px-3 py-2 text-[#1E2A4A] break-all">
-                  https://thenycmaid.com/api/admin/google/callback
+                  https://washandfoldnyc.com/api/admin/google/callback
                 </code>
               </div>
             </div>

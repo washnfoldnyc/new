@@ -34,9 +34,9 @@ export async function POST(request: NextRequest) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        host: 'www.thenycmaid.com',
+        host: 'www.washandfoldnyc.com',
         key: INDEXNOW_KEY,
-        keyLocation: 'https://www.thenycmaid.com/api/indexnow?key=' + INDEXNOW_KEY,
+        keyLocation: 'https://www.washandfoldnyc.com/api/indexnow?key=' + INDEXNOW_KEY,
         urlList: urls.slice(0, 10000), // IndexNow supports up to 10k URLs per batch
       }),
     })

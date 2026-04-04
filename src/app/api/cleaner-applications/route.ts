@@ -112,7 +112,7 @@ export async function POST(request: Request) {
         <p><strong>Drives:</strong> ${has_car ? 'Yes' : 'No'}</p>
         ${max_travel_minutes ? `<p><strong>Max Travel:</strong> ${max_travel_minutes} min</p>` : ''}
         ${notes ? `<p><strong>Notes:</strong> ${notes}</p>` : ''}
-        <p style="margin-top: 20px;"><a href="https://www.thenycmaid.com/admin/cleaners" style="color: #2563eb;">Review in Dashboard →</a></p>
+        <p style="margin-top: 20px;"><a href="https://www.washandfoldnyc.com/admin/cleaners" style="color: #2563eb;">Review in Dashboard →</a></p>
       </div>
     `
     await emailAdmins(`New Cleaner Application: ${name}`, adminHtml)
@@ -125,12 +125,12 @@ export async function POST(request: Request) {
         <div style="font-family: sans-serif; max-width: 500px;">
           <h2 style="color: #000;">Application Received! / ¡Solicitud Recibida!</h2>
           <p>Hi ${name.split(' ')[0]},</p>
-          <p>Thanks for applying to join The NYC Maid team! We've received your application and will review it shortly.</p>
-          <p>Gracias por solicitar unirse al equipo de The NYC Maid. Hemos recibido su solicitud y la revisaremos pronto.</p>
-          <p style="margin-top: 20px; color: #666;">Questions? / ¿Preguntas?<br><a href="tel:2122028400" style="color: #000;">(212) 202-8400</a></p>
+          <p>Thanks for applying to join Wash and Fold NYC team! We've received your application and will review it shortly.</p>
+          <p>Gracias por solicitar unirse al equipo de Wash and Fold NYC. Hemos recibido su solicitud y la revisaremos pronto.</p>
+          <p style="margin-top: 20px; color: #666;">Questions? / ¿Preguntas?<br><a href="tel:9179706002" style="color: #000;">(917) 970-6002</a></p>
         </div>
       `
-      await sendEmail(email, 'Application Received / Solicitud Recibida – The NYC Maid', applicantHtml)
+      await sendEmail(email, 'Application Received / Solicitud Recibida – Wash and Fold NYC', applicantHtml)
     }
 
     return NextResponse.json({ success: true, id: data.id })

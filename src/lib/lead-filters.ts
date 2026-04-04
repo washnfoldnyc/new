@@ -29,14 +29,14 @@ const SEARCH_ENGINES = [
   'yandex.', 'ecosia.org', 'search.brave.com',
 ]
 
-// All owned domains + thenycmaid.com — referrals from these are internal, not real traffic
+// All owned domains + washandfoldnyc.com — referrals from these are internal, not real traffic
 const OWNED_HOSTS = new Set([
   ...ALL_DOMAINS.map(d => d.toLowerCase()),
   ...ALL_DOMAINS.map(d => 'www.' + d.toLowerCase()),
-  'thenycmaid.com',
-  'www.thenycmaid.com',
-  'thenycmaidservice.com',
-  'www.thenycmaidservice.com',
+  'washandfoldnyc.com',
+  'www.washandfoldnyc.com',
+  'washandfoldnyc.com',
+  'www.washandfoldnyc.com',
 ])
 
 const ENGAGEMENT_ACTIONS = new Set([
@@ -65,9 +65,9 @@ export function isSpamReferrer(referrer: string | null | undefined): boolean {
 export function isAdminReferrer(referrer: string | null | undefined): boolean {
   if (!referrer) return false
   return (
-    referrer.includes('thenycmaid.com/admin') ||
-    referrer.includes('thenycmaid.com/team') ||
-    referrer.includes('thenycmaid.com/book/dashboard') ||
+    referrer.includes('washandfoldnyc.com/admin') ||
+    referrer.includes('washandfoldnyc.com/team') ||
+    referrer.includes('washandfoldnyc.com/book/dashboard') ||
     referrer.includes('/administrator')
   )
 }

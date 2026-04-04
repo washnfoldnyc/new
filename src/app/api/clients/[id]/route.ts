@@ -29,11 +29,11 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
       const { data: client } = await supabaseAdmin.from('clients').select('*').eq('id', id).single()
       if (!client?.pin) return NextResponse.json({ error: 'Client has no PIN' }, { status: 400 })
 
-      const pinMessage = `Your NYC Maid portal PIN is: ${client.pin}. Log in at thenycmaid.com/book with your email and this PIN.`
-      const smsMessage = `Your NYC Maid portal PIN is: ${client.pin}. Log in at thenycmaid.com/book`
+      const pinMessage = `Your Wash and Fold NYC portal PIN is: ${client.pin}. Log in at washandfoldnyc.com/book with your email and this PIN.`
+      const smsMessage = `Your Wash and Fold NYC portal PIN is: ${client.pin}. Log in at washandfoldnyc.com/book`
 
       if (client.email) {
-        await sendEmail(client.email, 'Your NYC Maid Portal PIN', `<p>${pinMessage}</p>`)
+        await sendEmail(client.email, 'Your Wash and Fold NYC Portal PIN', `<p>${pinMessage}</p>`)
       }
 
       if (client.phone && client.sms_consent) {

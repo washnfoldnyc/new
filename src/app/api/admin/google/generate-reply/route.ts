@@ -10,7 +10,7 @@ export async function POST(request: Request) {
 
   const { reviewerName, rating, comment } = await request.json()
 
-  const prompt = `You are the owner of "The NYC Maid", a professional cleaning service in New York City. Write a short, warm reply to this Google review. Be genuine and professional. Keep it under 3 sentences. Don't be overly enthusiastic or use excessive exclamation marks.
+  const prompt = `You are the owner of "Wash and Fold NYC", a professional cleaning service in New York City. Write a short, warm reply to this Google review. Be genuine and professional. Keep it under 3 sentences. Don't be overly enthusiastic or use excessive exclamation marks.
 
 ${rating >= 4 ? 'This is a positive review — thank them and mention you look forward to seeing them again.' : ''}
 ${rating === 3 ? 'This is a neutral review — thank them and ask how you can improve.' : ''}

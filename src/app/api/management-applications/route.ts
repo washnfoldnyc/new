@@ -119,7 +119,7 @@ export async function POST(request: Request) {
         ${photo_url ? `<div style="margin: 16px 0;"><img src="${photo_url}" alt="${name}" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #eee;" /></div>` : ''}
         <p style="margin-top: 12px;"><strong>Resume:</strong> <a href="${resume_url}" style="color: #2563eb;">Download Resume</a></p>
         <p><strong>Selfie Video:</strong> <a href="${video_url}" style="color: #2563eb;">Watch Video</a></p>
-        <p style="margin-top: 20px;"><a href="https://www.thenycmaid.com/admin" style="color: #2563eb;">Review in Dashboard &rarr;</a></p>
+        <p style="margin-top: 20px;"><a href="https://www.washandfoldnyc.com/admin" style="color: #2563eb;">Review in Dashboard &rarr;</a></p>
       </div>
     `
     await emailAdmins(`New Ops Manager Application: ${name}`, adminHtml)
@@ -130,12 +130,12 @@ export async function POST(request: Request) {
         <div style="font-family: sans-serif; max-width: 500px;">
           <h2 style="color: #1E2A4A;">Application Received!</h2>
           <p>Hi ${name.split(' ')[0]},</p>
-          <p>Thanks for applying for the <strong>Operations Manager (Virtual)</strong> position at The NYC Maid. We've received your application, photo, video, and resume.</p>
+          <p>Thanks for applying for the <strong>Operations Manager (Virtual)</strong> position at Wash and Fold NYC. We've received your application, photo, video, and resume.</p>
           <p>We'll review everything and reach out to you soon. If your application moves forward, we'll schedule a brief interview.</p>
-          <p style="margin-top: 20px; color: #666;">Questions?<br><a href="tel:2122028400" style="color: #1E2A4A;">(212) 202-8400</a></p>
+          <p style="margin-top: 20px; color: #666;">Questions?<br><a href="tel:9179706002" style="color: #1E2A4A;">(917) 970-6002</a></p>
         </div>
       `
-      await sendEmail(email, 'Application Received — Operations Manager (Virtual) | The NYC Maid', applicantHtml)
+      await sendEmail(email, 'Application Received — Operations Manager (Virtual) | Wash and Fold NYC', applicantHtml)
     }
 
     return NextResponse.json({ success: true, id: data.id })

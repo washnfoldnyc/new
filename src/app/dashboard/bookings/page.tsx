@@ -46,7 +46,7 @@ interface Referrer { id: string; name: string; ref_code: string; active: boolean
 
 function BookingsPage() {
   const searchParams = useSearchParams()
-  useEffect(() => { document.title = 'Bookings | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Bookings | The Wash and Fold NYC' }, []);
   const formatPhone = (value: string) => {
     const cleaned = value.replace(/\D/g, '')
     if (cleaned.length <= 3) return cleaned
@@ -646,10 +646,10 @@ function BookingsPage() {
           </div>
         </div>
         <div className="text-sm text-gray-500 mb-4 hidden md:block">
-          Client portal: <a href="https://www.thenycmaid.com/book" target="_blank" className="text-blue-600 hover:underline">thenycmaid.com/book</a> ·
-          New booking: <a href="https://www.thenycmaid.com/book/new" target="_blank" className="text-blue-600 hover:underline ml-1">thenycmaid.com/book/new</a> ·
-          Collect info: <a href="https://www.thenycmaid.com/book/collect" target="_blank" className="text-blue-600 hover:underline ml-1">thenycmaid.com/book/collect</a> ·
-          Team portal: <a href="https://www.thenycmaid.com/team" target="_blank" className="text-blue-600 hover:underline ml-1">thenycmaid.com/team</a>
+          Client portal: <a href="https://www.washandfoldnyc.com/book" target="_blank" className="text-blue-600 hover:underline">washandfoldnyc.com/book</a> ·
+          New booking: <a href="https://www.washandfoldnyc.com/book/new" target="_blank" className="text-blue-600 hover:underline ml-1">washandfoldnyc.com/book/new</a> ·
+          Collect info: <a href="https://www.washandfoldnyc.com/book/collect" target="_blank" className="text-blue-600 hover:underline ml-1">washandfoldnyc.com/book/collect</a> ·
+          Team portal: <a href="https://www.washandfoldnyc.com/team" target="_blank" className="text-blue-600 hover:underline ml-1">washandfoldnyc.com/team</a>
         </div>
         <input type="text" placeholder="Search client, cleaner, address..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm text-black mb-4 focus:outline-none focus:border-black" />
 

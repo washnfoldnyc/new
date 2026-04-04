@@ -14,7 +14,7 @@ interface Website {
 const ITEMS_PER_PAGE = 24
 
 export default function WebsitesPage() {
-  useEffect(() => { document.title = 'Websites | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'Websites | Wash and Fold NYC' }, []);
   const [websites, setWebsites] = useState<Website[]>([])
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedRegion, setSelectedRegion] = useState('all')
@@ -165,8 +165,8 @@ export default function WebsitesPage() {
       { domain: 'sandkeymaid.com', location: 'Sand Key', region: 'Florida', url: 'https://sandkeymaid.com', lat: 27.9230, lng: -82.8521 },
 
       // ========== NYC METRO (General/Brand Sites) ==========
-      { domain: 'thenycmaid.com', location: 'NYC', region: 'NYC Metro', url: 'https://www.thenycmaid.com', lat: 40.7589, lng: -73.9851 },
-      { domain: 'thenycmaidservice.com', location: 'NYC', region: 'NYC Metro', url: 'https://thenycmaidservice.com', lat: 40.7589, lng: -73.9851 },
+      { domain: 'washandfoldnyc.com', location: 'NYC', region: 'NYC Metro', url: 'https://www.washandfoldnyc.com', lat: 40.7589, lng: -73.9851 },
+      { domain: 'washandfoldnyc.com', location: 'NYC', region: 'NYC Metro', url: 'https://washandfoldnyc.com', lat: 40.7589, lng: -73.9851 },
       { domain: 'maidny.com', location: 'NYC', region: 'NYC Metro', url: 'https://maidny.com', lat: 40.7589, lng: -73.9851 },
       { domain: 'thenyccleaningservice.com', location: 'NYC', region: 'NYC Metro', url: 'https://thenyccleaningservice.com', lat: 40.7589, lng: -73.9851 },
       { domain: 'thenyccleaningcrew.com', location: 'NYC', region: 'NYC Metro', url: 'https://thenyccleaningcrew.com', lat: 40.7589, lng: -73.9851 },

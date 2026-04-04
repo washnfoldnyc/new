@@ -21,7 +21,7 @@ export function useFormTracking(page: string) {
     }
 
     const payload: Record<string, unknown> = {
-      domain: 'thenycmaid.com',
+      domain: 'washandfoldnyc.com',
       page,
       action,
       session_id,
@@ -70,7 +70,7 @@ export function useFormTracking(page: string) {
         try { sid = sessionStorage.getItem('nycmaid_sid') } catch {}
         try { vid = localStorage.getItem('nycmaid_vid') } catch {}
         const payload: Record<string, unknown> = {
-          domain: 'thenycmaid.com',
+          domain: 'washandfoldnyc.com',
           page,
           action: 'form_abandon',
           session_id: sid,

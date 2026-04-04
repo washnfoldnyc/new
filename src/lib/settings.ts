@@ -51,13 +51,13 @@ export interface Settings {
 }
 
 export const DEFAULT_SETTINGS: Omit<Settings, 'id' | 'updated_at'> = {
-  business_name: 'The NYC Maid',
-  business_phone: '(212) 202-8400',
-  business_email: 'hi@thenycmaid.com',
-  business_website: 'https://www.thenycmaid.com',
-  admin_email: 'thenycmaid@gmail.com',
-  email_from_name: 'The NYC Maid',
-  email_from_address: 'hi@thenycmaid.com',
+  business_name: 'Wash and Fold NYC',
+  business_phone: '(917) 970-6002',
+  business_email: 'hi@washandfoldnyc.com',
+  business_website: 'https://www.washandfoldnyc.com',
+  admin_email: 'hi@washandfoldnyc.com',
+  email_from_name: 'Wash and Fold NYC',
+  email_from_address: 'hi@washandfoldnyc.com',
   service_types: [
     { name: 'Standard Cleaning', default_hours: 2, active: true },
     { name: 'Deep Cleaning', default_hours: 4, active: true },

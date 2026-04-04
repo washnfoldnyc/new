@@ -80,7 +80,7 @@ export async function GET(request: Request) {
 
     // Send retention text
     const firstName = (client.name || '').split(' ')[0] || 'there'
-    const message = `Hey ${firstName}! It's been a while \u{2014} need a cleaning? We'd love to help \u{1F60A} Reply to this text or call (212) 202-8400 to schedule.`
+    const message = `Hey ${firstName}! It's been a while \u{2014} need a cleaning? We'd love to help \u{1F60A} Reply to this text or call (917) 970-6002 to schedule.`
 
     const result = await sendSMS(`+1${cleanPhone}`, message, {
       smsType: 'retention',

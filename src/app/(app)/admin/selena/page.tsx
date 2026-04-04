@@ -42,7 +42,7 @@ interface Stats {
 }
 
 export default function SelenaAdminPage() {
-  useEffect(() => { document.title = 'Selena | The NYC Maid Admin' }, [])
+  useEffect(() => { document.title = 'Selena | Wash and Fold NYC Admin' }, [])
   const [convos, setConvos] = useState<Conversation[]>([])
   const [stats, setStats] = useState<Stats | null>(null)
   const [errorLog, setErrorLog] = useState<Array<{ id: string; type: string; title: string; message: string; created_at: string }>>([])

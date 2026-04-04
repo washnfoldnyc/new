@@ -124,7 +124,7 @@ const HOURS = [
 ]
 
 export default function TeamDashboardPage() {
-  useEffect(() => { document.title = 'My Schedule | The NYC Maid' }, []);
+  useEffect(() => { document.title = 'My Schedule | Wash and Fold NYC' }, []);
   const [cleanerName, setCleanerName] = useState('')
   const [cleanerId, setCleanerId] = useState('')
   const [todayJobs, setTodayJobs] = useState<Booking[]>([])
@@ -438,7 +438,7 @@ export default function TeamDashboardPage() {
       <div className="bg-[#1E2A4A] text-white p-4">
         <div className="flex justify-between items-center">
           <div>
-            <p className="text-sm opacity-80">The NYC Maid</p>
+            <p className="text-sm opacity-80">Wash and Fold NYC</p>
             <h1 className="text-xl font-semibold">{cleanerName}</h1>
           </div>
           <div className="flex items-center gap-3">
@@ -566,7 +566,7 @@ export default function TeamDashboardPage() {
             <div className="text-right">
               <p className="text-sm opacity-80">Paid via</p>
               <p className="text-lg font-semibold">Zelle / Apple Pay</p>
-              <p className="text-xs opacity-70">hi@thenycmaid.com</p>
+              <p className="text-xs opacity-70">hi@washandfoldnyc.com</p>
             </div>
           </div>
         )}
@@ -914,10 +914,10 @@ export default function TeamDashboardPage() {
 
         {/* Quick Actions */}
         <div className="mb-6 flex gap-2">
-          <a href="tel:2122028400" className="flex-1 py-3 bg-white border border-gray-200 rounded-xl text-center font-medium text-[#1E2A4A]">
+          <a href="tel:9179706002" className="flex-1 py-3 bg-white border border-gray-200 rounded-xl text-center font-medium text-[#1E2A4A]">
             📞 Call Office
           </a>
-          <a href="sms:2122028400" className="flex-1 py-3 bg-white border border-gray-200 rounded-xl text-center font-medium text-[#1E2A4A]">
+          <a href="sms:9179706002" className="flex-1 py-3 bg-white border border-gray-200 rounded-xl text-center font-medium text-[#1E2A4A]">
             💬 Text Office
           </a>
         </div>

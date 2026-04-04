@@ -113,7 +113,7 @@ export default function ApplyPage() {
     return (
       <div className="min-h-screen bg-white flex flex-col">
         <div className="bg-[#1E2A4A] px-6 py-4">
-          <h1 className="text-white text-xl font-bold">The NYC Maid</h1>
+          <h1 className="text-white text-xl font-bold">Wash and Fold NYC</h1>
         </div>
         <div className="flex-1 flex items-center justify-center p-6">
           <div className="text-center max-w-sm">
@@ -121,7 +121,7 @@ export default function ApplyPage() {
             <h2 className="text-2xl font-bold text-[#1E2A4A] mb-2">Application Received! / ¡Solicitud Recibida!</h2>
             <p className="text-gray-600">Thanks, {form.name.split(' ')[0]}. We&apos;ll review your application and reach out soon.</p>
             <p className="text-gray-600 mt-2">Gracias, {form.name.split(' ')[0]}. Revisaremos su solicitud y nos comunicaremos pronto.</p>
-            <p className="text-gray-500 text-sm mt-4">Questions? / ¿Preguntas? (212) 202-8400</p>
+            <p className="text-gray-500 text-sm mt-4">Questions? / ¿Preguntas? (917) 970-6002</p>
           </div>
         </div>
       </div>
@@ -131,7 +131,7 @@ export default function ApplyPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="bg-[#1E2A4A] px-6 py-4">
-        <h1 className="text-white text-xl font-bold">The NYC Maid</h1>
+        <h1 className="text-white text-xl font-bold">Wash and Fold NYC</h1>
         <p className="text-gray-400 text-sm">Join Our Team / Únete a Nuestro Equipo</p>
       </div>
 
@@ -383,11 +383,11 @@ export default function ApplyPage() {
             <label className="flex items-start gap-3 cursor-pointer text-[13px] leading-relaxed text-gray-600">
               <input type="checkbox" name="sms_consent" required className="mt-1 min-w-[18px] min-h-[18px]" />
               <span>
-                By checking this box, I consent to receive transactional text messages from <strong>The NYC Maid</strong> for appointment confirmations, reminders, and customer support. Reply STOP to opt out. Reply HELP for help. Msg frequency may vary. Msg &amp; data rates may apply.
+                By checking this box, I consent to receive transactional text messages from <strong>Wash and Fold NYC</strong> for appointment confirmations, reminders, and customer support. Reply STOP to opt out. Reply HELP for help. Msg frequency may vary. Msg &amp; data rates may apply.
                 <br /><br />
-                Al marcar esta casilla, doy mi consentimiento para recibir mensajes de texto de <strong>The NYC Maid</strong> para confirmaciones de citas, recordatorios y atención al cliente. Responda STOP para cancelar. Responda HELP para ayuda.
+                Al marcar esta casilla, doy mi consentimiento para recibir mensajes de texto de <strong>Wash and Fold NYC</strong> para confirmaciones de citas, recordatorios y atención al cliente. Responda STOP para cancelar. Responda HELP para ayuda.
                 <br /><br />
-                <a href="https://www.thenycmaid.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#1E2A4A] hover:underline">Privacy Policy</a> | <a href="https://www.thenycmaid.com/terms-conditions" target="_blank" rel="noopener noreferrer" className="text-[#1E2A4A] hover:underline">Terms &amp; Conditions</a>
+                <a href="https://www.washandfoldnyc.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#1E2A4A] hover:underline">Privacy Policy</a> | <a href="https://www.washandfoldnyc.com/terms-conditions" target="_blank" rel="noopener noreferrer" className="text-[#1E2A4A] hover:underline">Terms &amp; Conditions</a>
               </span>
             </label>
           </div>
@@ -401,7 +401,7 @@ export default function ApplyPage() {
           </button>
 
           <p className="text-xs text-gray-400 text-center">
-            Questions? / ¿Preguntas? (212) 202-8400
+            Questions? / ¿Preguntas? (917) 970-6002
           </p>
         </form>
       </div>

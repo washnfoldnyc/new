@@ -82,7 +82,7 @@ interface AnalyticsData {
 }
 
 export default function AnalyticsPage() {
-  useEffect(() => { document.title = 'Analytics | The NYC Maid' }, [])
+  useEffect(() => { document.title = 'Analytics | Wash and Fold NYC' }, [])
 
   const [data, setData] = useState<AnalyticsData | null>(null)
   const [loading, setLoading] = useState(true)
@@ -176,7 +176,7 @@ export default function AnalyticsPage() {
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-8">
           <div>
             <h2 className="text-xl font-bold text-[#1E2A4A] tracking-tight">Site Analytics</h2>
-            <p className="text-gray-400 text-xs mt-0.5">thenycmaid.com visitor behavior</p>
+            <p className="text-gray-400 text-xs mt-0.5">washandfoldnyc.com visitor behavior</p>
           </div>
           <div className="flex gap-2 items-center">
             <div className="flex gap-1 bg-gray-100/80 rounded-lg p-0.5">

@@ -79,7 +79,7 @@ export async function POST(request: Request) {
         <p><strong>Address:</strong> ${job.clients?.address}</p>
         <p><strong>Pay Rate:</strong> $${job.cleaner_pay_rate || 40}/hr</p>
         <p style="margin-top: 20px;">
-          <a href="https://www.thenycmaid.com/team" style="background: #000; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 6px;">View in Portal</a>
+          <a href="https://www.washandfoldnyc.com/team" style="background: #000; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 6px;">View in Portal</a>
         </p>
       </div>
     `

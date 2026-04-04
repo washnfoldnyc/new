@@ -62,7 +62,7 @@ const PAYMENT_OPTIONS = [
 ]
 
 export default function SettingsPage() {
-  useEffect(() => { document.title = 'Settings | The NYC Maid' }, [])
+  useEffect(() => { document.title = 'Settings | Wash and Fold NYC' }, [])
 
   const [activeTab, setActiveTab] = useState<TabId>('business')
   const [settings, setSettings] = useState<Settings | null>(null)
