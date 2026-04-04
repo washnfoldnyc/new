@@ -1,0 +1,7 @@
+Backups/
+nycmaid-old/
+scripts/
+*.bak
+*.backup
+*.md
+supabase/
