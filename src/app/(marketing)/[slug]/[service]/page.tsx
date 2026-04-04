@@ -373,6 +373,65 @@ export default async function NeighborhoodServicePage({ params }: Props) {
         </section>
       )}
 
+      {/* Cost Calculator */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="font-[family-name:var(--font-bebas)] text-3xl text-[#1a3a5c] tracking-wide mb-4">What Does {service.name} Cost in {neighborhood.name}? Real Numbers.</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">Here is what {service.name.toLowerCase()} in {neighborhood.name} actually costs for different household sizes, so you can see exactly what to expect on your bill. All prices include free pickup and delivery to any address in {neighborhood.name}, {area.name}.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div className="bg-[#F0F8FF] border border-[#4BA3D4]/10 rounded-xl p-5">
+              <p className="font-semibold text-[#1a3a5c] text-sm">Single Person</p>
+              <p className="text-gray-500 text-xs mt-1">10–15 lbs/week</p>
+              <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#4BA3D4] mt-2">$39–$45/week</p>
+              <p className="text-gray-400 text-xs mt-1">$162/mo with weekly sub (10% off)</p>
+            </div>
+            <div className="bg-[#F0F8FF] border border-[#4BA3D4]/10 rounded-xl p-5">
+              <p className="font-semibold text-[#1a3a5c] text-sm">Couple</p>
+              <p className="text-gray-500 text-xs mt-1">20–25 lbs/week</p>
+              <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#4BA3D4] mt-2">$60–$75/week</p>
+              <p className="text-gray-400 text-xs mt-1">$216/mo with weekly sub (10% off)</p>
+            </div>
+            <div className="bg-[#F0F8FF] border border-[#4BA3D4]/10 rounded-xl p-5">
+              <p className="font-semibold text-[#1a3a5c] text-sm">Family</p>
+              <p className="text-gray-500 text-xs mt-1">30–50 lbs/week</p>
+              <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#4BA3D4] mt-2">$90–$150/week</p>
+              <p className="text-gray-400 text-xs mt-1">Save 10% with weekly subscription</p>
+            </div>
+          </div>
+          <p className="text-gray-500 text-sm leading-relaxed">These estimates are based on typical laundry volumes. A single person generates about 10 to 15 pounds of laundry per week — that is roughly four to five outfits plus towels and underwear. Couples typically generate 20 to 25 pounds, which includes bedsheets, bath towels, and two wardrobes of daily wear. Families with children can generate 30 to 50 pounds or more per week, especially with kids in sports, school uniforms, or during summer when outdoor play creates more laundry. At $3 per pound, you always know exactly what your bill will be before we even pick up your bag. No surprises, no variable pricing, no surge rates. The price in {neighborhood.name} is the same as every other neighborhood we serve.</p>
+        </div>
+      </section>
+
+      {/* How We Handle Your Laundry */}
+      <section className="py-16 bg-[#F0F8FF]">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="font-[family-name:var(--font-bebas)] text-3xl text-[#1a3a5c] tracking-wide mb-4">How We Handle Your {service.name} in {neighborhood.name}</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">When you book {service.name.toLowerCase()} in {neighborhood.name}, here is the exact process your laundry goes through. We follow this same 12-step process on every single order — no exceptions, no shortcuts.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              'Pickup from your door, lobby, or doorman',
+              'Tag and inventory every item in your bag',
+              'Sort by color — whites, darks, colors, brights',
+              'Sort by fabric — delicates, regular, heavy items',
+              'Pre-treat every stain individually',
+              'Wash each sorted load separately',
+              'Dry on correct heat setting per fabric type',
+              'Hand-fold every single item',
+              'Organize by garment type',
+              'Package in sealed clean bags',
+              'Quality check against pickup inventory',
+              'Deliver back to your door with text notification',
+            ].map((step, i) => (
+              <div key={step} className="flex items-start gap-3 bg-white rounded-lg p-3 border border-[#4BA3D4]/5">
+                <span className="font-[family-name:var(--font-bebas)] text-lg text-[#4BA3D4]/40 mt-0.5 w-6 flex-shrink-0">{String(i + 1).padStart(2, '0')}</span>
+                <span className="text-gray-600 text-sm">{step}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-gray-500 text-sm leading-relaxed mt-6">This process applies whether you are in a {neighborhood.housing_types[0]} or a {neighborhood.housing_types[1]}. We process every order in its own separate batch — your laundry never touches another customer&apos;s clothes. This is how we maintain quality, prevent lost items, and deliver consistent results on every order in {neighborhood.name}.</p>
+        </div>
+      </section>
+
       {/* Trust Signals */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
