@@ -7,22 +7,22 @@ import JsonLd from '@/components/marketing/JsonLd'
 import Breadcrumbs from '@/components/marketing/Breadcrumbs'
 import CTABlock from '@/components/marketing/CTABlock'
 
-const url = 'https://www.thenycmaid.com/contact-the-nyc-maid-service-today'
-const title = 'Contact The NYC Maid | Call or Text (212) 202-8400 | Free Quote'
-const description = 'Contact The NYC Maid for a free cleaning quote. Text or call (212) 202-8400, email hi@thenycmaid.com, or book online. Service from $59/hr across NYC, Brooklyn, Queens, LI & NJ. 5.0★ Google.'
+const url = 'https://www.washandfoldnyc.com/contact-the-nyc-wash-and-fold-today'
+const title = 'Contact Wash and Fold NYC | Call or Text (917) 970-6002 | Free Quote'
+const description = 'Contact Wash and Fold NYC for a free cleaning quote. Text or call (917) 970-6002, email hi@washandfoldnyc.com, or book online. Service from $3/lb across NYC, Brooklyn, Queens, LI & NJ. 5.0★ Google.'
 
 export const metadata: Metadata = {
   title: { absolute: title },
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, type: 'website', siteName: 'The NYC Maid', locale: 'en_US' },
+  openGraph: { title, description, url, type: 'website', siteName: 'Wash and Fold NYC', locale: 'en_US' },
   twitter: { card: 'summary_large_image', title, description },
   other: { 'geo.region': 'US-NY', 'geo.placename': 'New York City', 'geo.position': '40.7589;-73.9851', 'ICBM': '40.7589, -73.9851' },
 }
 
 const contactFaqs = [
-  { question: 'What\'s the fastest way to get a quote?', answer: 'Text (212) 202-8400 with your address, home size (bedrooms/bathrooms), and what type of cleaning you need. Most quotes are delivered within 15 minutes.' },
-  { question: 'Do I need to call to book, or can I text?', answer: 'Texting is our preferred method — it\'s faster for both of us. You can also call or email hi@thenycmaid.com.' },
+  { question: 'What\'s the fastest way to get a quote?', answer: 'Text (917) 970-6002 with your address, home size (bedrooms/bathrooms), and what type of cleaning you need. Most quotes are delivered within 15 minutes.' },
+  { question: 'Do I need to call to book, or can I text?', answer: 'Texting is our preferred method — it\'s faster for both of us. You can also call or email hi@washandfoldnyc.com.' },
   { question: 'What information do you need for a quote?', answer: 'Your address (or neighborhood), number of bedrooms and bathrooms, the type of cleaning you need (regular, deep, move-in/out, etc.), and your preferred date. That\'s it — we\'ll handle the rest.' },
   { question: 'How quickly can you schedule a cleaning?', answer: 'Usually within 24–48 hours. For same-day service, text us before 10am for the best chance of afternoon availability. Same-day is $100/hr.' },
   { question: 'What areas do you serve?', answer: 'All of Manhattan, Brooklyn, Queens, Long Island (North Shore including Great Neck, Manhasset, Port Washington), and northern New Jersey (Jersey City, Hoboken, Weehawken, Edgewater, Fort Lee). Same rates everywhere.' },
@@ -37,10 +37,10 @@ export default function ContactPage() {
       <JsonLd data={[
         organizationSchema(),
         webSiteSchema(),
-        webPageSchema({ url, name: title, description, type: 'ContactPage', breadcrumb: [{ name: 'Home', url: 'https://www.thenycmaid.com' }, { name: 'Contact', url }] }),
+        webPageSchema({ url, name: title, description, type: 'ContactPage', breadcrumb: [{ name: 'Home', url: 'https://www.washandfoldnyc.com' }, { name: 'Contact', url }] }),
         localBusinessSchema(),
         howToBookSchema(),
-        breadcrumbSchema([{ name: 'Home', url: 'https://www.thenycmaid.com' }, { name: 'Contact', url }]),
+        breadcrumbSchema([{ name: 'Home', url: 'https://www.washandfoldnyc.com' }, { name: 'Contact', url }]),
         faqSchema(contactFaqs),
       ]} />
 
@@ -57,14 +57,14 @@ export default function ContactPage() {
           <p className="text-sky-200/60 text-lg max-w-2xl mx-auto leading-relaxed mb-8">
             Text is fastest. Call if you prefer. Email works too. We respond to everything within 15 minutes during business hours.
           </p>
-          <a href="sms:2122028400" className="inline-block font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-[#4BA3D4] tracking-wide hover:text-white transition-colors">
-            (212) 202-8400
+          <a href="sms:9179706002" className="inline-block font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-[#4BA3D4] tracking-wide hover:text-white transition-colors">
+            (917) 970-6002
           </a>
         </div>
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <Breadcrumbs items={[{ name: 'Contact', href: '/contact-the-nyc-maid-service-today' }]} />
+        <Breadcrumbs items={[{ name: 'Contact', href: '/contact-the-nyc-wash-and-fold-today' }]} />
       </div>
 
       {/* Three contact method cards */}
@@ -77,13 +77,13 @@ export default function ContactPage() {
                 <span className="text-[#1a3a5c] text-2xl">&#9742;</span>
               </div>
               <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-2">Text or Call</h2>
-              <a href="sms:2122028400" className="text-[#1a3a5c] text-xl font-bold hover:underline underline-offset-4">(212) 202-8400</a>
+              <a href="sms:9179706002" className="text-[#1a3a5c] text-xl font-bold hover:underline underline-offset-4">(917) 970-6002</a>
               <p className="text-gray-500 text-sm mt-3">Fastest way to reach us. Most quotes delivered within 15 minutes.</p>
               <div className="flex flex-col gap-2 mt-5">
-                <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
                   Text Us
                 </a>
-                <a href="tel:2122028400" className="text-[#1a3a5c] font-semibold text-sm py-2 hover:underline underline-offset-4">
+                <a href="tel:9179706002" className="text-[#1a3a5c] font-semibold text-sm py-2 hover:underline underline-offset-4">
                   or Call
                 </a>
               </div>
@@ -95,9 +95,9 @@ export default function ContactPage() {
                 <span className="text-[#1a3a5c] text-2xl">&#9993;</span>
               </div>
               <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-2">Email Us</h2>
-              <a href="mailto:hi@thenycmaid.com" className="text-[#1a3a5c] text-lg font-bold hover:underline underline-offset-4">hi@thenycmaid.com</a>
+              <a href="mailto:hi@washandfoldnyc.com" className="text-[#1a3a5c] text-lg font-bold hover:underline underline-offset-4">hi@washandfoldnyc.com</a>
               <p className="text-gray-500 text-sm mt-3">For detailed requests, photos, or questions. We respond within 2 hours.</p>
-              <a href="mailto:hi@thenycmaid.com" className="inline-block mt-5 bg-[#1a3a5c] text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
+              <a href="mailto:hi@washandfoldnyc.com" className="inline-block mt-5 bg-[#1a3a5c] text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
                 Send Email
               </a>
             </div>
@@ -108,7 +108,7 @@ export default function ContactPage() {
                 <span className="text-[#1a3a5c] text-2xl">&#128197;</span>
               </div>
               <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-2">Existing Client?</h2>
-              <p className="text-[#1a3a5c] text-lg font-bold">thenycmaid.com/book</p>
+              <p className="text-[#1a3a5c] text-lg font-bold">washandfoldnyc.com/book</p>
               <p className="text-gray-500 text-sm mt-3">Log in to view your bookings, reschedule, or manage your account.</p>
               <Link href="/book" className="inline-block mt-5 bg-[#1a3a5c] text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
                 Client Login
@@ -137,7 +137,7 @@ export default function ContactPage() {
               </div>
               <div className="bg-[#4BA3D4]/15 rounded-lg p-3 mb-8">
                 <p className="text-[#1a3a5c] text-sm font-semibold">Sales &amp; Booking: Available 24/7</p>
-                <p className="text-gray-500 text-xs">Call or text (212) 202-8400 anytime — day or night.</p>
+                <p className="text-gray-500 text-xs">Call or text (917) 970-6002 anytime — day or night.</p>
               </div>
               <div className="bg-gray-50 rounded-xl p-5">
                 <p className="text-xs font-semibold text-gray-400 tracking-[0.15em] uppercase mb-2">Main Office</p>

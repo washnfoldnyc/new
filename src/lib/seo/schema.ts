@@ -850,13 +850,14 @@ export function neighborhoodServicePageSchemas(neighborhood: Neighborhood, servi
 export function servicePageSchemas(service: Service) {
   const url = `${BUSINESS.url}/services/${service.urlSlug}`
   const title = `${service.name} in NYC From ${service.priceRange.split('–')[0]} | 5-Star Rated | Wash and Fold NYC`
+  const desc = `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn & Queens. ${service.features.slice(0, 3).join(', ')} & more. ${service.priceRange}. 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),
     webSiteSchema(),
     webPageSchema({
       url,
       name: title,
-      description,
+      description: desc,
       breadcrumb: [
         { name: 'Home', url: BUSINESS.url },
         { name: 'Services', url: `${BUSINESS.url}/services` },

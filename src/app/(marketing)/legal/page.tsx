@@ -5,23 +5,23 @@ import JsonLd from '@/components/marketing/JsonLd'
 import Breadcrumbs from '@/components/marketing/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Legal Information | The NYC Maid',
-  description: 'Legal information for The NYC Maid — privacy policy, terms, refund policy & data sharing. NYC cleaning from $59/hr. (646) 490-0130',
-  alternates: { canonical: 'https://www.thenycmaid.com/legal' },
+  title: 'Legal Information | Wash and Fold NYC',
+  description: 'Legal information for Wash and Fold NYC — privacy policy, terms, refund policy & data sharing. NYC cleaning from $3/lb. (917) 970-6002',
+  alternates: { canonical: 'https://www.washandfoldnyc.com/legal' },
 }
 
 export default function LegalPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema([
-        { name: 'Home', url: 'https://www.thenycmaid.com' },
-        { name: 'Legal', url: 'https://www.thenycmaid.com/legal' },
+        { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+        { name: 'Legal', url: 'https://www.washandfoldnyc.com/legal' },
       ])} />
 
       <section className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] py-16 md:py-20">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-white tracking-wide">Legal Information</h1>
-          <p className="text-sky-200/60 mt-3">Policies and terms for The NYC Maid</p>
+          <p className="text-sky-200/60 mt-3">Policies and terms for Wash and Fold NYC</p>
         </div>
       </section>
 
@@ -50,7 +50,7 @@ export default function LegalPage() {
               'We never sell, share, or distribute your personal information',
               'First-time and one-time bookings cannot be cancelled or rescheduled once confirmed',
               'Recurring services require 7 days notice to reschedule — cancellations only if discontinuing service entirely with 7 days notice',
-              'Payment is due before the cleaner leaves — Zelle (hi@thenycmaid.com), Apple Pay, Venmo, card, or cash',
+              'Payment is due before the cleaner leaves — Zelle (hi@washandfoldnyc.com), Apple Pay, Venmo, card, or cash',
               'We collect anonymized usage data to improve our website — never tied to your identity',
               'Not happy? Contact us within 24 hours and we\'ll send someone back at no charge',
             ].map(item => (
@@ -64,7 +64,7 @@ export default function LegalPage() {
 
         <div className="mt-8 text-center">
           <p className="text-gray-500 text-sm">
-            Questions? Contact us at <a href="mailto:hi@thenycmaid.com" className="text-[#1a3a5c] underline underline-offset-2">hi@thenycmaid.com</a> or text/call <a href="tel:6464900130" className="text-[#1a3a5c] underline underline-offset-2">(646) 490-0130</a>.
+            Questions? Contact us at <a href="mailto:hi@washandfoldnyc.com" className="text-[#1a3a5c] underline underline-offset-2">hi@washandfoldnyc.com</a> or text/call <a href="tel:9179706002" className="text-[#1a3a5c] underline underline-offset-2">(917) 970-6002</a>.
           </p>
         </div>
       </div>

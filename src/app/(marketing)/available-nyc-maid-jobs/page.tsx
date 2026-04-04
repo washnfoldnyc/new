@@ -38,15 +38,15 @@ const careerFAQs = [
   { question: 'Is the schedule flexible?', questionEs: '¿Es flexible el horario?', answer: 'Yes. You set your own availability. We match you with jobs that fit your schedule. No forced hours or mandatory shifts.', answerEs: 'Sí. Tú defines tu disponibilidad. Te conectamos con trabajos que se ajusten a tu horario.' },
   { question: 'Do I need a car?', questionEs: '¿Necesito carro?', answer: 'For NYC cleaners, no — public transit works fine. For Long Island and New Jersey, a car is strongly preferred since jobs are spread across different neighborhoods.', answerEs: 'Para NYC, no — el transporte público funciona bien. Para Long Island y NJ, se prefiere carro.' },
   { question: 'Do I need to pass a background check?', questionEs: '¿Necesito verificación de antecedentes?', answer: 'Yes. All cleaners must pass a background check before being assigned to any client. This protects both you and our clients.', answerEs: 'Sí. Todos los limpiadores deben pasar una verificación de antecedentes.' },
-  { question: 'How do I apply?', questionEs: '¿Cómo aplico?', answer: 'Apply online at thenycmaid.com/apply or text (212) 202-8400. We review applications within 24–48 hours and get you working fast.', answerEs: 'Aplica en thenycmaid.com/apply o envía un texto al (212) 202-8400. Revisamos en 24–48 horas.' },
+  { question: 'How do I apply?', questionEs: '¿Cómo aplico?', answer: 'Apply online at washandfoldnyc.com/apply or text (917) 970-6002. We review applications within 24–48 hours and get you working fast.', answerEs: 'Aplica en washandfoldnyc.com/apply o envía un texto al (917) 970-6002. Revisamos en 24–48 horas.' },
 ]
 
 // Revalidate every 3 days so datePosted stays fresh in Google Jobs
 export const revalidate = 259200
 
-const pageUrl = 'https://www.thenycmaid.com/available-nyc-maid-jobs'
+const pageUrl = 'https://www.washandfoldnyc.com/available-nyc-maid-jobs'
 const pageTitle = 'Cleaning Jobs NYC, LI & NJ — Starting $30/hr + Bonuses, Open 24/7 | Trabajo de Limpieza'
-const pageDescription = 'Hiring cleaners NYC, Long Island & NJ! Starting $30/hr + bonus programs. Zelle in <30 min. 100% tips. Open 24/7. English & Spanish | Contratando — desde $30/hr + bonos, propinas 100% tuyas. (212) 202-8400'
+const pageDescription = 'Hiring cleaners NYC, Long Island & NJ! Starting $30/hr + bonus programs. Zelle in <30 min. 100% tips. Open 24/7. English & Spanish | Contratando — desde $30/hr + bonos, propinas 100% tuyas. (917) 970-6002'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
     description: pageDescription,
     url: pageUrl,
     type: 'website',
-    siteName: 'The NYC Maid',
+    siteName: 'Wash and Fold NYC',
     locale: 'en_US',
-    images: [{ url: 'https://www.thenycmaid.com/icon-512.png', width: 512, height: 512, alt: 'The NYC Maid' }],
+    images: [{ url: 'https://www.washandfoldnyc.com/icon-512.png', width: 512, height: 512, alt: 'Wash and Fold NYC' }],
   },
   twitter: {
     card: 'summary',
@@ -80,10 +80,10 @@ function jobPostingSchema(region: string, locations: string) {
     '@context': 'https://schema.org',
     '@type': 'JobPosting',
     title: `Professional House Cleaner — ${region}`,
-    description: `Now hiring experienced house cleaners in ${locations}. Starting at $30/hr paid via Zelle within 30 minutes of every completed job. Bonus programs available for retention, client satisfaction, and five-star reviews. Flexible schedule. Open 24/7. You provide your own cleaning supplies and equipment. Background check required. Apply at thenycmaid.com/apply or text (212) 202-8400. Bilingual workplace (English/Spanish). 100% of tips are yours.`,
+    description: `Now hiring experienced house cleaners in ${locations}. Starting at $30/hr paid via Zelle within 30 minutes of every completed job. Bonus programs available for retention, client satisfaction, and five-star reviews. Flexible schedule. Open 24/7. You provide your own cleaning supplies and equipment. Background check required. Apply at washandfoldnyc.com/apply or text (917) 970-6002. Bilingual workplace (English/Spanish). 100% of tips are yours.`,
     identifier: {
       '@type': 'PropertyValue',
-      name: 'The NYC Maid',
+      name: 'Wash and Fold NYC',
       value: `nycmaid-cleaner-${regionSlug}`,
     },
     datePosted: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
@@ -93,9 +93,9 @@ function jobPostingSchema(region: string, locations: string) {
     totalJobOpenings: 10,
     hiringOrganization: {
       '@type': 'Organization',
-      name: 'The NYC Maid',
-      sameAs: 'https://www.thenycmaid.com',
-      logo: 'https://www.thenycmaid.com/icon-512.png',
+      name: 'Wash and Fold NYC',
+      sameAs: 'https://www.washandfoldnyc.com',
+      logo: 'https://www.washandfoldnyc.com/icon-512.png',
     },
     jobLocation: {
       '@type': 'Place',
@@ -154,14 +154,14 @@ export default function CareersPage() {
           name: pageTitle,
           description: pageDescription,
           breadcrumb: [
-            { name: 'Home', url: 'https://www.thenycmaid.com' },
+            { name: 'Home', url: 'https://www.washandfoldnyc.com' },
             { name: 'Careers', url: pageUrl },
           ],
         }),
         localBusinessSchema(),
         howToBookSchema(),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
+          { name: 'Home', url: 'https://www.washandfoldnyc.com' },
           { name: 'Careers', url: pageUrl },
         ]),
         ...openings.map(o => jobPostingSchema(o.region, o.locations)),
@@ -179,7 +179,7 @@ export default function CareersPage() {
             <p className="text-white/60 text-sm">Open 24/7</p>
           </div>
           <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-6xl lg:text-7xl text-white tracking-wide leading-[0.95] mb-6">
-            Join The NYC Maid — Starting at $30/hr, Bonus Programs Available
+            Join Wash and Fold NYC — Starting at $30/hr, Bonus Programs Available
           </h1>
           <p className="text-blue-200/80 text-lg max-w-2xl leading-relaxed mb-3">
             We&apos;re hiring experienced cleaners in NYC, Long Island, and New Jersey. You bring your own supplies and equipment — we bring a steady stream of clients, a flexible schedule, and starting at $30/hr paid via Zelle within 30 minutes of every completed job. Bonus programs let top performers earn even more.
@@ -197,8 +197,8 @@ export default function CareersPage() {
             <Link href="/apply" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
               Apply Now / Aplica Ahora
             </Link>
-            <a href="sms:2122028400" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
-              or Text (212) 202-8400
+            <a href="sms:9179706002" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
+              or Text (917) 970-6002
             </a>
           </div>
         </div>
@@ -564,8 +564,8 @@ export default function CareersPage() {
             <Link href="/apply" className="bg-[#1a3a5c] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
               Apply Now / Aplica Ahora
             </Link>
-            <a href="sms:2122028400" className="text-[#1a3a5c] font-semibold underline underline-offset-4 hover:no-underline">
-              or Text (212) 202-8400
+            <a href="sms:9179706002" className="text-[#1a3a5c] font-semibold underline underline-offset-4 hover:no-underline">
+              or Text (917) 970-6002
             </a>
           </div>
         </section>

@@ -12,19 +12,19 @@ const allNeighborhoods = AREAS.flatMap(a => getNeighborhoodsByArea(a.slug))
 const totalNeighborhoods = allNeighborhoods.length
 
 const areaFAQs = [
-  { question: 'What areas does The NYC Maid serve?', answer: `We serve ${totalNeighborhoods}+ neighborhoods across Manhattan, Brooklyn, Queens, Long Island (Nassau County), and New Jersey (Hudson County). Same rates and same quality everywhere.` },
-  { question: 'Do you charge extra for certain neighborhoods?', answer: 'No. Our rates are the same regardless of neighborhood or borough — $59/hr with your supplies, $75/hr when we bring everything, and $100/hr for same-day emergency service. No travel fees, no surge pricing.' },
+  { question: 'What areas does Wash and Fold NYC serve?', answer: `We serve ${totalNeighborhoods}+ neighborhoods across Manhattan, Brooklyn, Queens, Long Island (Nassau County), and New Jersey (Hudson County). Same rates and same quality everywhere.` },
+  { question: 'Do you charge extra for certain neighborhoods?', answer: 'No. Our rates are the same regardless of neighborhood or borough — $3/lb with your supplies, $75/hr when we bring everything, and $100/hr for same-day emergency service. No travel fees, no surge pricing.' },
   { question: 'Are all services available in every area?', answer: 'Yes. Every service we offer — deep cleaning, regular cleaning, move-in/out, post-renovation, Airbnb, office, same-day — is available in all neighborhoods we serve.' },
-  { question: 'Do you serve areas outside of these neighborhoods?', answer: 'We may. If you don\'t see your neighborhood listed, call or text (212) 202-8400 and we\'ll let you know. We\'re always expanding.' },
+  { question: 'Do you serve areas outside of these neighborhoods?', answer: 'We may. If you don\'t see your neighborhood listed, call or text (917) 970-6002 and we\'ll let you know. We\'re always expanding.' },
   { question: 'Do I get the same cleaner in my area?', answer: 'Yes. For recurring clients, we assign a dedicated cleaner who lives near your area so they can arrive consistently and on time.' },
-  { question: 'How quickly can you schedule a cleaning in my area?', answer: 'We typically schedule within 24–48 hours for standard service. Same-day cleaning is available in most areas — call (212) 202-8400 for availability.' },
+  { question: 'How quickly can you schedule a cleaning in my area?', answer: 'We typically schedule within 24–48 hours for standard service. Same-day cleaning is available in most areas — call (917) 970-6002 for availability.' },
   { question: 'Do your cleaners use public transit or drive?', answer: 'It depends on the area. In Manhattan, Brooklyn, and Queens, many of our cleaners use public transit. For Long Island and New Jersey, cleaners typically drive.' },
   { question: 'What if I\'m on the border of two neighborhoods?', answer: 'We serve the entire area, not just specific blocks. If you\'re near any of our listed neighborhoods, we cover your location. Just give us your address and we\'ll confirm.' },
 ]
 
-const pageUrl = 'https://www.thenycmaid.com/service-areas-served-by-the-nyc-maid'
-const pageTitle = `Service Areas — ${totalNeighborhoods}+ Neighborhoods in NYC, Long Island & NJ | The NYC Maid`
-const pageDescription = `The NYC Maid serves ${totalNeighborhoods}+ neighborhoods across Manhattan, Brooklyn, Queens, Long Island & New Jersey. Same rates everywhere — $59/hr. Find professional cleaning in your neighborhood. (212) 202-8400`
+const pageUrl = 'https://www.washandfoldnyc.com/service-areas-served-by-the-nyc-maid'
+const pageTitle = `Service Areas — ${totalNeighborhoods}+ Neighborhoods in NYC, Long Island & NJ | Wash and Fold NYC`
+const pageDescription = `Wash and Fold NYC serves ${totalNeighborhoods}+ neighborhoods across Manhattan, Brooklyn, Queens, Long Island & New Jersey. Same rates everywhere — $3/lb. Find professional cleaning in your neighborhood. (917) 970-6002`
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     description: pageDescription,
     url: pageUrl,
     type: 'website',
-    siteName: 'The NYC Maid',
+    siteName: 'Wash and Fold NYC',
     locale: 'en_US',
-    images: [{ url: 'https://www.thenycmaid.com/icon-512.png', width: 512, height: 512, alt: 'The NYC Maid' }],
+    images: [{ url: 'https://www.washandfoldnyc.com/icon-512.png', width: 512, height: 512, alt: 'Wash and Fold NYC' }],
   },
   twitter: {
     card: 'summary',
@@ -63,14 +63,14 @@ export default function AreasIndexPage() {
           name: pageTitle,
           description: pageDescription,
           breadcrumb: [
-            { name: 'Home', url: 'https://www.thenycmaid.com' },
+            { name: 'Home', url: 'https://www.washandfoldnyc.com' },
             { name: 'Service Areas', url: pageUrl },
           ],
         }),
         localBusinessSchema(),
         howToBookSchema(),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
+          { name: 'Home', url: 'https://www.washandfoldnyc.com' },
           { name: 'Service Areas', url: pageUrl },
         ]),
         areaItemListSchema(),
@@ -88,10 +88,10 @@ export default function AreasIndexPage() {
             {totalNeighborhoods}+ Neighborhoods Across NYC, Long Island &amp; New Jersey
           </h1>
           <p className="text-blue-200/80 text-lg max-w-2xl leading-relaxed mb-10">
-            Professional house cleaning from $59/hr in every neighborhood we serve. Same rates, same quality, same background-checked cleaners — whether you&apos;re in Manhattan, Brooklyn, Queens, Long Island, or New Jersey.
+            Professional house cleaning from $3/lb in every neighborhood we serve. Same rates, same quality, same background-checked cleaners — whether you&apos;re in Manhattan, Brooklyn, Queens, Long Island, or New Jersey.
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
-            <span className="text-[#4BA3D4] text-sm font-medium">&#10003; From $59/hr</span>
+            <span className="text-[#4BA3D4] text-sm font-medium">&#10003; From $3/lb</span>
             <span className="text-[#4BA3D4] text-sm font-medium">&#10003; Same rate everywhere</span>
             <span className="text-[#4BA3D4] text-sm font-medium">&#10003; No travel fees</span>
             <span className="text-[#4BA3D4] text-sm font-medium">&#10003; All services available</span>
@@ -199,11 +199,11 @@ export default function AreasIndexPage() {
             We&apos;re always expanding. Text or call us with your address and we&apos;ll let you know if we cover your area — we probably do.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <a href="sms:2122028400" className="bg-[#1a3a5c] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
-              Text (212) 202-8400
+            <a href="sms:9179706002" className="bg-[#1a3a5c] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
+              Text (917) 970-6002
             </a>
-            <a href="tel:2122028400" className="text-[#1a3a5c] font-semibold underline underline-offset-4 hover:no-underline">
-              or Call (212) 202-8400
+            <a href="tel:9179706002" className="text-[#1a3a5c] font-semibold underline underline-offset-4 hover:no-underline">
+              or Call (917) 970-6002
             </a>
           </div>
         </section>

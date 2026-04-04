@@ -5,17 +5,17 @@ import JsonLd from '@/components/marketing/JsonLd'
 import Breadcrumbs from '@/components/marketing/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | The NYC Maid',
-  description: 'The NYC Maid privacy policy — how we protect your data. We never sell or share your information. NYC cleaning from $59/hr. (646) 490-0130',
-  alternates: { canonical: 'https://www.thenycmaid.com/privacy-policy' },
+  title: 'Privacy Policy | Wash and Fold NYC',
+  description: 'Wash and Fold NYC privacy policy — how we protect your data. We never sell or share your information. NYC cleaning from $3/lb. (917) 970-6002',
+  alternates: { canonical: 'https://www.washandfoldnyc.com/privacy-policy' },
 }
 
 export default function PrivacyPolicyPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema([
-        { name: 'Home', url: 'https://www.thenycmaid.com' },
-        { name: 'Privacy Policy', url: 'https://www.thenycmaid.com/privacy-policy' },
+        { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+        { name: 'Privacy Policy', url: 'https://www.washandfoldnyc.com/privacy-policy' },
       ])} />
 
       <section className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] py-16 md:py-20">
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
               {[
                 { label: 'Contact Information', detail: 'Your name, phone number, email address, and home address — provided when you book a cleaning or request a quote.' },
                 { label: 'Service Details', detail: 'Information about your home (size, condition, access instructions) and any special cleaning requests or preferences.' },
-                { label: 'Payment Information', detail: 'Payment is collected in person upon completion of service via Zelle (hi@thenycmaid.com), Apple Pay, Venmo, credit card, or cash. We do not store payment card details on our servers.' },
+                { label: 'Payment Information', detail: 'Payment is collected in person upon completion of service via Zelle (hi@washandfoldnyc.com), Apple Pay, Venmo, credit card, or cash. We do not store payment card details on our servers.' },
                 { label: 'Usage Data', detail: 'We collect anonymized data about how you interact with our website — pages visited, buttons clicked, and features used. This helps us improve the user experience and make our site more useful for you.' },
               ].map(item => (
                 <li key={item.label} className="bg-gray-50 rounded-xl p-5">
@@ -116,7 +116,7 @@ export default function PrivacyPolicyPage() {
           <div className="border-t border-gray-200 pt-8">
             <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-4">Contact Us</h2>
             <p className="text-gray-600 leading-relaxed">
-              Questions about this privacy policy? Contact us at <a href="mailto:hi@thenycmaid.com" className="text-[#1a3a5c] underline underline-offset-2">hi@thenycmaid.com</a> or text/call <a href="tel:6464900130" className="text-[#1a3a5c] underline underline-offset-2">(646) 490-0130</a>.
+              Questions about this privacy policy? Contact us at <a href="mailto:hi@washandfoldnyc.com" className="text-[#1a3a5c] underline underline-offset-2">hi@washandfoldnyc.com</a> or text/call <a href="tel:9179706002" className="text-[#1a3a5c] underline underline-offset-2">(917) 970-6002</a>.
             </p>
             <p className="text-gray-500 text-sm mt-4">
               See also: <Link href="/terms-conditions" className="text-[#1a3a5c] underline underline-offset-2">Terms &amp; Conditions</Link> &middot; <Link href="/refund-policy" className="text-[#1a3a5c] underline underline-offset-2">Refund Policy</Link> &middot; <Link href="/do-not-share-policy" className="text-[#1a3a5c] underline underline-offset-2">Do Not Share Policy</Link>

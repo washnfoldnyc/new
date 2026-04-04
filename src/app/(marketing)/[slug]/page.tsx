@@ -35,14 +35,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const area = getAreaByUrlSlug(slug)
   if (area) {
     const content = areaContent(area)
-    const url = `https://www.thenycmaid.com/${slug}`
-    const title = `${area.name} Maid Service & House Cleaning From $59/hr | The NYC Maid`
-    const description = `Professional house cleaning in ${area.name} from $59/hr. Deep cleaning, weekly maid service, move-in/out & more. Licensed, insured, 5.0★ Google. (212) 202-8400`
+    const url = `https://www.washandfoldnyc.com/${slug}`
+    const title = `${area.name} Maid Service & House Cleaning From $3/lb | Wash and Fold NYC`
+    const description = `Professional house cleaning in ${area.name} from $3/lb. Deep cleaning, weekly maid service, move-in/out & more. Licensed, insured, 5.0★ Google. (917) 970-6002`
     return {
       title: { absolute: title },
       description,
       alternates: { canonical: url },
-      openGraph: { title, description, url, type: 'website', siteName: 'The NYC Maid', locale: 'en_US' },
+      openGraph: { title, description, url, type: 'website', siteName: 'Wash and Fold NYC', locale: 'en_US' },
       twitter: { card: 'summary_large_image', title, description },
       other: { 'geo.region': `US-${area.state}`, 'geo.placename': area.name, 'geo.position': `${area.lat};${area.lng}`, 'ICBM': `${area.lat}, ${area.lng}` },
     }
@@ -52,14 +52,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (neighborhood) {
     const neighborhoodArea = getArea(neighborhood.area)!
     const content = neighborhoodContent(neighborhood, neighborhoodArea)
-    const url = `https://www.thenycmaid.com/${slug}`
-    const title = `${neighborhood.name} Maid Service & House Cleaning From $59/hr | The NYC Maid`
-    const description = `Professional cleaning in ${neighborhood.name}, ${neighborhoodArea.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $59/hr. 5.0★ Google. (212) 202-8400`
+    const url = `https://www.washandfoldnyc.com/${slug}`
+    const title = `${neighborhood.name} Maid Service & House Cleaning From $3/lb | Wash and Fold NYC`
+    const description = `Professional cleaning in ${neighborhood.name}, ${neighborhoodArea.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $3/lb. 5.0★ Google. (917) 970-6002`
     return {
       title: { absolute: title },
       description,
       alternates: { canonical: url },
-      openGraph: { title, description, url, type: 'website', siteName: 'The NYC Maid', locale: 'en_US' },
+      openGraph: { title, description, url, type: 'website', siteName: 'Wash and Fold NYC', locale: 'en_US' },
       twitter: { card: 'summary_large_image', title, description },
       other: { 'geo.region': `US-${neighborhoodArea.state}`, 'geo.placename': neighborhood.name, 'geo.position': `${neighborhood.lat};${neighborhood.lng}`, 'ICBM': `${neighborhood.lat}, ${neighborhood.lng}` },
     }
@@ -91,21 +91,21 @@ export default async function SlugPage({ params }: Props) {
                   <span className="text-sky-200/60 text-sm">5.0 on Google &middot; 27 verified reviews</span>
                 </div>
                 <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl lg:text-6xl text-white tracking-wide leading-[0.95] mb-5">
-                  {area.name} Maid Service & House Cleaning — From $59/hr
+                  {area.name} Maid Service & House Cleaning — From $3/lb
                 </h1>
                 <p className="text-sky-200/60 text-lg leading-relaxed mb-6">{content.intro}</p>
                 <div className="flex flex-wrap gap-x-6 gap-y-2 mb-8">
-                  <span className="text-[#4BA3D4] text-sm font-medium">&#10003; From $59/hr</span>
+                  <span className="text-[#4BA3D4] text-sm font-medium">&#10003; From $3/lb</span>
                   <span className="text-[#4BA3D4] text-sm font-medium">&#10003; No money upfront</span>
                   <span className="text-[#4BA3D4] text-sm font-medium">&#10003; Licensed &amp; insured</span>
                   <span className="text-[#4BA3D4] text-sm font-medium">&#10003; Background-checked</span>
                 </div>
                 <div className="flex flex-col sm:flex-row items-start gap-4">
-                  <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-                    Text (212) 202-8400
+                  <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                    Text (917) 970-6002
                   </a>
-                  <a href="tel:2122028400" className="text-sky-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
-                    or Call (212) 202-8400
+                  <a href="tel:9179706002" className="text-sky-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
+                    or Call (917) 970-6002
                   </a>
                 </div>
               </div>
@@ -128,8 +128,8 @@ export default async function SlugPage({ params }: Props) {
                     <p className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide">Same Rate Everywhere</p>
                     <p className="text-[#1a3a5c]/60 text-xs mt-1">No travel fees &middot; No surge pricing</p>
                   </div>
-                  <a href="sms:2122028400" className="block text-center bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-                    Text (212) 202-8400
+                  <a href="sms:9179706002" className="block text-center bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                    Text (917) 970-6002
                   </a>
                 </div>
               </div>
@@ -149,8 +149,8 @@ export default async function SlugPage({ params }: Props) {
                 <div className="w-10 h-[3px] bg-[#4BA3D4] mb-5" />
                 <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide leading-tight mb-4">{area.name} Neighborhoods We Serve</h2>
                 <p className="text-gray-500 leading-relaxed mb-6">Every neighborhood below gets the same rates, the same quality, and the same background-checked cleaners. Click any neighborhood to see services available in your area.</p>
-                <a href="sms:2122028400" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-                  Text (212) 202-8400
+                <a href="sms:9179706002" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                  Text (917) 970-6002
                 </a>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -205,7 +205,7 @@ export default async function SlugPage({ params }: Props) {
             <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book {area.name} Cleaning in 3 Steps</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { n: '01', t: 'Text or Call', d: `Reach us at (212) 202-8400 with your ${area.name} address, preferred date, and any special requests.` },
+                { n: '01', t: 'Text or Call', d: `Reach us at (917) 970-6002 with your ${area.name} address, preferred date, and any special requests.` },
                 { n: '02', t: 'We Confirm', d: 'We match you with a background-checked, insured cleaner and lock in your appointment — usually within the hour.' },
                 { n: '03', t: 'Pay After', d: 'Your cleaner arrives on time, does the work, and you pay only after the cleaning is complete. No deposits ever.' },
               ].map(s => (
@@ -217,8 +217,8 @@ export default async function SlugPage({ params }: Props) {
               ))}
             </div>
             <div className="flex justify-center mt-10">
-              <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-                Text (212) 202-8400
+              <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                Text (917) 970-6002
               </a>
             </div>
           </div>
@@ -271,11 +271,11 @@ export default async function SlugPage({ params }: Props) {
             </div>
             {/* CTA row */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-              <a href="sms:2122028400" className="bg-[#1a3a5c] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
-                Text (212) 202-8400
+              <a href="sms:9179706002" className="bg-[#1a3a5c] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
+                Text (917) 970-6002
               </a>
-              <a href="tel:2122028400" className="text-[#1a3a5c] font-semibold py-4 hover:underline underline-offset-4">
-                or Call (212) 202-8400
+              <a href="tel:9179706002" className="text-[#1a3a5c] font-semibold py-4 hover:underline underline-offset-4">
+                or Call (917) 970-6002
               </a>
             </div>
           </div>
@@ -331,11 +331,11 @@ export default async function SlugPage({ params }: Props) {
                   ))}
                 </div>
                 <div className="flex flex-wrap items-center gap-4">
-                  <a href="sms:2122028400" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-                    Text (212) 202-8400
+                  <a href="sms:9179706002" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                    Text (917) 970-6002
                   </a>
-                  <a href="tel:2122028400" className="text-[#1a3a5c] font-semibold hover:underline underline-offset-4">
-                    or Call (212) 202-8400
+                  <a href="tel:9179706002" className="text-[#1a3a5c] font-semibold hover:underline underline-offset-4">
+                    or Call (917) 970-6002
                   </a>
                 </div>
               </div>
@@ -417,9 +417,9 @@ export default async function SlugPage({ params }: Props) {
             <div>
               <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide mb-2">{neighborhood.name} Cleaning Costs</h3>
               <p className="text-[#1a3a5c]/80 leading-relaxed">
-                House cleaning in {neighborhood.name} starts at $59/hr with your supplies, $75/hr when we bring everything, or $100/hr for same-day emergency service. A typical {neighborhood.name} apartment cleaning runs $98–$260 depending on size and service type. Deep cleans, move-in/move-out, and post-renovation jobs take longer but use the same flat hourly rate. No travel fees, no surge pricing — {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
+                House cleaning in {neighborhood.name} starts at $3/lb with your supplies, $75/hr when we bring everything, or $100/hr for same-day emergency service. A typical {neighborhood.name} apartment cleaning runs $98–$260 depending on size and service type. Deep cleans, move-in/move-out, and post-renovation jobs take longer but use the same flat hourly rate. No travel fees, no surge pricing — {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
               </p>
-              <Link href="/updated-nyc-maid-service-industry-pricing" className="inline-block mt-3 text-[#1a3a5c] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
+              <Link href="/updated-nyc-wash-and-fold-industry-pricing" className="inline-block mt-3 text-[#1a3a5c] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
             </div>
           </div>
         </section>
@@ -459,7 +459,7 @@ export default async function SlugPage({ params }: Props) {
             <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book {neighborhood.name} Cleaning in 3 Steps</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { n: '01', t: 'Text or Call', d: `Reach us at (212) 202-8400 with your ${neighborhood.name} address, preferred date, and any special requests.` },
+                { n: '01', t: 'Text or Call', d: `Reach us at (917) 970-6002 with your ${neighborhood.name} address, preferred date, and any special requests.` },
                 { n: '02', t: 'We Confirm', d: 'We match you with a background-checked, insured cleaner and lock in your appointment — usually within the hour.' },
                 { n: '03', t: 'Pay After', d: 'Your cleaner arrives on time, does the work, and you pay only after the cleaning is complete. No deposits ever.' },
               ].map(s => (
@@ -471,8 +471,8 @@ export default async function SlugPage({ params }: Props) {
               ))}
             </div>
             <div className="flex justify-center mt-10">
-              <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-                Text (212) 202-8400
+              <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                Text (917) 970-6002
               </a>
             </div>
           </div>

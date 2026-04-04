@@ -150,13 +150,13 @@ const faqData = [
 ]
 
 export const metadata: Metadata = {
-  title: 'The 100 Best Cleaning Tips for NYC Apartments | The NYC Maid',
-  description: 'The definitive list — 100 expert cleaning tips for NYC apartments from professional cleaners. Kitchen, bathroom, floors, pets & more. From $59/hr. (212) 202-8400',
-  alternates: { canonical: 'https://www.thenycmaid.com/nyc-maid-and-cleaning-tips-and-advice-by-the-nyc-maid' },
+  title: 'The 100 Best Cleaning Tips for NYC Apartments | Wash and Fold NYC',
+  description: 'The definitive list — 100 expert cleaning tips for NYC apartments from professional cleaners. Kitchen, bathroom, floors, pets & more. From $3/lb. (917) 970-6002',
+  alternates: { canonical: 'https://www.washandfoldnyc.com/nyc-maid-and-cleaning-tips-and-advice-by-the-nyc-maid' },
   openGraph: {
-    title: '100 Best Cleaning Tips | The NYC Maid',
+    title: '100 Best Cleaning Tips | Wash and Fold NYC',
     description: 'The definitive cleaning tips guide for NYC apartments — 100 expert tips organized by room.',
-    url: 'https://www.thenycmaid.com/nyc-maid-and-cleaning-tips-and-advice-by-the-nyc-maid',
+    url: 'https://www.washandfoldnyc.com/nyc-maid-and-cleaning-tips-and-advice-by-the-nyc-maid',
   },
 }
 
@@ -196,8 +196,8 @@ export default function TipsPage() {
       <JsonLd data={[
         localBusinessSchema(),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
-          { name: '100 Cleaning Tips', url: 'https://www.thenycmaid.com/nyc-maid-and-cleaning-tips-and-advice-by-the-nyc-maid' },
+          { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+          { name: '100 Cleaning Tips', url: 'https://www.washandfoldnyc.com/nyc-maid-and-cleaning-tips-and-advice-by-the-nyc-maid' },
         ]),
         faqSchema,
         howToSchema,
@@ -252,9 +252,9 @@ export default function TipsPage() {
             {/* Mid-page CTA every 3 categories */}
             {(cat.id === 'bedroom' || cat.id === 'laundry' || cat.id === 'pets') && (
               <div className="bg-[#4BA3D4]/15 border border-[#4BA3D4]/30 rounded-xl p-6 mt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-                <p className="text-[#1a3a5c] font-medium">Rather have a pro handle it? We start at $59/hr.</p>
-                <a href="tel:2122028400" className="border-2 border-[#1a3a5c] text-[#1a3a5c] px-6 py-2.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c] hover:text-white transition-colors flex-shrink-0">
-                  (212) 202-8400
+                <p className="text-[#1a3a5c] font-medium">Rather have a pro handle it? We start at $3/lb.</p>
+                <a href="tel:9179706002" className="border-2 border-[#1a3a5c] text-[#1a3a5c] px-6 py-2.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c] hover:text-white transition-colors flex-shrink-0">
+                  (917) 970-6002
                 </a>
               </div>
             )}
@@ -276,7 +276,7 @@ export default function TipsPage() {
 
         <div className="text-center">
           <p className="text-gray-600">
-            Want more in-depth articles? Check out our <Link href="/nyc-maid-service-blog" className="text-[#1a3a5c] font-semibold hover:underline">blog</Link> for detailed cleaning guides.
+            Want more in-depth articles? Check out our <Link href="/nyc-wash-and-fold-blog" className="text-[#1a3a5c] font-semibold hover:underline">blog</Link> for detailed cleaning guides.
           </p>
         </div>
       </div>

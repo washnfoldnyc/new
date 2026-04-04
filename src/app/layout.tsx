@@ -1,48 +1,47 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | The NYC Maid',
-    default: 'The NYC Maid - Professional Cleaning Services in NYC From $59/hr',
+    template: '%s | Wash and Fold NYC',
+    default: 'Wash and Fold NYC — NYC Laundry Service $3/lb | Free Pickup & Delivery',
   },
-  description: 'NYC house cleaning & maid service from $59/hr. Manhattan, Brooklyn, Queens, Long Island & NJ. Licensed, insured, 5.0★ Google rated. Book online or call (212) 202-8400.',
-  metadataBase: new URL('https://www.thenycmaid.com'),
+  description: 'NYC wash and fold laundry service — $3/lb, $39 minimum, free pickup & delivery. Manhattan, Brooklyn & Queens. Same-day rush +$20. Dry cleaning, comforters, commercial. (917) 970-6002.',
+  metadataBase: new URL('https://www.washandfoldnyc.com'),
   manifest: '/manifest.json',
-  applicationName: 'The NYC Maid',
-  authors: [{ name: 'The NYC Maid', url: 'https://www.thenycmaid.com' }],
-  creator: 'The NYC Maid Cleaning Service LLC',
-  publisher: 'The NYC Maid',
-  category: 'Home Services',
-  classification: 'Cleaning Service',
+  applicationName: 'Wash and Fold NYC',
+  authors: [{ name: 'Wash and Fold NYC', url: 'https://www.washandfoldnyc.com' }],
+  creator: 'Wash and Fold NYC LLC',
+  publisher: 'Wash and Fold NYC',
+  category: 'Laundry Service',
+  classification: 'Laundry Service',
   referrer: 'origin-when-cross-origin',
   keywords: [
-    'NYC maid service', 'house cleaning NYC', 'apartment cleaning New York',
-    'deep cleaning service Manhattan', 'maid service Brooklyn', 'cleaning service Queens',
-    'move in cleaning NYC', 'office cleaning New York', 'same day cleaning NYC',
-    'affordable cleaning service NYC', 'weekly maid service NYC',
+    'wash and fold NYC', 'laundry service NYC', 'laundry pickup delivery Manhattan',
+    'wash and fold Brooklyn', 'laundry service Queens', 'dry cleaning NYC',
+    'comforter cleaning NYC', 'commercial laundry New York',
+    'affordable laundry service NYC', 'same day laundry NYC',
   ],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'The NYC Maid',
-    title: 'The NYC Maid - Professional Cleaning Services in NYC From $59/hr',
-    description: 'NYC house cleaning & maid service from $59/hr. Manhattan, Brooklyn, Queens, Long Island & NJ. Licensed, insured, 5.0★ Google rated.',
-    url: 'https://www.thenycmaid.com',
+    siteName: 'Wash and Fold NYC',
+    title: 'Wash and Fold NYC — NYC Laundry Service $3/lb | Free Pickup & Delivery',
+    description: 'NYC wash and fold laundry service — $3/lb, free pickup & delivery. Manhattan, Brooklyn & Queens. (917) 970-6002.',
+    url: 'https://www.washandfoldnyc.com',
     images: [
       {
-        url: 'https://www.thenycmaid.com/icon-512.png',
+        url: 'https://www.washandfoldnyc.com/icon-512.png',
         width: 512,
         height: 512,
-        alt: 'The NYC Maid - Professional Cleaning Service',
+        alt: 'Wash and Fold NYC — NYC Laundry Service',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The NYC Maid - NYC Cleaning Service From $59/hr',
-    description: 'Professional house cleaning across NYC, Long Island & NJ. 5.0★ Google. Licensed & insured. Book online or call (212) 202-8400.',
+    title: 'Wash and Fold NYC — $3/lb Laundry Service | Free Pickup & Delivery',
+    description: 'NYC wash and fold laundry service. $3/lb, free pickup & delivery. Manhattan, Brooklyn & Queens. (917) 970-6002.',
   },
   robots: {
     index: true,
@@ -52,16 +51,7 @@ export const metadata: Metadata = {
     'max-video-preview': -1,
   },
   alternates: {
-    canonical: 'https://www.thenycmaid.com',
-    languages: {
-      'en-US': 'https://www.thenycmaid.com',
-      'es-US': 'https://www.thenycmaid.com',
-    },
-  },
-  verification: {
-    other: {
-      'msvalidate.01': [''],
-    },
+    canonical: 'https://www.washandfoldnyc.com',
   },
   other: {
     'format-detection': 'telephone=yes',
@@ -69,19 +59,17 @@ export const metadata: Metadata = {
     'geo.placename': 'New York City',
     'geo.position': '40.7589;-73.9851',
     'ICBM': '40.7589, -73.9851',
-    'rating': 'general',
-    'revisit-after': '3 days',
-    'distribution': 'global',
-    'language': 'English',
-    'og:phone_number': '+1-212-202-8400',
-    'og:email': 'hi@thenycmaid.com',
+    'og:phone_number': '+1-917-970-6002',
+    'og:email': 'hi@washandfoldnyc.com',
     'business:contact_data:street_address': '150 W 47th St',
     'business:contact_data:locality': 'New York',
     'business:contact_data:region': 'NY',
     'business:contact_data:postal_code': '10036',
     'business:contact_data:country_name': 'United States',
+    'business:contact_data:phone_number': '+1-917-970-6002',
+    'business:contact_data:website': 'https://www.washandfoldnyc.com',
   },
-};
+}
 
 export default function RootLayout({
   children,
@@ -89,51 +77,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="ltr">
-      <head>
-        <link rel="alternate" hrefLang="en-US" href="https://www.thenycmaid.com" />
-        <link rel="alternate" hrefLang="es-US" href="https://www.thenycmaid.com" />
-        <link rel="alternate" hrefLang="x-default" href="https://www.thenycmaid.com" />
-      </head>
+    <html lang="en">
       <body>
         {children}
-        <Script id="tawk-to" strategy="afterInteractive">{`
-          var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-          (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/6823effa7c5b09190cd447fe/1ir662r4n';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-          })();
-        `}</Script>
-        <Script id="error-catcher" strategy="beforeInteractive">{`
-          window.addEventListener('error', function(e) {
-            if (!e.message) return;
-            if (e.message.indexOf('Failed to load chunk') !== -1 || e.message.indexOf('Loading chunk') !== -1 || e.message.indexOf('ChunkLoadError') !== -1) {
-              window.location.reload();
-              return;
-            }
-            fetch('/api/errors', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ message: e.message, stack: e.error?.stack, url: location.href, source: 'window.onerror' })
-            }).catch(function(){});
-          });
-          window.addEventListener('unhandledrejection', function(e) {
-            var msg = e.reason?.message || String(e.reason);
-            if (msg.indexOf('Failed to load chunk') !== -1 || msg.indexOf('Loading chunk') !== -1 || msg.indexOf('ChunkLoadError') !== -1) {
-              window.location.reload();
-              return;
-            }
-            fetch('/api/errors', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ message: msg, stack: e.reason?.stack, url: location.href, source: 'unhandled-promise' })
-            }).catch(function(){});
-          });
-        `}</Script>
       </body>
     </html>
   );

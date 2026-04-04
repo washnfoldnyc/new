@@ -101,7 +101,7 @@ export default function HeroChat() {
         if (data.reply) setMessages(prev => [...prev, { role: 'assistant', content: data.reply }])
         setQuickReplies(data.quickReplies || [])
       } catch {
-        setMessages(prev => [...prev, { role: 'assistant', content: 'Sorry, something went wrong. Text us at (212) 202-8400.' }])
+        setMessages(prev => [...prev, { role: 'assistant', content: 'Sorry, something went wrong. Text us at (917) 970-6002.' }])
         setQuickReplies([])
       } finally {
         setLoading(false)
@@ -126,7 +126,7 @@ export default function HeroChat() {
       if (data.reply) setMessages(prev => [...prev, { role: 'assistant', content: data.reply }])
       setQuickReplies(data.quickReplies || [])
     } catch {
-      setMessages(prev => [...prev, { role: 'assistant', content: 'Sorry, something went wrong. Text us at (212) 202-8400.' }])
+      setMessages(prev => [...prev, { role: 'assistant', content: 'Sorry, something went wrong. Text us at (917) 970-6002.' }])
       setQuickReplies([])
     } finally {
       setLoading(false)

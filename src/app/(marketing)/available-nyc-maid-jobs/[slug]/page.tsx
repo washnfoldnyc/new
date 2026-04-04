@@ -33,16 +33,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!n) return {}
 
   const title = `🧹 Cleaning Jobs in ${n.name} — Starting $30/hr + Bonuses | Trabajo de Limpieza`
-  const description = `💰 Now hiring cleaners in ${n.name}! Starting $30/hr + bonus programs. Zelle in <30 min. 100% tips. Open 24/7 🇺🇸🇪🇸 | Contratando en ${n.name} — desde $30/hr + bonos. (212) 202-8400`
+  const description = `💰 Now hiring cleaners in ${n.name}! Starting $30/hr + bonus programs. Zelle in <30 min. 100% tips. Open 24/7 🇺🇸🇪🇸 | Contratando en ${n.name} — desde $30/hr + bonos. (917) 970-6002`
 
   return {
     title,
     description,
-    alternates: { canonical: `https://www.thenycmaid.com/available-nyc-maid-jobs/${n.slug}` },
+    alternates: { canonical: `https://www.washandfoldnyc.com/available-nyc-maid-jobs/${n.slug}` },
     openGraph: {
-      title: `Cleaning Jobs in ${n.name} | The NYC Maid`,
+      title: `Cleaning Jobs in ${n.name} | Wash and Fold NYC`,
       description,
-      url: `https://www.thenycmaid.com/available-nyc-maid-jobs/${n.slug}`,
+      url: `https://www.washandfoldnyc.com/available-nyc-maid-jobs/${n.slug}`,
     },
   }
 }
@@ -61,10 +61,10 @@ export default async function NeighborhoodJobPage({ params }: { params: Promise<
     '@context': 'https://schema.org',
     '@type': 'JobPosting',
     title: `Professional House Cleaner — ${n.name}`,
-    description: `Now hiring experienced house cleaners in ${n.name}, ${areaName}. Starting at $30/hr paid via Zelle within 30 minutes of every completed job. Bonus programs for retention, client satisfaction, and five-star reviews. 100% of tips are yours. Flexible schedule 24/7. Full bilingual team portal (English/Spanish) with GPS, job details, and payment tracking. Apply at thenycmaid.com/apply or text (212) 202-8400.`,
+    description: `Now hiring experienced house cleaners in ${n.name}, ${areaName}. Starting at $30/hr paid via Zelle within 30 minutes of every completed job. Bonus programs for retention, client satisfaction, and five-star reviews. 100% of tips are yours. Flexible schedule 24/7. Full bilingual team portal (English/Spanish) with GPS, job details, and payment tracking. Apply at washandfoldnyc.com/apply or text (917) 970-6002.`,
     identifier: {
       '@type': 'PropertyValue',
-      name: 'The NYC Maid',
+      name: 'Wash and Fold NYC',
       value: `nycmaid-cleaner-${n.slug}`,
     },
     datePosted: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
@@ -74,9 +74,9 @@ export default async function NeighborhoodJobPage({ params }: { params: Promise<
     totalJobOpenings: 5,
     hiringOrganization: {
       '@type': 'Organization',
-      name: 'The NYC Maid',
-      sameAs: 'https://www.thenycmaid.com',
-      logo: 'https://www.thenycmaid.com/icon-512.png',
+      name: 'Wash and Fold NYC',
+      sameAs: 'https://www.washandfoldnyc.com',
+      logo: 'https://www.washandfoldnyc.com/icon-512.png',
     },
     jobLocation: {
       '@type': 'Place',
@@ -123,9 +123,9 @@ export default async function NeighborhoodJobPage({ params }: { params: Promise<
       <JsonLd data={[
         localBusinessSchema(),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
-          { name: 'Careers', url: 'https://www.thenycmaid.com/available-nyc-maid-jobs' },
-          { name: `Jobs in ${n.name}`, url: `https://www.thenycmaid.com/available-nyc-maid-jobs/${n.slug}` },
+          { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+          { name: 'Careers', url: 'https://www.washandfoldnyc.com/available-nyc-maid-jobs' },
+          { name: `Jobs in ${n.name}`, url: `https://www.washandfoldnyc.com/available-nyc-maid-jobs/${n.slug}` },
         ]),
         jobSchema,
       ]} />
@@ -152,8 +152,8 @@ export default async function NeighborhoodJobPage({ params }: { params: Promise<
             <Link href="/apply" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
               Apply Now / Aplica Ahora
             </Link>
-            <a href="sms:2122028400" className="text-white/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
-              or Text (212) 202-8400
+            <a href="sms:9179706002" className="text-white/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
+              or Text (917) 970-6002
             </a>
           </div>
         </div>
@@ -318,8 +318,8 @@ export default async function NeighborhoodJobPage({ params }: { params: Promise<
             <Link href="/apply" className="bg-[#1a3a5c] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
               Apply Now / Aplica Ahora
             </Link>
-            <a href="sms:2122028400" className="text-[#1a3a5c] font-semibold underline underline-offset-4 hover:no-underline">
-              Text (212) 202-8400
+            <a href="sms:9179706002" className="text-[#1a3a5c] font-semibold underline underline-offset-4 hover:no-underline">
+              Text (917) 970-6002
             </a>
           </div>
         </section>

@@ -53,7 +53,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/admin/', '/book/', '/team/', '/referral/', '/feedback/', '/api/'],
       },
     ],
-    sitemap: 'https://www.thenycmaid.com/sitemap.xml',
-    host: 'https://www.thenycmaid.com',
+    sitemap: 'https://www.washandfoldnyc.com/sitemap.xml',
+    host: 'https://www.washandfoldnyc.com',
   }
 }

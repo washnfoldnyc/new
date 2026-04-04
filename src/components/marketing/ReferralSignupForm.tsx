@@ -51,7 +51,7 @@ export default function ReferralSignupForm() {
   }
 
   const copyLink = () => {
-    navigator.clipboard.writeText(`https://www.thenycmaid.com/book?ref=${refCode}`)
+    navigator.clipboard.writeText(`https://www.washandfoldnyc.com/book?ref=${refCode}`)
     alert('Link copied!')
   }
 
@@ -64,7 +64,7 @@ export default function ReferralSignupForm() {
           </svg>
         </div>
         <h3 className="font-[family-name:var(--font-bebas)] text-3xl text-[#1a3a5c] tracking-wide mb-2">You&apos;re In!</h3>
-        <p className="text-gray-600 mb-6">Welcome to The NYC Maid referral program.</p>
+        <p className="text-gray-600 mb-6">Welcome to Wash and Fold NYC referral program.</p>
 
         <div className="bg-[#F0F8FF] border border-[#4BA3D4]/30 rounded-xl p-6 mb-6">
           <p className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-2">Your Referral Code</p>
@@ -73,7 +73,7 @@ export default function ReferralSignupForm() {
 
         <div className="bg-gray-50 rounded-xl p-6 mb-6">
           <p className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-2">Your Referral Link</p>
-          <p className="text-sm font-mono text-gray-700 break-all mb-3">https://www.thenycmaid.com/book?ref={refCode}</p>
+          <p className="text-sm font-mono text-gray-700 break-all mb-3">https://www.washandfoldnyc.com/book?ref={refCode}</p>
           <button
             onClick={copyLink}
             className="bg-[#4BA3D4] text-[#1a3a5c] px-6 py-2.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors"
@@ -185,7 +185,7 @@ export default function ReferralSignupForm() {
         <div className="border border-gray-200 rounded-lg p-4 bg-gray-50">
           <label className="flex items-start gap-3 cursor-pointer text-sm text-gray-600 leading-relaxed">
             <input type="checkbox" name="sms_consent" required className="mt-1 min-w-[18px] min-h-[18px]" />
-            <span>By checking this box, I consent to receive transactional text messages from <strong>The NYC Maid</strong> for appointment confirmations, reminders, and customer support. Reply STOP to opt out. Reply HELP for help. Msg frequency may vary. Msg &amp; data rates may apply. <a href="/privacy-policy" className="text-[#1a3a5c] underline underline-offset-2">Privacy Policy</a> | <a href="/terms-conditions" className="text-[#1a3a5c] underline underline-offset-2">Terms &amp; Conditions</a></span>
+            <span>By checking this box, I consent to receive transactional text messages from <strong>Wash and Fold NYC</strong> for appointment confirmations, reminders, and customer support. Reply STOP to opt out. Reply HELP for help. Msg frequency may vary. Msg &amp; data rates may apply. <a href="/privacy-policy" className="text-[#1a3a5c] underline underline-offset-2">Privacy Policy</a> | <a href="/terms-conditions" className="text-[#1a3a5c] underline underline-offset-2">Terms &amp; Conditions</a></span>
           </label>
         </div>
 

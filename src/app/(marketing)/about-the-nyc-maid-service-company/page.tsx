@@ -8,24 +8,24 @@ import JsonLd from '@/components/marketing/JsonLd'
 import Breadcrumbs from '@/components/marketing/Breadcrumbs'
 import CTABlock from '@/components/marketing/CTABlock'
 
-const url = 'https://www.thenycmaid.com/about-the-nyc-maid-service-company'
-const title = 'About The NYC Maid | Affordable, Reliable NYC Cleaning Since 2018'
-const description = 'The NYC Maid is NYC\'s most trusted cleaning service — affordable rates from $59/hr, reliable background-checked cleaners, and consistent quality since 2018. Serving 150+ neighborhoods. 5.0★ Google. (212) 202-8400'
+const url = 'https://www.washandfoldnyc.com/about-the-nyc-wash-and-fold-company'
+const title = 'About Wash and Fold NYC | Affordable, Reliable NYC Cleaning Since 2018'
+const description = 'Wash and Fold NYC is NYC\'s most trusted cleaning service — affordable rates from $3/lb, reliable background-checked cleaners, and consistent quality since 2018. Serving 150+ neighborhoods. 5.0★ Google. (917) 970-6002'
 
 export const metadata: Metadata = {
   title: { absolute: title },
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, type: 'website', siteName: 'The NYC Maid', locale: 'en_US' },
+  openGraph: { title, description, url, type: 'website', siteName: 'Wash and Fold NYC', locale: 'en_US' },
   twitter: { card: 'summary_large_image', title, description },
   other: { 'geo.region': 'US-NY', 'geo.placename': 'New York City', 'geo.position': '40.7589;-73.9851', 'ICBM': '40.7589, -73.9851' },
 }
 
 const aboutFaqs = [
-  { question: 'How long has The NYC Maid been in business?', answer: 'Since 2018. We started serving Manhattan and have expanded to Brooklyn, Queens, Long Island, and New Jersey. We\'ve completed thousands of cleanings and maintain a 5.0-star Google rating.' },
+  { question: 'How long has Wash and Fold NYC been in business?', answer: 'Since 2018. We started serving Manhattan and have expanded to Brooklyn, Queens, Long Island, and New Jersey. We\'ve completed thousands of cleanings and maintain a 5.0-star Google rating.' },
   { question: 'Are your cleaners employees or contractors?', answer: 'Our cleaners are independent professionals who work exclusively with us. Every cleaner is background-checked, trained on our quality standards, and covered by our general liability insurance while working in your home.' },
   { question: 'How do you keep prices so affordable?', answer: 'We keep overhead low — no storefront, no middle-management layer, no expensive marketing budgets. We pass those savings to you. Our cleaners earn competitive pay while you get rates well below the NYC average.' },
-  { question: 'What makes you different from other cleaning companies?', answer: 'Three things: consistency (same cleaner every visit for recurring clients), affordability ($59/hr is among the lowest rates in NYC for licensed, insured service), and reliability (we show up on time, every time, and we don\'t cancel).' },
+  { question: 'What makes you different from other cleaning companies?', answer: 'Three things: consistency (same cleaner every visit for recurring clients), affordability ($3/lb is among the lowest rates in NYC for licensed, insured service), and reliability (we show up on time, every time, and we don\'t cancel).' },
   { question: 'How many neighborhoods do you serve?', answer: `We serve ${ALL_NEIGHBORHOODS.length}+ neighborhoods across Manhattan, Brooklyn, Queens, Long Island, and New Jersey. Same rates everywhere — no travel surcharges.` },
   { question: 'Do you serve commercial spaces too?', answer: 'Yes. We clean offices, co-working spaces, medical offices, and retail spaces. Same hourly rates, same quality. Many of our residential clients also use us for their workspaces.' },
   { question: 'How do I know I can trust your cleaners?', answer: 'Every cleaner undergoes a comprehensive background check. We carry general liability insurance and bonding. We\'ve been in business since 2018 with a perfect 5.0-star Google rating and zero complaints filed with the BBB.' },
@@ -38,10 +38,10 @@ export default function AboutPage() {
       <JsonLd data={[
         organizationSchema(),
         webSiteSchema(),
-        webPageSchema({ url, name: title, description, type: 'AboutPage', breadcrumb: [{ name: 'Home', url: 'https://www.thenycmaid.com' }, { name: 'About', url }] }),
+        webPageSchema({ url, name: title, description, type: 'AboutPage', breadcrumb: [{ name: 'Home', url: 'https://www.washandfoldnyc.com' }, { name: 'About', url }] }),
         localBusinessSchema(),
         howToBookSchema(),
-        breadcrumbSchema([{ name: 'Home', url: 'https://www.thenycmaid.com' }, { name: 'About', url }]),
+        breadcrumbSchema([{ name: 'Home', url: 'https://www.washandfoldnyc.com' }, { name: 'About', url }]),
         faqSchema(aboutFaqs),
       ]} />
 
@@ -56,13 +56,13 @@ export default function AboutPage() {
             Affordable. Reliable. Friendly.
           </h1>
           <p className="text-sky-200/60 text-lg max-w-2xl mx-auto leading-relaxed">
-            The NYC Maid has been keeping New York homes clean since 2018. No gimmicks, no corporate nonsense — just honest, dependable cleaning from people who care.
+            Wash and Fold NYC has been keeping New York homes clean since 2018. No gimmicks, no corporate nonsense — just honest, dependable cleaning from people who care.
           </p>
         </div>
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <Breadcrumbs items={[{ name: 'About', href: '/about-the-nyc-maid-service-company' }]} />
+        <Breadcrumbs items={[{ name: 'About', href: '/about-the-nyc-wash-and-fold-company' }]} />
       </div>
 
       {/* Our Story — two column */}
@@ -74,7 +74,7 @@ export default function AboutPage() {
               <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1a3a5c] tracking-wide leading-tight mb-6">Built on a Simple Idea: Show Up, Do Great Work, Charge Fair Prices</p>
               <div className="space-y-5 text-gray-600 leading-relaxed">
                 <p>
-                  We started The NYC Maid in 2018 because we were frustrated with the cleaning industry in New York. Prices were inflated, quality was inconsistent, and companies treated cleaners and clients like numbers. We knew there had to be a better way.
+                  We started Wash and Fold NYC in 2018 because we were frustrated with the cleaning industry in New York. Prices were inflated, quality was inconsistent, and companies treated cleaners and clients like numbers. We knew there had to be a better way.
                 </p>
                 <p>
                   Our approach was simple from day one: hire great people, pay them well, charge honest prices, and show up on time. No surge pricing when demand is high. No bait-and-switch quotes. No cancelling on clients because a higher-paying job came in. Just reliable, thorough cleaning from people who genuinely take pride in their work.
@@ -83,7 +83,7 @@ export default function AboutPage() {
                   That approach has earned us a perfect 5.0-star rating on Google with 27 verified reviews, thousands of completed cleanings, and a client base that includes everyone from studios in Astoria to brownstones in Park Slope to offices in Midtown. Many of our clients have been with us for years — and they stay because we deliver the same quality every single visit.
                 </p>
                 <p>
-                  Today we serve {ALL_NEIGHBORHOODS.length}+ neighborhoods across Manhattan, Brooklyn, Queens, Long Island, and New Jersey. Our team is bilingual (English and Spanish), background-checked, licensed, and insured. And our prices haven&apos;t changed — $59/hr with your supplies, $75/hr when we bring everything, $100/hr for same-day emergency service.
+                  Today we serve {ALL_NEIGHBORHOODS.length}+ neighborhoods across Manhattan, Brooklyn, Queens, Long Island, and New Jersey. Our team is bilingual (English and Spanish), background-checked, licensed, and insured. And our prices haven&apos;t changed — $3/lb with your supplies, $75/hr when we bring everything, $100/hr for same-day emergency service.
                 </p>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function AboutPage() {
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-12">Why Thousands of New Yorkers Trust Us</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: 'Truly Affordable', detail: 'Our rates start at $59/hr — well below the NYC average for licensed, insured cleaning. No surge pricing, no hidden fees, no travel charges. Manhattan to Long Island, same rate.' },
+              { title: 'Truly Affordable', detail: 'Our rates start at $3/lb — well below the NYC average for licensed, insured cleaning. No surge pricing, no hidden fees, no travel charges. Manhattan to Long Island, same rate.' },
               { title: 'Reliably On Time', detail: 'We show up when we say we will. Period. We don\'t cancel, we don\'t reschedule last-minute, and we don\'t ghost. Our cleaners are punctual and our scheduling team confirms every appointment.' },
               { title: 'Consistent Quality', detail: 'For recurring clients, we assign the same cleaner every visit. They learn your home, your preferences, and your standards. The result is consistent, reliable quality — not a different stranger every time.' },
               { title: 'Friendly People', detail: 'Our cleaners are warm, respectful, and professional. Many of our 5-star reviews mention how friendly and pleasant our team is. We hire for character first, then train for skill.' },
@@ -169,7 +169,7 @@ export default function AboutPage() {
       <section className="py-16 bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0]">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-[#4BA3D4]/60 tracking-[0.25em] uppercase mb-3 text-center">How We Work</h2>
-          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-4">The NYC Maid Difference</p>
+          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-4">Wash and Fold NYC Difference</p>
           <p className="text-sky-200/60 text-center max-w-2xl mx-auto mb-12">Here&apos;s what happens when you book with us — no surprises, no fine print.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7">
@@ -252,7 +252,7 @@ export default function AboutPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">Common Questions</h2>
-          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-12">About The NYC Maid</p>
+          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-12">About Wash and Fold NYC</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
             {aboutFaqs.map(faq => (
               <div key={faq.question}>

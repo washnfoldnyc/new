@@ -36,15 +36,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!neighborhood || !service) return {}
 
   const area = getArea(neighborhood.area)!
-  const url = `https://www.thenycmaid.com/${slug}/${serviceSlug}`
-  const title = `${service.name} in ${neighborhood.name}, ${area.name} From $59/hr | The NYC Maid`
-  const description = `Professional ${service.name.toLowerCase()} in ${neighborhood.name}, ${area.name}. ${service.features.slice(0, 3).join(', ')} & more. ${service.priceRange}. 5.0★ Google. (212) 202-8400`
+  const url = `https://www.washandfoldnyc.com/${slug}/${serviceSlug}`
+  const title = `${service.name} in ${neighborhood.name}, ${area.name} From $3/lb | Wash and Fold NYC`
+  const description = `Professional ${service.name.toLowerCase()} in ${neighborhood.name}, ${area.name}. ${service.features.slice(0, 3).join(', ')} & more. ${service.priceRange}. 5.0★ Google. (917) 970-6002`
 
   return {
     title: { absolute: title },
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, type: 'website', siteName: 'The NYC Maid', locale: 'en_US' },
+    openGraph: { title, description, url, type: 'website', siteName: 'Wash and Fold NYC', locale: 'en_US' },
     twitter: { card: 'summary_large_image', title, description },
     other: { 'geo.region': `US-${area.state}`, 'geo.placename': neighborhood.name, 'geo.position': `${neighborhood.lat};${neighborhood.lng}`, 'ICBM': `${neighborhood.lat}, ${neighborhood.lng}` },
   }
@@ -99,11 +99,11 @@ export default async function NeighborhoodServicePage({ params }: Props) {
           </h1>
           <p className="text-sky-200/60 text-lg max-w-3xl leading-relaxed mb-8">{content.intro}</p>
           <div className="flex flex-col sm:flex-row items-start gap-4 mb-12">
-            <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-              Text (212) 202-8400
+            <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+              Text (917) 970-6002
             </a>
-            <a href="tel:2122028400" className="text-sky-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
-              or Call (212) 202-8400
+            <a href="tel:9179706002" className="text-sky-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
+              or Call (917) 970-6002
             </a>
           </div>
         </div>
@@ -182,8 +182,8 @@ export default async function NeighborhoodServicePage({ params }: Props) {
                     <p className="text-gray-400 text-xs mt-1">Duration</p>
                   </div>
                 </div>
-                <a href="sms:2122028400" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-xs tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors w-full">
-                  Text (212) 202-8400
+                <a href="sms:9179706002" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-6 py-3 rounded-lg font-bold text-xs tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors w-full">
+                  Text (917) 970-6002
                 </a>
               </div>
             </div>
@@ -237,9 +237,9 @@ export default async function NeighborhoodServicePage({ params }: Props) {
           <div>
             <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide mb-2">{service.name} Pricing in {neighborhood.name}</h3>
             <p className="text-[#1a3a5c]/80 leading-relaxed">
-              {service.name} in {neighborhood.name} typically costs {service.priceRange} and takes {service.duration}. We charge a flat hourly rate — $59/hr with your supplies, $75/hr when we bring everything, or $100/hr for same-day emergency service. No travel fees, no surge pricing, no hidden costs. {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
+              {service.name} in {neighborhood.name} typically costs {service.priceRange} and takes {service.duration}. We charge a flat hourly rate — $3/lb with your supplies, $75/hr when we bring everything, or $100/hr for same-day emergency service. No travel fees, no surge pricing, no hidden costs. {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
             </p>
-            <Link href="/updated-nyc-maid-service-industry-pricing" className="inline-block mt-3 text-[#1a3a5c] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
+            <Link href="/updated-nyc-wash-and-fold-industry-pricing" className="inline-block mt-3 text-[#1a3a5c] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
           </div>
         </div>
       </section>
@@ -294,7 +294,7 @@ export default async function NeighborhoodServicePage({ params }: Props) {
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book {service.name} in {neighborhood.name} — 3 Steps</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { n: '01', t: 'Text or Call', d: `Reach us at (212) 202-8400 with your ${neighborhood.name} address and tell us you need ${service.name.toLowerCase()}.` },
+              { n: '01', t: 'Text or Call', d: `Reach us at (917) 970-6002 with your ${neighborhood.name} address and tell us you need ${service.name.toLowerCase()}.` },
               { n: '02', t: 'We Confirm', d: `We match you with a cleaner experienced in ${service.name.toLowerCase()} for ${neighborhood.name} homes and lock in your appointment.` },
               { n: '03', t: 'Pay After', d: `Your cleaner arrives on time, completes the ${service.name.toLowerCase()}, and you pay only when you're satisfied. No deposits.` },
             ].map(s => (
@@ -306,8 +306,8 @@ export default async function NeighborhoodServicePage({ params }: Props) {
             ))}
           </div>
           <div className="flex justify-center mt-10">
-            <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-              Text (212) 202-8400
+            <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+              Text (917) 970-6002
             </a>
           </div>
         </div>

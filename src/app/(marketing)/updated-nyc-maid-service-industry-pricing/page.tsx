@@ -6,35 +6,35 @@ import JsonLd from '@/components/marketing/JsonLd'
 import Breadcrumbs from '@/components/marketing/Breadcrumbs'
 import CTABlock from '@/components/marketing/CTABlock'
 
-const url = 'https://www.thenycmaid.com/updated-nyc-maid-service-industry-pricing'
-const title = 'NYC Maid Service Pricing From $59/hr | Transparent Rates | The NYC Maid'
-const description = 'Transparent hourly cleaning rates across NYC, Brooklyn, Queens, Long Island & NJ. $59/hr your supplies, $75/hr we bring everything, $100/hr same-day. No hidden fees. 5.0★ Google. (212) 202-8400'
+const url = 'https://www.washandfoldnyc.com/updated-nyc-wash-and-fold-industry-pricing'
+const title = 'Wash and Fold NYC Service Pricing From $3/lb | Transparent Rates | Wash and Fold NYC'
+const description = 'Transparent hourly cleaning rates across NYC, Brooklyn, Queens, Long Island & NJ. $3/lb your supplies, $75/hr we bring everything, $100/hr same-day. No hidden fees. 5.0★ Google. (917) 970-6002'
 
 export const metadata: Metadata = {
   title: { absolute: title },
   description,
   alternates: { canonical: url },
-  openGraph: { title, description, url, type: 'website', siteName: 'The NYC Maid', locale: 'en_US' },
+  openGraph: { title, description, url, type: 'website', siteName: 'Wash and Fold NYC', locale: 'en_US' },
   twitter: { card: 'summary_large_image', title, description },
   other: { 'geo.region': 'US-NY', 'geo.placename': 'New York City', 'geo.position': '40.7589;-73.9851', 'ICBM': '40.7589, -73.9851' },
 }
 
 const pricingFaqs = [
-  { question: 'How much does house cleaning cost in NYC?', answer: 'Our rates are $59/hr when you provide supplies, $75/hr when we bring everything, and $100/hr for same-day emergency service. A typical NYC apartment cleaning costs $98–$390 depending on size and service type. We provide a custom quote based on your specific needs.' },
-  { question: 'Do you charge by the hour or by the job?', answer: 'We charge by the hour at a flat rate. $59/hr if you provide cleaning supplies, $75/hr if we bring our own professional-grade products and equipment, $100/hr for same-day emergency service. The total cost depends on how long your cleaning takes, which we estimate upfront based on your home size and service type.' },
+  { question: 'How much does house cleaning cost in NYC?', answer: 'Our rates are $3/lb when you provide supplies, $75/hr when we bring everything, and $100/hr for same-day emergency service. A typical NYC apartment cleaning costs $98–$390 depending on size and service type. We provide a custom quote based on your specific needs.' },
+  { question: 'Do you charge by the hour or by the job?', answer: 'We charge by the hour at a flat rate. $3/lb if you provide cleaning supplies, $75/hr if we bring our own professional-grade products and equipment, $100/hr for same-day emergency service. The total cost depends on how long your cleaning takes, which we estimate upfront based on your home size and service type.' },
   { question: 'Is there a minimum charge?', answer: 'Our minimum booking is 2 hours. For most studio and 1-bedroom regular cleanings, 2 hours is sufficient. Deep cleans and larger apartments typically require 3–6+ hours.' },
   { question: 'Do you charge extra for travel or different neighborhoods?', answer: 'No. Every neighborhood we serve — from Manhattan to Brooklyn to Long Island — gets the same flat hourly rate. No travel surcharges, no surge pricing, no zone fees.' },
-  { question: 'What\'s the difference between $59/hr and $75/hr?', answer: 'At $59/hr, you provide the cleaning supplies and equipment (vacuum, mop, products). At $75/hr, we bring everything — professional-grade products, microfiber systems, and a commercial vacuum. The cleaning quality and thoroughness is identical.' },
+  { question: 'What\'s the difference between $3/lb and $75/hr?', answer: 'At $3/lb, you provide the cleaning supplies and equipment (vacuum, mop, products). At $75/hr, we bring everything — professional-grade products, microfiber systems, and a commercial vacuum. The cleaning quality and thoroughness is identical.' },
   { question: 'How much does a deep cleaning cost?', answer: 'Deep cleaning typically costs $196–$390 for a standard NYC apartment. Studios run $196–$245, 1-bedrooms $245–$325, and 2-3 bedrooms $325–$390+. The exact price depends on square footage, condition, and whether you want us to bring supplies.' },
   { question: 'How much does move-in/move-out cleaning cost?', answer: 'Move-in/move-out cleaning runs $260–$520. These take 4–8 hours because we clean inside every cabinet, drawer, closet, and appliance. Empty apartments are easier to clean but require more detail work to be deposit-ready.' },
-  { question: 'Do I pay before or after the cleaning?', answer: 'After. We never charge upfront or take deposits. You pay only after the cleaning is complete, before the cleaner leaves. We accept cash, Venmo, Zelle (hi@thenycmaid.com), and credit card.' },
-  { question: 'What payment methods do you accept?', answer: 'Cash, Venmo, Zelle (hi@thenycmaid.com), and credit card (via Stripe). Payment is collected after the cleaning is complete. No deposits, no pre-authorization holds.' },
+  { question: 'Do I pay before or after the cleaning?', answer: 'After. We never charge upfront or take deposits. You pay only after the cleaning is complete, before the cleaner leaves. We accept cash, Venmo, Zelle (hi@washandfoldnyc.com), and credit card.' },
+  { question: 'What payment methods do you accept?', answer: 'Cash, Venmo, Zelle (hi@washandfoldnyc.com), and credit card (via Stripe). Payment is collected after the cleaning is complete. No deposits, no pre-authorization holds.' },
   { question: 'Do you offer discounts for recurring service?', answer: 'Our hourly rate stays the same for recurring service, but recurring cleanings take less time because your home stays consistently clean. A weekly client\'s cleaning might take 2 hours vs. 4 hours for a first-time deep clean — so you naturally pay less per visit.' },
   { question: 'Is there a cancellation fee?', answer: 'First-time and one-time services cannot be cancelled or rescheduled once confirmed. Recurring services (weekly, bi-weekly, monthly) require 7 days notice to reschedule, and cancellations are only allowed if discontinuing the service entirely with 7 days notice. We don\'t collect payment upfront — we hold your spot on our busy schedule, turning away other clients. Late changes directly affect our team members who depend on this income.' },
-  { question: 'Do you offer free estimates?', answer: 'Yes. Text or call (212) 202-8400 with your address, home size, and service type and we\'ll provide a custom quote within minutes. No obligation, no pressure.' },
+  { question: 'Do you offer free estimates?', answer: 'Yes. Text or call (917) 970-6002 with your address, home size, and service type and we\'ll provide a custom quote within minutes. No obligation, no pressure.' },
   { question: 'Are your cleaners insured?', answer: 'Yes. We carry general liability insurance and bonding. Every cleaner is covered while working in your home. If anything is accidentally damaged, we handle it through our insurance.' },
   { question: 'How long does a typical cleaning take?', answer: 'Regular apartment cleaning: 2–4 hours. Deep cleaning: 3–6 hours. Move-in/out: 4–8 hours. Post-construction: 5–10 hours. We estimate the time upfront so you know the approximate cost before we start.' },
-  { question: 'Can I get a quote without booking?', answer: 'Absolutely. Text (212) 202-8400 with your apartment details and we\'ll send a quote. No commitment required. Most quotes are delivered within 15 minutes.' },
+  { question: 'Can I get a quote without booking?', answer: 'Absolutely. Text (917) 970-6002 with your apartment details and we\'ll send a quote. No commitment required. Most quotes are delivered within 15 minutes.' },
 ]
 
 export default function PricingPage() {
@@ -43,11 +43,11 @@ export default function PricingPage() {
       <JsonLd data={[
         organizationSchema(),
         webSiteSchema(),
-        webPageSchema({ url, name: title, description, breadcrumb: [{ name: 'Home', url: 'https://www.thenycmaid.com' }, { name: 'Pricing', url }] }),
+        webPageSchema({ url, name: title, description, breadcrumb: [{ name: 'Home', url: 'https://www.washandfoldnyc.com' }, { name: 'Pricing', url }] }),
         localBusinessSchema(),
         pricingOffersSchema(),
         howToBookSchema(),
-        breadcrumbSchema([{ name: 'Home', url: 'https://www.thenycmaid.com' }, { name: 'Pricing', url }]),
+        breadcrumbSchema([{ name: 'Home', url: 'https://www.washandfoldnyc.com' }, { name: 'Pricing', url }]),
         faqSchema(pricingFaqs),
       ]} />
 
@@ -112,8 +112,8 @@ export default function PricingPage() {
             </div>
 
             <div className="flex justify-center mt-8">
-              <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-                Text (212) 202-8400
+              <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                Text (917) 970-6002
               </a>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function PricingPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <Breadcrumbs items={[{ name: 'Pricing', href: '/updated-nyc-maid-service-industry-pricing' }]} />
+        <Breadcrumbs items={[{ name: 'Pricing', href: '/updated-nyc-wash-and-fold-industry-pricing' }]} />
       </div>
 
       {/* Pricing guarantees */}
@@ -186,7 +186,7 @@ export default function PricingPage() {
               { n: '01', t: 'Home Size', d: 'Number of bedrooms and bathrooms determines how long the cleaning takes. A studio takes ~2 hours, a 3-bedroom takes 4–6+.' },
               { n: '02', t: 'Service Type', d: 'Deep cleans and move-in/out take 2–3x longer than regular maintenance. More time = higher total, same hourly rate.' },
               { n: '03', t: 'Current Condition', d: 'A home that hasn\'t been cleaned in months needs more attention on the first visit. After that, recurring visits are faster.' },
-              { n: '04', t: 'Supply Choice', d: '$59/hr with your supplies, $75/hr when we bring professional-grade products and equipment, or $100/hr for same-day emergency service. Same quality either way.' },
+              { n: '04', t: 'Supply Choice', d: '$3/lb with your supplies, $75/hr when we bring professional-grade products and equipment, or $100/hr for same-day emergency service. Same quality either way.' },
             ].map(item => (
               <div key={item.n} className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7 text-center">
                 <span className="font-[family-name:var(--font-bebas)] text-4xl text-[#4BA3D4]/30 leading-none">{item.n}</span>
@@ -212,7 +212,7 @@ export default function PricingPage() {
               <strong>Studio/1BR regular clean:</strong> $98–$195 &middot; <strong>2BR deep clean:</strong> $245–$390 &middot; <strong>3BR move-out:</strong> $390–$520 &middot; <strong>Post-reno:</strong> $375–$750
             </p>
             <p className="text-[#1a3a5c]/60 text-sm">
-              These are estimates at $59/hr. Add ~50% for the $75/hr supplies-included option. Every quote is customized to your specific home.
+              These are estimates at $3/lb. Add ~50% for the $75/hr supplies-included option. Every quote is customized to your specific home.
             </p>
           </div>
         </div>
@@ -225,9 +225,9 @@ export default function PricingPage() {
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-12">Get a Quote in 3 Steps</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { n: '01', t: 'Text or Call', d: 'Reach us at (212) 202-8400 with your address, home size, and what type of cleaning you need.' },
+              { n: '01', t: 'Text or Call', d: 'Reach us at (917) 970-6002 with your address, home size, and what type of cleaning you need.' },
               { n: '02', t: 'Get Your Quote', d: 'We\'ll reply with a custom quote based on your home\'s size, condition, and service type — usually within 15 minutes.' },
-              { n: '03', t: 'Pay After', d: 'We clean, you inspect, you pay. No deposits, no upfront charges. Cash, Venmo, Zelle (hi@thenycmaid.com), or credit card.' },
+              { n: '03', t: 'Pay After', d: 'We clean, you inspect, you pay. No deposits, no upfront charges. Cash, Venmo, Zelle (hi@washandfoldnyc.com), or credit card.' },
             ].map(s => (
               <div key={s.n} className="border border-gray-200 rounded-2xl p-7 text-center">
                 <span className="font-[family-name:var(--font-bebas)] text-5xl text-[#4BA3D4] leading-none">{s.n}</span>
@@ -237,8 +237,8 @@ export default function PricingPage() {
             ))}
           </div>
           <div className="flex justify-center mt-10">
-            <a href="sms:2122028400" className="bg-[#1a3a5c] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
-              Text (212) 202-8400
+            <a href="sms:9179706002" className="bg-[#1a3a5c] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
+              Text (917) 970-6002
             </a>
           </div>
         </div>

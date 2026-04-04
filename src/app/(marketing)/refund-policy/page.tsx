@@ -5,17 +5,17 @@ import JsonLd from '@/components/marketing/JsonLd'
 import Breadcrumbs from '@/components/marketing/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Refund Policy | The NYC Maid',
-  description: 'The NYC Maid refund policy — no money upfront, pay only after cleaning is complete. No deposits. Service from $59/hr. (646) 490-0130',
-  alternates: { canonical: 'https://www.thenycmaid.com/refund-policy' },
+  title: 'Refund Policy | Wash and Fold NYC',
+  description: 'Wash and Fold NYC refund policy — no money upfront, pay only after cleaning is complete. No deposits. Service from $3/lb. (917) 970-6002',
+  alternates: { canonical: 'https://www.washandfoldnyc.com/refund-policy' },
 }
 
 export default function RefundPolicyPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema([
-        { name: 'Home', url: 'https://www.thenycmaid.com' },
-        { name: 'Refund Policy', url: 'https://www.thenycmaid.com/refund-policy' },
+        { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+        { name: 'Refund Policy', url: 'https://www.washandfoldnyc.com/refund-policy' },
       ])} />
 
       <section className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] py-16 md:py-20">
@@ -102,7 +102,7 @@ export default function RefundPolicyPage() {
           <div className="border-t border-gray-200 pt-8">
             <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-4">Contact Us</h2>
             <p className="text-gray-600 leading-relaxed">
-              Questions? Contact us at <a href="mailto:hi@thenycmaid.com" className="text-[#1a3a5c] underline underline-offset-2">hi@thenycmaid.com</a> or text/call <a href="tel:6464900130" className="text-[#1a3a5c] underline underline-offset-2">(646) 490-0130</a>.
+              Questions? Contact us at <a href="mailto:hi@washandfoldnyc.com" className="text-[#1a3a5c] underline underline-offset-2">hi@washandfoldnyc.com</a> or text/call <a href="tel:9179706002" className="text-[#1a3a5c] underline underline-offset-2">(917) 970-6002</a>.
             </p>
             <p className="text-gray-500 text-sm mt-4">
               See also: <Link href="/privacy-policy" className="text-[#1a3a5c] underline underline-offset-2">Privacy Policy</Link> &middot; <Link href="/terms-conditions" className="text-[#1a3a5c] underline underline-offset-2">Terms &amp; Conditions</Link> &middot; <Link href="/do-not-share-policy" className="text-[#1a3a5c] underline underline-offset-2">Do Not Share Policy</Link>

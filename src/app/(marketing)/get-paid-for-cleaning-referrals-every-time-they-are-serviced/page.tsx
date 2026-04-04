@@ -7,13 +7,13 @@ import CTABlock from '@/components/marketing/CTABlock'
 import ReferralSignupForm from '@/components/marketing/ReferralSignupForm'
 
 export const metadata: Metadata = {
-  title: 'Get Paid for Cleaning Referrals | Earn 10% Commission | The NYC Maid',
-  description: 'Earn 10% commission every time your referral books a cleaning (from $59/hr). Recurring income, fast payouts via Zelle or Apple Cash. (212) 202-8400',
-  alternates: { canonical: 'https://www.thenycmaid.com/get-paid-for-cleaning-referrals-every-time-they-are-serviced' },
+  title: 'Get Paid for Cleaning Referrals | Earn 10% Commission | Wash and Fold NYC',
+  description: 'Earn 10% commission every time your referral books a cleaning (from $3/lb). Recurring income, fast payouts via Zelle or Apple Cash. (917) 970-6002',
+  alternates: { canonical: 'https://www.washandfoldnyc.com/get-paid-for-cleaning-referrals-every-time-they-are-serviced' },
   openGraph: {
-    title: 'Get Paid for Cleaning Referrals | The NYC Maid',
+    title: 'Get Paid for Cleaning Referrals | Wash and Fold NYC',
     description: 'Earn 10% commission every time someone you refer books a cleaning. Recurring income, fast payouts.',
-    url: 'https://www.thenycmaid.com/get-paid-for-cleaning-referrals-every-time-they-are-serviced',
+    url: 'https://www.washandfoldnyc.com/get-paid-for-cleaning-referrals-every-time-they-are-serviced',
   },
 }
 
@@ -32,8 +32,8 @@ export default function ReferralPage() {
       <JsonLd data={[
         localBusinessSchema(),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
-          { name: 'Referral Program', url: 'https://www.thenycmaid.com/get-paid-for-cleaning-referrals-every-time-they-are-serviced' },
+          { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+          { name: 'Referral Program', url: 'https://www.washandfoldnyc.com/get-paid-for-cleaning-referrals-every-time-they-are-serviced' },
         ]),
         faqSchema(referralFAQs),
       ]} />
@@ -45,7 +45,7 @@ export default function ReferralPage() {
             Get Paid for Cleaning Referrals
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl leading-relaxed">
-            Earn 10% commission every time someone you refer books a cleaning with The NYC Maid. No limit on referrals. Recurring income for as long as they stay a customer.
+            Earn 10% commission every time someone you refer books a cleaning with Wash and Fold NYC. No limit on referrals. Recurring income for as long as they stay a customer.
           </p>
         </div>
       </section>
@@ -77,7 +77,7 @@ export default function ReferralPage() {
           <div className="aspect-video rounded-xl overflow-hidden border border-gray-200">
             <iframe
               src="https://www.youtube.com/embed/MhVjNiZtB_E"
-              title="The NYC Maid Referral Program"
+              title="Wash and Fold NYC Referral Program"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full"

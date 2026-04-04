@@ -6,9 +6,9 @@ import Breadcrumbs from '@/components/marketing/Breadcrumbs'
 
 export const revalidate = 259200
 
-const pageUrl = 'https://www.thenycmaid.com/careers/operations-coordinator'
-const pageTitle = 'Part-Time Operations Admin — 10% Per Job, ~$40/hr Last Month | The NYC Maid'
-const pageDescription = 'The NYC Maid is hiring a part-time operations coordinator. Earn 10% of every completed job — paid per job via Zelle. Last month 10% averaged out to about $40/hr. Own the calendar, cleaners, and collections. Aiming for 100 services/week. Apply now.'
+const pageUrl = 'https://www.washandfoldnyc.com/careers/operations-coordinator'
+const pageTitle = 'Part-Time Operations Admin — 10% Per Job, ~$40/hr Last Month | Wash and Fold NYC'
+const pageDescription = 'Wash and Fold NYC is hiring a part-time operations coordinator. Earn 10% of every completed job — paid per job via Zelle. Last month 10% averaged out to about $40/hr. Own the calendar, cleaners, and collections. Aiming for 100 services/week. Apply now.'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     description: pageDescription,
     url: pageUrl,
     type: 'article',
-    siteName: 'The NYC Maid',
+    siteName: 'Wash and Fold NYC',
     locale: 'en_US',
-    images: [{ url: 'https://www.thenycmaid.com/icon-512.png', width: 512, height: 512, alt: 'Part-Time Operations Admin — The NYC Maid — Now Hiring' }],
+    images: [{ url: 'https://www.washandfoldnyc.com/icon-512.png', width: 512, height: 512, alt: 'Part-Time Operations Admin — Wash and Fold NYC — Now Hiring' }],
     publishedTime: '2026-03-31T00:00:00Z',
     modifiedTime: new Date().toISOString(),
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: pageTitle,
     description: pageDescription,
-    images: ['https://www.thenycmaid.com/icon-512.png'],
+    images: ['https://www.washandfoldnyc.com/icon-512.png'],
   },
   keywords: 'part time operations coordinator, part time coordinator remote, part time dispatcher, part time customer service, second job from home, side job remote, work from phone job, cleaning service coordinator, scheduling coordinator part time, payment coordinator, virtual coordinator, remote coordinator NYC, part time work from home, easy second job, side gig remote, operations coordinator cleaning company, bilingual coordinator, part time job NYC, part time job New Jersey, part time job Long Island, remote part time job, work from home part time, dispatcher part time, service coordinator part time, 10 percent commission job, per job pay, pay per job coordinator',
   other: {
@@ -61,8 +61,8 @@ function coordinatorJobPostingSchema() {
     title: 'Operations Admin (Part-Time, Remote)',
     datePosted,
     validThrough,
-    description: `<h2>Part-Time Operations Admin — The NYC Maid — Remote</h2>
-<p>The NYC Maid is hiring a <strong>part-time operations coordinator</strong> to own the calendar, the cleaners, and the collections. You earn <strong>10% of every completed and paid job</strong> — paid per job via Zelle within minutes of completion, same as the cleaners. No base salary. No hourly rate. You earn when the business earns.</p>
+    description: `<h2>Part-Time Operations Admin — Wash and Fold NYC — Remote</h2>
+<p>Wash and Fold NYC is hiring a <strong>part-time operations coordinator</strong> to own the calendar, the cleaners, and the collections. You earn <strong>10% of every completed and paid job</strong> — paid per job via Zelle within minutes of completion, same as the cleaners. No base salary. No hourly rate. You earn when the business earns.</p>
 
 <h3>Compensation</h3>
 <p><strong>10% of total revenue per completed job, paid via Zelle within minutes.</strong> February: 36 jobs. March: 81 jobs, $17,000 revenue = $1,700 earned — 10% averaged out to about $40/hr. We are aiming for 100 services per week, which would be $80K/month in revenue and around $8,000/month for you. Average job is ~$210, so you earn ~$21 per job. The business is doubling — more jobs means more money, automatically.</p>
@@ -100,21 +100,21 @@ function coordinatorJobPostingSchema() {
 <p>This is a <strong>1099 independent contractor position</strong>. You are not an employee. You are paid per job, you set your own workflow, and you are responsible for your own taxes. You will receive a 1099-NEC at the end of the year.</p>
 
 <h3>How to Apply</h3>
-<p>Submit your application at <a href="https://www.thenycmaid.com/apply/operations-coordinator">thenycmaid.com/apply/operations-coordinator</a>. Include a photo and a 60-second selfie video introduction. If bilingual, speak in both English and Spanish.</p>`,
+<p>Submit your application at <a href="https://www.washandfoldnyc.com/apply/operations-coordinator">washandfoldnyc.com/apply/operations-coordinator</a>. Include a photo and a 60-second selfie video introduction. If bilingual, speak in both English and Spanish.</p>`,
 
     hiringOrganization: {
       '@type': 'Organization',
-      name: 'The NYC Maid',
-      sameAs: 'https://www.thenycmaid.com',
-      url: 'https://www.thenycmaid.com',
+      name: 'Wash and Fold NYC',
+      sameAs: 'https://www.washandfoldnyc.com',
+      url: 'https://www.washandfoldnyc.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.thenycmaid.com/icon-512.png',
+        url: 'https://www.washandfoldnyc.com/icon-512.png',
         width: 512,
         height: 512,
       },
       telephone: '+1-212-202-8400',
-      email: 'hi@thenycmaid.com',
+      email: 'hi@washandfoldnyc.com',
       foundingDate: '2018',
       numberOfEmployees: {
         '@type': 'QuantitativeValue',
@@ -168,7 +168,7 @@ function coordinatorJobPostingSchema() {
 
     identifier: {
       '@type': 'PropertyValue',
-      name: 'The NYC Maid',
+      name: 'Wash and Fold NYC',
       value: 'nycmaid-ops-coordinator-2026',
     },
 
@@ -192,7 +192,7 @@ function coordinatorJobPostingSchema() {
     applicationContact: {
       '@type': 'ContactPoint',
       telephone: '+1-212-202-8400',
-      email: 'hi@thenycmaid.com',
+      email: 'hi@washandfoldnyc.com',
       contactType: 'Human Resources',
       availableLanguage: ['English', 'Spanish'],
     },
@@ -253,7 +253,7 @@ const faqs = [
   {
     question: 'How do I apply?',
     questionEs: '¿Cómo aplico?',
-    answer: 'Go to thenycmaid.com/apply/operations-coordinator. Fill out the short form, upload a photo of yourself and a 60-second selfie video. If you\'re bilingual, speak in both English and Spanish in the video. We review applications within 48 hours.',
+    answer: 'Go to washandfoldnyc.com/apply/operations-coordinator. Fill out the short form, upload a photo of yourself and a 60-second selfie video. If you\'re bilingual, speak in both English and Spanish in the video. We review applications within 48 hours.',
   },
 ]
 
@@ -270,14 +270,14 @@ export default function OperationsCoordinatorPage() {
           type: 'WebPage',
           speakable: ['h1', 'h2', '.hero-description'],
           breadcrumb: [
-            { name: 'Home', url: 'https://www.thenycmaid.com' },
-            { name: 'Careers', url: 'https://www.thenycmaid.com/available-nyc-maid-jobs' },
+            { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+            { name: 'Careers', url: 'https://www.washandfoldnyc.com/available-nyc-maid-jobs' },
             { name: 'Operations Admin', url: pageUrl },
           ],
         }),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
-          { name: 'Careers', url: 'https://www.thenycmaid.com/available-nyc-maid-jobs' },
+          { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+          { name: 'Careers', url: 'https://www.washandfoldnyc.com/available-nyc-maid-jobs' },
           { name: 'Operations Admin', url: pageUrl },
         ]),
         coordinatorJobPostingSchema(),
@@ -300,7 +300,7 @@ export default function OperationsCoordinatorPage() {
             Operations Admin — 10% Per Job, Averaged ~$40/hr Last Month
           </h1>
           <p className="text-blue-200/80 text-lg max-w-3xl leading-relaxed mb-3">
-            The NYC Maid &mdash; New York City | Long Island | New Jersey
+            Wash and Fold NYC &mdash; New York City | Long Island | New Jersey
           </p>
           <p className="text-sky-200/60 max-w-3xl leading-relaxed mb-4">
             You own the calendar, the cleaners, and the collections. Jobs are sold and scheduled &mdash; your job is to make sure every cleaning runs, every client is happy, and every payment comes in. You get paid 10% of every completed job, same way the cleaners get paid &mdash; per job, via Zelle, within minutes of completion.
@@ -323,8 +323,8 @@ export default function OperationsCoordinatorPage() {
             <Link href="/apply/operations-coordinator" data-track="coord-hero-apply" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
               Apply Now
             </Link>
-            <a href="sms:2122028400" data-track="coord-hero-text" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
-              or Text (212) 202-8400
+            <a href="sms:9179706002" data-track="coord-hero-text" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
+              or Text (917) 970-6002
             </a>
           </div>
         </div>
@@ -732,8 +732,8 @@ export default function OperationsCoordinatorPage() {
             <Link href="/apply/operations-coordinator" data-track="coord-bottom-apply" className="bg-[#1a3a5c] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
               Apply Now
             </Link>
-            <a href="sms:2122028400" data-track="coord-bottom-text" className="text-[#1a3a5c]/60 font-medium text-sm hover:text-[#1a3a5c] transition-colors underline underline-offset-4">
-              or Text (212) 202-8400
+            <a href="sms:9179706002" data-track="coord-bottom-text" className="text-[#1a3a5c]/60 font-medium text-sm hover:text-[#1a3a5c] transition-colors underline underline-offset-4">
+              or Text (917) 970-6002
             </a>
           </div>
         </section>

@@ -6,11 +6,11 @@ import Breadcrumbs from '@/components/marketing/Breadcrumbs'
 import CTABlock from '@/components/marketing/CTABlock'
 
 const pricingFAQs = [
-  { question: 'How much does house cleaning cost in NYC?', answer: 'Our standard rate is $59/hr when you provide supplies, $75/hr when we bring everything, and $100/hr for same-day emergency service. A typical studio takes 2–3 hours. We provide free custom quotes based on your home size and cleaning needs.' },
-  { question: 'Do you charge a flat rate or hourly?', answer: 'We charge by the hour. The rate is the same regardless of service type or neighborhood — $59/hr with your supplies, $75/hr when we bring everything, $100/hr for same-day emergency service. No hidden fees, no surge pricing.' },
+  { question: 'How much does house cleaning cost in NYC?', answer: 'Our standard rate is $3/lb when you provide supplies, $75/hr when we bring everything, and $100/hr for same-day emergency service. A typical studio takes 2–3 hours. We provide free custom quotes based on your home size and cleaning needs.' },
+  { question: 'Do you charge a flat rate or hourly?', answer: 'We charge by the hour. The rate is the same regardless of service type or neighborhood — $3/lb with your supplies, $75/hr when we bring everything, $100/hr for same-day emergency service. No hidden fees, no surge pricing.' },
   { question: 'Is there a minimum charge?', answer: 'Our minimum is 2 hours per visit. Most apartments take 2–4 hours depending on size and condition.' },
   { question: 'Do I pay before or after the cleaning?', answer: 'You pay after the cleaning is complete, before the cleaner leaves. No deposits, no pre-charges, no money upfront.' },
-  { question: 'What payment methods do you accept?', answer: 'We accept cash, credit card, debit card, Zelle (hi@thenycmaid.com), Venmo, and Apple Pay. You choose what works best for you.' },
+  { question: 'What payment methods do you accept?', answer: 'We accept cash, credit card, debit card, Zelle (hi@washandfoldnyc.com), Venmo, and Apple Pay. You choose what works best for you.' },
   { question: 'Do you offer discounts for recurring cleanings?', answer: 'Our hourly rate stays the same for all cleanings. The savings with recurring service come from shorter cleaning times — a well-maintained home takes less time to clean each visit.' },
 ]
 
@@ -24,18 +24,18 @@ const serviceFAQs = [
 ]
 
 const schedulingFAQs = [
-  { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-8400. We typically schedule within 24–48 hours. Same-day availability for urgent requests.' },
+  { question: 'How do I book a cleaning?', answer: 'Text or call (917) 970-6002. We typically schedule within 24–48 hours. Same-day availability for urgent requests.' },
   { question: 'Can I get the same cleaner each time?', answer: 'Yes. For recurring clients, we assign the same dedicated cleaner to your home so they learn your preferences and layout. Consistency is one of the things our clients value most.' },
-  { question: 'Do you offer same-day cleaning?', answer: 'Yes. Call or text (212) 202-8400 and we\'ll dispatch a professional cleaner within hours. Same-day service is $100/hr.' },
+  { question: 'Do you offer same-day cleaning?', answer: 'Yes. Call or text (917) 970-6002 and we\'ll dispatch a professional cleaner within hours. Same-day service is $100/hr.' },
   { question: 'How do I reschedule or cancel?', answer: 'First-time and one-time services cannot be cancelled or rescheduled once confirmed. Recurring services (weekly, bi-weekly, monthly) require 7 days notice to reschedule, and cancellations are only permitted if discontinuing the service entirely with 7 days notice. We don\'t take payment upfront — we hold your spot and turn away other clients, so late changes directly affect our team members who depend on this income.' },
-  { question: 'What hours do you operate?', answer: 'Office hours are Monday through Saturday 7am to 7pm. Sales and booking inquiries are available 24/7 — call or text (212) 202-8400 anytime.' },
+  { question: 'What hours do you operate?', answer: 'Office hours are Monday through Saturday 7am to 7pm. Sales and booking inquiries are available 24/7 — call or text (917) 970-6002 anytime.' },
 ]
 
 const trustFAQs = [
   { question: 'Are your cleaners licensed and insured?', answer: 'Yes. All of our cleaners are fully licensed, insured, and background-checked. We carry general liability insurance and bonding for your complete protection and peace of mind.' },
   { question: 'Do I need to be home during the cleaning?', answer: 'No. Many of our clients provide a key, lockbox code, or doorman access. If you prefer to be home, that\'s perfectly fine too.' },
   { question: 'What if I\'m not satisfied with the cleaning?', answer: 'We offer a satisfaction guarantee. If you\'re not happy with any part of the cleaning, contact us within 24 hours and we\'ll send a team back to address the issue at no extra charge.' },
-  { question: 'Do you bring your own supplies?', answer: 'It\'s your choice. At $59/hr you provide the supplies. At $75/hr we bring everything — professional-grade cleaning products and all equipment needed. $100/hr for same-day emergency service, we bring everything.' },
+  { question: 'Do you bring your own supplies?', answer: 'It\'s your choice. At $3/lb you provide the supplies. At $75/hr we bring everything — professional-grade cleaning products and all equipment needed. $100/hr for same-day emergency service, we bring everything.' },
   { question: 'Are there any contracts or commitments?', answer: 'No contracts. Stay because you\'re happy, not because you\'re locked in. Cancel recurring service anytime with 7 days notice.' },
   { question: 'What areas do you serve?', answer: 'We serve Manhattan, Brooklyn, Queens, Long Island (Great Neck, Manhasset, Port Washington, Garden City, Roslyn), and New Jersey (Hoboken, Jersey City, Weehawken, Edgewater). Same rates everywhere.' },
   { question: 'How long does a cleaning take?', answer: 'Regular cleaning: 2–4 hours. Deep cleaning: 2–4 hours. Move-in/out: 4–8 hours. Post-renovation: 5–10 hours. Time depends on home size and condition.' },
@@ -43,9 +43,9 @@ const trustFAQs = [
 
 const allFAQs = [...pricingFAQs, ...serviceFAQs, ...schedulingFAQs, ...trustFAQs]
 
-const pageUrl = 'https://www.thenycmaid.com/nyc-cleaning-service-frequently-asked-questions-in-2025'
-const pageTitle = 'NYC Cleaning Service FAQ — Pricing, Services & Scheduling | The NYC Maid'
-const pageDescription = 'Answers to 24 common questions about The NYC Maid — pricing ($59–$100/hr), what\'s included, scheduling, insurance, service areas, and more. Serving Manhattan, Brooklyn, Queens, Long Island & NJ. (212) 202-8400'
+const pageUrl = 'https://www.washandfoldnyc.com/nyc-cleaning-service-frequently-asked-questions-in-2025'
+const pageTitle = 'NYC Cleaning Service FAQ — Pricing, Services & Scheduling | Wash and Fold NYC'
+const pageDescription = 'Answers to 24 common questions about Wash and Fold NYC — pricing ($59–$100/hr), what\'s included, scheduling, insurance, service areas, and more. Serving Manhattan, Brooklyn, Queens, Long Island & NJ. (917) 970-6002'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
     description: pageDescription,
     url: pageUrl,
     type: 'website',
-    siteName: 'The NYC Maid',
+    siteName: 'Wash and Fold NYC',
     locale: 'en_US',
-    images: [{ url: 'https://www.thenycmaid.com/icon-512.png', width: 512, height: 512, alt: 'The NYC Maid' }],
+    images: [{ url: 'https://www.washandfoldnyc.com/icon-512.png', width: 512, height: 512, alt: 'Wash and Fold NYC' }],
   },
   twitter: {
     card: 'summary',
@@ -91,14 +91,14 @@ export default function FAQPage() {
           name: pageTitle,
           description: pageDescription,
           breadcrumb: [
-            { name: 'Home', url: 'https://www.thenycmaid.com' },
+            { name: 'Home', url: 'https://www.washandfoldnyc.com' },
             { name: 'FAQ', url: pageUrl },
           ],
         }),
         localBusinessSchema(),
         howToBookSchema(),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
+          { name: 'Home', url: 'https://www.washandfoldnyc.com' },
           { name: 'FAQ', url: pageUrl },
         ]),
         faqSchema(allFAQs),
@@ -115,7 +115,7 @@ export default function FAQPage() {
             Frequently Asked Questions About NYC House Cleaning Services
           </h1>
           <p className="text-blue-200/80 text-lg max-w-2xl leading-relaxed mb-10">
-            Everything you need to know about pricing, services, scheduling, and how we work — answered by our team. Can&apos;t find your question? Call <a href="tel:6464900130" className="text-[#4BA3D4] underline underline-offset-2">(646) 490-0130</a>.
+            Everything you need to know about pricing, services, scheduling, and how we work — answered by our team. Can&apos;t find your question? Call <a href="tel:9179706002" className="text-[#4BA3D4] underline underline-offset-2">(917) 970-6002</a>.
           </p>
 
           {/* Quick nav */}
@@ -173,7 +173,7 @@ export default function FAQPage() {
                 <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1a3a5c] tracking-wide">$100<span className="text-xl text-gray-300">/hr</span></p>
               </div>
             </div>
-            <Link href="/updated-nyc-maid-service-industry-pricing" className="inline-block mt-6 text-[#1a3a5c] font-semibold underline underline-offset-4 hover:no-underline">
+            <Link href="/updated-nyc-wash-and-fold-industry-pricing" className="inline-block mt-6 text-[#1a3a5c] font-semibold underline underline-offset-4 hover:no-underline">
               View Full Pricing Details &rarr;
             </Link>
           </div>
@@ -186,18 +186,18 @@ export default function FAQPage() {
             We&apos;re happy to answer anything. Text or call us — most questions are answered within minutes.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-              Text (212) 202-8400
+            <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+              Text (917) 970-6002
             </a>
-            <a href="tel:2122028400" className="text-blue-200/70 font-medium text-lg hover:text-white transition-colors underline underline-offset-4">
-              or Call (212) 202-8400
+            <a href="tel:9179706002" className="text-blue-200/70 font-medium text-lg hover:text-white transition-colors underline underline-offset-4">
+              or Call (917) 970-6002
             </a>
           </div>
         </div>
 
         {/* Helpful links */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
-          <Link href="/nyc-maid-service-services-offered-by-the-nyc-maid" className="group border border-gray-200 rounded-xl p-6 hover:border-[#4BA3D4] transition-all">
+          <Link href="/nyc-wash-and-fold-services-offered-by-the-nyc-maid" className="group border border-gray-200 rounded-xl p-6 hover:border-[#4BA3D4] transition-all">
             <p className="font-semibold text-[#1a3a5c] group-hover:underline underline-offset-2 mb-1">View All Services</p>
             <p className="text-gray-500 text-sm">10 cleaning services for every situation</p>
           </Link>

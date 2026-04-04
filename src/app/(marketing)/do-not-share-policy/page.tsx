@@ -5,17 +5,17 @@ import JsonLd from '@/components/marketing/JsonLd'
 import Breadcrumbs from '@/components/marketing/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Do Not Share Policy | The NYC Maid',
-  description: 'The NYC Maid does not sell, share, or distribute your personal information. Your data stays with us. NYC cleaning from $59/hr. (646) 490-0130',
-  alternates: { canonical: 'https://www.thenycmaid.com/do-not-share-policy' },
+  title: 'Do Not Share Policy | Wash and Fold NYC',
+  description: 'Wash and Fold NYC does not sell, share, or distribute your personal information. Your data stays with us. NYC cleaning from $3/lb. (917) 970-6002',
+  alternates: { canonical: 'https://www.washandfoldnyc.com/do-not-share-policy' },
 }
 
 export default function DoNotSharePage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema([
-        { name: 'Home', url: 'https://www.thenycmaid.com' },
-        { name: 'Do Not Share Policy', url: 'https://www.thenycmaid.com/do-not-share-policy' },
+        { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+        { name: 'Do Not Share Policy', url: 'https://www.washandfoldnyc.com/do-not-share-policy' },
       ])} />
 
       <section className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] py-16 md:py-20">
@@ -75,8 +75,8 @@ export default function DoNotSharePage() {
               If you would still like to submit a formal request, you may do so at any time:
             </p>
             <div className="bg-gray-50 rounded-xl p-5 mt-4 space-y-2">
-              <p className="text-gray-600 text-sm">Email us at <a href="mailto:hi@thenycmaid.com" className="text-[#1a3a5c] underline underline-offset-2">hi@thenycmaid.com</a> with the subject &ldquo;Do Not Share&rdquo;</p>
-              <p className="text-gray-600 text-sm">Or text/call <a href="tel:6464900130" className="text-[#1a3a5c] underline underline-offset-2">(646) 490-0130</a></p>
+              <p className="text-gray-600 text-sm">Email us at <a href="mailto:hi@washandfoldnyc.com" className="text-[#1a3a5c] underline underline-offset-2">hi@washandfoldnyc.com</a> with the subject &ldquo;Do Not Share&rdquo;</p>
+              <p className="text-gray-600 text-sm">Or text/call <a href="tel:9179706002" className="text-[#1a3a5c] underline underline-offset-2">(917) 970-6002</a></p>
             </div>
             <p className="text-gray-500 text-sm mt-4">
               We will acknowledge your request within 15 business days.

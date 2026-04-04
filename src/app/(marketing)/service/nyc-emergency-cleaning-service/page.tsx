@@ -161,7 +161,7 @@ const emergencyTypes = [
 ]
 
 const process = [
-  { step: '1', title: 'Call Us', description: 'Call (212) 202-8400 and describe the situation. We\'ll ask what happened, when it happened, and the scope of damage. Be honest about severity — it helps us send the right team with the right equipment.' },
+  { step: '1', title: 'Call Us', description: 'Call (917) 970-6002 and describe the situation. We\'ll ask what happened, when it happened, and the scope of damage. Be honest about severity — it helps us send the right team with the right equipment.' },
   { step: '2', title: 'Assessment', description: 'We assess the situation — in person if possible, or by phone/video for faster response. We\'ll give you an honest estimate of time, cost, and what to expect. No surprises.' },
   { step: '3', title: 'Response', description: 'Our team arrives with professional-grade equipment — HEPA vacuums, industrial dehumidifiers, commercial cleaning agents, PPE, and specialized tools for the specific emergency type.' },
   { step: '4', title: 'Cleanup', description: 'Systematic cleanup following industry protocols. We document everything for your insurance claim. For water damage, we monitor moisture levels. For biohazard, we follow OSHA bloodborne pathogen standards.' },
@@ -182,13 +182,13 @@ const faqData = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Emergency Cleaning Service NYC — 24/7 Response | The NYC Maid',
-  description: 'NYC emergency cleaning — water damage, fire, sewage, biohazard & mold. 24/7 rapid response with pro equipment. What to do, what not to do. Call (212) 202-8400.',
-  alternates: { canonical: 'https://www.thenycmaid.com/service/nyc-emergency-cleaning-service' },
+  title: 'Emergency Cleaning Service NYC — 24/7 Response | Wash and Fold NYC',
+  description: 'NYC emergency cleaning — water damage, fire, sewage, biohazard & mold. 24/7 rapid response with pro equipment. What to do, what not to do. Call (917) 970-6002.',
+  alternates: { canonical: 'https://www.washandfoldnyc.com/service/nyc-emergency-cleaning-service' },
   openGraph: {
-    title: 'Emergency Cleaning Service NYC | The NYC Maid',
+    title: 'Emergency Cleaning Service NYC | Wash and Fold NYC',
     description: 'Rapid-response emergency cleaning across NYC. Water damage, fire, biohazard & more. Available 24/7.',
-    url: 'https://www.thenycmaid.com/service/nyc-emergency-cleaning-service',
+    url: 'https://www.washandfoldnyc.com/service/nyc-emergency-cleaning-service',
   },
 }
 
@@ -210,8 +210,8 @@ export default function EmergencyCleaningPage() {
     description: 'Professional emergency cleaning service for NYC apartments — water damage, fire, sewage, biohazard, mold, and disaster cleanup. Available 24/7.',
     provider: {
       '@type': 'LocalBusiness',
-      name: 'The NYC Maid',
-      url: 'https://www.thenycmaid.com',
+      name: 'Wash and Fold NYC',
+      url: 'https://www.washandfoldnyc.com',
       telephone: '+12122028400',
       address: { '@type': 'PostalAddress', addressLocality: 'New York', addressRegion: 'NY', addressCountry: 'US' },
     },
@@ -256,9 +256,9 @@ export default function EmergencyCleaningPage() {
       <JsonLd data={[
         localBusinessSchema(),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
-          { name: 'Services', url: 'https://www.thenycmaid.com/nyc-maid-service-services-offered-by-the-nyc-maid' },
-          { name: 'Emergency Cleaning', url: 'https://www.thenycmaid.com/service/nyc-emergency-cleaning-service' },
+          { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+          { name: 'Services', url: 'https://www.washandfoldnyc.com/nyc-wash-and-fold-services-offered-by-the-nyc-maid' },
+          { name: 'Emergency Cleaning', url: 'https://www.washandfoldnyc.com/service/nyc-emergency-cleaning-service' },
         ]),
         faqSchema,
         serviceSchema,
@@ -272,11 +272,11 @@ export default function EmergencyCleaningPage() {
           <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl lg:text-7xl text-white tracking-wide leading-[0.95] mb-6">Emergency Cleaning Service in NYC</h1>
           <p className="text-white/60 text-lg max-w-3xl mx-auto mb-8">Flooding, fire damage, sewage, biohazard, mold — when disaster hits your apartment, you need professionals who respond fast and know what they&apos;re doing. We&apos;ve handled hundreds of emergency cleanups across all five boroughs.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="tel:2122028400" className="bg-red-600 text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-red-700 transition-colors">
-              Call Now — (212) 202-8400
+            <a href="tel:9179706002" className="bg-red-600 text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-red-700 transition-colors">
+              Call Now — (917) 970-6002
             </a>
-            <a href="sms:2122028400" className="text-white font-semibold text-lg hover:underline underline-offset-4">
-              or Text (212) 202-8400
+            <a href="sms:9179706002" className="text-white font-semibold text-lg hover:underline underline-offset-4">
+              or Text (917) 970-6002
             </a>
           </div>
         </div>
@@ -284,7 +284,7 @@ export default function EmergencyCleaningPage() {
 
       <div className="max-w-5xl mx-auto px-4 py-12">
         <Breadcrumbs items={[
-          { name: 'Services', href: '/nyc-maid-service-services-offered-by-the-nyc-maid' },
+          { name: 'Services', href: '/nyc-wash-and-fold-services-offered-by-the-nyc-maid' },
           { name: 'Emergency Cleaning', href: '/service/nyc-emergency-cleaning-service' },
         ]} />
         <TrustBadges />
@@ -369,8 +369,8 @@ export default function EmergencyCleaningPage() {
         <div className="bg-red-600 rounded-xl p-8 md:p-10 mb-20 text-center">
           <h2 className="font-[family-name:var(--font-bebas)] text-3xl text-white tracking-wide mb-2">Dealing With an Emergency Right Now?</h2>
           <p className="text-red-100 mb-6">Don&apos;t wait. Our team is available 24/7 for emergency response across all five NYC boroughs.</p>
-          <a href="tel:2122028400" className="inline-block bg-white text-red-600 px-10 py-4 rounded-lg font-bold text-lg hover:bg-red-50 transition-colors">
-            Call (212) 202-8400
+          <a href="tel:9179706002" className="inline-block bg-white text-red-600 px-10 py-4 rounded-lg font-bold text-lg hover:bg-red-50 transition-colors">
+            Call (917) 970-6002
           </a>
         </div>
 

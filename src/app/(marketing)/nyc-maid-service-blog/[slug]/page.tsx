@@ -17,13 +17,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!post) return {}
 
   return {
-    title: `${post.title} | The NYC Maid`,
+    title: `${post.title} | Wash and Fold NYC`,
     description: post.metaDescription,
-    alternates: { canonical: `https://www.thenycmaid.com/nyc-maid-service-blog/${post.slug}` },
+    alternates: { canonical: `https://www.washandfoldnyc.com/nyc-wash-and-fold-blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://www.thenycmaid.com/nyc-maid-service-blog/${post.slug}`,
+      url: `https://www.washandfoldnyc.com/nyc-wash-and-fold-blog/${post.slug}`,
       type: 'article',
       publishedTime: post.date,
     },
@@ -56,9 +56,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     description: post.excerpt,
     datePublished: post.date,
     dateModified: post.date,
-    author: { '@type': 'Organization', name: 'The NYC Maid', url: 'https://www.thenycmaid.com' },
-    publisher: { '@type': 'Organization', name: 'The NYC Maid', url: 'https://www.thenycmaid.com' },
-    mainEntityOfPage: `https://www.thenycmaid.com/nyc-maid-service-blog/${post.slug}`,
+    author: { '@type': 'Organization', name: 'Wash and Fold NYC', url: 'https://www.washandfoldnyc.com' },
+    publisher: { '@type': 'Organization', name: 'Wash and Fold NYC', url: 'https://www.washandfoldnyc.com' },
+    mainEntityOfPage: `https://www.washandfoldnyc.com/nyc-wash-and-fold-blog/${post.slug}`,
   }
 
   return (
@@ -66,9 +66,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <JsonLd data={[
         localBusinessSchema(),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
-          { name: 'Blog', url: 'https://www.thenycmaid.com/nyc-maid-service-blog' },
-          { name: post.title, url: `https://www.thenycmaid.com/nyc-maid-service-blog/${post.slug}` },
+          { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+          { name: 'Blog', url: 'https://www.washandfoldnyc.com/nyc-wash-and-fold-blog' },
+          { name: post.title, url: `https://www.washandfoldnyc.com/nyc-wash-and-fold-blog/${post.slug}` },
         ]),
         articleSchema,
       ]} />
@@ -87,8 +87,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Breadcrumbs items={[
-          { name: 'Blog', href: '/nyc-maid-service-blog' },
-          { name: post.title, href: `/nyc-maid-service-blog/${post.slug}` },
+          { name: 'Blog', href: '/nyc-wash-and-fold-blog' },
+          { name: post.title, href: `/nyc-wash-and-fold-blog/${post.slug}` },
         ]} />
 
         <div className="prose prose-lg max-w-none">
@@ -117,12 +117,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {/* CTA mid-article */}
         <div className="bg-[#1a3a5c] rounded-xl p-8 my-12 text-center">
           <h3 className="font-[family-name:var(--font-bebas)] text-2xl text-white tracking-wide mb-2">Need Help With This?</h3>
-          <p className="text-white/70 mb-6">Our professional team handles all of this and more — starting at $59/hr.</p>
+          <p className="text-white/70 mb-6">Our professional team handles all of this and more — starting at $3/lb.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="tel:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-              Call (212) 202-8400
+            <a href="tel:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+              Call (917) 970-6002
             </a>
-            <a href="sms:2122028400" className="text-white font-semibold hover:underline underline-offset-4">
+            <a href="sms:9179706002" className="text-white font-semibold hover:underline underline-offset-4">
               or Text Us
             </a>
           </div>
@@ -134,7 +134,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <h3 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-6">Keep Reading</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {related.map(r => (
-                <Link key={r.slug} href={`/nyc-maid-service-blog/${r.slug}`} className="group border border-gray-200 rounded-xl p-6 hover:border-[#4BA3D4] hover:shadow-lg transition-all">
+                <Link key={r.slug} href={`/nyc-wash-and-fold-blog/${r.slug}`} className="group border border-gray-200 rounded-xl p-6 hover:border-[#4BA3D4] hover:shadow-lg transition-all">
                   <span className="text-xs font-medium text-[#1a3a5c]/60 uppercase tracking-widest">{r.category}</span>
                   <h4 className="font-semibold text-[#1a3a5c] group-hover:text-[#1a3a5c]/80 mt-2 line-clamp-2">{r.title}</h4>
                   <p className="text-gray-500 text-sm mt-2 line-clamp-2">{r.excerpt}</p>

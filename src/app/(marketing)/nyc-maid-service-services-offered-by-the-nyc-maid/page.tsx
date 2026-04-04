@@ -8,13 +8,13 @@ import ServiceGrid from '@/components/marketing/ServiceGrid'
 import CTABlock from '@/components/marketing/CTABlock'
 
 export const metadata: Metadata = {
-  title: { absolute: 'NYC Cleaning Services — Deep Clean, Maid Service, Move-In/Out & More | The NYC Maid' },
-  description: 'All cleaning services by The NYC Maid from $59/hr. Deep cleaning, weekly maid service, move-in/out, post-construction, Airbnb, same-day. Manhattan, Brooklyn, Queens, LI & NJ.',
-  alternates: { canonical: 'https://www.thenycmaid.com/nyc-maid-service-services-offered-by-the-nyc-maid' },
+  title: { absolute: 'NYC Cleaning Services — Deep Clean, Maid Service, Move-In/Out & More | Wash and Fold NYC' },
+  description: 'All cleaning services by Wash and Fold NYC from $3/lb. Deep cleaning, weekly maid service, move-in/out, post-construction, Airbnb, same-day. Manhattan, Brooklyn, Queens, LI & NJ.',
+  alternates: { canonical: 'https://www.washandfoldnyc.com/nyc-wash-and-fold-services-offered-by-the-nyc-maid' },
   openGraph: {
-    title: 'NYC Cleaning Services — Deep Clean, Maid Service & More | The NYC Maid',
-    description: 'Professional cleaning services from $59/hr across NYC, Brooklyn, Queens, Long Island & NJ. Licensed, insured, 5-star rated.',
-    url: 'https://www.thenycmaid.com/nyc-maid-service-services-offered-by-the-nyc-maid',
+    title: 'NYC Cleaning Services — Deep Clean, Maid Service & More | Wash and Fold NYC',
+    description: 'Professional cleaning services from $3/lb across NYC, Brooklyn, Queens, Long Island & NJ. Licensed, insured, 5-star rated.',
+    url: 'https://www.washandfoldnyc.com/nyc-wash-and-fold-services-offered-by-the-nyc-maid',
   },
 }
 
@@ -25,8 +25,8 @@ export default function ServicesIndexPage() {
         localBusinessSchema(),
         serviceItemListSchema(),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
-          { name: 'Services', url: 'https://www.thenycmaid.com/nyc-maid-service-services-offered-by-the-nyc-maid' },
+          { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+          { name: 'Services', url: 'https://www.washandfoldnyc.com/nyc-wash-and-fold-services-offered-by-the-nyc-maid' },
         ]),
       ]} />
 
@@ -41,27 +41,27 @@ export default function ServicesIndexPage() {
             NYC House Cleaning Services — Every Type of Clean, One Trusted Team
           </h1>
           <p className="text-blue-200/70 text-lg max-w-3xl leading-relaxed mb-8">
-            From <Link href="/services/weekly-maid-service-in-nyc" className="text-[#4BA3D4] underline underline-offset-2">weekly maid service</Link> and <Link href="/services/deep-cleaning-service-in-nyc" className="text-[#4BA3D4] underline underline-offset-2">deep cleaning</Link> to <Link href="/services/move-in-move-out-cleaning-service-in-nyc" className="text-[#4BA3D4] underline underline-offset-2">move-in/move-out</Link>, <Link href="/services/post-construction-cleanup-service-in-nyc" className="text-[#4BA3D4] underline underline-offset-2">post-renovation cleanup</Link>, and <Link href="/services/same-day-cleaning-service-in-nyc" className="text-[#4BA3D4] underline underline-offset-2">same-day emergency service</Link> — our background-checked, insured cleaners handle it all across Manhattan, Brooklyn, Queens, Long Island &amp; New Jersey.
+            From <Link href="/services/weekly-wash-and-fold-in-nyc" className="text-[#4BA3D4] underline underline-offset-2">weekly maid service</Link> and <Link href="/services/deep-cleaning-service-in-nyc" className="text-[#4BA3D4] underline underline-offset-2">deep cleaning</Link> to <Link href="/services/move-in-move-out-cleaning-service-in-nyc" className="text-[#4BA3D4] underline underline-offset-2">move-in/move-out</Link>, <Link href="/services/post-construction-cleanup-service-in-nyc" className="text-[#4BA3D4] underline underline-offset-2">post-renovation cleanup</Link>, and <Link href="/services/same-day-cleaning-service-in-nyc" className="text-[#4BA3D4] underline underline-offset-2">same-day emergency service</Link> — our background-checked, insured cleaners handle it all across Manhattan, Brooklyn, Queens, Long Island &amp; New Jersey.
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 mb-10">
-            <span className="text-[#4BA3D4] text-sm font-medium">&#10003; From $59/hr</span>
+            <span className="text-[#4BA3D4] text-sm font-medium">&#10003; From $3/lb</span>
             <span className="text-[#4BA3D4] text-sm font-medium">&#10003; No money upfront</span>
             <span className="text-[#4BA3D4] text-sm font-medium">&#10003; Licensed &amp; insured</span>
             <span className="text-[#4BA3D4] text-sm font-medium">&#10003; Background-checked</span>
           </div>
           <div className="flex flex-col sm:flex-row items-start gap-5">
-            <a href="sms:2122028400" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-              Text (212) 202-8400
+            <a href="sms:9179706002" className="bg-[#4BA3D4] text-[#1a3a5c] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+              Text (917) 970-6002
             </a>
-            <a href="tel:2122028400" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
-              or Call (212) 202-8400
+            <a href="tel:9179706002" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
+              or Call (917) 970-6002
             </a>
           </div>
         </div>
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <Breadcrumbs items={[{ name: 'Services', href: '/nyc-maid-service-services-offered-by-the-nyc-maid' }]} />
+        <Breadcrumbs items={[{ name: 'Services', href: '/nyc-wash-and-fold-services-offered-by-the-nyc-maid' }]} />
       </div>
 
       {/* Service cards (reuse homepage grid with icons) */}
@@ -120,7 +120,7 @@ export default function ServicesIndexPage() {
               <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1a3a5c] tracking-wide">$100<span className="text-xl text-gray-300">/hr</span></p>
             </div>
           </div>
-          <Link href="/updated-nyc-maid-service-industry-pricing" className="inline-block bg-[#1a3a5c] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
+          <Link href="/updated-nyc-wash-and-fold-industry-pricing" className="inline-block bg-[#1a3a5c] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
             View Full Pricing Details
           </Link>
         </div>
@@ -130,21 +130,21 @@ export default function ServicesIndexPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <h2 className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-3">Why New Yorkers Choose The NYC Maid</h2>
+            <h2 className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-3">Why New Yorkers Choose Wash and Fold NYC</h2>
             <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide leading-tight mb-6">Same Professional Standards — Every Service, Every Visit</p>
             <div className="w-12 h-[2px] bg-[#4BA3D4] mb-6" />
             <p className="text-gray-600 leading-relaxed mb-5">
-              Whether you book a <Link href="/services/deep-cleaning-service-in-nyc" className="text-[#1a3a5c] underline underline-offset-2">deep clean</Link>, a <Link href="/services/weekly-maid-service-in-nyc" className="text-[#1a3a5c] underline underline-offset-2">weekly maid service</Link>, or a <Link href="/services/same-day-cleaning-service-in-nyc" className="text-[#1a3a5c] underline underline-offset-2">same-day emergency clean</Link> — you get the same background-checked, insured professional and the same attention to detail. We don&apos;t send different tiers of cleaners for different services.
+              Whether you book a <Link href="/services/deep-cleaning-service-in-nyc" className="text-[#1a3a5c] underline underline-offset-2">deep clean</Link>, a <Link href="/services/weekly-wash-and-fold-in-nyc" className="text-[#1a3a5c] underline underline-offset-2">weekly maid service</Link>, or a <Link href="/services/same-day-cleaning-service-in-nyc" className="text-[#1a3a5c] underline underline-offset-2">same-day emergency clean</Link> — you get the same background-checked, insured professional and the same attention to detail. We don&apos;t send different tiers of cleaners for different services.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Our cleaners serve <Link href="/manhattan-maid-service" className="text-[#1a3a5c] underline underline-offset-2">Manhattan</Link>, <Link href="/brooklyn-maid-service" className="text-[#1a3a5c] underline underline-offset-2">Brooklyn</Link>, <Link href="/queens-maid-service" className="text-[#1a3a5c] underline underline-offset-2">Queens</Link>, <Link href="/long-island-maid-service" className="text-[#1a3a5c] underline underline-offset-2">Long Island</Link>, and <Link href="/new-jersey-maid-service" className="text-[#1a3a5c] underline underline-offset-2">New Jersey</Link> — same rates, same quality, no travel fees. <Link href="/nyc-customer-reviews-for-the-nyc-maid" className="text-[#1a3a5c] underline underline-offset-2">Read our reviews</Link> to see what clients say.
+              Our cleaners serve <Link href="/manhattan-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Manhattan</Link>, <Link href="/brooklyn-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Brooklyn</Link>, <Link href="/queens-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Queens</Link>, <Link href="/long-island-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Long Island</Link>, and <Link href="/new-jersey-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">New Jersey</Link> — same rates, same quality, no travel fees. <Link href="/nyc-customer-reviews-for-the-nyc-maid" className="text-[#1a3a5c] underline underline-offset-2">Read our reviews</Link> to see what clients say.
             </p>
             <div className="flex flex-col sm:flex-row items-start gap-4">
-              <a href="sms:2122028400" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-                Text (212) 202-8400
+              <a href="sms:9179706002" className="inline-block bg-[#4BA3D4] text-[#1a3a5c] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+                Text (917) 970-6002
               </a>
-              <a href="tel:2122028400" className="inline-block text-[#1a3a5c] font-semibold py-3.5 hover:underline underline-offset-4">
-                or Call (212) 202-8400
+              <a href="tel:9179706002" className="inline-block text-[#1a3a5c] font-semibold py-3.5 hover:underline underline-offset-4">
+                or Call (917) 970-6002
               </a>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function ServicesIndexPage() {
             {[
               { title: 'Background-Checked & Insured', desc: 'Every cleaner is fully vetted, background-checked, and covered by our general liability insurance and bonding.' },
               { title: 'No Money Upfront', desc: 'You pay only after the cleaning is complete, before the cleaner leaves. No deposits, no pre-charges.' },
-              { title: 'Flat Hourly Rate', desc: 'Same rate regardless of service type or neighborhood. $59/hr with your supplies, $75/hr when we bring everything, $100/hr same-day emergency.' },
+              { title: 'Flat Hourly Rate', desc: 'Same rate regardless of service type or neighborhood. $3/lb with your supplies, $75/hr when we bring everything, $100/hr same-day emergency.' },
               { title: 'Same Cleaner Every Time', desc: 'For recurring services, we match you with the same cleaner so they learn your home and your preferences.' },
               { title: 'No Contracts', desc: 'Stay because you\'re happy, not because you\'re locked in. Cancel recurring service with 7 days notice.' },
             ].map(item => (
@@ -171,7 +171,7 @@ export default function ServicesIndexPage() {
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3">Available Across 225+ Neighborhoods</h2>
           <p className="font-[family-name:var(--font-bebas)] text-3xl text-[#1a3a5c] tracking-wide mb-4">All Services Available in Every Area We Serve</p>
           <p className="text-gray-500 max-w-2xl mx-auto mb-8">
-            Every service listed above is available in all of our coverage areas. Same rates, same quality — whether you&apos;re in the <Link href="/upper-east-side-maid-service" className="text-[#1a3a5c] underline underline-offset-2">Upper East Side</Link>, <Link href="/williamsburg-maid-service" className="text-[#1a3a5c] underline underline-offset-2">Williamsburg</Link>, <Link href="/astoria-maid-service" className="text-[#1a3a5c] underline underline-offset-2">Astoria</Link>, <Link href="/great-neck-maid-service" className="text-[#1a3a5c] underline underline-offset-2">Great Neck</Link>, or <Link href="/hoboken-maid-service" className="text-[#1a3a5c] underline underline-offset-2">Hoboken</Link>.
+            Every service listed above is available in all of our coverage areas. Same rates, same quality — whether you&apos;re in the <Link href="/upper-east-side-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Upper East Side</Link>, <Link href="/williamsburg-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Williamsburg</Link>, <Link href="/astoria-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Astoria</Link>, <Link href="/great-neck-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Great Neck</Link>, or <Link href="/hoboken-wash-and-fold" className="text-[#1a3a5c] underline underline-offset-2">Hoboken</Link>.
           </p>
           <Link href="/service-areas-served-by-the-nyc-maid" className="inline-block bg-[#1a3a5c] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1a3a5c]/90 transition-colors">
             Browse All Service Areas &rarr;

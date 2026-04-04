@@ -10,7 +10,7 @@ const reviews = [
   { name: 'Joseph Busacca', time: 'a day ago', text: 'Karina was great and very helpful.', initial: 'J', color: 'bg-indigo-500' },
   { name: 'Adam Berger', time: '3 days ago', text: 'Great job. Friendly and professional.', initial: 'A', color: 'bg-slate-500' },
   { name: 'Jessica Pace', time: '4 days ago', text: 'Ines Enriquez was incredible. Loved this job. Worth every penny.', initial: 'J', color: 'bg-purple-500' },
-  { name: 'Brad Lieberman', time: '2 weeks ago', text: 'Jeff is a real gem. Super communicative easy going and responsive. In a city with a lot of fly by night operations, NYC Maids is the real deal. I\'ve occasionally had a few feedback points for Jeff\'s team and he has always been receptive and responsive.', initial: 'B', color: 'bg-amber-400' },
+  { name: 'Brad Lieberman', time: '2 weeks ago', text: 'Jeff is a real gem. Super communicative easy going and responsive. In a city with a lot of fly by night operations, Wash and Fold NYCs is the real deal. I\'ve occasionally had a few feedback points for Jeff\'s team and he has always been receptive and responsive.', initial: 'B', color: 'bg-amber-400' },
   { name: 'Eeland Stribling', time: '4 weeks ago', text: 'Moving into an apartment clean. Had my daughter\'s room, a bathroom and a kitchen to clean. Cindy came and cleaned very well. Even cleaned up my living room as bonus. Right on time, fast, easy to book and communicate. Will be using again. No complaints!', initial: 'E', color: 'bg-violet-400' },
   { name: 'Kelsey Wheeler', time: '2 weeks ago', text: 'Great experience. Texted the number on their website on Saturday and had a deep cleaning scheduled for that following Monday at 9am. The cleaner was prompt and super nice/friendly.', initial: 'K', color: 'bg-cyan-400' },
   { name: 'Jason Klig', time: '2 months ago', text: 'Maria did an amazing job! My apartment is spotless and she is so easy to work with. Was very happy to accommodate all of my requests.', initial: 'J', color: 'bg-lime-500' },
@@ -23,26 +23,26 @@ const reviews = [
   { name: 'Priya Vadlamudi', time: '3 months ago', text: 'Service was great and very friendly staff.', initial: 'P', color: 'bg-pink-500' },
   { name: 'Erik Berlin', time: '2 months ago', text: 'Great service, cleaning, and pricing!', initial: 'E', color: 'bg-teal-500' },
   { name: 'Kayli Watson', time: '5 months ago', text: 'Super fast to book, incredibly kind people, and great results!', initial: 'K', color: 'bg-pink-400' },
-  { name: 'Julie Salamon', time: '5 months ago', text: 'We just had our apartment painted and needed a deep clean to get rid of loads of dust. NYC Maid sent a wonderful cleaner who was prompt, professional and did an amazing job. Highly recommend!!!', initial: 'J', color: 'bg-orange-400' },
+  { name: 'Julie Salamon', time: '5 months ago', text: 'We just had our apartment painted and needed a deep clean to get rid of loads of dust. Wash and Fold NYC sent a wonderful cleaner who was prompt, professional and did an amazing job. Highly recommend!!!', initial: 'J', color: 'bg-orange-400' },
   { name: 'Moodap', time: '5 months ago', text: 'Super detailed!', initial: 'M', color: 'bg-green-500' },
   { name: 'Antong', time: '6 months ago', text: 'Everything was spotless, from oven stove to fridge.', initial: 'A', color: 'bg-teal-400' },
   { name: 'Courtney Gamble', time: '6 months ago', text: "Best cleaning service I've used in the 20 years I've lived in NYC! Consistently efficient, thorough...", initial: 'C', color: 'bg-purple-400' },
   { name: 'Shilpa Ray', time: '6 months ago', text: 'Perfect for post move deep cleaning. Appliances were spotless. Looked brand new.', initial: 'S', color: 'bg-blue-400' },
   { name: 'Greg Farr', time: '6 months ago', text: 'The very best service every time, amazing!!', initial: 'G', color: 'bg-indigo-400' },
-  { name: 'Maria Lina', time: '6 months ago', text: 'The NYC Maid Cleaning Service is so efficient and professional! I know I can always count on them.', initial: 'M', color: 'bg-rose-400' },
+  { name: 'Maria Lina', time: '6 months ago', text: 'Wash and Fold NYC Cleaning Service is so efficient and professional! I know I can always count on them.', initial: 'M', color: 'bg-rose-400' },
   { name: 'Timothy Wojcik', time: '7 months ago', text: 'Excellent service and a great price! Prompt and thorough, would highly recommend!', initial: 'T', color: 'bg-amber-500' },
-  { name: 'Jenni Martinez', time: '7 months ago', text: '5 Stars \u2013 Absolutely the Best Cleaning Service in NYC! I gotta say, The NYC Maid is truly the best.', initial: 'J', color: 'bg-emerald-500' },
-  { name: 'Jenna M', time: '7 months ago', text: 'After trying three different cleaning companies in NYC, The NYC Maid is hands down the most affordable and thorough.', initial: 'J', color: 'bg-sky-500' },
+  { name: 'Jenni Martinez', time: '7 months ago', text: '5 Stars \u2013 Absolutely the Best Cleaning Service in NYC! I gotta say, Wash and Fold NYC is truly the best.', initial: 'J', color: 'bg-emerald-500' },
+  { name: 'Jenna M', time: '7 months ago', text: 'After trying three different cleaning companies in NYC, Wash and Fold NYC is hands down the most affordable and thorough.', initial: 'J', color: 'bg-sky-500' },
 ]
 
 export const metadata: Metadata = {
-  title: 'NYC Maid Service Reviews | 5-Star Rated House Cleaning New York City | The NYC Maid',
-  description: '27 verified 5-star Google reviews from real NYC cleaning clients. Background-checked cleaners, from $59/hr, no contracts. Manhattan, Brooklyn, Queens, LI & NJ. (212) 202-8400',
-  alternates: { canonical: 'https://www.thenycmaid.com/nyc-customer-reviews-for-the-nyc-maid' },
+  title: 'Wash and Fold NYC Service Reviews | 5-Star Rated House Cleaning New York City | Wash and Fold NYC',
+  description: '27 verified 5-star Google reviews from real NYC cleaning clients. Background-checked cleaners, from $3/lb, no contracts. Manhattan, Brooklyn, Queens, LI & NJ. (917) 970-6002',
+  alternates: { canonical: 'https://www.washandfoldnyc.com/nyc-customer-reviews-for-the-nyc-maid' },
   openGraph: {
-    title: 'NYC Maid Service Reviews | 5-Star Rated House Cleaning | The NYC Maid',
+    title: 'Wash and Fold NYC Service Reviews | 5-Star Rated House Cleaning | Wash and Fold NYC',
     description: '27 verified 5-star Google reviews from real NYC cleaning clients. Professional maid service across Manhattan, Brooklyn, Queens, Long Island & NJ.',
-    url: 'https://www.thenycmaid.com/nyc-customer-reviews-for-the-nyc-maid',
+    url: 'https://www.washandfoldnyc.com/nyc-customer-reviews-for-the-nyc-maid',
   },
 }
 
@@ -52,8 +52,8 @@ export default function ReviewsPage() {
       <JsonLd data={[
         localBusinessSchema(),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
-          { name: 'Reviews', url: 'https://www.thenycmaid.com/nyc-customer-reviews-for-the-nyc-maid' },
+          { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+          { name: 'Reviews', url: 'https://www.washandfoldnyc.com/nyc-customer-reviews-for-the-nyc-maid' },
         ]),
         ...reviewSchemas(),
       ]} />
@@ -62,7 +62,7 @@ export default function ReviewsPage() {
       <section className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] py-20 md:py-28">
         <div className="max-w-5xl mx-auto px-4">
           <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-6xl lg:text-7xl text-white tracking-wide leading-[0.95] mb-6">
-            NYC House Cleaning Reviews — What Real Clients Say About The NYC Maid
+            NYC House Cleaning Reviews — What Real Clients Say About Wash and Fold NYC
           </h1>
           <p className="text-blue-200/80 text-lg max-w-2xl leading-relaxed">
             27 verified 5-star Google reviews from real apartment cleaning, deep cleaning, and maid service clients across Manhattan, Brooklyn, Queens, Long Island &amp; New Jersey. No fake reviews, no cherry-picking — just honest feedback from New Yorkers who trust us with their homes.

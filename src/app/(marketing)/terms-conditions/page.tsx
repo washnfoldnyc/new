@@ -5,23 +5,23 @@ import JsonLd from '@/components/marketing/JsonLd'
 import Breadcrumbs from '@/components/marketing/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Terms & Conditions | The NYC Maid',
-  description: 'Terms & conditions for The NYC Maid — cancellation policy, payment terms, scheduling & service agreement. Cleaning from $59/hr. (646) 490-0130',
-  alternates: { canonical: 'https://www.thenycmaid.com/terms-conditions' },
+  title: 'Terms & Conditions | Wash and Fold NYC',
+  description: 'Terms & conditions for Wash and Fold NYC — cancellation policy, payment terms, scheduling & service agreement. Cleaning from $3/lb. (917) 970-6002',
+  alternates: { canonical: 'https://www.washandfoldnyc.com/terms-conditions' },
 }
 
 export default function TermsPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema([
-        { name: 'Home', url: 'https://www.thenycmaid.com' },
-        { name: 'Terms & Conditions', url: 'https://www.thenycmaid.com/terms-conditions' },
+        { name: 'Home', url: 'https://www.washandfoldnyc.com' },
+        { name: 'Terms & Conditions', url: 'https://www.washandfoldnyc.com/terms-conditions' },
       ])} />
 
       <section className="bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0] py-16 md:py-20">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-white tracking-wide">Terms &amp; Conditions</h1>
-          <p className="text-sky-200/60 mt-3">Service agreement for The NYC Maid</p>
+          <p className="text-sky-200/60 mt-3">Service agreement for Wash and Fold NYC</p>
         </div>
       </section>
 
@@ -34,7 +34,7 @@ export default function TermsPage() {
           <div>
             <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-4">Service Agreement</h2>
             <p className="text-gray-600 leading-relaxed">
-              By booking a cleaning service with The NYC Maid, you agree to the following terms and conditions. We reserve the right to update these terms at any time. Continued use of our services constitutes acceptance of any changes.
+              By booking a cleaning service with Wash and Fold NYC, you agree to the following terms and conditions. We reserve the right to update these terms at any time. Continued use of our services constitutes acceptance of any changes.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ export default function TermsPage() {
                 {[
                   'We do not collect any money upfront. There are no deposits, no pre-authorizations, and no advance charges.',
                   'Payment is due upon completion of service — before the cleaner leaves your home.',
-                  'Accepted payment methods: Zelle (hi@thenycmaid.com), Apple Pay, Venmo, credit/debit card, and cash.',
+                  'Accepted payment methods: Zelle (hi@washandfoldnyc.com), Apple Pay, Venmo, credit/debit card, and cash.',
                   'Pricing is hourly and transparent. The rate you are quoted is the rate you pay. No hidden fees, no surcharges.',
                   'If a cleaning runs longer than expected, we will communicate with you before continuing and adjusting the final amount.',
                 ].map(item => (
@@ -117,7 +117,7 @@ export default function TermsPage() {
             <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-4">Liability &amp; Insurance</h2>
             <ul className="space-y-2.5">
               {[
-                'The NYC Maid carries full general liability insurance and bonding.',
+                'Wash and Fold NYC carries full general liability insurance and bonding.',
                 'Any damage claims must be reported within 24 hours of service completion.',
                 'We are not responsible for pre-existing damage, normal wear and tear, or items left in accessible areas during cleaning.',
                 'Clients are responsible for securing valuables, fragile items, and personal belongings before the cleaning begins.',
@@ -150,7 +150,7 @@ export default function TermsPage() {
           <div className="border-t border-gray-200 pt-8">
             <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c] tracking-wide mb-4">Contact Us</h2>
             <p className="text-gray-600 leading-relaxed">
-              Questions about these terms? Contact us at <a href="mailto:hi@thenycmaid.com" className="text-[#1a3a5c] underline underline-offset-2">hi@thenycmaid.com</a> or text/call <a href="tel:6464900130" className="text-[#1a3a5c] underline underline-offset-2">(646) 490-0130</a>.
+              Questions about these terms? Contact us at <a href="mailto:hi@washandfoldnyc.com" className="text-[#1a3a5c] underline underline-offset-2">hi@washandfoldnyc.com</a> or text/call <a href="tel:9179706002" className="text-[#1a3a5c] underline underline-offset-2">(917) 970-6002</a>.
             </p>
             <p className="text-gray-500 text-sm mt-4">
               See also: <Link href="/privacy-policy" className="text-[#1a3a5c] underline underline-offset-2">Privacy Policy</Link> &middot; <Link href="/refund-policy" className="text-[#1a3a5c] underline underline-offset-2">Refund Policy</Link> &middot; <Link href="/do-not-share-policy" className="text-[#1a3a5c] underline underline-offset-2">Do Not Share Policy</Link>
