@@ -142,16 +142,31 @@ export function neighborhoodServiceContent(neighborhood: Neighborhood, service: 
   const intro = pick(serviceIntroTemplates, seed)(neighborhood, service)
   const h1 = pick(serviceH1Templates, seed, 1)(neighborhood, service)
 
+  const neighborhoodStory = `${neighborhood.name} is one of ${area.name}'s most distinctive neighborhoods. Home to ${neighborhood.housing_types.join(', ')}, the area is anchored by landmarks like ${neighborhood.landmarks.slice(0, 2).join(' and ')}. Residents here know that convenience matters — and that is exactly why ${service.name.toLowerCase()} with free pickup and delivery has become one of the most requested services in ${neighborhood.name}. Whether you live in a ${neighborhood.housing_types[0]} near ${neighborhood.landmarks[0]} or a ${neighborhood.housing_types[1]} closer to ${neighborhood.landmarks[1] || neighborhood.landmarks[0]}, our service reaches every building in the neighborhood.`
+
+  const pricingDetail = `${service.name} in ${neighborhood.name} is ${service.priceRange} with a $39 minimum order. Pickup and delivery is always free — we come to your door, your lobby, or your doorman. Same-day rush service is available for a flat $20 fee on orders placed before 10am. Weekly subscribers save 10 percent, biweekly subscribers save 5 percent. ${neighborhood.name} residents pay the exact same rate as every other neighborhood we serve across ${area.name} — no distance surcharges, no zone fees, no surge pricing. The price on our website is the price on your bill.`
+
+  const processDetail = `Here is exactly what happens when you book ${service.name.toLowerCase()} in ${neighborhood.name}: You text or call (917) 970-6002 with your address and what you need. We confirm pricing and schedule a pickup time that works for you. Our driver arrives at your ${neighborhood.name} address — whether that is a ${neighborhood.housing_types[0]}, a ${neighborhood.housing_types[1]}, or any other building type in the area. Your laundry is taken to our partner facility, sorted by color and fabric type, pre-treated for stains, washed with premium detergent, dried on appropriate heat settings, hand-folded item by item, organized by garment type, and packaged in clean sealed bags. We deliver back to your door within ${service.duration}. You pay after delivery.`
+
+  const comparisonText = `Most ${neighborhood.name} residents have three options for laundry: do it themselves, go to a neighborhood laundromat, or use a service like Wash and Fold NYC. Doing it yourself means hauling bags, finding available machines, waiting through cycles, and spending your evening folding. A laundromat in ${neighborhood.name} costs $2.50 to $4.00 per load in machine fees alone — before detergent, your time, and the commute. With our ${service.name.toLowerCase()} service, you text a number, leave a bag at your door, and get it back clean and folded. At ${service.priceRange}, most ${neighborhood.name} residents find it costs about the same as the laundromat when you factor in time, supplies, and convenience — except you get your evenings and weekends back.`
+
   return {
     title: `${service.name} in ${neighborhood.name}, ${area.name} — ${service.priceRange} | Wash and Fold NYC`,
     metaDescription: `${service.name} in ${neighborhood.name}, ${area.name}. ${service.priceRange}, free pickup & delivery. ${service.features.slice(0, 2).join(', ')} & more. 5.0★ Google. (917) 970-6002`,
     h1,
     intro,
+    neighborhoodStory,
+    pricingDetail,
+    processDetail,
+    comparisonText,
     whyUs: [
       `Local ${neighborhood.name} expertise — we know the ${neighborhood.housing_types[0]} and ${neighborhood.housing_types[1]} here`,
       `Specialized in ${neighborhood.cleaning_challenges[hashCode(seed) % neighborhood.cleaning_challenges.length]} common in this area`,
       `${service.priceRange} with free pickup and delivery to your door`,
       `${service.duration} turnaround — fast, reliable, consistent`,
+      'Your laundry is processed separately — never mixed with other orders',
+      'Premium detergent, stain pre-treatment, hand-folded every item',
+      'Text updates at pickup, processing, and delivery',
       'Licensed, insured, and background-checked team',
       'Satisfaction guaranteed on every order',
     ],
@@ -869,23 +884,35 @@ export function neighborhoodFAQs(neighborhood: Neighborhood, area: Area): { ques
   return [
     {
       question: `How much does wash and fold cost in ${neighborhood.name}?`,
-      answer: `Our laundry services in ${neighborhood.name} start at $150 for regular cleaning and $250+ for deep cleaning. Pricing depends on home size, condition, and service type. We provide a custom quote based on your specific needs.`,
+      answer: `Wash and fold in ${neighborhood.name} is $3 per pound with a $39 minimum order. Free pickup and delivery to any address in ${neighborhood.name}. Same-day rush is +$20. Weekly subscribers save 10%. These are the same rates across all of ${area.name} — no neighborhood surcharges.`,
     },
     {
-      question: `Do you serve all of ${neighborhood.name}?`,
-      answer: `Yes! We serve all of ${neighborhood.name} and surrounding areas including ${neighborhood.nearby.slice(0, 2).map(s => s.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')).join(' and ')}. Our laundry team are familiar with the local ${neighborhood.housing_types[0]} and ${neighborhood.housing_types[1]}.`,
+      question: `Do you pick up laundry in ${neighborhood.name}?`,
+      answer: `Yes, we offer free pickup and delivery throughout ${neighborhood.name} and surrounding areas including ${neighborhood.nearby.slice(0, 3).map(s => s.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')).join(', ')}. We pick up from your door, lobby, or doorman. Text (917) 970-6002 with your ${neighborhood.name} address to schedule.`,
     },
     {
-      question: `Are your ${neighborhood.name} cleaners insured?`,
-      answer: `Absolutely. All of our laundry team are fully licensed, insured, and background-checked. We carry general liability insurance and bonding for your peace of mind.`,
+      question: `How fast is laundry turnaround in ${neighborhood.name}?`,
+      answer: `Standard turnaround for ${neighborhood.name} is 24 to 48 hours. Same-day rush is available for +$20 on orders picked up before 10am. Weekly subscription customers in ${neighborhood.name} typically get under-24-hour turnaround.`,
     },
     {
-      question: `How do I book a laundry service in ${neighborhood.name}?`,
-      answer: `You can book online through our website, call us at (917) 970-6002, or text us. We typically can schedule within 24-48 hours, with same-day availability for urgent requests.`,
+      question: `Do you serve ${neighborhood.housing_types[0]} in ${neighborhood.name}?`,
+      answer: `Yes. We serve all building types in ${neighborhood.name} including ${neighborhood.housing_types.join(', ')}. Whether you have a doorman, a lobby, or a walkup — we coordinate pickup and delivery to work with your building.`,
     },
     {
       question: `What laundry services do you offer in ${neighborhood.name}?`,
-      answer: `We offer deep cleaning, regular recurring cleaning, move-in/move-out cleaning, post-renovation cleaning, office cleaning, and Airbnb turnover cleaning throughout ${neighborhood.name}, ${area.name}.`,
+      answer: `In ${neighborhood.name} we offer wash and fold ($3/lb), pickup and delivery (free), dry cleaning ($10-$350/item), comforter cleaning ($35-$55), in-unit laundry service ($45-$85/visit), in-building laundry service ($50-$90/visit), and commercial laundry ($1-$2/lb). All with free pickup and delivery.`,
+    },
+    {
+      question: `Is there a minimum order in ${neighborhood.name}?`,
+      answer: `The minimum order for pickup and delivery in ${neighborhood.name} is $39. At $3/lb, that is about 13 pounds — most individual orders are 15+ pounds so most customers hit it easily.`,
+    },
+    {
+      question: `Do you offer dry cleaning pickup in ${neighborhood.name}?`,
+      answer: `Yes. We pick up dry cleaning from your ${neighborhood.name} address and deliver it back clean and pressed. Dress shirts $10, suits $34, dresses $28, winter coats $45. Free pickup and delivery on all dry cleaning orders.`,
+    },
+    {
+      question: `Can I get a subscription plan in ${neighborhood.name}?`,
+      answer: `Yes. ${neighborhood.name} residents can subscribe to weekly (10% off) or biweekly (5% off) laundry service. Weekly 15 lb plan is $162/mo, weekly 20 lb is $216/mo, biweekly 15 lb is $85.50/mo. Same driver every pickup, consistent schedule, pause or cancel anytime.`,
     },
   ]
 }
@@ -894,19 +921,27 @@ export function serviceFAQs(service: Service): { question: string; answer: strin
   return [
     {
       question: `What does ${service.name.toLowerCase()} include?`,
-      answer: `Our ${service.name.toLowerCase()} includes: ${service.features.join(', ')}. Every cleaning is customized to your home's needs.`,
+      answer: `Our ${service.name.toLowerCase()} includes: ${service.features.join(', ')}. Every order is processed separately — your laundry never mixes with anyone else's.`,
     },
     {
       question: `How much does ${service.name.toLowerCase()} cost?`,
-      answer: `${service.name} pricing ranges from ${service.priceRange}, depending on your home size and condition. We provide accurate quotes after understanding your specific needs.`,
+      answer: `${service.name} is ${service.priceRange}. Free pickup and delivery on orders over $39. Same-day rush is +$20. Weekly subscribers save 10%, biweekly save 5%.`,
     },
     {
       question: `How long does ${service.name.toLowerCase()} take?`,
-      answer: `A typical ${service.name.toLowerCase()} takes ${service.duration}. Time varies based on home size, current condition, and any special requests.`,
+      answer: `Standard turnaround for ${service.name.toLowerCase()} is ${service.duration}. Same-day rush is available for +$20 on orders received before 10am.`,
     },
     {
       question: `Who is ${service.name.toLowerCase()} ideal for?`,
-      answer: `${service.name} is perfect for: ${service.idealFor.join(', ')}.`,
+      answer: `${service.name} is perfect for: ${service.idealFor.join(', ')}. Whether you need a one-time order or recurring service, we handle it all.`,
+    },
+    {
+      question: `Is pickup free for ${service.name.toLowerCase()}?`,
+      answer: `Yes. Pickup and delivery is free on all ${service.name.toLowerCase()} orders over the $39 minimum. We pick up from your door, lobby, or doorman and deliver back within ${service.duration}.`,
+    },
+    {
+      question: `Can I get recurring ${service.name.toLowerCase()}?`,
+      answer: `Yes. Weekly subscribers get 10% off and biweekly subscribers get 5% off. You get the same pickup day, the same driver, and priority processing. Pause, skip, or cancel anytime.`,
     },
   ]
 }
@@ -914,25 +949,25 @@ export function serviceFAQs(service: Service): { question: string; answer: strin
 // Common FAQs that apply to any service — used to pad to 25 total
 export function commonServiceFAQs(service: Service): { question: string; answer: string }[] {
   return [
-    { question: 'Are your laundry team background-checked?', answer: 'Yes. Every cleaner on our team undergoes a comprehensive background check before their first assignment. We also carry general liability insurance and bonding for your protection. You can trust that the person entering your home has been fully vetted.' },
-    { question: 'Do I need to be home during the cleaning?', answer: 'No. Many clients leave a key, provide a door code, or arrange access through their doorman or building management. You\'re welcome to be home or away — whatever is most comfortable. We\'ll text you when we arrive and when we\'re done.' },
-    { question: 'How do I book a cleaning?', answer: 'Text or call (917) 970-6002. Tell us your address, preferred date, and any special requests. We\'ll confirm your appointment and match you with a laundry professional, usually within the hour.' },
-    { question: 'What areas do you serve?', answer: 'We serve all of Manhattan, Brooklyn, and Queens. Same rates everywhere — no distance surcharges.' },
-    { question: 'Do I pay before or after the cleaning?', answer: 'After. We never charge upfront or take deposits. You pay only after the cleaning is complete, before our team leaves. We accept cash, Venmo, Zelle (hi@washandfoldnyc.com), and credit card.' },
-    { question: 'What if I\'m not satisfied with the cleaning?', answer: 'Let us know within 24 hours and we\'ll send a laundry professional back to address any issues at no additional cost. We stand behind our work — your satisfaction is non-negotiable.' },
-    { question: 'Do you bring your own cleaning supplies?', answer: 'At $75/hr, yes — we bring professional-grade products, microfiber systems, and a commercial vacuum. At $3/lb, you provide your own supplies. Either way, we\'re happy to use specific products you prefer (eco-friendly, hypoallergenic, etc.).' },
-    { question: 'Can I request a specific cleaner?', answer: 'For recurring services, we automatically assign the same cleaner to your home every visit. For one-time bookings, we match you with the best available cleaner for your area and service type.' },
-    { question: 'How far in advance do I need to book?', answer: 'We recommend booking 3–5 days ahead for the best availability. For same-day service, text us as early as possible — morning requests before 10am have the best chance of afternoon availability.' },
-    { question: `Is ${service.name.toLowerCase()} available on weekends?`, answer: 'We offer service Monday through Friday 8am–6pm and Saturday 9am–4pm. Saturday slots fill up fast, so book early if you prefer weekend service. We do not offer Sunday service.' },
-    { question: 'What payment methods do you accept?', answer: 'We accept cash, Venmo, Zelle (hi@washandfoldnyc.com), and credit card (via Stripe). Payment is collected after the cleaning is complete, before our team leaves. No deposits, no pre-authorization holds.' },
-    { question: 'Are you licensed and insured?', answer: 'Yes. Wash and Fold NYC is a fully licensed cleaning company with general liability insurance and bonding. Every cleaner is covered while working in your home. We can provide proof of insurance upon request.' },
-    { question: 'Do you offer eco-friendly or green cleaning?', answer: 'Yes. If you prefer eco-friendly, plant-based, or hypoallergenic products, just let us know when booking. At $75/hr we can bring green products; at $3/lb you provide your preferred products and we\'ll use them.' },
-    { question: `Can I combine ${service.name.toLowerCase()} with other services?`, answer: `Absolutely. Many clients combine services — for example, a deep clean followed by weekly maintenance, or a move-out clean with post-construction cleanup. Let us know what you need and we'll create a custom plan.` },
-    { question: 'What if I need to cancel or reschedule?', answer: 'First-time and one-time services cannot be cancelled or rescheduled once confirmed. Recurring services require 7 days notice to reschedule, and cancellations are only permitted if discontinuing the service entirely with 7 days notice. We don\'t take payment upfront — we hold your spot on our busy schedule, turning away other clients. Late changes directly affect our team members who depend on this income.' },
-    { question: 'Do you clean apartments, houses, or both?', answer: 'Both. We clean apartments (studios through 4+ bedrooms), townhouses, brownstones, single-family homes, lofts, and penthouses. The hourly rate is the same regardless of home type.' },
-    { question: 'How do you handle pets during cleaning?', answer: 'We\'re pet-friendly. If you have pets, let us know when booking so we can match you with a pet-comfortable cleaner. We ask that aggressive animals be secured in a separate room during the cleaning for everyone\'s safety.' },
-    { question: 'Do you offer gift certificates?', answer: 'Yes — cleaning makes a great gift. Text us at (917) 970-6002 to purchase a gift certificate in any amount. We\'ll send a digital certificate that the recipient can redeem for any service.' },
-    { question: 'What happens if something is damaged during cleaning?', answer: 'We carry general liability insurance specifically for this reason. If a laundry professional accidentally damages something in your home, report it within 24 hours and we\'ll work with you to resolve it through our insurance coverage.' },
-    { question: 'Do you have a referral program?', answer: 'Yes. Refer a friend and earn money every time they book a cleaning — not just the first time. Visit washandfoldnyc.com/referral or text us for details. It\'s one of the most generous referral programs in NYC cleaning.' },
+    { question: 'Is your team background-checked?', answer: 'Yes. Every team member undergoes a comprehensive background check before handling any customer laundry. We also carry general liability insurance. Your garments and property are protected on every order.' },
+    { question: 'Do I need to be home for pickup?', answer: 'No. Most customers leave their laundry bag with the doorman, at their front door, or in a designated spot. We text you when we pick up and when we deliver. You do not need to be present for either.' },
+    { question: 'How do I schedule a pickup?', answer: 'Text or call (917) 970-6002 with your address and what you need. We confirm pricing and schedule a pickup, usually within a few hours. No app to download, no account to create.' },
+    { question: 'What areas do you serve?', answer: 'We serve all of Manhattan, Brooklyn, and Queens — nearly 200 neighborhoods. Same rate everywhere, no distance surcharges.' },
+    { question: 'When do I pay?', answer: 'After delivery. We never charge upfront or take deposits. Payment is collected when your clean, folded laundry is delivered back to you. We accept credit card, Zelle (hi@washandfoldnyc.com), Venmo, Apple Pay, and cash.' },
+    { question: 'What if something goes wrong with my order?', answer: 'Contact us within 48 hours and we will make it right. We carry full liability insurance. Lost or damaged items are extremely rare because every order is processed separately and inventoried at pickup.' },
+    { question: 'What detergent do you use?', answer: 'We use premium commercial-grade detergent. If you prefer fragrance-free, eco-friendly, or hypoallergenic detergent, just let us know — we accommodate all requests at no extra charge.' },
+    { question: 'Can I get the same driver every time?', answer: 'Yes. Weekly and biweekly subscribers are assigned a consistent route driver for every pickup and delivery. This builds familiarity — your driver knows your building, your doorman, and your preferences.' },
+    { question: 'How far in advance do I need to schedule?', answer: 'Most pickups can be scheduled same-day or next-day. For same-day rush (+$20), schedule before 10am. For standard 24-48 hour turnaround, anytime works. Subscription customers have a standing weekly schedule.' },
+    { question: `Is ${service.name.toLowerCase()} available on weekends?`, answer: 'We accept pickup and delivery requests seven days a week. Typical pickup windows are 7am to 9pm. Weekend slots are popular, so schedule early for Saturday or Sunday pickup.' },
+    { question: 'What payment methods do you accept?', answer: 'Credit card, debit card, Zelle (hi@washandfoldnyc.com), Venmo, Apple Pay, and cash. Subscription customers can set up automatic billing. One-time orders are charged at delivery.' },
+    { question: 'Are you licensed and insured?', answer: 'Yes. Wash and Fold NYC is fully licensed, bonded, and insured with general liability coverage. We can provide proof of insurance upon request. Every team member is background-checked.' },
+    { question: 'Do you offer eco-friendly options?', answer: 'Yes. We offer fragrance-free, plant-based, and hypoallergenic detergent options at no extra cost. Just mention your preference when scheduling and we will use it on every order.' },
+    { question: `Can I combine ${service.name.toLowerCase()} with other services?`, answer: `Yes. Many customers combine wash and fold with dry cleaning pickup, comforter cleaning, or commercial laundry for their business. Text us what you need and we will handle it all in one pickup.` },
+    { question: 'What if I need to cancel?', answer: 'One-time orders can be cancelled before pickup with no charge. Subscription customers can pause, skip, or cancel anytime with no penalties. We do not lock you into contracts.' },
+    { question: 'Do you handle all fabric types?', answer: 'Yes. We sort every load by fabric type and wash each on the appropriate setting — delicates on gentle, heavy items on normal, towels on hot. Items that are dry-clean-only are flagged and set aside. We follow care labels on every garment.' },
+    { question: 'How do you prevent lost items?', answer: 'Every order is tagged with your name and order number at pickup. Your laundry is processed in its own separate batch — it never mixes with anyone else. We do an inventory count at pickup and cross-check at delivery. Lost items are extremely rare.' },
+    { question: 'Do you fold everything?', answer: 'Yes, every single item is hand-folded by a trained professional. Shirts are folded flat, pants are creased, towels are stacked, socks are paired, and everything is organized by garment type. When you open your bag, it is ready to put directly into drawers.' },
+    { question: 'What happens if it rains on delivery day?', answer: 'Your laundry is packaged in sealed bags that protect against weather. If conditions are severe, we will coordinate with you to reschedule or find a safe delivery location like a lobby or doorman desk.' },
+    { question: 'Do you serve businesses too?', answer: 'Yes. Our commercial laundry service handles restaurants, salons, gyms, Airbnb hosts, and offices. Bulk pricing from $1-$2/lb with daily or weekly pickup schedules. Text (917) 970-6002 for a custom business quote.' },
   ]
 }

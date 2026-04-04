@@ -191,6 +191,54 @@ export default async function NeighborhoodServicePage({ params }: Props) {
         </div>
       </section>
 
+      {/* Neighborhood Story */}
+      <section className="py-16 bg-[#F0F8FF]">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="font-[family-name:var(--font-bebas)] text-3xl text-[#1a3a5c] tracking-wide mb-4">{service.name} in {neighborhood.name}, {area.name}</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">{content.neighborhoodStory}</p>
+          <p className="text-gray-600 leading-relaxed mb-6">{content.processDetail}</p>
+          <p className="text-gray-600 leading-relaxed">{content.comparisonText}</p>
+        </div>
+      </section>
+
+      {/* Detailed Pricing */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="font-[family-name:var(--font-bebas)] text-3xl text-[#1a3a5c] tracking-wide mb-4">{service.name} Pricing in {neighborhood.name}</h2>
+          <p className="text-gray-600 leading-relaxed mb-8">{content.pricingDetail}</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-[#F0F8FF] border border-[#4BA3D4]/10 rounded-xl p-5 text-center">
+              <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c]">{service.priceRange}</p>
+              <p className="text-gray-400 text-xs mt-1">Per order</p>
+            </div>
+            <div className="bg-[#F0F8FF] border border-[#4BA3D4]/10 rounded-xl p-5 text-center">
+              <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#4BA3D4]">FREE</p>
+              <p className="text-gray-400 text-xs mt-1">Pickup & Delivery</p>
+            </div>
+            <div className="bg-[#F0F8FF] border border-[#4BA3D4]/10 rounded-xl p-5 text-center">
+              <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#1a3a5c]">+$20</p>
+              <p className="text-gray-400 text-xs mt-1">Same-Day Rush</p>
+            </div>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link href="/pricing" className="text-[#4BA3D4] text-sm font-medium underline underline-offset-2">Full pricing details</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/services" className="text-[#4BA3D4] text-sm font-medium underline underline-offset-2">All services</Link>
+            <span className="text-gray-300">|</span>
+            <Link href={`/${neighborhood.urlSlug}`} className="text-[#4BA3D4] text-sm font-medium underline underline-offset-2">All services in {neighborhood.name}</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Subscription CTA */}
+      <section className="py-12 bg-gradient-to-r from-[#4BA3D4] to-[#7EC8E3]">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-white tracking-wide mb-2">Save 10% With a Weekly Subscription</h2>
+          <p className="text-white/80 text-sm mb-4">Weekly 15 lb: $162/mo &middot; Weekly 20 lb: $216/mo &middot; Biweekly 15 lb: $85.50/mo</p>
+          <p className="text-white/60 text-xs">Same driver, consistent schedule, priority processing. Pause or cancel anytime.</p>
+        </div>
+      </section>
+
       {/* Neighborhood expertise — service × housing types */}
       <section className="py-16 bg-gradient-to-b from-[#1a3a5c] to-[#2B7BB0]">
         <div className="max-w-7xl mx-auto px-4">
@@ -324,6 +372,29 @@ export default async function NeighborhoodServicePage({ params }: Props) {
           </div>
         </section>
       )}
+
+      {/* Trust Signals */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="font-[family-name:var(--font-bebas)] text-3xl text-[#1a3a5c] tracking-wide text-center mb-8">Why {neighborhood.name} Residents Trust Wash and Fold NYC</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {[
+              { icon: '&#9733;', label: '5.0 Google Rating', detail: 'Zero negative reviews' },
+              { icon: '&#10003;', label: 'Licensed & Insured', detail: 'Full liability coverage' },
+              { icon: '&#128274;', label: 'Background Checked', detail: 'Every team member' },
+              { icon: '&#128176;', label: 'Pay After Delivery', detail: 'No deposits, no upfront' },
+              { icon: '&#128222;', label: 'Real Human Support', detail: 'Text (917) 970-6002' },
+              { icon: '&#128230;', label: 'Never Mixed', detail: 'Your order processed alone' },
+            ].map(b => (
+              <div key={b.label} className="bg-[#F0F8FF] border border-[#4BA3D4]/10 rounded-xl p-4 text-center">
+                <span className="text-2xl text-[#4BA3D4]" dangerouslySetInnerHTML={{ __html: b.icon }} />
+                <p className="text-xs font-semibold text-[#1a3a5c] mt-2">{b.label}</p>
+                <p className="text-xs text-gray-400 mt-1">{b.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <FAQSection faqs={faqs} title={`${service.name} in ${neighborhood.name} — Frequently Asked Questions`} columns={2} />
       <CTABlock title={`Book ${service.name} in ${neighborhood.name}`} subtitle={`Text or call — ${service.priceRange}, free pickup & delivery across all of ${area.name}.`} />
