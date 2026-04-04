@@ -2,8 +2,6 @@ import { AREAS, type Area } from './data/areas'
 import { MANHATTAN_NEIGHBORHOODS } from './data/manhattan'
 import { BROOKLYN_NEIGHBORHOODS } from './data/brooklyn'
 import { QUEENS_NEIGHBORHOODS } from './data/queens'
-import { LONG_ISLAND_NEIGHBORHOODS } from './data/long-island'
-import { NEW_JERSEY_NEIGHBORHOODS } from './data/new-jersey'
 
 export interface Neighborhood {
   slug: string
@@ -23,8 +21,6 @@ export const ALL_NEIGHBORHOODS: Neighborhood[] = [
   ...MANHATTAN_NEIGHBORHOODS,
   ...BROOKLYN_NEIGHBORHOODS,
   ...QUEENS_NEIGHBORHOODS,
-  ...LONG_ISLAND_NEIGHBORHOODS,
-  ...NEW_JERSEY_NEIGHBORHOODS,
 ]
 
 export function getArea(slug: string): Area | undefined {

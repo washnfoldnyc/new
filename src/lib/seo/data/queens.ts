@@ -4,7 +4,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   // === Western Queens / Waterfront ===
   {
     slug: 'long-island-city',
-    urlSlug: 'long-island-city-maid-service',
+    urlSlug: 'long-island-city-wash-and-fold',
     name: 'Long Island City',
     area: 'queens',
     lat: 40.7447, lng: -73.9485,
@@ -16,7 +16,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'hunters-point',
-    urlSlug: 'hunters-point-maid-service',
+    urlSlug: 'hunters-point-wash-and-fold',
     name: 'Hunters Point',
     area: 'queens',
     lat: 40.7420, lng: -73.9560,
@@ -28,7 +28,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'astoria',
-    urlSlug: 'astoria-maid-service',
+    urlSlug: 'astoria-wash-and-fold',
     name: 'Astoria',
     area: 'queens',
     lat: 40.7614, lng: -73.9246,
@@ -40,7 +40,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'ditmars-steinway',
-    urlSlug: 'ditmars-steinway-maid-service',
+    urlSlug: 'ditmars-steinway-wash-and-fold',
     name: 'Ditmars Steinway',
     area: 'queens',
     lat: 40.7752, lng: -73.9120,
@@ -52,7 +52,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'roosevelt-island',
-    urlSlug: 'roosevelt-island-maid-service',
+    urlSlug: 'roosevelt-island-wash-and-fold',
     name: 'Roosevelt Island',
     area: 'queens',
     lat: 40.7620, lng: -73.9500,
@@ -66,7 +66,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   // === Central-West Queens ===
   {
     slug: 'sunnyside',
-    urlSlug: 'sunnyside-maid-service',
+    urlSlug: 'sunnyside-wash-and-fold',
     name: 'Sunnyside',
     area: 'queens',
     lat: 40.7433, lng: -73.9196,
@@ -78,7 +78,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'woodside',
-    urlSlug: 'woodside-maid-service',
+    urlSlug: 'woodside-wash-and-fold',
     name: 'Woodside',
     area: 'queens',
     lat: 40.7454, lng: -73.9030,
@@ -90,7 +90,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'jackson-heights',
-    urlSlug: 'jackson-heights-maid-service',
+    urlSlug: 'jackson-heights-wash-and-fold',
     name: 'Jackson Heights',
     area: 'queens',
     lat: 40.7557, lng: -73.8831,
@@ -102,7 +102,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'east-elmhurst',
-    urlSlug: 'east-elmhurst-maid-service',
+    urlSlug: 'east-elmhurst-wash-and-fold',
     name: 'East Elmhurst',
     area: 'queens',
     lat: 40.7615, lng: -73.8630,
@@ -114,7 +114,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'elmhurst',
-    urlSlug: 'elmhurst-maid-service',
+    urlSlug: 'elmhurst-wash-and-fold',
     name: 'Elmhurst',
     area: 'queens',
     lat: 40.7370, lng: -73.8801,
@@ -126,7 +126,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'corona',
-    urlSlug: 'corona-maid-service',
+    urlSlug: 'corona-wash-and-fold',
     name: 'Corona',
     area: 'queens',
     lat: 40.7449, lng: -73.8602,
@@ -138,7 +138,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'maspeth',
-    urlSlug: 'maspeth-maid-service',
+    urlSlug: 'maspeth-wash-and-fold',
     name: 'Maspeth',
     area: 'queens',
     lat: 40.7268, lng: -73.9120,
@@ -150,7 +150,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'middle-village',
-    urlSlug: 'middle-village-maid-service',
+    urlSlug: 'middle-village-wash-and-fold',
     name: 'Middle Village',
     area: 'queens',
     lat: 40.7178, lng: -73.8812,
@@ -162,7 +162,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'glendale',
-    urlSlug: 'glendale-maid-service',
+    urlSlug: 'glendale-wash-and-fold',
     name: 'Glendale',
     area: 'queens',
     lat: 40.7002, lng: -73.8816,
@@ -174,7 +174,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'ridgewood',
-    urlSlug: 'ridgewood-maid-service',
+    urlSlug: 'ridgewood-wash-and-fold',
     name: 'Ridgewood',
     area: 'queens',
     lat: 40.7023, lng: -73.9046,
@@ -188,7 +188,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   // === Central Queens ===
   {
     slug: 'rego-park',
-    urlSlug: 'rego-park-maid-service',
+    urlSlug: 'rego-park-wash-and-fold',
     name: 'Rego Park',
     area: 'queens',
     lat: 40.7264, lng: -73.8616,
@@ -200,7 +200,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'forest-hills',
-    urlSlug: 'forest-hills-maid-service',
+    urlSlug: 'forest-hills-wash-and-fold',
     name: 'Forest Hills',
     area: 'queens',
     lat: 40.7185, lng: -73.8448,
@@ -212,7 +212,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'kew-gardens',
-    urlSlug: 'kew-gardens-maid-service',
+    urlSlug: 'kew-gardens-wash-and-fold',
     name: 'Kew Gardens',
     area: 'queens',
     lat: 40.7070, lng: -73.8309,
@@ -224,7 +224,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'kew-gardens-hills',
-    urlSlug: 'kew-gardens-hills-maid-service',
+    urlSlug: 'kew-gardens-hills-wash-and-fold',
     name: 'Kew Gardens Hills',
     area: 'queens',
     lat: 40.7296, lng: -73.8220,
@@ -236,7 +236,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'briarwood',
-    urlSlug: 'briarwood-maid-service',
+    urlSlug: 'briarwood-wash-and-fold',
     name: 'Briarwood',
     area: 'queens',
     lat: 40.7095, lng: -73.8151,
@@ -248,7 +248,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'richmond-hill',
-    urlSlug: 'richmond-hill-maid-service',
+    urlSlug: 'richmond-hill-wash-and-fold',
     name: 'Richmond Hill',
     area: 'queens',
     lat: 40.6975, lng: -73.8271,
@@ -260,7 +260,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'woodhaven',
-    urlSlug: 'woodhaven-maid-service',
+    urlSlug: 'woodhaven-wash-and-fold',
     name: 'Woodhaven',
     area: 'queens',
     lat: 40.6903, lng: -73.8564,
@@ -272,7 +272,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'ozone-park',
-    urlSlug: 'ozone-park-maid-service',
+    urlSlug: 'ozone-park-wash-and-fold',
     name: 'Ozone Park',
     area: 'queens',
     lat: 40.6767, lng: -73.8437,
@@ -284,7 +284,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'south-ozone-park',
-    urlSlug: 'south-ozone-park-maid-service',
+    urlSlug: 'south-ozone-park-wash-and-fold',
     name: 'South Ozone Park',
     area: 'queens',
     lat: 40.6735, lng: -73.8142,
@@ -296,7 +296,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'howard-beach',
-    urlSlug: 'howard-beach-maid-service',
+    urlSlug: 'howard-beach-wash-and-fold',
     name: 'Howard Beach',
     area: 'queens',
     lat: 40.6576, lng: -73.8429,
@@ -308,7 +308,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'broad-channel',
-    urlSlug: 'broad-channel-maid-service',
+    urlSlug: 'broad-channel-wash-and-fold',
     name: 'Broad Channel',
     area: 'queens',
     lat: 40.6037, lng: -73.8198,
@@ -322,7 +322,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   // === Northeast Queens ===
   {
     slug: 'flushing',
-    urlSlug: 'flushing-maid-service',
+    urlSlug: 'flushing-wash-and-fold',
     name: 'Flushing',
     area: 'queens',
     lat: 40.7674, lng: -73.8330,
@@ -334,7 +334,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'murray-hill-queens',
-    urlSlug: 'murray-hill-queens-maid-service',
+    urlSlug: 'murray-hill-queens-wash-and-fold',
     name: 'Murray Hill',
     area: 'queens',
     lat: 40.7630, lng: -73.8095,
@@ -346,7 +346,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'whitestone',
-    urlSlug: 'whitestone-maid-service',
+    urlSlug: 'whitestone-wash-and-fold',
     name: 'Whitestone',
     area: 'queens',
     lat: 40.7934, lng: -73.8091,
@@ -358,7 +358,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'college-point',
-    urlSlug: 'college-point-maid-service',
+    urlSlug: 'college-point-wash-and-fold',
     name: 'College Point',
     area: 'queens',
     lat: 40.7848, lng: -73.8389,
@@ -370,7 +370,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'bayside',
-    urlSlug: 'bayside-maid-service',
+    urlSlug: 'bayside-wash-and-fold',
     name: 'Bayside',
     area: 'queens',
     lat: 40.7682, lng: -73.7772,
@@ -382,7 +382,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'oakland-gardens',
-    urlSlug: 'oakland-gardens-maid-service',
+    urlSlug: 'oakland-gardens-wash-and-fold',
     name: 'Oakland Gardens',
     area: 'queens',
     lat: 40.7440, lng: -73.7584,
@@ -394,7 +394,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'fresh-meadows',
-    urlSlug: 'fresh-meadows-maid-service',
+    urlSlug: 'fresh-meadows-wash-and-fold',
     name: 'Fresh Meadows',
     area: 'queens',
     lat: 40.7358, lng: -73.7907,
@@ -406,7 +406,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'douglaston',
-    urlSlug: 'douglaston-maid-service',
+    urlSlug: 'douglaston-wash-and-fold',
     name: 'Douglaston',
     area: 'queens',
     lat: 40.7631, lng: -73.7484,
@@ -418,7 +418,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'little-neck',
-    urlSlug: 'little-neck-maid-service',
+    urlSlug: 'little-neck-wash-and-fold',
     name: 'Little Neck',
     area: 'queens',
     lat: 40.7634, lng: -73.7323,
@@ -430,7 +430,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'glen-oaks',
-    urlSlug: 'glen-oaks-maid-service',
+    urlSlug: 'glen-oaks-wash-and-fold',
     name: 'Glen Oaks',
     area: 'queens',
     lat: 40.7477, lng: -73.7120,
@@ -442,7 +442,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'bellerose',
-    urlSlug: 'bellerose-maid-service',
+    urlSlug: 'bellerose-wash-and-fold',
     name: 'Bellerose',
     area: 'queens',
     lat: 40.7224, lng: -73.7176,
@@ -454,7 +454,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'floral-park-queens',
-    urlSlug: 'floral-park-queens-maid-service',
+    urlSlug: 'floral-park-queens-wash-and-fold',
     name: 'Floral Park',
     area: 'queens',
     lat: 40.7267, lng: -73.7048,
@@ -468,7 +468,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   // === Southeast Queens ===
   {
     slug: 'jamaica',
-    urlSlug: 'jamaica-maid-service',
+    urlSlug: 'jamaica-wash-and-fold',
     name: 'Jamaica',
     area: 'queens',
     lat: 40.7028, lng: -73.7918,
@@ -480,7 +480,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'jamaica-hills',
-    urlSlug: 'jamaica-hills-maid-service',
+    urlSlug: 'jamaica-hills-wash-and-fold',
     name: 'Jamaica Hills',
     area: 'queens',
     lat: 40.7153, lng: -73.7988,
@@ -492,7 +492,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'jamaica-estates',
-    urlSlug: 'jamaica-estates-maid-service',
+    urlSlug: 'jamaica-estates-wash-and-fold',
     name: 'Jamaica Estates',
     area: 'queens',
     lat: 40.7181, lng: -73.7832,
@@ -504,7 +504,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'holliswood',
-    urlSlug: 'holliswood-maid-service',
+    urlSlug: 'holliswood-wash-and-fold',
     name: 'Holliswood',
     area: 'queens',
     lat: 40.7237, lng: -73.7695,
@@ -516,7 +516,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'hollis',
-    urlSlug: 'hollis-maid-service',
+    urlSlug: 'hollis-wash-and-fold',
     name: 'Hollis',
     area: 'queens',
     lat: 40.7110, lng: -73.7621,
@@ -528,7 +528,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'queens-village',
-    urlSlug: 'queens-village-maid-service',
+    urlSlug: 'queens-village-wash-and-fold',
     name: 'Queens Village',
     area: 'queens',
     lat: 40.7272, lng: -73.7417,
@@ -540,7 +540,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'south-jamaica',
-    urlSlug: 'south-jamaica-maid-service',
+    urlSlug: 'south-jamaica-wash-and-fold',
     name: 'South Jamaica',
     area: 'queens',
     lat: 40.6908, lng: -73.7893,
@@ -552,7 +552,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'st-albans',
-    urlSlug: 'st-albans-maid-service',
+    urlSlug: 'st-albans-wash-and-fold',
     name: 'St. Albans',
     area: 'queens',
     lat: 40.6909, lng: -73.7634,
@@ -564,7 +564,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'laurelton',
-    urlSlug: 'laurelton-maid-service',
+    urlSlug: 'laurelton-wash-and-fold',
     name: 'Laurelton',
     area: 'queens',
     lat: 40.6770, lng: -73.7443,
@@ -576,7 +576,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'cambria-heights',
-    urlSlug: 'cambria-heights-maid-service',
+    urlSlug: 'cambria-heights-wash-and-fold',
     name: 'Cambria Heights',
     area: 'queens',
     lat: 40.6927, lng: -73.7376,
@@ -588,7 +588,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'rosedale',
-    urlSlug: 'rosedale-maid-service',
+    urlSlug: 'rosedale-wash-and-fold',
     name: 'Rosedale',
     area: 'queens',
     lat: 40.6589, lng: -73.7352,
@@ -600,7 +600,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'springfield-gardens',
-    urlSlug: 'springfield-gardens-maid-service',
+    urlSlug: 'springfield-gardens-wash-and-fold',
     name: 'Springfield Gardens',
     area: 'queens',
     lat: 40.6637, lng: -73.7619,
@@ -614,7 +614,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   // === Rockaways ===
   {
     slug: 'rockaway-beach',
-    urlSlug: 'rockaway-beach-maid-service',
+    urlSlug: 'rockaway-beach-wash-and-fold',
     name: 'Rockaway Beach',
     area: 'queens',
     lat: 40.5834, lng: -73.8161,
@@ -626,7 +626,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'belle-harbor',
-    urlSlug: 'belle-harbor-maid-service',
+    urlSlug: 'belle-harbor-wash-and-fold',
     name: 'Belle Harbor',
     area: 'queens',
     lat: 40.5716, lng: -73.8486,
@@ -638,7 +638,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'neponsit',
-    urlSlug: 'neponsit-maid-service',
+    urlSlug: 'neponsit-wash-and-fold',
     name: 'Neponsit',
     area: 'queens',
     lat: 40.5710, lng: -73.8597,
@@ -650,7 +650,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'rockaway-park',
-    urlSlug: 'rockaway-park-maid-service',
+    urlSlug: 'rockaway-park-wash-and-fold',
     name: 'Rockaway Park',
     area: 'queens',
     lat: 40.5789, lng: -73.8415,
@@ -662,7 +662,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'far-rockaway',
-    urlSlug: 'far-rockaway-maid-service',
+    urlSlug: 'far-rockaway-wash-and-fold',
     name: 'Far Rockaway',
     area: 'queens',
     lat: 40.6005, lng: -73.7551,
@@ -676,7 +676,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   // === Auburndale / North-Central ===
   {
     slug: 'auburndale',
-    urlSlug: 'auburndale-maid-service',
+    urlSlug: 'auburndale-wash-and-fold',
     name: 'Auburndale',
     area: 'queens',
     lat: 40.7555, lng: -73.7910,
@@ -690,7 +690,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   // === Missing Sub-Neighborhoods & Micro-Neighborhoods ===
   {
     slug: 'dutch-kills',
-    urlSlug: 'dutch-kills-maid-service',
+    urlSlug: 'dutch-kills-wash-and-fold',
     name: 'Dutch Kills',
     area: 'queens',
     lat: 40.7465, lng: -73.9380,
@@ -702,7 +702,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'ravenswood',
-    urlSlug: 'ravenswood-maid-service',
+    urlSlug: 'ravenswood-wash-and-fold',
     name: 'Ravenswood',
     area: 'queens',
     lat: 40.7590, lng: -73.9370,
@@ -714,7 +714,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'malba',
-    urlSlug: 'malba-maid-service',
+    urlSlug: 'malba-wash-and-fold',
     name: 'Malba',
     area: 'queens',
     lat: 40.7920, lng: -73.8200,
@@ -726,7 +726,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'beechhurst',
-    urlSlug: 'beechhurst-maid-service',
+    urlSlug: 'beechhurst-wash-and-fold',
     name: 'Beechhurst',
     area: 'queens',
     lat: 40.7870, lng: -73.7920,
@@ -738,7 +738,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'bay-terrace',
-    urlSlug: 'bay-terrace-maid-service',
+    urlSlug: 'bay-terrace-wash-and-fold',
     name: 'Bay Terrace',
     area: 'queens',
     lat: 40.7790, lng: -73.7680,
@@ -750,7 +750,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'clearview',
-    urlSlug: 'clearview-maid-service',
+    urlSlug: 'clearview-wash-and-fold',
     name: 'Clearview',
     area: 'queens',
     lat: 40.7680, lng: -73.7580,
@@ -762,7 +762,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'hillcrest',
-    urlSlug: 'hillcrest-maid-service',
+    urlSlug: 'hillcrest-wash-and-fold',
     name: 'Hillcrest',
     area: 'queens',
     lat: 40.7270, lng: -73.8050,
@@ -774,7 +774,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'breezy-point',
-    urlSlug: 'breezy-point-maid-service',
+    urlSlug: 'breezy-point-wash-and-fold',
     name: 'Breezy Point',
     area: 'queens',
     lat: 40.5580, lng: -73.9200,
@@ -786,7 +786,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'arverne',
-    urlSlug: 'arverne-maid-service',
+    urlSlug: 'arverne-wash-and-fold',
     name: 'Arverne',
     area: 'queens',
     lat: 40.5890, lng: -73.7960,
@@ -798,7 +798,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'hammels',
-    urlSlug: 'hammels-maid-service',
+    urlSlug: 'hammels-wash-and-fold',
     name: 'Hammels',
     area: 'queens',
     lat: 40.5870, lng: -73.8080,
@@ -810,7 +810,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'edgemere',
-    urlSlug: 'edgemere-maid-service',
+    urlSlug: 'edgemere-wash-and-fold',
     name: 'Edgemere',
     area: 'queens',
     lat: 40.5960, lng: -73.7680,
@@ -822,7 +822,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'lindenwood',
-    urlSlug: 'lindenwood-maid-service',
+    urlSlug: 'lindenwood-wash-and-fold',
     name: 'Lindenwood',
     area: 'queens',
     lat: 40.6580, lng: -73.8530,
@@ -834,7 +834,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'pomonok',
-    urlSlug: 'pomonok-maid-service',
+    urlSlug: 'pomonok-wash-and-fold',
     name: 'Pomonok',
     area: 'queens',
     lat: 40.7330, lng: -73.8100,
@@ -846,7 +846,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'north-corona',
-    urlSlug: 'north-corona-maid-service',
+    urlSlug: 'north-corona-wash-and-fold',
     name: 'North Corona',
     area: 'queens',
     lat: 40.7560, lng: -73.8630,
@@ -858,7 +858,7 @@ export const QUEENS_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'rochdale-village',
-    urlSlug: 'rochdale-village-maid-service',
+    urlSlug: 'rochdale-village-wash-and-fold',
     name: 'Rochdale Village',
     area: 'queens',
     lat: 40.6770, lng: -73.7630,
