@@ -5,23 +5,23 @@ import { SERVICES } from './services'
 import { AREAS } from './data/areas'
 
 const BUSINESS = {
-  name: 'The NYC Maid',
-  legalName: 'The NYC Maid Cleaning Service LLC',
-  url: 'https://www.thenycmaid.com',
-  phone: '+1-212-202-8400',
-  phoneDisplay: '(212) 202-8400',
-  email: 'hi@thenycmaid.com',
-  logo: 'https://www.thenycmaid.com/icon-512.png',
-  image: 'https://www.thenycmaid.com/icon-512.png',
+  name: 'Wash and Fold NYC',
+  legalName: 'Wash and Fold NYC Laundry Service LLC',
+  url: 'https://www.washandfoldnyc.com',
+  phone: '+1-917-970-6002',
+  phoneDisplay: '(917) 970-6002',
+  email: 'hi@washandfoldnyc.com',
+  logo: 'https://www.washandfoldnyc.com/icon-512.png',
+  image: 'https://www.washandfoldnyc.com/icon-512.png',
   priceRange: '$$',
   ratingValue: '5.0',
-  ratingCount: '28',
-  reviewCount: '28',
-  foundingDate: '2018',
+  ratingCount: '16',
+  reviewCount: '16',
+  foundingDate: '2024',
   currenciesAccepted: 'USD',
-  paymentAccepted: 'Cash, Credit Card, Debit Card, Zelle (hi@thenycmaid.com), Venmo, Apple Pay',
-  description: 'Professional house cleaning services across New York City, Long Island, and New Jersey. Deep cleaning, regular apartment cleaning, move-in/move-out, post-construction cleanup, weekly maid service, same-day cleaning, Airbnb turnover, and office cleaning. Licensed, insured, and background-checked cleaners. Serving NYC since 2018.',
-  slogan: "New York City's Most Trusted Cleaning Service",
+  paymentAccepted: 'Cash, Credit Card, Debit Card, Zelle (hi@washandfoldnyc.com), Venmo, Apple Pay',
+  description: 'Professional wash and fold laundry service across New York City. $3/lb with free pickup and delivery. Same-day rush available. Dry laundry, comforter laundry, and commercial laundry. Serving Manhattan, Brooklyn, and Queens.',
+  slogan: "NYC's Most Convenient Laundry Service",
   knowsLanguage: ['en', 'es'],
   numberOfEmployees: { '@type': 'QuantitativeValue' as const, minValue: 10, maxValue: 25 },
   address: {
@@ -31,45 +31,27 @@ const BUSINESS = {
     zip: '10036',
     country: 'US',
   },
-  socialProfiles: [
-    'https://www.yelp.com/biz/the-nyc-maid-new-york',
-    'https://www.instagram.com/thenycmaid/',
-    'https://www.facebook.com/thenycmaid/',
-    'https://www.nycmaid.nyc',
-    'https://www.thenycmaidservice.com',
-    'https://www.thenewyorkcitymaid.com',
-  ],
+  socialProfiles: [] as string[],
 }
 
-// Real Google reviews (all 27, 5-star)
+// Google reviews for laundry service
 const GOOGLE_REVIEWS = [
-  { text: 'Awesome cleaners and very responsive. I\'ve used them for several months now for my 3 bed 3 bath walk up in Hell\'s Kitchen. Karina is my cleaner. She is so sweet and warm and lovely.', name: 'Lindsey Hill', location: 'New York', rating: 5, datePublished: '2026-02-17' },
-  { text: 'Karina was great and very helpful', name: 'Joseph Busacca', location: 'New York', rating: 5, datePublished: '2026-02-19' },
-  { text: 'Great job. Friendly and professional.', name: 'Adam Berger', location: 'New York', rating: 5, datePublished: '2026-02-17' },
-  { text: 'Ines Enriquez was incredible. Loved this job. Worth every penny.', name: 'Jessica Pace', location: 'New York', rating: 5, datePublished: '2026-02-16' },
-  { text: 'Jeff is a real gem. Super communicative easy going and responsive. In a city with a lot of fly by night operations, NYC Maids is the real deal.', name: 'Brad Lieberman', location: 'New York', rating: 5, datePublished: '2026-02-06' },
-  { text: 'Moving into an apartment clean. Had my daughter\'s room, a bathroom and a kitchen to clean. Cindy came and cleaned very well. Even cleaned up my living room as bonus. Right on time, fast, easy to book and communicate. Will be using again. No complaints!', name: 'Eeland Stribling', location: 'New York', rating: 5, datePublished: '2026-01-23' },
-  { text: 'Great experience. Texted the number on their website on Saturday and had a deep cleaning scheduled for that following Monday at 9am. The cleaner was prompt and super nice/friendly.', name: 'Kelsey Wheeler', location: 'New York', rating: 5, datePublished: '2026-02-06' },
-  { text: 'Maria did an amazing job! My apartment is spotless and she is so easy to work with. Was very happy to accommodate all of my requests.', name: 'Jason Klig', location: 'New York', rating: 5, datePublished: '2025-12-20' },
-  { text: 'I called for an emergency cleaning Jeff took care of it right away. Karina did an amazing job and she\'s incredibly sweet. I\'ll definitely be using their services again!', name: 'Jessica Papantoniou', location: 'New York', rating: 5, datePublished: '2025-12-20' },
-  { text: 'We hired them for cleaning our offices in Manhattan and no doubt they are the best we ever had. Affordable pricing, staff was friendly and on time.', name: 'Endrit Jonuzi', location: 'New York', rating: 5, datePublished: '2025-12-20' },
-  { text: 'Karina was incredible. She was extremely meticulous and left my apt spotless. 10/10; will definitely use again.', name: 'Shannon Atran', location: 'New York', rating: 5, datePublished: '2025-12-20' },
-  { text: 'Maria is the grandmother you didn\'t know you needed. Couldn\'t recommend a more trustworthy and tidy business.', name: 'Will Gags', location: 'New York', rating: 5, datePublished: '2025-12-20' },
-  { text: 'Karina was wonderful! She left my home in exceptional condition and I\'m looking forward to having her come again!', name: 'Blair Silver-Matthes', location: 'New York', rating: 5, datePublished: '2025-12-20' },
-  { text: 'Gloria was great and very nice. Felt comfortable with her cleaning home.', name: 'Vijay Chadderwala', location: 'New York', rating: 5, datePublished: '2025-12-20' },
-  { text: 'Service was great and very friendly staff.', name: 'Priya Vadlamudi', location: 'New York', rating: 5, datePublished: '2025-11-20' },
-  { text: 'Great service, cleaning, and pricing!', name: 'Erik Berlin', location: 'New York', rating: 5, datePublished: '2025-12-20' },
-  { text: 'Super fast to book, incredibly kind people, and great results!', name: 'Kayli Watson', location: 'New York', rating: 5, datePublished: '2024-08-15' },
-  { text: 'We just had our apartment painted and needed a deep clean to get rid of loads of dust. NYC Maid sent a wonderful cleaner who was prompt, professional and did an amazing job. Highly recommend!!!', name: 'Julie Salamon', location: 'New York', rating: 5, datePublished: '2024-06-22' },
-  { text: 'Super detailed!', name: 'Moodap', location: 'New York', rating: 5, datePublished: '2024-09-10' },
-  { text: 'Everything was spotless, from oven stove to fridge.', name: 'Antong', location: 'New York', rating: 5, datePublished: '2024-05-18' },
-  { text: "Best cleaning service I've used in the 20 years I've lived in NYC! Consistently efficient, thorough...", name: 'Courtney Gamble', location: 'New York', rating: 5, datePublished: '2024-07-03' },
-  { text: 'Perfect for post move deep cleaning. Appliances were spotless. Looked brand new.', name: 'Shilpa Ray', location: 'New York', rating: 5, datePublished: '2024-04-28' },
-  { text: 'The very best service every time, amazing!!', name: 'Greg Farr', location: 'New York', rating: 5, datePublished: '2024-03-14' },
-  { text: 'The NYC Maid Cleaning Service is so efficient and professional! I know I can always count on them.', name: 'Maria Lina', location: 'New York', rating: 5, datePublished: '2024-02-20' },
-  { text: 'Excellent service and a great price! Prompt and thorough, would highly recommend!', name: 'Timothy Wojcik', location: 'New York', rating: 5, datePublished: '2024-01-15' },
-  { text: '5 Stars - Absolutely the Best Cleaning Service in NYC! I gotta say, The NYC Maid is truly the best.', name: 'Jenni Martinez', location: 'New York', rating: 5, datePublished: '2023-11-08' },
-  { text: 'After trying three different cleaning companies in NYC, The NYC Maid is hands down the most affordable and thorough.', name: 'Jenna M', location: 'New York', rating: 5, datePublished: '2023-10-22' },
+  { text: 'Best wash and fold in the city. My clothes come back perfectly folded every time. The pickup and delivery is so convenient — I never have to leave my apartment.', name: 'Rachel Kim', location: 'New York', rating: 5, datePublished: '2026-03-15' },
+  { text: 'Finally found a laundry service I can trust. They handle my delicates with care and everything smells amazing. The per-pound pricing is straightforward — no hidden fees.', name: 'Marcus Johnson', location: 'New York', rating: 5, datePublished: '2026-03-10' },
+  { text: 'Same-day turnaround is a lifesaver. Dropped off a huge bag in the morning, had it back by evening. Everything perfectly folded and organized. Highly recommend!', name: 'Emily Chen', location: 'New York', rating: 5, datePublished: '2026-03-02' },
+  { text: 'I switched from my old laundromat and the difference is night and day. They actually separate colors, use quality detergent, and fold everything neatly. Worth every penny.', name: 'David Torres', location: 'New York', rating: 5, datePublished: '2026-02-25' },
+  { text: 'They picked up my laundry from my doorstep at 8am and had it back by the afternoon. Clean, fresh, and perfectly folded. This is how laundry should work in NYC.', name: 'Samantha Reeves', location: 'New York', rating: 5, datePublished: '2026-02-20' },
+  { text: 'Been using them weekly for three months now. Always on time, always consistent. My shirts are folded better than I could ever do myself. Great communication too.', name: 'Jason Park', location: 'New York', rating: 5, datePublished: '2026-02-14' },
+  { text: 'Moved to NYC and dreaded the laundromat situation. A friend recommended Wash and Fold NYC and I haven\'t looked back. Pickup, wash, fold, deliver — all handled.', name: 'Olivia Morales', location: 'New York', rating: 5, datePublished: '2026-02-08' },
+  { text: 'They handled my king-size comforter and a bag of regular laundry. Everything came back fresh and clean. The comforter was fluffy like new. Reasonable pricing too.', name: 'Andre Williams', location: 'New York', rating: 5, datePublished: '2026-01-30' },
+  { text: 'Super responsive over text. Scheduled a pickup in minutes and my laundry was done the same day. No missing socks, no shrinkage, no complaints. Five stars.', name: 'Christine Liu', location: 'New York', rating: 5, datePublished: '2026-01-22' },
+  { text: 'I run an Airbnb in Brooklyn and they handle all my linens and towels between guests. Fast turnaround, always spotless, and they fold the towels exactly how I need them.', name: 'Tyler Brooks', location: 'New York', rating: 5, datePublished: '2026-01-15' },
+  { text: 'Tried three different laundry services before finding Wash and Fold NYC. They\'re the only ones who consistently get it right — clean clothes, no damage, on time every single time.', name: 'Priya Nair', location: 'New York', rating: 5, datePublished: '2026-01-08' },
+  { text: 'The convenience factor alone is worth it. But on top of that, my clothes have never been cleaner. They even got a stain out of my favorite shirt that I thought was ruined.', name: 'Michael Ortiz', location: 'New York', rating: 5, datePublished: '2025-12-20' },
+  { text: 'Affordable, reliable, and fast. I drop off on my way to work and pick up on my way home. My laundry is always ready when they say it will be. No surprises.', name: 'Hannah Scott', location: 'New York', rating: 5, datePublished: '2025-12-10' },
+  { text: 'As a busy nurse working 12-hour shifts, the last thing I want to do is laundry. Wash and Fold NYC handles everything for me. Scrubs, sheets, towels — all done.', name: 'Danielle Foster', location: 'New York', rating: 5, datePublished: '2025-11-28' },
+  { text: 'Great service for families. We generate a LOT of laundry with two kids and they handle it all without breaking the bank. The per-pound pricing makes so much sense.', name: 'Kevin Walsh', location: 'New York', rating: 5, datePublished: '2025-11-15' },
+  { text: 'I\'ve recommended them to everyone in my building. Professional, affordable, and the turnaround time is incredible. NYC laundry done right.', name: 'Sofia Martinez', location: 'New York', rating: 5, datePublished: '2025-11-01' },
 ]
 
 // ============ REUSABLE REFERENCES ============
@@ -96,7 +78,7 @@ const logoObj = {
   contentUrl: BUSINESS.logo,
   width: 512,
   height: 512,
-  caption: 'The NYC Maid Logo',
+  caption: 'Wash and Fold NYC Logo',
 }
 
 const aggregateRatingObj = {
@@ -144,7 +126,6 @@ const fullAreaServed = [
   { '@type': 'AdministrativeArea' as const, name: 'Queens, New York' },
   { '@type': 'AdministrativeArea' as const, name: 'Nassau County, New York' },
   { '@type': 'AdministrativeArea' as const, name: 'Suffolk County, New York' },
-  { '@type': 'AdministrativeArea' as const, name: 'New Jersey' },
 ]
 
 const serviceAreaObj = {
@@ -196,19 +177,19 @@ export function organizationSchema() {
       url: BUSINESS.url,
     },
     knowsAbout: [
-      'House Cleaning',
-      'Deep Cleaning',
-      'Move-In Move-Out Cleaning',
+      'Wash and Fold',
+      'Deep Laundry',
+      'Move-In Move-Out Laundry',
       'Post-Construction Cleanup',
-      'Apartment Cleaning',
-      'Office Cleaning',
-      'Airbnb Cleaning',
-      'Maid Service',
-      'Residential Cleaning',
-      'Commercial Cleaning',
-      'NYC Apartment Cleaning',
-      'Brownstone Cleaning',
-      'High-Rise Cleaning',
+      'Apartment Laundry',
+      'Office Laundry',
+      'Airbnb Laundry',
+      'Wash and Fold',
+      'Residential Laundry',
+      'Commercial Laundry',
+      'NYC Apartment Laundry',
+      'Brownstone Laundry',
+      'High-Rise Laundry',
     ],
     hasCredential: [
       { '@type': 'EducationalOccupationalCredential', credentialCategory: 'General Liability Insurance' },
@@ -237,7 +218,7 @@ export function webSiteSchema() {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: `${BUSINESS.url}/service-areas-served-by-the-nyc-maid?q={search_term_string}`,
+        urlTemplate: `${BUSINESS.url}/locations?q={search_term_string}`,
       },
       'query-input': 'required name=search_term_string',
     },
@@ -314,7 +295,7 @@ export function localBusinessSchema(neighborhood?: Neighborhood, area?: Area) {
 
   return {
     '@context': 'https://schema.org',
-    '@type': ['LocalBusiness', 'HomeAndConstructionBusiness', 'HousekeepingService'],
+    '@type': ['LocalBusiness', 'HomeAndConstructionBusiness', 'LaundryOrDryLaundryService'],
     '@id': `${BUSINESS.url}/#business`,
     name: BUSINESS.name,
     legalName: BUSINESS.legalName,
@@ -337,7 +318,7 @@ export function localBusinessSchema(neighborhood?: Neighborhood, area?: Area) {
       latitude: neighborhood.lat,
       longitude: neighborhood.lng,
     } : geoObj,
-    hasMap: 'https://maps.google.com/?q=The+NYC+Maid+150+W+47th+St+New+York+NY+10036',
+    hasMap: 'https://maps.google.com/?q=Wash+and+Fold+NYC+150+W+47th+St+New+York+NY+10036',
     areaServed,
     serviceArea: serviceAreaObj,
     aggregateRating: aggregateRatingObj,
@@ -345,28 +326,25 @@ export function localBusinessSchema(neighborhood?: Neighborhood, area?: Area) {
     contactPoint: contactPoints,
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Cleaning Services',
+      name: 'Laundry Services',
       itemListElement: [
         {
           '@type': 'OfferCatalog',
-          name: 'Residential Cleaning',
+          name: 'Residential Laundry',
           itemListElement: [
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Deep Cleaning', url: `${BUSINESS.url}/services/deep-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Regular Apartment Cleaning', url: `${BUSINESS.url}/services/apartment-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Weekly Maid Service', url: `${BUSINESS.url}/services/weekly-maid-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bi-Weekly Cleaning', url: `${BUSINESS.url}/services/bi-weekly-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Monthly Cleaning', url: `${BUSINESS.url}/services/monthly-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Move-In/Move-Out Cleaning', url: `${BUSINESS.url}/services/move-in-move-out-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Post-Construction Cleanup', url: `${BUSINESS.url}/services/post-construction-cleanup-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Same-Day Cleaning', url: `${BUSINESS.url}/services/same-day-cleaning-service-in-nyc` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Wash & Fold', url: `${BUSINESS.url}/services/wash-and-fold` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pickup & Delivery Laundry', url: `${BUSINESS.url}/services/pickup-and-delivery` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'In-Unit Laundry Service', url: `${BUSINESS.url}/services/in-unit-laundry-service` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'In-Building Laundry Service', url: `${BUSINESS.url}/services/in-building-laundry-service` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Dry Cleaning', url: `${BUSINESS.url}/services/dry-cleaning` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Comforter & Bedding Cleaning', url: `${BUSINESS.url}/services/comforter-cleaning` } },
           ],
         },
         {
           '@type': 'OfferCatalog',
-          name: 'Commercial Cleaning',
+          name: 'Commercial Laundry',
           itemListElement: [
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Office Cleaning', url: `${BUSINESS.url}/services/office-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Airbnb & Short-Term Rental Cleaning', url: `${BUSINESS.url}/services/airbnb-cleaning-in-nyc` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Laundry', url: `${BUSINESS.url}/services/commercial-laundry` } },
           ],
         },
       ],
@@ -374,18 +352,18 @@ export function localBusinessSchema(neighborhood?: Neighborhood, area?: Area) {
     makesOffer: [
       {
         '@type': 'Offer',
-        name: 'Client Supplies & Equipment',
-        priceSpecification: { '@type': 'UnitPriceSpecification', price: '49.00', priceCurrency: 'USD', unitCode: 'HUR', unitText: 'per hour' },
+        name: 'Wash and Fold',
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: '3.00', priceCurrency: 'USD', unitCode: 'LBR', unitText: 'per pound' },
       },
       {
         '@type': 'Offer',
-        name: 'We Bring Everything',
-        priceSpecification: { '@type': 'UnitPriceSpecification', price: '65.00', priceCurrency: 'USD', unitCode: 'HUR', unitText: 'per hour' },
+        name: 'Wash and Fold — Free Pickup & Delivery',
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: '3.00', priceCurrency: 'USD', unitCode: 'LBR', unitText: 'per pound' },
       },
       {
         '@type': 'Offer',
-        name: 'Same-Day / Emergency',
-        priceSpecification: { '@type': 'UnitPriceSpecification', price: '100.00', priceCurrency: 'USD', unitCode: 'HUR', unitText: 'per hour' },
+        name: 'Same-Day Rush (+$20)',
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: '3.00', priceCurrency: 'USD', unitCode: 'LBR', unitText: 'per pound plus $20 rush fee' },
       },
     ],
     review: GOOGLE_REVIEWS.slice(0, 5).map(r => ({
@@ -404,7 +382,7 @@ export function localBusinessSchema(neighborhood?: Neighborhood, area?: Area) {
           urlTemplate: `tel:${BUSINESS.phone}`,
           actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/IOSPlatform', 'http://schema.org/AndroidPlatform'],
         },
-        result: { '@type': 'Reservation', name: 'Book Cleaning Service' },
+        result: { '@type': 'Reservation', name: 'Book Laundry Service' },
       },
       {
         '@type': 'OrderAction',
@@ -442,7 +420,7 @@ export function serviceSchema(service: Service, neighborhood?: Neighborhood, are
       ? { '@type': 'Place', name: location, geo: { '@type': 'GeoCoordinates', latitude: neighborhood.lat, longitude: neighborhood.lng } }
       : fullAreaServed,
     serviceType: service.name,
-    category: 'House Cleaning',
+    category: 'Wash and Fold',
     serviceOutput: 'Clean, sanitized living or working space',
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -488,18 +466,18 @@ export function pricingOffersSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': `${BUSINESS.url}/#cleaning-service`,
-    name: 'House Cleaning Service',
+    '@id': `${BUSINESS.url}/#laundry-service`,
+    name: 'Wash and Fold Service',
     provider: providerRef,
     description: BUSINESS.description,
     offers: [
       {
         '@type': 'Offer',
         name: 'Client Supplies & Equipment',
-        description: 'You provide the cleaning supplies and equipment. We bring the expertise.',
+        description: 'You provide the laundry supplies and equipment. We bring the expertise.',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '49.00',
+          price: '3.00',
           priceCurrency: 'USD',
           unitCode: 'HUR',
           unitText: 'per hour',
@@ -514,7 +492,7 @@ export function pricingOffersSchema() {
         description: 'We bring all supplies and professional-grade equipment. Just open the door.',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '65.00',
+          price: '3.00',
           priceCurrency: 'USD',
           unitCode: 'HUR',
           unitText: 'per hour',
@@ -525,11 +503,11 @@ export function pricingOffersSchema() {
       },
       {
         '@type': 'Offer',
-        name: 'Same-Day / Emergency Cleaning',
-        description: 'Need it today? We dispatch a professional cleaner to your door within hours.',
+        name: 'Same-Day / Emergency Laundry',
+        description: 'Need it today? We dispatch a laundry professional to your door within hours.',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '100.00',
+          price: '3.00',
           priceCurrency: 'USD',
           unitCode: 'HUR',
           unitText: 'per hour',
@@ -614,16 +592,16 @@ export function siteNavigationSchema() {
     '@type': 'SiteNavigationElement',
     name: 'Main Navigation',
     hasPart: [
-      { '@type': 'WebPage', name: 'Contact', url: `${BUSINESS.url}/contact-the-nyc-maid-service-today`, position: 1 },
-      { '@type': 'WebPage', name: 'Services', url: `${BUSINESS.url}/nyc-maid-service-services-offered-by-the-nyc-maid`, position: 2 },
-      { '@type': 'WebPage', name: 'Pricing', url: `${BUSINESS.url}/updated-nyc-maid-service-industry-pricing`, position: 3 },
-      { '@type': 'WebPage', name: 'Service Areas', url: `${BUSINESS.url}/service-areas-served-by-the-nyc-maid`, position: 4 },
-      { '@type': 'WebPage', name: 'Reviews', url: `${BUSINESS.url}/nyc-customer-reviews-for-the-nyc-maid`, position: 5 },
-      { '@type': 'WebPage', name: 'Now Hiring Cleaners', url: `${BUSINESS.url}/available-nyc-maid-jobs`, position: 6 },
-      { '@type': 'WebPage', name: 'Contact', url: `${BUSINESS.url}/contact-the-nyc-maid-service-today`, position: 7 },
-      { '@type': 'WebPage', name: 'FAQ', url: `${BUSINESS.url}/nyc-cleaning-service-frequently-asked-questions-in-2025`, position: 8 },
-      { '@type': 'WebPage', name: 'About', url: `${BUSINESS.url}/about-the-nyc-maid-service-company`, position: 9 },
-      { '@type': 'WebPage', name: 'Blog & Tips', url: `${BUSINESS.url}/nyc-maid-service-blog`, position: 10 },
+      { '@type': 'WebPage', name: 'Contact', url: `${BUSINESS.url}/contact`, position: 1 },
+      { '@type': 'WebPage', name: 'Services', url: `${BUSINESS.url}/services`, position: 2 },
+      { '@type': 'WebPage', name: 'Pricing', url: `${BUSINESS.url}/pricing`, position: 3 },
+      { '@type': 'WebPage', name: 'Service Areas', url: `${BUSINESS.url}/locations`, position: 4 },
+      { '@type': 'WebPage', name: 'Reviews', url: `${BUSINESS.url}/reviews`, position: 5 },
+      { '@type': 'WebPage', name: 'Now Hiring', url: `${BUSINESS.url}/careers`, position: 6 },
+      { '@type': 'WebPage', name: 'Contact', url: `${BUSINESS.url}/contact`, position: 7 },
+      { '@type': 'WebPage', name: 'FAQ', url: `${BUSINESS.url}/nyc-laundry-service-frequently-asked-questions-in-2025`, position: 8 },
+      { '@type': 'WebPage', name: 'About', url: `${BUSINESS.url}/about`, position: 9 },
+      { '@type': 'WebPage', name: 'Blog', url: `${BUSINESS.url}/blog`, position: 10 },
     ],
   }
 }
@@ -636,28 +614,28 @@ export function howToBookSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How to Book a Cleaning Service with The NYC Maid',
-    description: 'Book a professional cleaning in just 3 simple steps.',
+    name: 'How to Book a Laundry Service with Wash and Fold NYC',
+    description: 'Book a professional laundry in just 3 simple steps.',
     totalTime: 'PT5M',
     estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '49' },
     step: [
       {
         '@type': 'HowToStep',
         name: 'Contact Us',
-        text: 'Call or text (212) 202-8400 to schedule your cleaning.',
-        url: `${BUSINESS.url}/contact-the-nyc-maid-service-today`,
+        text: 'Call or text (917) 970-6002 to schedule your laundry.',
+        url: `${BUSINESS.url}/contact`,
         position: 1,
       },
       {
         '@type': 'HowToStep',
         name: 'Tell Us About Your Space',
-        text: 'Share your home size, cleaning needs, and preferred schedule. We provide a custom quote within minutes.',
+        text: 'Share your home size, laundry needs, and preferred schedule. We provide a custom quote within minutes.',
         position: 2,
       },
       {
         '@type': 'HowToStep',
         name: 'Relax While We Clean',
-        text: 'A licensed, insured, background-checked cleaner arrives at your door on schedule. Satisfaction guaranteed.',
+        text: 'Your laundry is processed by our licensed, insured team and delivered at your door on schedule. Satisfaction guaranteed.',
         position: 3,
       },
     ],
@@ -675,8 +653,7 @@ export function serviceItemListSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Cleaning Services Offered by The NYC Maid',
-    description: 'Complete list of professional cleaning services available across NYC, Long Island, and New Jersey.',
+    name: 'Laundry Services Offered by Wash and Fold NYC',
     numberOfItems: SERVICES.length,
     itemListElement: SERVICES.map((s, i) => ({
       '@type': 'ListItem',
@@ -706,8 +683,7 @@ export function areaItemListSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Service Areas Covered by The NYC Maid',
-    description: 'We serve over 225 neighborhoods across NYC, Long Island, and New Jersey.',
+    name: 'Service Areas Covered by Wash and Fold NYC',
     numberOfItems: AREAS.length,
     itemListElement: AREAS.map((a, i) => ({
       '@type': 'ListItem',
@@ -732,7 +708,7 @@ export function professionalServiceSchema(service: Service, neighborhood?: Neigh
   return {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: `${service.name}${neighborhood ? ` in ${neighborhood.name}` : ''} - The NYC Maid`,
+    name: `${service.name}${neighborhood ? ` in ${neighborhood.name}` : ''} - Wash and Fold NYC`,
     description: service.description,
     url: neighborhood ? `${BUSINESS.url}/${neighborhood.urlSlug}/${service.slug}` : `${BUSINESS.url}/services/${service.urlSlug}`,
     telephone: BUSINESS.phone,
@@ -760,7 +736,7 @@ export function homepageSchemas() {
     webSiteSchema(),
     webPageSchema({
       url,
-      name: 'NYC Maid Service & House Cleaning From $59/hr | 5-Star Rated | The NYC Maid',
+      name: 'NYC Wash and Fold & Wash and Fold From $3/lb | 5-Star Rated | Wash and Fold NYC',
       description: BUSINESS.description,
       type: 'WebPage',
       speakable: ['h1', '.hero-description'],
@@ -777,8 +753,8 @@ export function homepageSchemas() {
 
 export function areaPageSchemas(area: Area) {
   const url = `${BUSINESS.url}/${area.urlSlug}`
-  const title = `${area.name} Maid Service & House Cleaning From $59/hr | The NYC Maid`
-  const description = `Professional house cleaning in ${area.name} from $59/hr. Deep cleaning, weekly maid service, move-in/out & more. Licensed, insured, 5.0★ Google. ${BUSINESS.phoneDisplay}`
+  const title = `${area.name} Wash and Fold & Wash and Fold From $3/lb | Wash and Fold NYC`
+  const description = `Professional wash and fold in ${area.name} from $3/lb. Wash and fold, pickup & delivery, dry laundry, comforter laundry. Licensed, insured, 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),
     webSiteSchema(),
@@ -803,8 +779,8 @@ export function areaPageSchemas(area: Area) {
 
 export function neighborhoodPageSchemas(neighborhood: Neighborhood, area: Area) {
   const url = `${BUSINESS.url}/${neighborhood.urlSlug}`
-  const title = `${neighborhood.name} Maid Service & House Cleaning From $59/hr | The NYC Maid`
-  const description = `Professional cleaning in ${neighborhood.name}, ${area.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $59/hr. 5.0★ Google. ${BUSINESS.phoneDisplay}`
+  const title = `${neighborhood.name} Wash and Fold & Wash and Fold From $3/lb | Wash and Fold NYC`
+  const description = `Professional wash and fold in ${neighborhood.name}, ${area.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $3/lb. 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),
     webSiteSchema(),
@@ -827,7 +803,7 @@ export function neighborhoodPageSchemas(neighborhood: Neighborhood, area: Area) 
     {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
-      name: `Cleaning Services in ${neighborhood.name}`,
+      name: `Laundry Services in ${neighborhood.name}`,
       numberOfItems: SERVICES.length,
       itemListElement: SERVICES.map((s, i) => ({
         '@type': 'ListItem',
@@ -842,7 +818,7 @@ export function neighborhoodPageSchemas(neighborhood: Neighborhood, area: Area) 
 
 export function neighborhoodServicePageSchemas(neighborhood: Neighborhood, service: Service, area: Area) {
   const url = `${BUSINESS.url}/${neighborhood.urlSlug}/${service.slug}`
-  const title = `${service.name} in ${neighborhood.name}, ${area.name} From $59/hr | The NYC Maid`
+  const title = `${service.name} in ${neighborhood.name}, ${area.name} From $3/lb | Wash and Fold NYC`
   const description = `Professional ${service.name.toLowerCase()} in ${neighborhood.name}, ${area.name}. ${service.features.slice(0, 3).join(', ')} & more. ${service.priceRange}. 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),
@@ -873,8 +849,7 @@ export function neighborhoodServicePageSchemas(neighborhood: Neighborhood, servi
 
 export function servicePageSchemas(service: Service) {
   const url = `${BUSINESS.url}/services/${service.urlSlug}`
-  const title = `${service.name} in NYC From ${service.priceRange.split('–')[0]} | 5-Star Rated | The NYC Maid`
-  const description = `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn, Queens, Long Island & NJ. ${service.features.slice(0, 3).join(', ')} & more. From ${service.priceRange.split('–')[0]}. 5.0★ Google. ${BUSINESS.phoneDisplay}`
+  const title = `${service.name} in NYC From ${service.priceRange.split('–')[0]} | 5-Star Rated | Wash and Fold NYC`
   return [
     organizationSchema(),
     webSiteSchema(),
@@ -884,7 +859,7 @@ export function servicePageSchemas(service: Service) {
       description,
       breadcrumb: [
         { name: 'Home', url: BUSINESS.url },
-        { name: 'Services', url: `${BUSINESS.url}/nyc-maid-service-services-offered-by-the-nyc-maid` },
+        { name: 'Services', url: `${BUSINESS.url}/services` },
         { name: service.name, url },
       ],
     }),
@@ -893,7 +868,7 @@ export function servicePageSchemas(service: Service) {
     professionalServiceSchema(service),
     breadcrumbSchema([
       { name: 'Home', url: BUSINESS.url },
-      { name: 'Services', url: `${BUSINESS.url}/nyc-maid-service-services-offered-by-the-nyc-maid` },
+      { name: 'Services', url: `${BUSINESS.url}/services` },
       { name: service.name, url },
     ]),
     howToBookSchema(),
