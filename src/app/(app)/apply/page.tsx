@@ -139,7 +139,7 @@ export default function ApplyPage() {
         <form onSubmit={handleSubmit} className="bg-white rounded-xl border border-gray-200 p-6 space-y-5">
           <div>
             <h2 className="text-xl font-bold text-[#1E2A4A]">Apply to Join Our Team / Solicite Unirse a Nuestro Equipo</h2>
-            <p className="text-gray-500 text-sm mt-1">We&apos;re looking for reliable, detail-oriented cleaners in NYC.</p>
+            <p className="text-gray-500 text-sm mt-1">We&apos;re looking for reliable, detail-oriented laundry workers in NYC.</p>
             <p className="text-gray-500 text-sm">Buscamos limpiadores confiables y detallistas en NYC.</p>
           </div>
 

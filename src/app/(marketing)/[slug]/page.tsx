@@ -417,9 +417,9 @@ export default async function SlugPage({ params }: Props) {
             <div>
               <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1a3a5c] tracking-wide mb-2">{neighborhood.name} Laundry Pricing</h3>
               <p className="text-[#1a3a5c]/80 leading-relaxed">
-                Wash and fold in {neighborhood.name} starts at $3/lb with your supplies, $75/lb when we bring everything, or $100/lb for same-day emergency service. A typical {neighborhood.name} apartment cleaning runs $98–$260 depending on size and service type. Deep cleans, move-in/move-out, and post-renovation jobs take longer but use the same $3/lb rate with free pickup. No travel fees, no surge pricing — {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
+                Wash and fold in {neighborhood.name} is $3/lb with a $39 minimum order. Free pickup and delivery on all orders. Same-day rush is available for +$20. Weekly subscribers save 10%, biweekly save 5%. {neighborhood.name} residents pay the same rate as every other neighborhood we serve — no surcharges, no zone fees. Dry cleaning, comforter cleaning, and commercial laundry are also available at the same address with the same free pickup.
               </p>
-              <Link href="/updated-nyc-wash-and-fold-industry-pricing" className="inline-block mt-3 text-[#1a3a5c] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
+              <Link href="/pricing" className="inline-block mt-3 text-[#1a3a5c] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
             </div>
           </div>
         </section>
