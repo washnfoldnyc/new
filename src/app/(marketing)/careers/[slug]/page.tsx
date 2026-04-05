@@ -40,7 +40,7 @@ export default async function NeighborhoodCareerPage({ params }: Props) {
           <p className="text-sky-200/60 text-lg max-w-2xl mb-6">
             Now hiring pickup/delivery drivers and laundry attendants in {n.name}, {area?.name}. $18–22/hr, flexible schedule, weekly pay.
           </p>
-          <a href="sms:9179706002" className="bg-[#4BA3D4] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
+          <a href="sms:9179706002" className="bg-white text-[#4BA3D4] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
             Apply — Text (917) 970-6002
           </a>
         </div>

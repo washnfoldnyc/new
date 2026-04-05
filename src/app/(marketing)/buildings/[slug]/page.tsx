@@ -58,9 +58,10 @@ export default async function BuildingTypePage({ params }: Props) {
               <p className="text-sky-200/40 text-xs">Pickup & Delivery</p>
             </div>
           </div>
-          <a href="sms:9179706002" className="bg-[#4BA3D4] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#2B7BB0] transition-colors">
-            Text (917) 970-6002
-          </a>
+          <div className="flex flex-col sm:flex-row items-start gap-4">
+            <a href="sms:9179706002" className="bg-white text-[#4BA3D4] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-sky-50 transition-colors shadow-lg">Text (917) 970-6002</a>
+            <a href="tel:9179706002" className="bg-white text-[#4BA3D4] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-sky-50 transition-colors shadow-lg">Call (917) 970-6002</a>
+          </div>
         </div>
       </section>
 
