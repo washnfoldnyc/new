@@ -1,6 +1,6 @@
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY?.replace(/\s/g, ''))
+const resend = new Resend(process.env.RESEND_API_KEY?.replace(/\s/g, '') || 'placeholder')
 
 // Emails sent TO these domains are admin emails — don't BCC owner on those
 const ADMIN_DOMAINS = ['washandfoldnyc.com', 'washandfoldnyc.gmail.com']
