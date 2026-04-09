@@ -3,13 +3,13 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
 const serviceLinks = [
-  { name: 'Wash & Fold', href: '/services/wash-and-fold' },
-  { name: 'In-Unit Laundry', href: '/services/in-unit-laundry-service' },
-  { name: 'In-Building Laundry', href: '/services/in-building-laundry-service' },
-  { name: 'Pickup & Delivery', href: '/services/pickup-and-delivery' },
-  { name: 'Dry Cleaning', href: '/services/dry-cleaning' },
-  { name: 'Comforter Cleaning', href: '/services/comforter-cleaning' },
-  { name: 'Commercial Laundry', href: '/services/commercial-laundry' },
+  { name: 'Wash & Fold', href: '/services/nyc-wash-and-fold' },
+  { name: 'In-Unit Laundry', href: '/services/nyc-in-unit-laundry-service' },
+  { name: 'In-Building Laundry', href: '/services/nyc-in-building-laundry-service' },
+  { name: 'Pickup & Delivery', href: '/services/nyc-pickup-and-delivery' },
+  { name: 'Dry Cleaning', href: '/services/nyc-dry-cleaning' },
+  { name: 'Comforter Cleaning', href: '/services/nyc-comforter-cleaning' },
+  { name: 'Commercial Laundry', href: '/services/nyc-commercial-laundry' },
   { name: 'All Services', href: '/services' },
 ]
 

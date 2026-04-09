@@ -111,7 +111,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">Our Services</h2>
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1a3a5c] tracking-wide text-center mb-4">Seven Laundry Services Covering Every Need</p>
-          <p className="text-gray-500 text-center max-w-3xl mx-auto mb-12">From everyday <Link href="/services/wash-and-fold" className="text-[#4BA3D4] underline underline-offset-2">wash and fold</Link> to <Link href="/services/dry-cleaning" className="text-[#4BA3D4] underline underline-offset-2">professional dry cleaning</Link>, <Link href="/services/comforter-cleaning" className="text-[#4BA3D4] underline underline-offset-2">comforter cleaning</Link>, and <Link href="/services/commercial-laundry" className="text-[#4BA3D4] underline underline-offset-2">commercial laundry for businesses</Link> — we handle every type of fabric and every size of order with the same attention to detail. All services include free pickup and delivery across Manhattan, Brooklyn, and Queens. No minimums on dry cleaning or comforter orders when combined with a wash and fold pickup.</p>
+          <p className="text-gray-500 text-center max-w-3xl mx-auto mb-12">From everyday <Link href="/services/nyc-wash-and-fold" className="text-[#4BA3D4] underline underline-offset-2">wash and fold</Link> to <Link href="/services/nyc-dry-cleaning" className="text-[#4BA3D4] underline underline-offset-2">professional dry cleaning</Link>, <Link href="/services/nyc-comforter-cleaning" className="text-[#4BA3D4] underline underline-offset-2">comforter cleaning</Link>, and <Link href="/services/nyc-commercial-laundry" className="text-[#4BA3D4] underline underline-offset-2">commercial laundry for businesses</Link> — we handle every type of fabric and every size of order with the same attention to detail. All services include free pickup and delivery across Manhattan, Brooklyn, and Queens. No minimums on dry cleaning or comforter orders when combined with a wash and fold pickup.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {SERVICES.map(service => (
               <Link key={service.slug} href={`/services/${service.urlSlug}`} className="group border border-gray-200 rounded-2xl p-7 hover:border-[#4BA3D4] hover:shadow-lg transition-all bg-white">
@@ -212,7 +212,7 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <Link href="/services/comforter-cleaning" className="inline-block mt-4 text-[#4BA3D4] text-sm font-medium underline underline-offset-2">Comforter cleaning details &rarr;</Link>
+              <Link href="/services/nyc-comforter-cleaning" className="inline-block mt-4 text-[#4BA3D4] text-sm font-medium underline underline-offset-2">Comforter cleaning details &rarr;</Link>
             </div>
 
             <div className="border border-gray-200 rounded-2xl p-8">
@@ -226,7 +226,7 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="text-gray-400 text-xs mt-4">Free pickup & delivery. Garment bags included. Same-week turnaround.</p>
-              <Link href="/services/dry-cleaning" className="inline-block mt-2 text-[#4BA3D4] text-sm font-medium underline underline-offset-2">Dry cleaning details &rarr;</Link>
+              <Link href="/services/nyc-dry-cleaning" className="inline-block mt-2 text-[#4BA3D4] text-sm font-medium underline underline-offset-2">Dry cleaning details &rarr;</Link>
             </div>
           </div>
         </div>
@@ -418,7 +418,7 @@ export default function HomePage() {
       <section className="py-20 bg-[#F0F8FF]">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="font-[family-name:var(--font-bebas)] text-3xl text-[#1a3a5c] tracking-wide text-center mb-4">Commercial Laundry for NYC Businesses</h2>
-          <p className="text-gray-500 text-center max-w-3xl mx-auto mb-12">Restaurants, salons, gyms, Airbnb hosts, and offices use our commercial laundry service for reliable, consistent, and affordable bulk laundering. Commercial pricing ranges from one dollar to two dollars per pound depending on volume and frequency. We handle everything from restaurant tablecloths to gym towels to Airbnb linen turnovers. <Link href="/services/commercial-laundry" className="text-[#4BA3D4] underline underline-offset-2">Learn more about commercial laundry</Link>.</p>
+          <p className="text-gray-500 text-center max-w-3xl mx-auto mb-12">Restaurants, salons, gyms, Airbnb hosts, and offices use our commercial laundry service for reliable, consistent, and affordable bulk laundering. Commercial pricing ranges from one dollar to two dollars per pound depending on volume and frequency. We handle everything from restaurant tablecloths to gym towels to Airbnb linen turnovers. <Link href="/services/nyc-commercial-laundry" className="text-[#4BA3D4] underline underline-offset-2">Learn more about commercial laundry</Link>.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { t: 'Restaurants & Cafes', d: 'Tablecloths, napkins, chef coats, aprons, kitchen towels, and bar rags. We handle grease stains and food residue with commercial-grade pre-treatment. Daily or weekly pickup schedules available. Your linens are always spotless and ready for the next service. Most restaurant clients process fifty to two hundred pounds per week at one dollar to one dollar fifty per pound.' },

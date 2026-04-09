@@ -13,7 +13,7 @@ export interface Service {
 export const SERVICES: Service[] = [
   {
     slug: 'wash-and-fold',
-    urlSlug: 'wash-and-fold',
+    urlSlug: 'nyc-wash-and-fold',
     name: 'Wash & Fold',
     shortName: 'Wash & Fold',
     description: 'Drop off your dirty laundry and pick it up clean, fresh, and perfectly folded. $3/lb with a $39 minimum. Same-day rush +$20. Subscriptions: 10% off weekly, 5% off biweekly.',
@@ -24,7 +24,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: 'in-unit-laundry',
-    urlSlug: 'in-unit-laundry-service',
+    urlSlug: 'nyc-in-unit-laundry-service',
     name: 'In-Unit Laundry Service',
     shortName: 'In-Unit',
     description: 'We come to your apartment and do your laundry using your own washer and dryer. Sort, wash, dry, fold — all while you relax or work from home.',
@@ -35,7 +35,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: 'in-building-laundry',
-    urlSlug: 'in-building-laundry-service',
+    urlSlug: 'nyc-in-building-laundry-service',
     name: 'In-Building Laundry Service',
     shortName: 'In-Building',
     description: 'We handle your laundry using your building\'s shared laundry room. We bring quarters, manage the machines, and deliver everything folded to your door.',
@@ -46,7 +46,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: 'pickup-and-delivery',
-    urlSlug: 'pickup-and-delivery',
+    urlSlug: 'nyc-pickup-and-delivery',
     name: 'Pickup & Delivery Laundry',
     shortName: 'Pickup & Delivery',
     description: 'We pick up your dirty laundry from your door, wash and fold it, and deliver it back clean and fresh. Free pickup, free delivery — same $3/lb rate.',
@@ -57,7 +57,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: 'dry-cleaning',
-    urlSlug: 'dry-cleaning',
+    urlSlug: 'nyc-dry-cleaning',
     name: 'Dry Cleaning',
     shortName: 'Dry Cleaning',
     description: 'Premium dry cleaning with free pickup and delivery. Suits, dresses, coats, delicates — even wedding gowns. White-glove service, handled with care.',
@@ -68,7 +68,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: 'comforter-cleaning',
-    urlSlug: 'comforter-cleaning',
+    urlSlug: 'nyc-comforter-cleaning',
     name: 'Comforter & Bedding Cleaning',
     shortName: 'Comforters',
     description: 'Oversized comforters, duvets, quilts, and pillows cleaned and freshened. Flat-rate pricing: Twin $35, Full/Queen $45, King $55. Too big for your home machine — perfect for ours.',
@@ -79,7 +79,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: 'commercial-laundry',
-    urlSlug: 'commercial-laundry',
+    urlSlug: 'nyc-commercial-laundry',
     name: 'Commercial Laundry',
     shortName: 'Commercial',
     description: 'Laundry service for businesses — restaurants, salons, gyms, Airbnbs, and offices. Bulk pricing, recurring schedules, and reliable turnaround.',

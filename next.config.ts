@@ -29,6 +29,14 @@ const nextConfig: NextConfig = {
       destination: '/sitemap.xml',
       permanent: true,
     },
+    // Old service URLs → new nyc-prefixed URLs
+    { source: '/services/wash-and-fold', destination: '/services/nyc-wash-and-fold', permanent: true },
+    { source: '/services/in-unit-laundry-service', destination: '/services/nyc-in-unit-laundry-service', permanent: true },
+    { source: '/services/in-building-laundry-service', destination: '/services/nyc-in-building-laundry-service', permanent: true },
+    { source: '/services/pickup-and-delivery', destination: '/services/nyc-pickup-and-delivery', permanent: true },
+    { source: '/services/dry-cleaning', destination: '/services/nyc-dry-cleaning', permanent: true },
+    { source: '/services/comforter-cleaning', destination: '/services/nyc-comforter-cleaning', permanent: true },
+    { source: '/services/commercial-laundry', destination: '/services/nyc-commercial-laundry', permanent: true },
   ],
   headers: async () => [
     {
