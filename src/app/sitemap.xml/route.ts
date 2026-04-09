@@ -23,6 +23,7 @@ export async function GET() {
     { path: '/careers', freq: 'daily', pri: '0.8' },
     { path: '/partners', freq: 'weekly', pri: '0.7' },
     { path: '/buildings', freq: 'weekly', pri: '0.7' },
+    { path: '/reviews', freq: 'weekly', pri: '0.8' },
     { path: '/privacy-policy', freq: 'yearly', pri: '0.3' },
     { path: '/terms-conditions', freq: 'yearly', pri: '0.3' },
     { path: '/legal', freq: 'yearly', pri: '0.3' },

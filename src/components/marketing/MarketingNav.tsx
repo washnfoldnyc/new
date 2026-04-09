@@ -20,6 +20,7 @@ const moreLinks = [
   { name: 'Locations', href: '/locations' },
   { name: 'Partners', href: '/partners' },
   { name: 'Reviews', href: '/reviews' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export default function MarketingNav() {
